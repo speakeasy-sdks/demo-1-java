@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class PostOrgsOrgIdResourcesDriversResponse {
     
     public String contentType;
+
     public PostOrgsOrgIdResourcesDriversResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -22,6 +23,7 @@ public class PostOrgsOrgIdResourcesDriversResponse {
      */
     
     public demo_1.test_1.models.shared.DriverDefinitionResponse driverDefinitionResponse;
+
     public PostOrgsOrgIdResourcesDriversResponse withDriverDefinitionResponse(demo_1.test_1.models.shared.DriverDefinitionResponse driverDefinitionResponse) {
         this.driverDefinitionResponse = driverDefinitionResponse;
         return this;
@@ -34,6 +36,7 @@ public class PostOrgsOrgIdResourcesDriversResponse {
      */
     
     public demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse;
+
     public PostOrgsOrgIdResourcesDriversResponse withHumanitecErrorResponse(demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse) {
         this.humanitecErrorResponse = humanitecErrorResponse;
         return this;
@@ -41,6 +44,7 @@ public class PostOrgsOrgIdResourcesDriversResponse {
     
     
     public Integer statusCode;
+
     public PostOrgsOrgIdResourcesDriversResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -48,6 +52,7 @@ public class PostOrgsOrgIdResourcesDriversResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public PostOrgsOrgIdResourcesDriversResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;

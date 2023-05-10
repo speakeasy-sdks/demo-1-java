@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class GetOrgsOrgIdWorkloadProfilesResponse {
     
     public String contentType;
+
     public GetOrgsOrgIdWorkloadProfilesResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -17,6 +18,7 @@ public class GetOrgsOrgIdWorkloadProfilesResponse {
     
     
     public Integer statusCode;
+
     public GetOrgsOrgIdWorkloadProfilesResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -24,6 +26,7 @@ public class GetOrgsOrgIdWorkloadProfilesResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public GetOrgsOrgIdWorkloadProfilesResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;
@@ -36,6 +39,7 @@ public class GetOrgsOrgIdWorkloadProfilesResponse {
      */
     
     public demo_1.test_1.models.shared.WorkloadProfileResponse[] workloadProfileResponses;
+
     public GetOrgsOrgIdWorkloadProfilesResponse withWorkloadProfileResponses(demo_1.test_1.models.shared.WorkloadProfileResponse[] workloadProfileResponses) {
         this.workloadProfileResponses = workloadProfileResponses;
         return this;

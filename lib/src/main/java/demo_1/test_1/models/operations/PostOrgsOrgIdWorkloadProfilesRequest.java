@@ -15,6 +15,7 @@ public class PostOrgsOrgIdWorkloadProfilesRequest {
      */
     @SpeakeasyMetadata("request:mediaType=application/json")
     public demo_1.test_1.models.shared.WorkloadProfileRequest workloadProfileRequest;
+
     public PostOrgsOrgIdWorkloadProfilesRequest withWorkloadProfileRequest(demo_1.test_1.models.shared.WorkloadProfileRequest workloadProfileRequest) {
         this.workloadProfileRequest = workloadProfileRequest;
         return this;
@@ -27,6 +28,7 @@ public class PostOrgsOrgIdWorkloadProfilesRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public PostOrgsOrgIdWorkloadProfilesRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;

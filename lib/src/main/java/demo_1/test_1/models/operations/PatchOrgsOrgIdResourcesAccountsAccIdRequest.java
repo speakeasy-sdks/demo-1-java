@@ -10,6 +10,7 @@ import demo_1.test_1.utils.SpeakeasyMetadata;
 public class PatchOrgsOrgIdResourcesAccountsAccIdRequest {
     @SpeakeasyMetadata("request:mediaType=application/json")
     public demo_1.test_1.models.shared.UpdateResourceAccountRequestRequest updateResourceAccountRequestRequest;
+
     public PatchOrgsOrgIdResourcesAccountsAccIdRequest withUpdateResourceAccountRequestRequest(demo_1.test_1.models.shared.UpdateResourceAccountRequestRequest updateResourceAccountRequestRequest) {
         this.updateResourceAccountRequestRequest = updateResourceAccountRequestRequest;
         return this;
@@ -22,6 +23,7 @@ public class PatchOrgsOrgIdResourcesAccountsAccIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=accId")
     public String accId;
+
     public PatchOrgsOrgIdResourcesAccountsAccIdRequest withAccId(String accId) {
         this.accId = accId;
         return this;
@@ -34,6 +36,7 @@ public class PatchOrgsOrgIdResourcesAccountsAccIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public PatchOrgsOrgIdResourcesAccountsAccIdRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;

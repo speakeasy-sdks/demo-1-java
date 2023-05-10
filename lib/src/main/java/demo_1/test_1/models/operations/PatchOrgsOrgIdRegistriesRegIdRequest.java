@@ -15,6 +15,7 @@ public class PatchOrgsOrgIdRegistriesRegIdRequest {
      */
     @SpeakeasyMetadata("request:mediaType=application/json")
     public demo_1.test_1.models.shared.RegistryRequest registryRequest;
+
     public PatchOrgsOrgIdRegistriesRegIdRequest withRegistryRequest(demo_1.test_1.models.shared.RegistryRequest registryRequest) {
         this.registryRequest = registryRequest;
         return this;
@@ -27,6 +28,7 @@ public class PatchOrgsOrgIdRegistriesRegIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public PatchOrgsOrgIdRegistriesRegIdRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;
@@ -39,6 +41,7 @@ public class PatchOrgsOrgIdRegistriesRegIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=regId")
     public String regId;
+
     public PatchOrgsOrgIdRegistriesRegIdRequest withRegId(String regId) {
         this.regId = regId;
         return this;

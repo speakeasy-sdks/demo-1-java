@@ -36,6 +36,12 @@ public class UserProfile {
 		this._genVersion = genVersion;
 	}
 
+    /**
+     * DEPRECATED
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.DeleteTokensTokenIdResponse deleteTokensTokenId(demo_1.test_1.models.operations.DeleteTokensTokenIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.DeleteTokensTokenIdRequest.class, baseUrl, "/tokens/{tokenId}", request, null);
@@ -60,6 +66,11 @@ public class UserProfile {
         return res;
     }
 
+    /**
+     * Gets the extended profile of the current user
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetCurrentUserResponse getCurrentUser() throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(baseUrl, "/current-user");
@@ -92,6 +103,11 @@ public class UserProfile {
         return res;
     }
 
+    /**
+     * DEPRECATED
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetTokensResponse getTokens() throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(baseUrl, "/tokens");
@@ -122,6 +138,11 @@ public class UserProfile {
         return res;
     }
 
+    /**
+     * DEPRECATED
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetUsersMeResponse getUsersMe() throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(baseUrl, "/users/me");
@@ -154,6 +175,12 @@ public class UserProfile {
         return res;
     }
 
+    /**
+     * Updates the extended profile of the current user.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PatchCurrentUserResponse patchCurrentUser(demo_1.test_1.models.shared.UserProfileExtendedRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(baseUrl, "/current-user");
@@ -199,6 +226,12 @@ public class UserProfile {
         return res;
     }
 
+    /**
+     * Creates a new service user.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PostOrgsOrgIdUsersResponse postOrgsOrgIdUsers(demo_1.test_1.models.operations.PostOrgsOrgIdUsersRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdUsersRequest.class, baseUrl, "/orgs/{orgId}/users", request, null);

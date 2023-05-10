@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class GetOrgsOrgIdAppsAppIdRuntimeResponse {
     
     public String contentType;
+
     public GetOrgsOrgIdAppsAppIdRuntimeResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -22,6 +23,7 @@ public class GetOrgsOrgIdAppsAppIdRuntimeResponse {
      */
     
     public demo_1.test_1.models.shared.EnvironmentRuntimeInfoResponse[] environmentRuntimeInfoResponses;
+
     public GetOrgsOrgIdAppsAppIdRuntimeResponse withEnvironmentRuntimeInfoResponses(demo_1.test_1.models.shared.EnvironmentRuntimeInfoResponse[] environmentRuntimeInfoResponses) {
         this.environmentRuntimeInfoResponses = environmentRuntimeInfoResponses;
         return this;
@@ -29,6 +31,7 @@ public class GetOrgsOrgIdAppsAppIdRuntimeResponse {
     
     
     public Integer statusCode;
+
     public GetOrgsOrgIdAppsAppIdRuntimeResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -36,6 +39,7 @@ public class GetOrgsOrgIdAppsAppIdRuntimeResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public GetOrgsOrgIdAppsAppIdRuntimeResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;

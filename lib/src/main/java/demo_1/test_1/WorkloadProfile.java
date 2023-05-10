@@ -39,6 +39,12 @@ public class WorkloadProfile {
 		this._genVersion = genVersion;
 	}
 
+    /**
+     * Delete a Workload Profile Version
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.DeleteOrgsOrgIdWorkloadProfilesProfileIdVersionsVersionResponse deleteOrgsOrgIdWorkloadProfilesProfileIdVersionsVersion(demo_1.test_1.models.operations.DeleteOrgsOrgIdWorkloadProfilesProfileIdVersionsVersionRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.DeleteOrgsOrgIdWorkloadProfilesProfileIdVersionsVersionRequest.class, baseUrl, "/orgs/{orgId}/workload-profiles/{profileId}/versions/{version}", request, null);
@@ -71,6 +77,15 @@ public class WorkloadProfile {
         return res;
     }
 
+    /**
+     * Delete a Workload Profile
+     * This will also delete all versions of a workload profile.
+     * 
+     * It is not possible to delete profiles of other organizations.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.DeleteOrgsOrgIdWorkloadProfilesProfileQidResponse deleteOrgsOrgIdWorkloadProfilesProfileQid(demo_1.test_1.models.operations.DeleteOrgsOrgIdWorkloadProfilesProfileQidRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.DeleteOrgsOrgIdWorkloadProfilesProfileQidRequest.class, baseUrl, "/orgs/{orgId}/workload-profiles/{profileQid}", request, null);
@@ -103,6 +118,12 @@ public class WorkloadProfile {
         return res;
     }
 
+    /**
+     * List workload profiles available to the organization.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdWorkloadProfilesResponse getOrgsOrgIdWorkloadProfiles(demo_1.test_1.models.operations.GetOrgsOrgIdWorkloadProfilesRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdWorkloadProfilesRequest.class, baseUrl, "/orgs/{orgId}/workload-profiles", request, null);
@@ -133,6 +154,12 @@ public class WorkloadProfile {
         return res;
     }
 
+    /**
+     * Get a Workload Profile
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdWorkloadProfilesProfileQidResponse getOrgsOrgIdWorkloadProfilesProfileQid(demo_1.test_1.models.operations.GetOrgsOrgIdWorkloadProfilesProfileQidRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdWorkloadProfilesProfileQidRequest.class, baseUrl, "/orgs/{orgId}/workload-profiles/{profileQid}", request, null);
@@ -171,6 +198,12 @@ public class WorkloadProfile {
         return res;
     }
 
+    /**
+     * List versions of the given workload profile with optional constraint.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdWorkloadProfilesProfileQidVersionsResponse getOrgsOrgIdWorkloadProfilesProfileQidVersions(demo_1.test_1.models.operations.GetOrgsOrgIdWorkloadProfilesProfileQidVersionsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdWorkloadProfilesProfileQidVersionsRequest.class, baseUrl, "/orgs/{orgId}/workload-profiles/{profileQid}/versions", request, null);
@@ -215,6 +248,12 @@ public class WorkloadProfile {
         return res;
     }
 
+    /**
+     * Create new Workload Profile
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PostOrgsOrgIdWorkloadProfilesResponse postOrgsOrgIdWorkloadProfiles(demo_1.test_1.models.operations.PostOrgsOrgIdWorkloadProfilesRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdWorkloadProfilesRequest.class, baseUrl, "/orgs/{orgId}/workload-profiles", request, null);
@@ -258,6 +297,27 @@ public class WorkloadProfile {
         return res;
     }
 
+    /**
+     * Add new Version of the Workload Profile
+     * Creates a Workload Profile Version from the uploaded Helm chart. The version is retrieved from the chart's metadata (Charts.yaml file).
+     * 
+     * The request has content type `multipart/form-data` and the request body includes two parts:
+     * 
+     * 1. `file` with `application/x-gzip` content type which is an archive containing a Helm chart.
+     * 
+     * 2. `metadata` with `application/json` content type which defines the version's metadata.
+     * 
+     * Request body example:
+     * 
+     * 	Content-Type: multipart/form-data; boundary=----boundary 	----boundary 	Content-Disposition: form-data; name="metadata" 	Content-Type: application/json; charset=UTF-8 	{ 	  "features": { 	     "humanitec/service": {}, 	     "humanitec/volumes": {}, 	     "custom": {"schema": {}} 	  }, 	  "notes": "Notes related to this version of the profile" 	} 	----boundary 	Content-Disposition: form-data; name="file"; filename="my-workload-1.0.1.tgz" 	Content-Type: application/x-gzip 	[TGZ_DATA] 	----boundary
+     * 
+     * **NOTE:**
+     * 
+     * A Workload Profile must be created before a version can be added to it.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PostOrgsOrgIdWorkloadProfilesProfileQidVersionsResponse postOrgsOrgIdWorkloadProfilesProfileQidVersions(demo_1.test_1.models.operations.PostOrgsOrgIdWorkloadProfilesProfileQidVersionsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdWorkloadProfilesProfileQidVersionsRequest.class, baseUrl, "/orgs/{orgId}/workload-profiles/{profileQid}/versions", request, null);

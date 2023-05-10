@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class GetOrgsOrgIdAppsAppIdEnvsEnvIdDeploysDeployIdResponse {
     
     public String contentType;
+
     public GetOrgsOrgIdAppsAppIdEnvsEnvIdDeploysDeployIdResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -22,6 +23,7 @@ public class GetOrgsOrgIdAppsAppIdEnvsEnvIdDeploysDeployIdResponse {
      */
     
     public demo_1.test_1.models.shared.DeploymentResponse deploymentResponse;
+
     public GetOrgsOrgIdAppsAppIdEnvsEnvIdDeploysDeployIdResponse withDeploymentResponse(demo_1.test_1.models.shared.DeploymentResponse deploymentResponse) {
         this.deploymentResponse = deploymentResponse;
         return this;
@@ -34,6 +36,7 @@ public class GetOrgsOrgIdAppsAppIdEnvsEnvIdDeploysDeployIdResponse {
      */
     
     public demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse;
+
     public GetOrgsOrgIdAppsAppIdEnvsEnvIdDeploysDeployIdResponse withHumanitecErrorResponse(demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse) {
         this.humanitecErrorResponse = humanitecErrorResponse;
         return this;
@@ -41,6 +44,7 @@ public class GetOrgsOrgIdAppsAppIdEnvsEnvIdDeploysDeployIdResponse {
     
     
     public Integer statusCode;
+
     public GetOrgsOrgIdAppsAppIdEnvsEnvIdDeploysDeployIdResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -48,6 +52,7 @@ public class GetOrgsOrgIdAppsAppIdEnvsEnvIdDeploysDeployIdResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public GetOrgsOrgIdAppsAppIdEnvsEnvIdDeploysDeployIdResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;

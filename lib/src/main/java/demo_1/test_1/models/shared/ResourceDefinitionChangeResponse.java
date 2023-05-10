@@ -15,6 +15,7 @@ public class ResourceDefinitionChangeResponse {
      */
     @JsonProperty("app_id")
     public String appId;
+
     public ResourceDefinitionChangeResponse withAppId(String appId) {
         this.appId = appId;
         return this;
@@ -25,6 +26,7 @@ public class ResourceDefinitionChangeResponse {
      */
     @JsonProperty("env_id")
     public String envId;
+
     public ResourceDefinitionChangeResponse withEnvId(String envId) {
         this.envId = envId;
         return this;
@@ -35,6 +37,7 @@ public class ResourceDefinitionChangeResponse {
      */
     @JsonProperty("from_def")
     public String fromDef;
+
     public ResourceDefinitionChangeResponse withFromDef(String fromDef) {
         this.fromDef = fromDef;
         return this;
@@ -45,6 +48,7 @@ public class ResourceDefinitionChangeResponse {
      */
     @JsonProperty("res_id")
     public String resId;
+
     public ResourceDefinitionChangeResponse withResId(String resId) {
         this.resId = resId;
         return this;
@@ -55,6 +59,7 @@ public class ResourceDefinitionChangeResponse {
      */
     @JsonProperty("to_def")
     public String toDef;
+
     public ResourceDefinitionChangeResponse withToDef(String toDef) {
         this.toDef = toDef;
         return this;

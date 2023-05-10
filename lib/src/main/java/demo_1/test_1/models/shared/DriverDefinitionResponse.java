@@ -19,6 +19,7 @@ public class DriverDefinitionResponse {
      */
     @JsonProperty("account_types")
     public String[] accountTypes;
+
     public DriverDefinitionResponse withAccountTypes(String[] accountTypes) {
         this.accountTypes = accountTypes;
         return this;
@@ -29,6 +30,7 @@ public class DriverDefinitionResponse {
      */
     @JsonProperty("id")
     public String id;
+
     public DriverDefinitionResponse withId(String id) {
         this.id = id;
         return this;
@@ -39,6 +41,7 @@ public class DriverDefinitionResponse {
      */
     @JsonProperty("inputs_schema")
     public java.util.Map<String, Object> inputsSchema;
+
     public DriverDefinitionResponse withInputsSchema(java.util.Map<String, Object> inputsSchema) {
         this.inputsSchema = inputsSchema;
         return this;
@@ -49,6 +52,7 @@ public class DriverDefinitionResponse {
      */
     @JsonProperty("is_public")
     public Boolean isPublic;
+
     public DriverDefinitionResponse withIsPublic(Boolean isPublic) {
         this.isPublic = isPublic;
         return this;
@@ -59,6 +63,7 @@ public class DriverDefinitionResponse {
      */
     @JsonProperty("org_id")
     public String orgId;
+
     public DriverDefinitionResponse withOrgId(String orgId) {
         this.orgId = orgId;
         return this;
@@ -70,6 +75,7 @@ public class DriverDefinitionResponse {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("target")
     public String target;
+
     public DriverDefinitionResponse withTarget(String target) {
         this.target = target;
         return this;
@@ -81,6 +87,7 @@ public class DriverDefinitionResponse {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("template")
     public Object template;
+
     public DriverDefinitionResponse withTemplate(Object template) {
         this.template = template;
         return this;
@@ -91,6 +98,7 @@ public class DriverDefinitionResponse {
      */
     @JsonProperty("type")
     public String type;
+
     public DriverDefinitionResponse withType(String type) {
         this.type = type;
         return this;

@@ -15,6 +15,7 @@ public class GetOrgsOrgIdResourcesDefsRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=app")
     public String app;
+
     public GetOrgsOrgIdResourcesDefsRequest withApp(String app) {
         this.app = app;
         return this;
@@ -27,6 +28,7 @@ public class GetOrgsOrgIdResourcesDefsRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=env")
     public String env;
+
     public GetOrgsOrgIdResourcesDefsRequest withEnv(String env) {
         this.env = env;
         return this;
@@ -39,6 +41,7 @@ public class GetOrgsOrgIdResourcesDefsRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=env_type")
     public String envType;
+
     public GetOrgsOrgIdResourcesDefsRequest withEnvType(String envType) {
         this.envType = envType;
         return this;
@@ -51,6 +54,7 @@ public class GetOrgsOrgIdResourcesDefsRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public GetOrgsOrgIdResourcesDefsRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;
@@ -63,6 +67,7 @@ public class GetOrgsOrgIdResourcesDefsRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=res")
     public String res;
+
     public GetOrgsOrgIdResourcesDefsRequest withRes(String res) {
         this.res = res;
         return this;
@@ -75,6 +80,7 @@ public class GetOrgsOrgIdResourcesDefsRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=res_type")
     public String resType;
+
     public GetOrgsOrgIdResourcesDefsRequest withResType(String resType) {
         this.resType = resType;
         return this;

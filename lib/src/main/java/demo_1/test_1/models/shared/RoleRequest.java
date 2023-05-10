@@ -15,6 +15,7 @@ public class RoleRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("role")
     public String role;
+
     public RoleRequest withRole(String role) {
         this.role = role;
         return this;

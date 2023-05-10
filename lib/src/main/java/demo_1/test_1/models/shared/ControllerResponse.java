@@ -12,6 +12,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class ControllerResponse {
     @JsonProperty("kind")
     public String kind;
+
     public ControllerResponse withKind(String kind) {
         this.kind = kind;
         return this;
@@ -19,6 +20,7 @@ public class ControllerResponse {
     
     @JsonProperty("message")
     public String message;
+
     public ControllerResponse withMessage(String message) {
         this.message = message;
         return this;
@@ -26,6 +28,7 @@ public class ControllerResponse {
     
     @JsonProperty("pods")
     public PodStateResponse[] pods;
+
     public ControllerResponse withPods(PodStateResponse[] pods) {
         this.pods = pods;
         return this;
@@ -33,6 +36,7 @@ public class ControllerResponse {
     
     @JsonProperty("replicas")
     public Long replicas;
+
     public ControllerResponse withReplicas(Long replicas) {
         this.replicas = replicas;
         return this;
@@ -40,6 +44,7 @@ public class ControllerResponse {
     
     @JsonProperty("revision")
     public Long revision;
+
     public ControllerResponse withRevision(Long revision) {
         this.revision = revision;
         return this;
@@ -47,6 +52,7 @@ public class ControllerResponse {
     
     @JsonProperty("status")
     public String status;
+
     public ControllerResponse withStatus(String status) {
         this.status = status;
         return this;

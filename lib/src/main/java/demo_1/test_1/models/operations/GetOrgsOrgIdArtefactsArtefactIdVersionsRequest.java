@@ -15,6 +15,7 @@ public class GetOrgsOrgIdArtefactsArtefactIdVersionsRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=archived")
     public String archived;
+
     public GetOrgsOrgIdArtefactsArtefactIdVersionsRequest withArchived(String archived) {
         this.archived = archived;
         return this;
@@ -27,6 +28,7 @@ public class GetOrgsOrgIdArtefactsArtefactIdVersionsRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=artefactId")
     public String artefactId;
+
     public GetOrgsOrgIdArtefactsArtefactIdVersionsRequest withArtefactId(String artefactId) {
         this.artefactId = artefactId;
         return this;
@@ -39,6 +41,7 @@ public class GetOrgsOrgIdArtefactsArtefactIdVersionsRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=limit")
     public String limit;
+
     public GetOrgsOrgIdArtefactsArtefactIdVersionsRequest withLimit(String limit) {
         this.limit = limit;
         return this;
@@ -51,6 +54,7 @@ public class GetOrgsOrgIdArtefactsArtefactIdVersionsRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public GetOrgsOrgIdArtefactsArtefactIdVersionsRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;
@@ -63,6 +67,7 @@ public class GetOrgsOrgIdArtefactsArtefactIdVersionsRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=reference")
     public String reference;
+
     public GetOrgsOrgIdArtefactsArtefactIdVersionsRequest withReference(String reference) {
         this.reference = reference;
         return this;

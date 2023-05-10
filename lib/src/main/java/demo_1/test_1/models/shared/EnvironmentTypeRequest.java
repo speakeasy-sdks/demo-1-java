@@ -20,6 +20,7 @@ public class EnvironmentTypeRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("description")
     public String description;
+
     public EnvironmentTypeRequest withDescription(String description) {
         this.description = description;
         return this;
@@ -30,6 +31,7 @@ public class EnvironmentTypeRequest {
      */
     @JsonProperty("id")
     public String id;
+
     public EnvironmentTypeRequest withId(String id) {
         this.id = id;
         return this;

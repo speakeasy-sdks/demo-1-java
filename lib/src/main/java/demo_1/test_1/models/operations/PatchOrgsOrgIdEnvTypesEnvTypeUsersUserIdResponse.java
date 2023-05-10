@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class PatchOrgsOrgIdEnvTypesEnvTypeUsersUserIdResponse {
     
     public String contentType;
+
     public PatchOrgsOrgIdEnvTypesEnvTypeUsersUserIdResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -22,6 +23,7 @@ public class PatchOrgsOrgIdEnvTypesEnvTypeUsersUserIdResponse {
      */
     
     public demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse;
+
     public PatchOrgsOrgIdEnvTypesEnvTypeUsersUserIdResponse withHumanitecErrorResponse(demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse) {
         this.humanitecErrorResponse = humanitecErrorResponse;
         return this;
@@ -29,6 +31,7 @@ public class PatchOrgsOrgIdEnvTypesEnvTypeUsersUserIdResponse {
     
     
     public Integer statusCode;
+
     public PatchOrgsOrgIdEnvTypesEnvTypeUsersUserIdResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -36,6 +39,7 @@ public class PatchOrgsOrgIdEnvTypesEnvTypeUsersUserIdResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public PatchOrgsOrgIdEnvTypesEnvTypeUsersUserIdResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;
@@ -48,6 +52,7 @@ public class PatchOrgsOrgIdEnvTypesEnvTypeUsersUserIdResponse {
      */
     
     public demo_1.test_1.models.shared.UserRoleResponse userRoleResponse;
+
     public PatchOrgsOrgIdEnvTypesEnvTypeUsersUserIdResponse withUserRoleResponse(demo_1.test_1.models.shared.UserRoleResponse userRoleResponse) {
         this.userRoleResponse = userRoleResponse;
         return this;

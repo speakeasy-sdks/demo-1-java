@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class PutOrgsOrgIdAppsAppIdEnvsEnvIdRuntimePausedResponse {
     
     public String contentType;
+
     public PutOrgsOrgIdAppsAppIdEnvsEnvIdRuntimePausedResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -17,6 +18,7 @@ public class PutOrgsOrgIdAppsAppIdEnvsEnvIdRuntimePausedResponse {
     
     
     public Integer statusCode;
+
     public PutOrgsOrgIdAppsAppIdEnvsEnvIdRuntimePausedResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -24,6 +26,7 @@ public class PutOrgsOrgIdAppsAppIdEnvsEnvIdRuntimePausedResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public PutOrgsOrgIdAppsAppIdEnvsEnvIdRuntimePausedResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;

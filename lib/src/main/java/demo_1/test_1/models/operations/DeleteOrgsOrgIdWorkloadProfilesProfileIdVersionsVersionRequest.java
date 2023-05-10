@@ -15,6 +15,7 @@ public class DeleteOrgsOrgIdWorkloadProfilesProfileIdVersionsVersionRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public DeleteOrgsOrgIdWorkloadProfilesProfileIdVersionsVersionRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;
@@ -27,6 +28,7 @@ public class DeleteOrgsOrgIdWorkloadProfilesProfileIdVersionsVersionRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=profileId")
     public String profileId;
+
     public DeleteOrgsOrgIdWorkloadProfilesProfileIdVersionsVersionRequest withProfileId(String profileId) {
         this.profileId = profileId;
         return this;
@@ -39,6 +41,7 @@ public class DeleteOrgsOrgIdWorkloadProfilesProfileIdVersionsVersionRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=version")
     public String version;
+
     public DeleteOrgsOrgIdWorkloadProfilesProfileIdVersionsVersionRequest withVersion(String version) {
         this.version = version;
         return this;

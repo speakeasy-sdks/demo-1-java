@@ -17,6 +17,7 @@ public class ResourceTypeResponse {
      */
     @JsonProperty("category")
     public String category;
+
     public ResourceTypeResponse withCategory(String category) {
         this.category = category;
         return this;
@@ -27,6 +28,7 @@ public class ResourceTypeResponse {
      */
     @JsonProperty("inputs_schema")
     public java.util.Map<String, Object> inputsSchema;
+
     public ResourceTypeResponse withInputsSchema(java.util.Map<String, Object> inputsSchema) {
         this.inputsSchema = inputsSchema;
         return this;
@@ -37,6 +39,7 @@ public class ResourceTypeResponse {
      */
     @JsonProperty("name")
     public String name;
+
     public ResourceTypeResponse withName(String name) {
         this.name = name;
         return this;
@@ -47,6 +50,7 @@ public class ResourceTypeResponse {
      */
     @JsonProperty("outputs_schema")
     public java.util.Map<String, Object> outputsSchema;
+
     public ResourceTypeResponse withOutputsSchema(java.util.Map<String, Object> outputsSchema) {
         this.outputsSchema = outputsSchema;
         return this;
@@ -57,6 +61,7 @@ public class ResourceTypeResponse {
      */
     @JsonProperty("type")
     public String type;
+
     public ResourceTypeResponse withType(String type) {
         this.type = type;
         return this;

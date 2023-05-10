@@ -15,6 +15,7 @@ public class PutOrgsOrgIdAppsAppIdValuesKeyRequest {
      */
     @SpeakeasyMetadata("request:mediaType=application/json")
     public demo_1.test_1.models.shared.ValueEditPayloadRequest valueEditPayloadRequest;
+
     public PutOrgsOrgIdAppsAppIdValuesKeyRequest withValueEditPayloadRequest(demo_1.test_1.models.shared.ValueEditPayloadRequest valueEditPayloadRequest) {
         this.valueEditPayloadRequest = valueEditPayloadRequest;
         return this;
@@ -27,6 +28,7 @@ public class PutOrgsOrgIdAppsAppIdValuesKeyRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=appId")
     public String appId;
+
     public PutOrgsOrgIdAppsAppIdValuesKeyRequest withAppId(String appId) {
         this.appId = appId;
         return this;
@@ -39,6 +41,7 @@ public class PutOrgsOrgIdAppsAppIdValuesKeyRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=key")
     public String key;
+
     public PutOrgsOrgIdAppsAppIdValuesKeyRequest withKey(String key) {
         this.key = key;
         return this;
@@ -51,6 +54,7 @@ public class PutOrgsOrgIdAppsAppIdValuesKeyRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public PutOrgsOrgIdAppsAppIdValuesKeyRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;

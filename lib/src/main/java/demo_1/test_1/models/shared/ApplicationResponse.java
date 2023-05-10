@@ -17,6 +17,7 @@ public class ApplicationResponse {
      */
     @JsonProperty("created_at")
     public String createdAt;
+
     public ApplicationResponse withCreatedAt(String createdAt) {
         this.createdAt = createdAt;
         return this;
@@ -27,6 +28,7 @@ public class ApplicationResponse {
      */
     @JsonProperty("created_by")
     public String createdBy;
+
     public ApplicationResponse withCreatedBy(String createdBy) {
         this.createdBy = createdBy;
         return this;
@@ -37,6 +39,7 @@ public class ApplicationResponse {
      */
     @JsonProperty("envs")
     public EnvironmentBaseResponse[] envs;
+
     public ApplicationResponse withEnvs(EnvironmentBaseResponse[] envs) {
         this.envs = envs;
         return this;
@@ -47,6 +50,7 @@ public class ApplicationResponse {
      */
     @JsonProperty("id")
     public String id;
+
     public ApplicationResponse withId(String id) {
         this.id = id;
         return this;
@@ -57,6 +61,7 @@ public class ApplicationResponse {
      */
     @JsonProperty("name")
     public String name;
+
     public ApplicationResponse withName(String name) {
         this.name = name;
         return this;

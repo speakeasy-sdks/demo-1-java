@@ -15,6 +15,7 @@ public class PostOrgsOrgIdInvitationsRequest {
      */
     @SpeakeasyMetadata("request:mediaType=application/json")
     public demo_1.test_1.models.shared.UserInviteRequestRequest userInviteRequestRequest;
+
     public PostOrgsOrgIdInvitationsRequest withUserInviteRequestRequest(demo_1.test_1.models.shared.UserInviteRequestRequest userInviteRequestRequest) {
         this.userInviteRequestRequest = userInviteRequestRequest;
         return this;
@@ -27,6 +28,7 @@ public class PostOrgsOrgIdInvitationsRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public PostOrgsOrgIdInvitationsRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;

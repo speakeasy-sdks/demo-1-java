@@ -15,6 +15,7 @@ public class PutOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataNameRequest {
      */
     @SpeakeasyMetadata("request:mediaType=application/json")
     public String requestBody;
+
     public PutOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataNameRequest withRequestBody(String requestBody) {
         this.requestBody = requestBody;
         return this;
@@ -27,6 +28,7 @@ public class PutOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataNameRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=appId")
     public String appId;
+
     public PutOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataNameRequest withAppId(String appId) {
         this.appId = appId;
         return this;
@@ -39,6 +41,7 @@ public class PutOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataNameRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=deltaId")
     public String deltaId;
+
     public PutOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataNameRequest withDeltaId(String deltaId) {
         this.deltaId = deltaId;
         return this;
@@ -51,6 +54,7 @@ public class PutOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataNameRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public PutOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataNameRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;

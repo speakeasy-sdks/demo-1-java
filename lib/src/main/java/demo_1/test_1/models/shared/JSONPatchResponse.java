@@ -11,6 +11,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class JSONPatchResponse {
     @JsonProperty("op")
     public String op;
+
     public JSONPatchResponse withOp(String op) {
         this.op = op;
         return this;
@@ -18,6 +19,7 @@ public class JSONPatchResponse {
     
     @JsonProperty("path")
     public String path;
+
     public JSONPatchResponse withPath(String path) {
         this.path = path;
         return this;
@@ -26,6 +28,7 @@ public class JSONPatchResponse {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("value")
     public Object value;
+
     public JSONPatchResponse withValue(Object value) {
         this.value = value;
         return this;

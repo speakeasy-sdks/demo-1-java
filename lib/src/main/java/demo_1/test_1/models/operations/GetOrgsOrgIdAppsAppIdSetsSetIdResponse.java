@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class GetOrgsOrgIdAppsAppIdSetsSetIdResponse {
     
     public String contentType;
+
     public GetOrgsOrgIdAppsAppIdSetsSetIdResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -17,6 +18,7 @@ public class GetOrgsOrgIdAppsAppIdSetsSetIdResponse {
     
     
     public Integer statusCode;
+
     public GetOrgsOrgIdAppsAppIdSetsSetIdResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -24,6 +26,7 @@ public class GetOrgsOrgIdAppsAppIdSetsSetIdResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public GetOrgsOrgIdAppsAppIdSetsSetIdResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;
@@ -36,6 +39,7 @@ public class GetOrgsOrgIdAppsAppIdSetsSetIdResponse {
      */
     
     public Object getOrgsOrgIdAppsAppIdSetsSetId200ApplicationJSONOneOf;
+
     public GetOrgsOrgIdAppsAppIdSetsSetIdResponse withGetOrgsOrgIdAppsAppIdSetsSetId200ApplicationJSONOneOf(Object getOrgsOrgIdAppsAppIdSetsSetId200ApplicationJSONOneOf) {
         this.getOrgsOrgIdAppsAppIdSetsSetId200ApplicationJSONOneOf = getOrgsOrgIdAppsAppIdSetsSetId200ApplicationJSONOneOf;
         return this;
@@ -48,6 +52,7 @@ public class GetOrgsOrgIdAppsAppIdSetsSetIdResponse {
      */
     
     public String getOrgsOrgIdAppsAppIdSetsSetId404ApplicationJSONString;
+
     public GetOrgsOrgIdAppsAppIdSetsSetIdResponse withGetOrgsOrgIdAppsAppIdSetsSetId404ApplicationJSONString(String getOrgsOrgIdAppsAppIdSetsSetId404ApplicationJSONString) {
         this.getOrgsOrgIdAppsAppIdSetsSetId404ApplicationJSONString = getOrgsOrgIdAppsAppIdSetsSetId404ApplicationJSONString;
         return this;

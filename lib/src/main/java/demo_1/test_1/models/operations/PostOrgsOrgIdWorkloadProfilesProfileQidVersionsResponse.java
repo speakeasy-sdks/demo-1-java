@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class PostOrgsOrgIdWorkloadProfilesProfileQidVersionsResponse {
     
     public String contentType;
+
     public PostOrgsOrgIdWorkloadProfilesProfileQidVersionsResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -22,6 +23,7 @@ public class PostOrgsOrgIdWorkloadProfilesProfileQidVersionsResponse {
      */
     
     public demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse;
+
     public PostOrgsOrgIdWorkloadProfilesProfileQidVersionsResponse withHumanitecErrorResponse(demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse) {
         this.humanitecErrorResponse = humanitecErrorResponse;
         return this;
@@ -29,6 +31,7 @@ public class PostOrgsOrgIdWorkloadProfilesProfileQidVersionsResponse {
     
     
     public Integer statusCode;
+
     public PostOrgsOrgIdWorkloadProfilesProfileQidVersionsResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -36,6 +39,7 @@ public class PostOrgsOrgIdWorkloadProfilesProfileQidVersionsResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public PostOrgsOrgIdWorkloadProfilesProfileQidVersionsResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;
@@ -48,6 +52,7 @@ public class PostOrgsOrgIdWorkloadProfilesProfileQidVersionsResponse {
      */
     
     public demo_1.test_1.models.shared.WorkloadProfileVersionResponse workloadProfileVersionResponse;
+
     public PostOrgsOrgIdWorkloadProfilesProfileQidVersionsResponse withWorkloadProfileVersionResponse(demo_1.test_1.models.shared.WorkloadProfileVersionResponse workloadProfileVersionResponse) {
         this.workloadProfileVersionResponse = workloadProfileVersionResponse;
         return this;

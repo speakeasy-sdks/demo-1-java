@@ -37,6 +37,13 @@ public class Registry {
 		this._genVersion = genVersion;
 	}
 
+    /**
+     * Deletes an existing registry record and all associated credentials and secrets.
+     * _Deletions are currently irreversible._
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.DeleteOrgsOrgIdRegistriesRegIdResponse deleteOrgsOrgIdRegistriesRegId(demo_1.test_1.models.operations.DeleteOrgsOrgIdRegistriesRegIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.DeleteOrgsOrgIdRegistriesRegIdRequest.class, baseUrl, "/orgs/{orgId}/registries/{regId}", request, null);
@@ -69,6 +76,12 @@ public class Registry {
         return res;
     }
 
+    /**
+     * Lists available registries for the organization.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdRegistriesResponse getOrgsOrgIdRegistries(demo_1.test_1.models.operations.GetOrgsOrgIdRegistriesRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdRegistriesRequest.class, baseUrl, "/orgs/{orgId}/registries", request, null);
@@ -107,6 +120,12 @@ public class Registry {
         return res;
     }
 
+    /**
+     * Loads a registry record details.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdRegistriesRegIdResponse getOrgsOrgIdRegistriesRegId(demo_1.test_1.models.operations.GetOrgsOrgIdRegistriesRegIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdRegistriesRegIdRequest.class, baseUrl, "/orgs/{orgId}/registries/{regId}", request, null);
@@ -145,6 +164,12 @@ public class Registry {
         return res;
     }
 
+    /**
+     * Returns current account credentials or secret details for the registry.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdRegistriesRegIdCredsResponse getOrgsOrgIdRegistriesRegIdCreds(demo_1.test_1.models.operations.GetOrgsOrgIdRegistriesRegIdCredsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdRegistriesRegIdCredsRequest.class, baseUrl, "/orgs/{orgId}/registries/{regId}/creds", request, null);
@@ -183,6 +208,12 @@ public class Registry {
         return res;
     }
 
+    /**
+     * Updates (patches) an existing registry record.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PatchOrgsOrgIdRegistriesRegIdResponse patchOrgsOrgIdRegistriesRegId(demo_1.test_1.models.operations.PatchOrgsOrgIdRegistriesRegIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PatchOrgsOrgIdRegistriesRegIdRequest.class, baseUrl, "/orgs/{orgId}/registries/{regId}", request, null);
@@ -226,6 +257,12 @@ public class Registry {
         return res;
     }
 
+    /**
+     * Creates a new registry record.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PostOrgsOrgIdRegistriesResponse postOrgsOrgIdRegistries(demo_1.test_1.models.operations.PostOrgsOrgIdRegistriesRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdRegistriesRequest.class, baseUrl, "/orgs/{orgId}/registries", request, null);

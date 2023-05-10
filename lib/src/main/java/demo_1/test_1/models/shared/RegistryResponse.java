@@ -20,6 +20,7 @@ public class RegistryResponse {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("created_at")
     public String createdAt;
+
     public RegistryResponse withCreatedAt(String createdAt) {
         this.createdAt = createdAt;
         return this;
@@ -31,6 +32,7 @@ public class RegistryResponse {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("created_by")
     public String createdBy;
+
     public RegistryResponse withCreatedBy(String createdBy) {
         this.createdBy = createdBy;
         return this;
@@ -41,6 +43,7 @@ public class RegistryResponse {
      */
     @JsonProperty("enable_ci")
     public Boolean enableCi;
+
     public RegistryResponse withEnableCi(Boolean enableCi) {
         this.enableCi = enableCi;
         return this;
@@ -51,6 +54,7 @@ public class RegistryResponse {
      */
     @JsonProperty("id")
     public String id;
+
     public RegistryResponse withId(String id) {
         this.id = id;
         return this;
@@ -61,6 +65,7 @@ public class RegistryResponse {
      */
     @JsonProperty("registry")
     public String registry;
+
     public RegistryResponse withRegistry(String registry) {
         this.registry = registry;
         return this;
@@ -72,6 +77,7 @@ public class RegistryResponse {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("secrets")
     public java.util.Map<String, ClusterSecretResponse> secrets;
+
     public RegistryResponse withSecrets(java.util.Map<String, ClusterSecretResponse> secrets) {
         this.secrets = secrets;
         return this;
@@ -94,6 +100,7 @@ public class RegistryResponse {
      */
     @JsonProperty("type")
     public String type;
+
     public RegistryResponse withType(String type) {
         this.type = type;
         return this;

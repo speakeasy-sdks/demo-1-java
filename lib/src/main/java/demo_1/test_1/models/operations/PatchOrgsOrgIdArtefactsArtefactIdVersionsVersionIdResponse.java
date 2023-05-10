@@ -15,6 +15,7 @@ public class PatchOrgsOrgIdArtefactsArtefactIdVersionsVersionIdResponse {
      */
     
     public demo_1.test_1.models.shared.ArtefactVersionResponse artefactVersionResponse;
+
     public PatchOrgsOrgIdArtefactsArtefactIdVersionsVersionIdResponse withArtefactVersionResponse(demo_1.test_1.models.shared.ArtefactVersionResponse artefactVersionResponse) {
         this.artefactVersionResponse = artefactVersionResponse;
         return this;
@@ -22,6 +23,7 @@ public class PatchOrgsOrgIdArtefactsArtefactIdVersionsVersionIdResponse {
     
     
     public String contentType;
+
     public PatchOrgsOrgIdArtefactsArtefactIdVersionsVersionIdResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -34,6 +36,7 @@ public class PatchOrgsOrgIdArtefactsArtefactIdVersionsVersionIdResponse {
      */
     
     public demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse;
+
     public PatchOrgsOrgIdArtefactsArtefactIdVersionsVersionIdResponse withHumanitecErrorResponse(demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse) {
         this.humanitecErrorResponse = humanitecErrorResponse;
         return this;
@@ -41,6 +44,7 @@ public class PatchOrgsOrgIdArtefactsArtefactIdVersionsVersionIdResponse {
     
     
     public Integer statusCode;
+
     public PatchOrgsOrgIdArtefactsArtefactIdVersionsVersionIdResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -48,6 +52,7 @@ public class PatchOrgsOrgIdArtefactsArtefactIdVersionsVersionIdResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public PatchOrgsOrgIdArtefactsArtefactIdVersionsVersionIdResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;

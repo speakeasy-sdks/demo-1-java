@@ -15,6 +15,7 @@ public class PostOrgsOrgIdAppsAppIdEnvsEnvIdRulesResponse {
      */
     
     public demo_1.test_1.models.shared.AutomationRuleResponse automationRuleResponse;
+
     public PostOrgsOrgIdAppsAppIdEnvsEnvIdRulesResponse withAutomationRuleResponse(demo_1.test_1.models.shared.AutomationRuleResponse automationRuleResponse) {
         this.automationRuleResponse = automationRuleResponse;
         return this;
@@ -22,6 +23,7 @@ public class PostOrgsOrgIdAppsAppIdEnvsEnvIdRulesResponse {
     
     
     public String contentType;
+
     public PostOrgsOrgIdAppsAppIdEnvsEnvIdRulesResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -34,6 +36,7 @@ public class PostOrgsOrgIdAppsAppIdEnvsEnvIdRulesResponse {
      */
     
     public demo_1.test_1.models.shared.ErrorInfoResponse errorInfoResponse;
+
     public PostOrgsOrgIdAppsAppIdEnvsEnvIdRulesResponse withErrorInfoResponse(demo_1.test_1.models.shared.ErrorInfoResponse errorInfoResponse) {
         this.errorInfoResponse = errorInfoResponse;
         return this;
@@ -41,6 +44,7 @@ public class PostOrgsOrgIdAppsAppIdEnvsEnvIdRulesResponse {
     
     
     public Integer statusCode;
+
     public PostOrgsOrgIdAppsAppIdEnvsEnvIdRulesResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -48,6 +52,7 @@ public class PostOrgsOrgIdAppsAppIdEnvsEnvIdRulesResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public PostOrgsOrgIdAppsAppIdEnvsEnvIdRulesResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;

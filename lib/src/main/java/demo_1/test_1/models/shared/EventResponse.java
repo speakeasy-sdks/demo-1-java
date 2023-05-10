@@ -15,6 +15,7 @@ public class EventResponse {
      */
     @JsonProperty("properties")
     public String[] properties;
+
     public EventResponse withProperties(String[] properties) {
         this.properties = properties;
         return this;
@@ -25,6 +26,7 @@ public class EventResponse {
      */
     @JsonProperty("scope")
     public String scope;
+
     public EventResponse withScope(String scope) {
         this.scope = scope;
         return this;
@@ -35,6 +37,7 @@ public class EventResponse {
      */
     @JsonProperty("type")
     public String type;
+
     public EventResponse withType(String type) {
         this.type = type;
         return this;

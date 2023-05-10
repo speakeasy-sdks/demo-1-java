@@ -34,6 +34,11 @@ public class Organization {
 		this._genVersion = genVersion;
 	}
 
+    /**
+     * List active organizations the user has access to.
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsResponse getOrgs() throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(baseUrl, "/orgs");
@@ -66,6 +71,12 @@ public class Organization {
         return res;
     }
 
+    /**
+     * Get the specified Organization.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdResponse getOrgsOrgId(demo_1.test_1.models.operations.GetOrgsOrgIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdRequest.class, baseUrl, "/orgs/{orgId}", request, null);

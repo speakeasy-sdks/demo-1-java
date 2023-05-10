@@ -17,6 +17,7 @@ public class UpdateDriverRequestRequest {
      */
     @JsonProperty("account_types")
     public String[] accountTypes;
+
     public UpdateDriverRequestRequest withAccountTypes(String[] accountTypes) {
         this.accountTypes = accountTypes;
         return this;
@@ -27,6 +28,7 @@ public class UpdateDriverRequestRequest {
      */
     @JsonProperty("inputs_schema")
     public java.util.Map<String, Object> inputsSchema;
+
     public UpdateDriverRequestRequest withInputsSchema(java.util.Map<String, Object> inputsSchema) {
         this.inputsSchema = inputsSchema;
         return this;
@@ -38,6 +40,7 @@ public class UpdateDriverRequestRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("is_public")
     public Boolean isPublic;
+
     public UpdateDriverRequestRequest withIsPublic(Boolean isPublic) {
         this.isPublic = isPublic;
         return this;
@@ -48,6 +51,7 @@ public class UpdateDriverRequestRequest {
      */
     @JsonProperty("target")
     public String target;
+
     public UpdateDriverRequestRequest withTarget(String target) {
         this.target = target;
         return this;
@@ -59,6 +63,7 @@ public class UpdateDriverRequestRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("template")
     public Object template;
+
     public UpdateDriverRequestRequest withTemplate(Object template) {
         this.template = template;
         return this;
@@ -69,6 +74,7 @@ public class UpdateDriverRequestRequest {
      */
     @JsonProperty("type")
     public String type;
+
     public UpdateDriverRequestRequest withType(String type) {
         this.type = type;
         return this;

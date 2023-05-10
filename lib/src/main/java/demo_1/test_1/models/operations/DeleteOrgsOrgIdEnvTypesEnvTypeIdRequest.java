@@ -15,6 +15,7 @@ public class DeleteOrgsOrgIdEnvTypesEnvTypeIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=envTypeId")
     public String envTypeId;
+
     public DeleteOrgsOrgIdEnvTypesEnvTypeIdRequest withEnvTypeId(String envTypeId) {
         this.envTypeId = envTypeId;
         return this;
@@ -27,6 +28,7 @@ public class DeleteOrgsOrgIdEnvTypesEnvTypeIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public DeleteOrgsOrgIdEnvTypesEnvTypeIdRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;

@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class GetOrgsOrgIdImagesImageIdBuildsResponse {
     
     public String contentType;
+
     public GetOrgsOrgIdImagesImageIdBuildsResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -22,6 +23,7 @@ public class GetOrgsOrgIdImagesImageIdBuildsResponse {
      */
     
     public demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse;
+
     public GetOrgsOrgIdImagesImageIdBuildsResponse withHumanitecErrorResponse(demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse) {
         this.humanitecErrorResponse = humanitecErrorResponse;
         return this;
@@ -34,6 +36,7 @@ public class GetOrgsOrgIdImagesImageIdBuildsResponse {
      */
     
     public demo_1.test_1.models.shared.ImageBuildResponse[] imageBuildResponses;
+
     public GetOrgsOrgIdImagesImageIdBuildsResponse withImageBuildResponses(demo_1.test_1.models.shared.ImageBuildResponse[] imageBuildResponses) {
         this.imageBuildResponses = imageBuildResponses;
         return this;
@@ -41,6 +44,7 @@ public class GetOrgsOrgIdImagesImageIdBuildsResponse {
     
     
     public Integer statusCode;
+
     public GetOrgsOrgIdImagesImageIdBuildsResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -48,6 +52,7 @@ public class GetOrgsOrgIdImagesImageIdBuildsResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public GetOrgsOrgIdImagesImageIdBuildsResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;

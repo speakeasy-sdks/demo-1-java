@@ -20,6 +20,7 @@ public class ResourceDefinitionResponse {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("created_at")
     public String createdAt;
+
     public ResourceDefinitionResponse withCreatedAt(String createdAt) {
         this.createdAt = createdAt;
         return this;
@@ -31,6 +32,7 @@ public class ResourceDefinitionResponse {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("created_by")
     public String createdBy;
+
     public ResourceDefinitionResponse withCreatedBy(String createdBy) {
         this.createdBy = createdBy;
         return this;
@@ -42,6 +44,7 @@ public class ResourceDefinitionResponse {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("criteria")
     public MatchingCriteriaResponse[] criteria;
+
     public ResourceDefinitionResponse withCriteria(MatchingCriteriaResponse[] criteria) {
         this.criteria = criteria;
         return this;
@@ -53,6 +56,7 @@ public class ResourceDefinitionResponse {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("driver_account")
     public String driverAccount;
+
     public ResourceDefinitionResponse withDriverAccount(String driverAccount) {
         this.driverAccount = driverAccount;
         return this;
@@ -64,6 +68,7 @@ public class ResourceDefinitionResponse {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("driver_inputs")
     public ValuesSecretsResponse driverInputs;
+
     public ResourceDefinitionResponse withDriverInputs(ValuesSecretsResponse driverInputs) {
         this.driverInputs = driverInputs;
         return this;
@@ -75,6 +80,7 @@ public class ResourceDefinitionResponse {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("driver_type")
     public String driverType;
+
     public ResourceDefinitionResponse withDriverType(String driverType) {
         this.driverType = driverType;
         return this;
@@ -85,6 +91,7 @@ public class ResourceDefinitionResponse {
      */
     @JsonProperty("id")
     public String id;
+
     public ResourceDefinitionResponse withId(String id) {
         this.id = id;
         return this;
@@ -96,6 +103,7 @@ public class ResourceDefinitionResponse {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("is_default")
     public Boolean isDefault;
+
     public ResourceDefinitionResponse withIsDefault(Boolean isDefault) {
         this.isDefault = isDefault;
         return this;
@@ -107,6 +115,7 @@ public class ResourceDefinitionResponse {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("is_deleted")
     public Boolean isDeleted;
+
     public ResourceDefinitionResponse withIsDeleted(Boolean isDeleted) {
         this.isDeleted = isDeleted;
         return this;
@@ -117,6 +126,7 @@ public class ResourceDefinitionResponse {
      */
     @JsonProperty("name")
     public String name;
+
     public ResourceDefinitionResponse withName(String name) {
         this.name = name;
         return this;
@@ -127,6 +137,7 @@ public class ResourceDefinitionResponse {
      */
     @JsonProperty("org_id")
     public String orgId;
+
     public ResourceDefinitionResponse withOrgId(String orgId) {
         this.orgId = orgId;
         return this;
@@ -137,6 +148,7 @@ public class ResourceDefinitionResponse {
      */
     @JsonProperty("type")
     public String type;
+
     public ResourceDefinitionResponse withType(String type) {
         this.type = type;
         return this;

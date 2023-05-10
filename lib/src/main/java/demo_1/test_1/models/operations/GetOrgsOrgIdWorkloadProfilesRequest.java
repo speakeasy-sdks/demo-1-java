@@ -15,6 +15,7 @@ public class GetOrgsOrgIdWorkloadProfilesRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public GetOrgsOrgIdWorkloadProfilesRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;

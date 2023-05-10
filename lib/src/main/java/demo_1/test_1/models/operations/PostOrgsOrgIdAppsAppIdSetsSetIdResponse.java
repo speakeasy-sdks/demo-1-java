@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class PostOrgsOrgIdAppsAppIdSetsSetIdResponse {
     
     public String contentType;
+
     public PostOrgsOrgIdAppsAppIdSetsSetIdResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -22,6 +23,7 @@ public class PostOrgsOrgIdAppsAppIdSetsSetIdResponse {
      */
     
     public demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse;
+
     public PostOrgsOrgIdAppsAppIdSetsSetIdResponse withHumanitecErrorResponse(demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse) {
         this.humanitecErrorResponse = humanitecErrorResponse;
         return this;
@@ -29,6 +31,7 @@ public class PostOrgsOrgIdAppsAppIdSetsSetIdResponse {
     
     
     public Integer statusCode;
+
     public PostOrgsOrgIdAppsAppIdSetsSetIdResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -36,6 +39,7 @@ public class PostOrgsOrgIdAppsAppIdSetsSetIdResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public PostOrgsOrgIdAppsAppIdSetsSetIdResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;
@@ -48,6 +52,7 @@ public class PostOrgsOrgIdAppsAppIdSetsSetIdResponse {
      */
     
     public String postOrgsOrgIdAppsAppIdSetsSetId200ApplicationJSONString;
+
     public PostOrgsOrgIdAppsAppIdSetsSetIdResponse withPostOrgsOrgIdAppsAppIdSetsSetId200ApplicationJSONString(String postOrgsOrgIdAppsAppIdSetsSetId200ApplicationJSONString) {
         this.postOrgsOrgIdAppsAppIdSetsSetId200ApplicationJSONString = postOrgsOrgIdAppsAppIdSetsSetId200ApplicationJSONString;
         return this;
@@ -60,6 +65,7 @@ public class PostOrgsOrgIdAppsAppIdSetsSetIdResponse {
      */
     
     public String postOrgsOrgIdAppsAppIdSetsSetId404ApplicationJSONString;
+
     public PostOrgsOrgIdAppsAppIdSetsSetIdResponse withPostOrgsOrgIdAppsAppIdSetsSetId404ApplicationJSONString(String postOrgsOrgIdAppsAppIdSetsSetId404ApplicationJSONString) {
         this.postOrgsOrgIdAppsAppIdSetsSetId404ApplicationJSONString = postOrgsOrgIdAppsAppIdSetsSetId404ApplicationJSONString;
         return this;

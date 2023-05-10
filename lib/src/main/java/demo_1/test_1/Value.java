@@ -40,6 +40,13 @@ public class Value {
 		this._genVersion = genVersion;
 	}
 
+    /**
+     * Delete all Shared Value for an Environment
+     * All Shared Values will be deleted. If the Shared Values are marked as a secret, they will also be deleted.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.DeleteOrgsOrgIdAppsAppIdEnvsEnvIdValuesResponse deleteOrgsOrgIdAppsAppIdEnvsEnvIdValues(demo_1.test_1.models.operations.DeleteOrgsOrgIdAppsAppIdEnvsEnvIdValuesRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.DeleteOrgsOrgIdAppsAppIdEnvsEnvIdValuesRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/envs/{envId}/values", request, null);
@@ -64,6 +71,13 @@ public class Value {
         return res;
     }
 
+    /**
+     * Delete Shared Value for an Environment
+     * The specified Shared Value will be permanently deleted. If the Shared Value is marked as a secret, it will also be permanently deleted.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.DeleteOrgsOrgIdAppsAppIdEnvsEnvIdValuesKeyResponse deleteOrgsOrgIdAppsAppIdEnvsEnvIdValuesKey(demo_1.test_1.models.operations.DeleteOrgsOrgIdAppsAppIdEnvsEnvIdValuesKeyRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.DeleteOrgsOrgIdAppsAppIdEnvsEnvIdValuesKeyRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/envs/{envId}/values/{key}", request, null);
@@ -96,6 +110,13 @@ public class Value {
         return res;
     }
 
+    /**
+     * Delete all Shared Value for an App
+     * All Shared Values will be deleted. If the Shared Values are marked as a secret, they will also be deleted.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.DeleteOrgsOrgIdAppsAppIdValuesResponse deleteOrgsOrgIdAppsAppIdValues(demo_1.test_1.models.operations.DeleteOrgsOrgIdAppsAppIdValuesRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.DeleteOrgsOrgIdAppsAppIdValuesRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/values", request, null);
@@ -120,6 +141,13 @@ public class Value {
         return res;
     }
 
+    /**
+     * Delete Shared Value for an Application
+     * The specified Shared Value will be permanently deleted. If the Shared Value is marked as a secret, it will also be permanently deleted.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.DeleteOrgsOrgIdAppsAppIdValuesKeyResponse deleteOrgsOrgIdAppsAppIdValuesKey(demo_1.test_1.models.operations.DeleteOrgsOrgIdAppsAppIdValuesKeyRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.DeleteOrgsOrgIdAppsAppIdValuesKeyRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/values/{key}", request, null);
@@ -152,6 +180,13 @@ public class Value {
         return res;
     }
 
+    /**
+     * List Shared Values in an Environment
+     * The returned values will be the base Application values with the Environment overrides where applicable. The `source` field will specify the level from which the value is from.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdValuesResponse getOrgsOrgIdAppsAppIdEnvsEnvIdValues(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdValuesRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdValuesRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/envs/{envId}/values", request, null);
@@ -182,6 +217,13 @@ public class Value {
         return res;
     }
 
+    /**
+     * List Shared Values in an Application
+     * The returned values will be the "base" values for the Application. The overridden value for the Environment can be retrieved via the `/orgs/{orgId}/apps/{appId}/envs/{envId}/values` endpoint.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdValuesResponse getOrgsOrgIdAppsAppIdValues(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdValuesRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdValuesRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/values", request, null);
@@ -212,6 +254,13 @@ public class Value {
         return res;
     }
 
+    /**
+     * Update Shared Value for an Environment
+     * Update the value or description of the Shared Value. Shared Values marked as secret can also be updated.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PatchOrgsOrgIdAppsAppIdEnvsEnvIdValuesKeyResponse patchOrgsOrgIdAppsAppIdEnvsEnvIdValuesKey(demo_1.test_1.models.operations.PatchOrgsOrgIdAppsAppIdEnvsEnvIdValuesKeyRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PatchOrgsOrgIdAppsAppIdEnvsEnvIdValuesKeyRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/envs/{envId}/values/{key}", request, null);
@@ -255,6 +304,13 @@ public class Value {
         return res;
     }
 
+    /**
+     * Update Shared Value for an Application
+     * Update the value or description of the Shared Value. Shared Values marked as secret can also be updated.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PatchOrgsOrgIdAppsAppIdValuesKeyResponse patchOrgsOrgIdAppsAppIdValuesKey(demo_1.test_1.models.operations.PatchOrgsOrgIdAppsAppIdValuesKeyRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PatchOrgsOrgIdAppsAppIdValuesKeyRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/values/{key}", request, null);
@@ -298,6 +354,15 @@ public class Value {
         return res;
     }
 
+    /**
+     * Create a Shared Value for an Environment
+     * The Shared Value created will only be available to the specific Environment.
+     * 
+     * If a Value is marked as a secret, it will be securely stored. It will not be possible to retrieve the value again through the API. The value of the secret can however be updated.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdEnvsEnvIdValuesResponse postOrgsOrgIdAppsAppIdEnvsEnvIdValues(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdEnvsEnvIdValuesRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdEnvsEnvIdValuesRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/envs/{envId}/values", request, null);
@@ -341,6 +406,15 @@ public class Value {
         return res;
     }
 
+    /**
+     * Create a Shared Value for an Application
+     * The Shared Value created will be available to all Environments in that Application.
+     * 
+     * If a Value is marked as a secret, it will be securely stored. It will not be possible to retrieve the value again through the API. The value of the secret can however be updated.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdValuesResponse postOrgsOrgIdAppsAppIdValues(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdValuesRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdValuesRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/values", request, null);
@@ -384,6 +458,13 @@ public class Value {
         return res;
     }
 
+    /**
+     * Update Shared Value for an Environment
+     * Update the value or description of the Shared Value. Shared Values marked as secret can also be updated.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PutOrgsOrgIdAppsAppIdEnvsEnvIdValuesKeyResponse putOrgsOrgIdAppsAppIdEnvsEnvIdValuesKey(demo_1.test_1.models.operations.PutOrgsOrgIdAppsAppIdEnvsEnvIdValuesKeyRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PutOrgsOrgIdAppsAppIdEnvsEnvIdValuesKeyRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/envs/{envId}/values/{key}", request, null);
@@ -427,6 +508,13 @@ public class Value {
         return res;
     }
 
+    /**
+     * Update Shared Value for an Application
+     * Update the value or description of the Shared Value. Shared Values marked as secret can also be updated.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PutOrgsOrgIdAppsAppIdValuesKeyResponse putOrgsOrgIdAppsAppIdValuesKey(demo_1.test_1.models.operations.PutOrgsOrgIdAppsAppIdValuesKeyRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PutOrgsOrgIdAppsAppIdValuesKeyRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/values/{key}", request, null);

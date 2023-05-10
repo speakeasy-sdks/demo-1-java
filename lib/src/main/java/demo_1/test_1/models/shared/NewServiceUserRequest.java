@@ -18,6 +18,7 @@ public class NewServiceUserRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("email")
     public String email;
+
     public NewServiceUserRequest withEmail(String email) {
         this.email = email;
         return this;
@@ -29,6 +30,7 @@ public class NewServiceUserRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("name")
     public String name;
+
     public NewServiceUserRequest withName(String name) {
         this.name = name;
         return this;
@@ -40,6 +42,7 @@ public class NewServiceUserRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("role")
     public String role;
+
     public NewServiceUserRequest withRole(String role) {
         this.role = role;
         return this;

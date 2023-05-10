@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class PostOrgsOrgIdResourcesDefsDefIdCriteriaResponse {
     
     public String contentType;
+
     public PostOrgsOrgIdResourcesDefsDefIdCriteriaResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -22,6 +23,7 @@ public class PostOrgsOrgIdResourcesDefsDefIdCriteriaResponse {
      */
     
     public demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse;
+
     public PostOrgsOrgIdResourcesDefsDefIdCriteriaResponse withHumanitecErrorResponse(demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse) {
         this.humanitecErrorResponse = humanitecErrorResponse;
         return this;
@@ -34,6 +36,7 @@ public class PostOrgsOrgIdResourcesDefsDefIdCriteriaResponse {
      */
     
     public demo_1.test_1.models.shared.MatchingCriteriaResponse matchingCriteriaResponse;
+
     public PostOrgsOrgIdResourcesDefsDefIdCriteriaResponse withMatchingCriteriaResponse(demo_1.test_1.models.shared.MatchingCriteriaResponse matchingCriteriaResponse) {
         this.matchingCriteriaResponse = matchingCriteriaResponse;
         return this;
@@ -41,6 +44,7 @@ public class PostOrgsOrgIdResourcesDefsDefIdCriteriaResponse {
     
     
     public Integer statusCode;
+
     public PostOrgsOrgIdResourcesDefsDefIdCriteriaResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -48,6 +52,7 @@ public class PostOrgsOrgIdResourcesDefsDefIdCriteriaResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public PostOrgsOrgIdResourcesDefsDefIdCriteriaResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;

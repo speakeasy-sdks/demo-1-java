@@ -17,6 +17,7 @@ public class PostOrgsOrgIdAppsAppIdDeltasRequest {
      */
     @SpeakeasyMetadata("request:mediaType=application/json")
     public demo_1.test_1.models.shared.DeltaRequest deltaRequest;
+
     public PostOrgsOrgIdAppsAppIdDeltasRequest withDeltaRequest(demo_1.test_1.models.shared.DeltaRequest deltaRequest) {
         this.deltaRequest = deltaRequest;
         return this;
@@ -29,6 +30,7 @@ public class PostOrgsOrgIdAppsAppIdDeltasRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=appId")
     public String appId;
+
     public PostOrgsOrgIdAppsAppIdDeltasRequest withAppId(String appId) {
         this.appId = appId;
         return this;
@@ -41,6 +43,7 @@ public class PostOrgsOrgIdAppsAppIdDeltasRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public PostOrgsOrgIdAppsAppIdDeltasRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;

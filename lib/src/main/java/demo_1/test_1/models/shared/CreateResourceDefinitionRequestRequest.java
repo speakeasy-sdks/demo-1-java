@@ -18,6 +18,7 @@ public class CreateResourceDefinitionRequestRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("criteria")
     public MatchingCriteriaRequest[] criteria;
+
     public CreateResourceDefinitionRequestRequest withCriteria(MatchingCriteriaRequest[] criteria) {
         this.criteria = criteria;
         return this;
@@ -29,6 +30,7 @@ public class CreateResourceDefinitionRequestRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("driver_account")
     public String driverAccount;
+
     public CreateResourceDefinitionRequestRequest withDriverAccount(String driverAccount) {
         this.driverAccount = driverAccount;
         return this;
@@ -40,6 +42,7 @@ public class CreateResourceDefinitionRequestRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("driver_inputs")
     public ValuesSecretsRequest driverInputs;
+
     public CreateResourceDefinitionRequestRequest withDriverInputs(ValuesSecretsRequest driverInputs) {
         this.driverInputs = driverInputs;
         return this;
@@ -50,6 +53,7 @@ public class CreateResourceDefinitionRequestRequest {
      */
     @JsonProperty("driver_type")
     public String driverType;
+
     public CreateResourceDefinitionRequestRequest withDriverType(String driverType) {
         this.driverType = driverType;
         return this;
@@ -60,6 +64,7 @@ public class CreateResourceDefinitionRequestRequest {
      */
     @JsonProperty("id")
     public String id;
+
     public CreateResourceDefinitionRequestRequest withId(String id) {
         this.id = id;
         return this;
@@ -70,6 +75,7 @@ public class CreateResourceDefinitionRequestRequest {
      */
     @JsonProperty("name")
     public String name;
+
     public CreateResourceDefinitionRequestRequest withName(String name) {
         this.name = name;
         return this;
@@ -80,6 +86,7 @@ public class CreateResourceDefinitionRequestRequest {
      */
     @JsonProperty("type")
     public String type;
+
     public CreateResourceDefinitionRequestRequest withType(String type) {
         this.type = type;
         return this;

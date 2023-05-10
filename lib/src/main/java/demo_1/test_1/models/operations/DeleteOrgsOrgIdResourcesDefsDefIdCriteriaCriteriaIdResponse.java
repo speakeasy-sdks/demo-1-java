@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class DeleteOrgsOrgIdResourcesDefsDefIdCriteriaCriteriaIdResponse {
     
     public String contentType;
+
     public DeleteOrgsOrgIdResourcesDefsDefIdCriteriaCriteriaIdResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -22,6 +23,7 @@ public class DeleteOrgsOrgIdResourcesDefsDefIdCriteriaCriteriaIdResponse {
      */
     
     public demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse;
+
     public DeleteOrgsOrgIdResourcesDefsDefIdCriteriaCriteriaIdResponse withHumanitecErrorResponse(demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse) {
         this.humanitecErrorResponse = humanitecErrorResponse;
         return this;
@@ -29,6 +31,7 @@ public class DeleteOrgsOrgIdResourcesDefsDefIdCriteriaCriteriaIdResponse {
     
     
     public Integer statusCode;
+
     public DeleteOrgsOrgIdResourcesDefsDefIdCriteriaCriteriaIdResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -36,6 +39,7 @@ public class DeleteOrgsOrgIdResourcesDefsDefIdCriteriaCriteriaIdResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public DeleteOrgsOrgIdResourcesDefsDefIdCriteriaCriteriaIdResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;
@@ -48,6 +52,7 @@ public class DeleteOrgsOrgIdResourcesDefsDefIdCriteriaCriteriaIdResponse {
      */
     
     public demo_1.test_1.models.shared.ResourceDefinitionChangeResponse[] resourceDefinitionChangeResponses;
+
     public DeleteOrgsOrgIdResourcesDefsDefIdCriteriaCriteriaIdResponse withResourceDefinitionChangeResponses(demo_1.test_1.models.shared.ResourceDefinitionChangeResponse[] resourceDefinitionChangeResponses) {
         this.resourceDefinitionChangeResponses = resourceDefinitionChangeResponses;
         return this;
@@ -60,6 +65,7 @@ public class DeleteOrgsOrgIdResourcesDefsDefIdCriteriaCriteriaIdResponse {
      */
     
     public String deleteOrgsOrgIdResourcesDefsDefIdCriteriaCriteriaId404ApplicationJSONString;
+
     public DeleteOrgsOrgIdResourcesDefsDefIdCriteriaCriteriaIdResponse withDeleteOrgsOrgIdResourcesDefsDefIdCriteriaCriteriaId404ApplicationJSONString(String deleteOrgsOrgIdResourcesDefsDefIdCriteriaCriteriaId404ApplicationJSONString) {
         this.deleteOrgsOrgIdResourcesDefsDefIdCriteriaCriteriaId404ApplicationJSONString = deleteOrgsOrgIdResourcesDefsDefIdCriteriaCriteriaId404ApplicationJSONString;
         return this;

@@ -15,6 +15,7 @@ public class PostOrgsOrgIdResourcesDefsRequest {
      */
     @SpeakeasyMetadata("request:mediaType=application/json")
     public demo_1.test_1.models.shared.CreateResourceDefinitionRequestRequest createResourceDefinitionRequestRequest;
+
     public PostOrgsOrgIdResourcesDefsRequest withCreateResourceDefinitionRequestRequest(demo_1.test_1.models.shared.CreateResourceDefinitionRequestRequest createResourceDefinitionRequestRequest) {
         this.createResourceDefinitionRequestRequest = createResourceDefinitionRequestRequest;
         return this;
@@ -27,6 +28,7 @@ public class PostOrgsOrgIdResourcesDefsRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public PostOrgsOrgIdResourcesDefsRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;

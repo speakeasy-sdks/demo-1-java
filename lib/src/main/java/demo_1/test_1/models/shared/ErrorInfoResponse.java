@@ -15,6 +15,7 @@ public class ErrorInfoResponse {
      */
     @JsonProperty("error")
     public String error;
+
     public ErrorInfoResponse withError(String error) {
         this.error = error;
         return this;

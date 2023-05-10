@@ -15,6 +15,7 @@ public class PostOrgsOrgIdImagesImageIdBuildsRequest {
      */
     @SpeakeasyMetadata("request:mediaType=application/json")
     public demo_1.test_1.models.shared.ImageBuildRequest imageBuildRequest;
+
     public PostOrgsOrgIdImagesImageIdBuildsRequest withImageBuildRequest(demo_1.test_1.models.shared.ImageBuildRequest imageBuildRequest) {
         this.imageBuildRequest = imageBuildRequest;
         return this;
@@ -27,6 +28,7 @@ public class PostOrgsOrgIdImagesImageIdBuildsRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=imageId")
     public String imageId;
+
     public PostOrgsOrgIdImagesImageIdBuildsRequest withImageId(String imageId) {
         this.imageId = imageId;
         return this;
@@ -39,6 +41,7 @@ public class PostOrgsOrgIdImagesImageIdBuildsRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public PostOrgsOrgIdImagesImageIdBuildsRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;

@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class GetOrgsOrgIdResourcesDriversResponse {
     
     public String contentType;
+
     public GetOrgsOrgIdResourcesDriversResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -22,6 +23,7 @@ public class GetOrgsOrgIdResourcesDriversResponse {
      */
     
     public demo_1.test_1.models.shared.DriverDefinitionResponse[] driverDefinitionResponses;
+
     public GetOrgsOrgIdResourcesDriversResponse withDriverDefinitionResponses(demo_1.test_1.models.shared.DriverDefinitionResponse[] driverDefinitionResponses) {
         this.driverDefinitionResponses = driverDefinitionResponses;
         return this;
@@ -34,6 +36,7 @@ public class GetOrgsOrgIdResourcesDriversResponse {
      */
     
     public demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse;
+
     public GetOrgsOrgIdResourcesDriversResponse withHumanitecErrorResponse(demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse) {
         this.humanitecErrorResponse = humanitecErrorResponse;
         return this;
@@ -41,6 +44,7 @@ public class GetOrgsOrgIdResourcesDriversResponse {
     
     
     public Integer statusCode;
+
     public GetOrgsOrgIdResourcesDriversResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -48,6 +52,7 @@ public class GetOrgsOrgIdResourcesDriversResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public GetOrgsOrgIdResourcesDriversResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;

@@ -14,6 +14,7 @@ import demo_1.test_1.utils.SpeakeasyMetadata;
 public class PostOrgsOrgIdWorkloadProfilesProfileQidVersionsRequestBody {
     @SpeakeasyMetadata("multipartForm:file")
     public PostOrgsOrgIdWorkloadProfilesProfileQidVersionsRequestBodyFile file;
+
     public PostOrgsOrgIdWorkloadProfilesProfileQidVersionsRequestBody withFile(PostOrgsOrgIdWorkloadProfilesProfileQidVersionsRequestBodyFile file) {
         this.file = file;
         return this;
@@ -24,6 +25,7 @@ public class PostOrgsOrgIdWorkloadProfilesProfileQidVersionsRequestBody {
      */
     @SpeakeasyMetadata("multipartForm:name=metadata,json")
     public demo_1.test_1.models.shared.WorkloadProfileVersionRequest metadata;
+
     public PostOrgsOrgIdWorkloadProfilesProfileQidVersionsRequestBody withMetadata(demo_1.test_1.models.shared.WorkloadProfileVersionRequest metadata) {
         this.metadata = metadata;
         return this;

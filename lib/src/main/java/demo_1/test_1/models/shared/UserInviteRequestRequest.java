@@ -15,6 +15,7 @@ public class UserInviteRequestRequest {
      */
     @JsonProperty("email")
     public String email;
+
     public UserInviteRequestRequest withEmail(String email) {
         this.email = email;
         return this;
@@ -25,6 +26,7 @@ public class UserInviteRequestRequest {
      */
     @JsonProperty("role")
     public String role;
+
     public UserInviteRequestRequest withRole(String role) {
         this.role = role;
         return this;

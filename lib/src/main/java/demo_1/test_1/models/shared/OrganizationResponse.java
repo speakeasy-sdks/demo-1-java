@@ -15,6 +15,7 @@ public class OrganizationResponse {
      */
     @JsonProperty("created_at")
     public String createdAt;
+
     public OrganizationResponse withCreatedAt(String createdAt) {
         this.createdAt = createdAt;
         return this;
@@ -25,6 +26,7 @@ public class OrganizationResponse {
      */
     @JsonProperty("created_by")
     public String createdBy;
+
     public OrganizationResponse withCreatedBy(String createdBy) {
         this.createdBy = createdBy;
         return this;
@@ -35,6 +37,7 @@ public class OrganizationResponse {
      */
     @JsonProperty("id")
     public String id;
+
     public OrganizationResponse withId(String id) {
         this.id = id;
         return this;
@@ -45,6 +48,7 @@ public class OrganizationResponse {
      */
     @JsonProperty("name")
     public String name;
+
     public OrganizationResponse withName(String name) {
         this.name = name;
         return this;

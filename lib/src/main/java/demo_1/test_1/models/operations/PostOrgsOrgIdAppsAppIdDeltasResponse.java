@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class PostOrgsOrgIdAppsAppIdDeltasResponse {
     
     public String contentType;
+
     public PostOrgsOrgIdAppsAppIdDeltasResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -22,6 +23,7 @@ public class PostOrgsOrgIdAppsAppIdDeltasResponse {
      */
     
     public demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse;
+
     public PostOrgsOrgIdAppsAppIdDeltasResponse withHumanitecErrorResponse(demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse) {
         this.humanitecErrorResponse = humanitecErrorResponse;
         return this;
@@ -29,6 +31,7 @@ public class PostOrgsOrgIdAppsAppIdDeltasResponse {
     
     
     public Integer statusCode;
+
     public PostOrgsOrgIdAppsAppIdDeltasResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -36,6 +39,7 @@ public class PostOrgsOrgIdAppsAppIdDeltasResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public PostOrgsOrgIdAppsAppIdDeltasResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;
@@ -48,6 +52,7 @@ public class PostOrgsOrgIdAppsAppIdDeltasResponse {
      */
     
     public Object postOrgsOrgIdAppsAppIdDeltas200ApplicationJSONOneOf;
+
     public PostOrgsOrgIdAppsAppIdDeltasResponse withPostOrgsOrgIdAppsAppIdDeltas200ApplicationJSONOneOf(Object postOrgsOrgIdAppsAppIdDeltas200ApplicationJSONOneOf) {
         this.postOrgsOrgIdAppsAppIdDeltas200ApplicationJSONOneOf = postOrgsOrgIdAppsAppIdDeltas200ApplicationJSONOneOf;
         return this;

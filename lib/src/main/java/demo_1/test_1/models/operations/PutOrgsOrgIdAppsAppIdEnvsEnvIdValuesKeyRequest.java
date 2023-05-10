@@ -15,6 +15,7 @@ public class PutOrgsOrgIdAppsAppIdEnvsEnvIdValuesKeyRequest {
      */
     @SpeakeasyMetadata("request:mediaType=application/json")
     public demo_1.test_1.models.shared.ValueEditPayloadRequest valueEditPayloadRequest;
+
     public PutOrgsOrgIdAppsAppIdEnvsEnvIdValuesKeyRequest withValueEditPayloadRequest(demo_1.test_1.models.shared.ValueEditPayloadRequest valueEditPayloadRequest) {
         this.valueEditPayloadRequest = valueEditPayloadRequest;
         return this;
@@ -27,6 +28,7 @@ public class PutOrgsOrgIdAppsAppIdEnvsEnvIdValuesKeyRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=appId")
     public String appId;
+
     public PutOrgsOrgIdAppsAppIdEnvsEnvIdValuesKeyRequest withAppId(String appId) {
         this.appId = appId;
         return this;
@@ -39,6 +41,7 @@ public class PutOrgsOrgIdAppsAppIdEnvsEnvIdValuesKeyRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=envId")
     public String envId;
+
     public PutOrgsOrgIdAppsAppIdEnvsEnvIdValuesKeyRequest withEnvId(String envId) {
         this.envId = envId;
         return this;
@@ -51,6 +54,7 @@ public class PutOrgsOrgIdAppsAppIdEnvsEnvIdValuesKeyRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=key")
     public String key;
+
     public PutOrgsOrgIdAppsAppIdEnvsEnvIdValuesKeyRequest withKey(String key) {
         this.key = key;
         return this;
@@ -63,6 +67,7 @@ public class PutOrgsOrgIdAppsAppIdEnvsEnvIdValuesKeyRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public PutOrgsOrgIdAppsAppIdEnvsEnvIdValuesKeyRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;

@@ -37,6 +37,15 @@ public class Image {
 		this._genVersion = genVersion;
 	}
 
+    /**
+     * List all Container Images
+     * DEPRECATED: This endpoint exists for historical compatibility and should not be used. Please use the [Artefact API](https://api-docs.humanitec.com/#tag/Artefact) instead.
+     * 
+     * Lists all of the Container Images registered for this organization.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdImagesResponse getOrgsOrgIdImages(demo_1.test_1.models.operations.GetOrgsOrgIdImagesRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdImagesRequest.class, baseUrl, "/orgs/{orgId}/images", request, null);
@@ -67,6 +76,17 @@ public class Image {
         return res;
     }
 
+    /**
+     * Get a specific Image Object
+     * DEPRECATED: This endpoint exists for historical compatibility and should not be used. Please use the [Artefact API](https://api-docs.humanitec.com/#tag/Artefact) instead.
+     * 
+     * The response includes a list of Image Builds as well as some metadata about the Image such as its Image Source.
+     * 
+     * Note, `imageId` may not be the same as the container name. `imageId` is determined by the system making notifications about new builds.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdImagesImageIdResponse getOrgsOrgIdImagesImageId(demo_1.test_1.models.operations.GetOrgsOrgIdImagesImageIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdImagesImageIdRequest.class, baseUrl, "/orgs/{orgId}/images/{imageId}", request, null);
@@ -105,6 +125,15 @@ public class Image {
         return res;
     }
 
+    /**
+     * Lists all the Builds of an Image
+     * DEPRECATED: This endpoint exists for historical compatibility and should not be used. Please use the [Artefact API](https://api-docs.humanitec.com/#tag/Artefact) instead.
+     * 
+     * The response lists all available Image Builds of an Image.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdImagesImageIdBuildsResponse getOrgsOrgIdImagesImageIdBuilds(demo_1.test_1.models.operations.GetOrgsOrgIdImagesImageIdBuildsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdImagesImageIdBuildsRequest.class, baseUrl, "/orgs/{orgId}/images/{imageId}/builds", request, null);
@@ -143,6 +172,17 @@ public class Image {
         return res;
     }
 
+    /**
+     * Add a new Image Build
+     * DEPRECATED: This endpoint exists for historical compatibility and should not be used. Please use the [Artefact API](https://api-docs.humanitec.com/#tag/Artefact) instead.
+     * 
+     * This endpoint is used by Continuous Integration (CI) pipelines to notify Humanitec that a new Image Build is available.
+     * 
+     * If there is no Image with ID `imageId`, it will be automatically created.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PostOrgsOrgIdImagesImageIdBuildsResponse postOrgsOrgIdImagesImageIdBuilds(demo_1.test_1.models.operations.PostOrgsOrgIdImagesImageIdBuildsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdImagesImageIdBuildsRequest.class, baseUrl, "/orgs/{orgId}/images/{imageId}/builds", request, null);

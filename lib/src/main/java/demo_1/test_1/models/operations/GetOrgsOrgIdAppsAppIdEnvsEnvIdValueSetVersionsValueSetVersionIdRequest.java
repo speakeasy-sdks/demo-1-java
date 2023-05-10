@@ -15,6 +15,7 @@ public class GetOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsValueSetVersionIdRequ
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=appId")
     public String appId;
+
     public GetOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsValueSetVersionIdRequest withAppId(String appId) {
         this.appId = appId;
         return this;
@@ -27,6 +28,7 @@ public class GetOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsValueSetVersionIdRequ
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=envId")
     public String envId;
+
     public GetOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsValueSetVersionIdRequest withEnvId(String envId) {
         this.envId = envId;
         return this;
@@ -39,6 +41,7 @@ public class GetOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsValueSetVersionIdRequ
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public GetOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsValueSetVersionIdRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;
@@ -51,6 +54,7 @@ public class GetOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsValueSetVersionIdRequ
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=valueSetVersionId")
     public String valueSetVersionId;
+
     public GetOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsValueSetVersionIdRequest withValueSetVersionId(String valueSetVersionId) {
         this.valueSetVersionId = valueSetVersionId;
         return this;

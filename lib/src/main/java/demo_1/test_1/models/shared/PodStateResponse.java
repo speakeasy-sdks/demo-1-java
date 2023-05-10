@@ -12,6 +12,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class PodStateResponse {
     @JsonProperty("containerStatuses")
     public java.util.Map<String, Object>[] containerStatuses;
+
     public PodStateResponse withContainerStatuses(java.util.Map<String, Object>[] containerStatuses) {
         this.containerStatuses = containerStatuses;
         return this;
@@ -19,6 +20,7 @@ public class PodStateResponse {
     
     @JsonProperty("phase")
     public String phase;
+
     public PodStateResponse withPhase(String phase) {
         this.phase = phase;
         return this;
@@ -26,6 +28,7 @@ public class PodStateResponse {
     
     @JsonProperty("podName")
     public String podName;
+
     public PodStateResponse withPodName(String podName) {
         this.podName = podName;
         return this;
@@ -33,6 +36,7 @@ public class PodStateResponse {
     
     @JsonProperty("revision")
     public Long revision;
+
     public PodStateResponse withRevision(Long revision) {
         this.revision = revision;
         return this;
@@ -40,6 +44,7 @@ public class PodStateResponse {
     
     @JsonProperty("status")
     public String status;
+
     public PodStateResponse withStatus(String status) {
         this.status = status;
         return this;

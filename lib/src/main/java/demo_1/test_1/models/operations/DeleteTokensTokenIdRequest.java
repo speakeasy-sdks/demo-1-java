@@ -15,6 +15,7 @@ public class DeleteTokensTokenIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=tokenId")
     public String tokenId;
+
     public DeleteTokensTokenIdRequest withTokenId(String tokenId) {
         this.tokenId = tokenId;
         return this;

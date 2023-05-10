@@ -17,6 +17,7 @@ public class ActiveResourceResponse {
      */
     @JsonProperty("app_id")
     public String appId;
+
     public ActiveResourceResponse withAppId(String appId) {
         this.appId = appId;
         return this;
@@ -27,6 +28,7 @@ public class ActiveResourceResponse {
      */
     @JsonProperty("def_id")
     public String defId;
+
     public ActiveResourceResponse withDefId(String defId) {
         this.defId = defId;
         return this;
@@ -37,6 +39,7 @@ public class ActiveResourceResponse {
      */
     @JsonProperty("deploy_id")
     public String deployId;
+
     public ActiveResourceResponse withDeployId(String deployId) {
         this.deployId = deployId;
         return this;
@@ -47,6 +50,7 @@ public class ActiveResourceResponse {
      */
     @JsonProperty("env_id")
     public String envId;
+
     public ActiveResourceResponse withEnvId(String envId) {
         this.envId = envId;
         return this;
@@ -57,6 +61,7 @@ public class ActiveResourceResponse {
      */
     @JsonProperty("env_type")
     public String envType;
+
     public ActiveResourceResponse withEnvType(String envType) {
         this.envType = envType;
         return this;
@@ -67,6 +72,7 @@ public class ActiveResourceResponse {
      */
     @JsonProperty("org_id")
     public String orgId;
+
     public ActiveResourceResponse withOrgId(String orgId) {
         this.orgId = orgId;
         return this;
@@ -77,6 +83,7 @@ public class ActiveResourceResponse {
      */
     @JsonProperty("res_id")
     public String resId;
+
     public ActiveResourceResponse withResId(String resId) {
         this.resId = resId;
         return this;
@@ -87,6 +94,7 @@ public class ActiveResourceResponse {
      */
     @JsonProperty("resource")
     public java.util.Map<String, Object> resource;
+
     public ActiveResourceResponse withResource(java.util.Map<String, Object> resource) {
         this.resource = resource;
         return this;
@@ -97,6 +105,7 @@ public class ActiveResourceResponse {
      */
     @JsonProperty("status")
     public String status;
+
     public ActiveResourceResponse withStatus(String status) {
         this.status = status;
         return this;
@@ -107,6 +116,7 @@ public class ActiveResourceResponse {
      */
     @JsonProperty("type")
     public String type;
+
     public ActiveResourceResponse withType(String type) {
         this.type = type;
         return this;
@@ -117,6 +127,7 @@ public class ActiveResourceResponse {
      */
     @JsonProperty("updated_at")
     public String updatedAt;
+
     public ActiveResourceResponse withUpdatedAt(String updatedAt) {
         this.updatedAt = updatedAt;
         return this;

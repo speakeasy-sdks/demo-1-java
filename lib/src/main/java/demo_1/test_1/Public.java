@@ -33,6 +33,15 @@ public class Public {
 		this._genVersion = genVersion;
 	}
 
+    /**
+     * Delete an Application
+     * Deleting an Application will also delete everything associated with it. This includes Environments, Deployment history on those Environments, and any shared values and secrets associated.
+     * 
+     * _Deletions are currently irreversible._
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.DeleteOrgsOrgIdAppsAppIdResponse deleteOrgsOrgIdAppsAppId(demo_1.test_1.models.operations.DeleteOrgsOrgIdAppsAppIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.DeleteOrgsOrgIdAppsAppIdRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}", request, null);
@@ -65,6 +74,17 @@ public class Public {
         return res;
     }
 
+    /**
+     * Delete a specific Environment.
+     * Deletes a specific Environment in an Application.
+     * 
+     * Deleting an Environment will also delete the Deployment history of the Environment.
+     * 
+     * _Deletions are currently irreversible._
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.DeleteOrgsOrgIdAppsAppIdEnvsEnvIdResponse deleteOrgsOrgIdAppsAppIdEnvsEnvId(demo_1.test_1.models.operations.DeleteOrgsOrgIdAppsAppIdEnvsEnvIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.DeleteOrgsOrgIdAppsAppIdEnvsEnvIdRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/envs/{envId}", request, null);
@@ -97,6 +117,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * Delete Active Resources.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.DeleteOrgsOrgIdAppsAppIdEnvsEnvIdResourcesTypeResIdResponse deleteOrgsOrgIdAppsAppIdEnvsEnvIdResourcesTypeResId(demo_1.test_1.models.operations.DeleteOrgsOrgIdAppsAppIdEnvsEnvIdResourcesTypeResIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.DeleteOrgsOrgIdAppsAppIdEnvsEnvIdResourcesTypeResIdRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/envs/{envId}/resources/{type}/{resId}", request, null);
@@ -121,6 +147,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * Delete Automation Rule from an Environment.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.DeleteOrgsOrgIdAppsAppIdEnvsEnvIdRulesRuleIdResponse deleteOrgsOrgIdAppsAppIdEnvsEnvIdRulesRuleId(demo_1.test_1.models.operations.DeleteOrgsOrgIdAppsAppIdEnvsEnvIdRulesRuleIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.DeleteOrgsOrgIdAppsAppIdEnvsEnvIdRulesRuleIdRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/envs/{envId}/rules/{ruleId}", request, null);
@@ -145,6 +177,13 @@ public class Public {
         return res;
     }
 
+    /**
+     * Delete all Shared Value for an Environment
+     * All Shared Values will be deleted. If the Shared Values are marked as a secret, they will also be deleted.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.DeleteOrgsOrgIdAppsAppIdEnvsEnvIdValuesResponse deleteOrgsOrgIdAppsAppIdEnvsEnvIdValues(demo_1.test_1.models.operations.DeleteOrgsOrgIdAppsAppIdEnvsEnvIdValuesRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.DeleteOrgsOrgIdAppsAppIdEnvsEnvIdValuesRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/envs/{envId}/values", request, null);
@@ -169,6 +208,13 @@ public class Public {
         return res;
     }
 
+    /**
+     * Delete Shared Value for an Environment
+     * The specified Shared Value will be permanently deleted. If the Shared Value is marked as a secret, it will also be permanently deleted.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.DeleteOrgsOrgIdAppsAppIdEnvsEnvIdValuesKeyResponse deleteOrgsOrgIdAppsAppIdEnvsEnvIdValuesKey(demo_1.test_1.models.operations.DeleteOrgsOrgIdAppsAppIdEnvsEnvIdValuesKeyRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.DeleteOrgsOrgIdAppsAppIdEnvsEnvIdValuesKeyRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/envs/{envId}/values/{key}", request, null);
@@ -201,6 +247,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * Deletes all Jobs for the Application
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.DeleteOrgsOrgIdAppsAppIdJobsResponse deleteOrgsOrgIdAppsAppIdJobs(demo_1.test_1.models.operations.DeleteOrgsOrgIdAppsAppIdJobsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.DeleteOrgsOrgIdAppsAppIdJobsRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/jobs", request, null);
@@ -225,6 +277,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * Remove the role of a User on an Application
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.DeleteOrgsOrgIdAppsAppIdUsersUserIdResponse deleteOrgsOrgIdAppsAppIdUsersUserId(demo_1.test_1.models.operations.DeleteOrgsOrgIdAppsAppIdUsersUserIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.DeleteOrgsOrgIdAppsAppIdUsersUserIdRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/users/{userId}", request, null);
@@ -257,6 +315,13 @@ public class Public {
         return res;
     }
 
+    /**
+     * Delete all Shared Value for an App
+     * All Shared Values will be deleted. If the Shared Values are marked as a secret, they will also be deleted.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.DeleteOrgsOrgIdAppsAppIdValuesResponse deleteOrgsOrgIdAppsAppIdValues(demo_1.test_1.models.operations.DeleteOrgsOrgIdAppsAppIdValuesRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.DeleteOrgsOrgIdAppsAppIdValuesRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/values", request, null);
@@ -281,6 +346,13 @@ public class Public {
         return res;
     }
 
+    /**
+     * Delete Shared Value for an Application
+     * The specified Shared Value will be permanently deleted. If the Shared Value is marked as a secret, it will also be permanently deleted.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.DeleteOrgsOrgIdAppsAppIdValuesKeyResponse deleteOrgsOrgIdAppsAppIdValuesKey(demo_1.test_1.models.operations.DeleteOrgsOrgIdAppsAppIdValuesKeyRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.DeleteOrgsOrgIdAppsAppIdValuesKeyRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/values/{key}", request, null);
@@ -313,6 +385,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * Delete a Webhook
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.DeleteOrgsOrgIdAppsAppIdWebhooksJobIdResponse deleteOrgsOrgIdAppsAppIdWebhooksJobId(demo_1.test_1.models.operations.DeleteOrgsOrgIdAppsAppIdWebhooksJobIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.DeleteOrgsOrgIdAppsAppIdWebhooksJobIdRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/webhooks/{jobId}", request, null);
@@ -337,6 +415,13 @@ public class Public {
         return res;
     }
 
+    /**
+     * Delete Artefact and all related Artefact Versions
+     * The specified Artefact and its Artefact Versions will be permanently deleted. Only Administrators can delete an Artefact.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.DeleteOrgsOrgIdArtefactsArtefactIdResponse deleteOrgsOrgIdArtefactsArtefactId(demo_1.test_1.models.operations.DeleteOrgsOrgIdArtefactsArtefactIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.DeleteOrgsOrgIdArtefactsArtefactIdRequest.class, baseUrl, "/orgs/{orgId}/artefacts/{artefactId}", request, null);
@@ -369,6 +454,13 @@ public class Public {
         return res;
     }
 
+    /**
+     * Deletes an Environment Type
+     * Deletes a specific Environment Type from an Organization. If there are Environments with this Type in the Organization, the operation will fail.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.DeleteOrgsOrgIdEnvTypesEnvTypeIdResponse deleteOrgsOrgIdEnvTypesEnvTypeId(demo_1.test_1.models.operations.DeleteOrgsOrgIdEnvTypesEnvTypeIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.DeleteOrgsOrgIdEnvTypesEnvTypeIdRequest.class, baseUrl, "/orgs/{orgId}/env-types/{envTypeId}", request, null);
@@ -415,6 +507,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * Remove the role of a User on an Environment Type
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.DeleteOrgsOrgIdEnvTypesEnvTypeUsersUserIdResponse deleteOrgsOrgIdEnvTypesEnvTypeUsersUserId(demo_1.test_1.models.operations.DeleteOrgsOrgIdEnvTypesEnvTypeUsersUserIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.DeleteOrgsOrgIdEnvTypesEnvTypeUsersUserIdRequest.class, baseUrl, "/orgs/{orgId}/env-types/{envType}/users/{userId}", request, null);
@@ -447,6 +545,13 @@ public class Public {
         return res;
     }
 
+    /**
+     * Deletes an existing registry record and all associated credentials and secrets.
+     * _Deletions are currently irreversible._
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.DeleteOrgsOrgIdRegistriesRegIdResponse deleteOrgsOrgIdRegistriesRegId(demo_1.test_1.models.operations.DeleteOrgsOrgIdRegistriesRegIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.DeleteOrgsOrgIdRegistriesRegIdRequest.class, baseUrl, "/orgs/{orgId}/registries/{regId}", request, null);
@@ -479,6 +584,19 @@ public class Public {
         return res;
     }
 
+    /**
+     * Delete a Resource Definition.
+     * If there **are no** Active Resources provisioned via the current definition, the Resource Definition is deleted immediately.
+     * 
+     * If there **are** Active Resources provisioned via the current definition, the request fails. The response will describe the changes to the affected Active Resources if operation is forced.
+     * 
+     * The request can take an optional `force` query parameter. If set to `true`, the current Resource Definition is **marked as** pending deletion and will be deleted (purged) as soon as no existing Active Resources reference it. With the next deployment matching criteria for Resources will be re-evaluated, and current Active Resources for the target environment would be either linked to another matching Resource Definition or decommissioned and created using the new or default Resource Definition (when available).
+     * 
+     * The Resource Definition that has been marked for deletion cannot be used to provision new resources.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.DeleteOrgsOrgIdResourcesDefsDefIdResponse deleteOrgsOrgIdResourcesDefsDefId(demo_1.test_1.models.operations.DeleteOrgsOrgIdResourcesDefsDefIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.DeleteOrgsOrgIdResourcesDefsDefIdRequest.class, baseUrl, "/orgs/{orgId}/resources/defs/{defId}", request, null);
@@ -525,6 +643,17 @@ public class Public {
         return res;
     }
 
+    /**
+     * Delete a Matching Criteria from a Resource Definition.
+     * If there **are no** Active Resources that would match to a different Resource Definition when the current Matching Criteria is deleted, the Matching Criteria is deleted immediately.
+     * 
+     * If there **are** Active Resources that would match to a different Resource Definition, the request fails with HTTP status code 409 (Conflict). The response content will list all of affected Active Resources and their new matches.
+     * 
+     * The request can take an optional `force` query parameter. If set to `true`, the Matching Criteria is deleted immediately. Referenced Active Resources would match to a different Resource Definition during the next deployment in the target environment.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.DeleteOrgsOrgIdResourcesDefsDefIdCriteriaCriteriaIdResponse deleteOrgsOrgIdResourcesDefsDefIdCriteriaCriteriaId(demo_1.test_1.models.operations.DeleteOrgsOrgIdResourcesDefsDefIdCriteriaCriteriaIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.DeleteOrgsOrgIdResourcesDefsDefIdCriteriaCriteriaIdRequest.class, baseUrl, "/orgs/{orgId}/resources/defs/{defId}/criteria/{criteriaId}", request, null);
@@ -578,6 +707,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * Delete a Resources Driver.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.DeleteOrgsOrgIdResourcesDriversDriverIdResponse deleteOrgsOrgIdResourcesDriversDriverId(demo_1.test_1.models.operations.DeleteOrgsOrgIdResourcesDriversDriverIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.DeleteOrgsOrgIdResourcesDriversDriverIdRequest.class, baseUrl, "/orgs/{orgId}/resources/drivers/{driverId}", request, null);
@@ -610,6 +745,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * Remove the role of a User on an Organization
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.DeleteOrgsOrgIdUsersUserIdResponse deleteOrgsOrgIdUsersUserId(demo_1.test_1.models.operations.DeleteOrgsOrgIdUsersUserIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.DeleteOrgsOrgIdUsersUserIdRequest.class, baseUrl, "/orgs/{orgId}/users/{userId}", request, null);
@@ -642,6 +783,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * Delete a Workload Profile Version
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.DeleteOrgsOrgIdWorkloadProfilesProfileIdVersionsVersionResponse deleteOrgsOrgIdWorkloadProfilesProfileIdVersionsVersion(demo_1.test_1.models.operations.DeleteOrgsOrgIdWorkloadProfilesProfileIdVersionsVersionRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.DeleteOrgsOrgIdWorkloadProfilesProfileIdVersionsVersionRequest.class, baseUrl, "/orgs/{orgId}/workload-profiles/{profileId}/versions/{version}", request, null);
@@ -674,6 +821,15 @@ public class Public {
         return res;
     }
 
+    /**
+     * Delete a Workload Profile
+     * This will also delete all versions of a workload profile.
+     * 
+     * It is not possible to delete profiles of other organizations.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.DeleteOrgsOrgIdWorkloadProfilesProfileQidResponse deleteOrgsOrgIdWorkloadProfilesProfileQid(demo_1.test_1.models.operations.DeleteOrgsOrgIdWorkloadProfilesProfileQidRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.DeleteOrgsOrgIdWorkloadProfilesProfileQidRequest.class, baseUrl, "/orgs/{orgId}/workload-profiles/{profileQid}", request, null);
@@ -706,6 +862,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * DEPRECATED
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.DeleteTokensTokenIdResponse deleteTokensTokenId(demo_1.test_1.models.operations.DeleteTokensTokenIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.DeleteTokensTokenIdRequest.class, baseUrl, "/tokens/{tokenId}", request, null);
@@ -730,6 +892,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * Fetch an existing Delta
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetDeltaResponse getDelta(demo_1.test_1.models.operations.GetDeltaRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetDeltaRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/deltas/{deltaId}", request, null);
@@ -767,6 +935,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * Get all Deployment Sets
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetSetsResponse getSets(demo_1.test_1.models.operations.GetSetsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetSetsRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/sets", request, null);
@@ -804,6 +978,11 @@ public class Public {
         return res;
     }
 
+    /**
+     * Gets the extended profile of the current user
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetCurrentUserResponse getCurrentUser() throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(baseUrl, "/current-user");
@@ -836,6 +1015,11 @@ public class Public {
         return res;
     }
 
+    /**
+     * List active organizations the user has access to.
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsResponse getOrgs() throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(baseUrl, "/orgs");
@@ -868,6 +1052,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * Get the specified Organization.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdResponse getOrgsOrgId(demo_1.test_1.models.operations.GetOrgsOrgIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdRequest.class, baseUrl, "/orgs/{orgId}", request, null);
@@ -908,6 +1098,13 @@ public class Public {
         return res;
     }
 
+    /**
+     * List all Applications in an Organization.
+     * Listing or lists of all Applications that exist within a specific Organization.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdAppsResponse getOrgsOrgIdApps(demo_1.test_1.models.operations.GetOrgsOrgIdAppsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdAppsRequest.class, baseUrl, "/orgs/{orgId}/apps", request, null);
@@ -938,6 +1135,13 @@ public class Public {
         return res;
     }
 
+    /**
+     * Get an existing Application
+     * Gets a specific Application in the specified Organization by ID.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdResponse getOrgsOrgIdAppsAppId(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}", request, null);
@@ -976,6 +1180,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * List Deltas in an Application
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdDeltasResponse getOrgsOrgIdAppsAppIdDeltas(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdDeltasRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdDeltasRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/deltas", request, null);
@@ -1012,6 +1222,13 @@ public class Public {
         return res;
     }
 
+    /**
+     * List all Environments.
+     * Lists all of the Environments in the Application.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsResponse getOrgsOrgIdAppsAppIdEnvs(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/envs", request, null);
@@ -1042,6 +1259,13 @@ public class Public {
         return res;
     }
 
+    /**
+     * Get a specific Environment.
+     * Gets a specific Environment in an Application.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdResponse getOrgsOrgIdAppsAppIdEnvsEnvId(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/envs/{envId}", request, null);
@@ -1080,6 +1304,13 @@ public class Public {
         return res;
     }
 
+    /**
+     * List Deployments in an Environment.
+     * List all of the Deployments that have been carried out in the current Environment. Deployments are returned with the newest first.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdDeploysResponse getOrgsOrgIdAppsAppIdEnvsEnvIdDeploys(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdDeploysRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdDeploysRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/envs/{envId}/deploys", request, null);
@@ -1118,6 +1349,13 @@ public class Public {
         return res;
     }
 
+    /**
+     * Get a specific Deployment.
+     * Gets a specific Deployment in an Application and an Environment.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdDeploysDeployIdResponse getOrgsOrgIdAppsAppIdEnvsEnvIdDeploysDeployId(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdDeploysDeployIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdDeploysDeployIdRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/envs/{envId}/deploys/{deployId}", request, null);
@@ -1156,6 +1394,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * List errors that occurred in a Deployment.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdDeploysDeployIdErrorsResponse getOrgsOrgIdAppsAppIdEnvsEnvIdDeploysDeployIdErrors(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdDeploysDeployIdErrorsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdDeploysDeployIdErrorsRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/envs/{envId}/deploys/{deployId}/errors", request, null);
@@ -1186,6 +1430,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * List Active Resources provisioned in an environment.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdResourcesResponse getOrgsOrgIdAppsAppIdEnvsEnvIdResources(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdResourcesRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdResourcesRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/envs/{envId}/resources", request, null);
@@ -1224,6 +1474,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * List all Automation Rules in an Environment.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdRulesResponse getOrgsOrgIdAppsAppIdEnvsEnvIdRules(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdRulesRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdRulesRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/envs/{envId}/rules", request, null);
@@ -1256,6 +1512,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * Get a specific Automation Rule for an Environment.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdRulesRuleIdResponse getOrgsOrgIdAppsAppIdEnvsEnvIdRulesRuleId(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdRulesRuleIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdRulesRuleIdRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/envs/{envId}/rules/{ruleId}", request, null);
@@ -1288,6 +1550,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * Get Runtime information about the environment.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdRuntimeResponse getOrgsOrgIdAppsAppIdEnvsEnvIdRuntime(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdRuntimeRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdRuntimeRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/envs/{envId}/runtime", request, null);
@@ -1320,6 +1588,13 @@ public class Public {
         return res;
     }
 
+    /**
+     * List Value Set Versions in an Environment of an App
+     * A new Value Set Version is created on every modification of a Value inside the an Environment of an App. In case this environment has no overrides the response is the same as the App level endpoint.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsResponse getOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersions(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/envs/{envId}/value-set-versions", request, null);
@@ -1356,6 +1631,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * Get a single Value Set Version in an Environment of an App
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsValueSetVersionIdResponse getOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsValueSetVersionId(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsValueSetVersionIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsValueSetVersionIdRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/envs/{envId}/value-set-versions/{valueSetVersionId}", request, null);
@@ -1394,6 +1675,13 @@ public class Public {
         return res;
     }
 
+    /**
+     * List Shared Values in an Environment
+     * The returned values will be the base Application values with the Environment overrides where applicable. The `source` field will specify the level from which the value is from.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdValuesResponse getOrgsOrgIdAppsAppIdEnvsEnvIdValues(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdValuesRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdValuesRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/envs/{envId}/values", request, null);
@@ -1424,6 +1712,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * Get Runtime information about specific environments.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdRuntimeResponse getOrgsOrgIdAppsAppIdRuntime(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdRuntimeRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdRuntimeRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/runtime", request, null);
@@ -1462,6 +1756,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * Get a Deployment Set
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdSetsSetIdResponse getOrgsOrgIdAppsAppIdSetsSetId(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdSetsSetIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdSetsSetIdRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/sets/{setId}", request, null);
@@ -1505,6 +1805,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * Get the difference between 2 Deployment Sets
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdSetsSetIdDiffSourceSetIdResponse getOrgsOrgIdAppsAppIdSetsSetIdDiffSourceSetId(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdSetsSetIdDiffSourceSetIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdSetsSetIdDiffSourceSetIdRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/sets/{setId}/diff/{sourceSetId}", request, null);
@@ -1542,6 +1848,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * List Users with roles in an App
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdUsersResponse getOrgsOrgIdAppsAppIdUsers(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdUsersRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdUsersRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/users", request, null);
@@ -1574,6 +1886,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * Get the role of a User on an Application
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdUsersUserIdResponse getOrgsOrgIdAppsAppIdUsersUserId(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdUsersUserIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdUsersUserIdRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/users/{userId}", request, null);
@@ -1614,6 +1932,13 @@ public class Public {
         return res;
     }
 
+    /**
+     * List Value Set Versions in the App
+     * A new Value Set Version is created on every modification of a Value inside the app.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdValueSetVersionsResponse getOrgsOrgIdAppsAppIdValueSetVersions(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdValueSetVersionsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdValueSetVersionsRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/value-set-versions", request, null);
@@ -1650,6 +1975,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * Get a single Value Set Version from the App
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionIdResponse getOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionId(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionIdRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/value-set-versions/{valueSetVersionId}", request, null);
@@ -1688,6 +2019,13 @@ public class Public {
         return res;
     }
 
+    /**
+     * List Shared Values in an Application
+     * The returned values will be the "base" values for the Application. The overridden value for the Environment can be retrieved via the `/orgs/{orgId}/apps/{appId}/envs/{envId}/values` endpoint.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdValuesResponse getOrgsOrgIdAppsAppIdValues(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdValuesRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdValuesRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/values", request, null);
@@ -1718,6 +2056,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * List Webhooks
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdWebhooksResponse getOrgsOrgIdAppsAppIdWebhooks(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdWebhooksRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdWebhooksRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/webhooks", request, null);
@@ -1748,6 +2092,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * Get a Webhook
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdWebhooksJobIdResponse getOrgsOrgIdAppsAppIdWebhooksJobId(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdWebhooksJobIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdWebhooksJobIdRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/webhooks/{jobId}", request, null);
@@ -1780,6 +2130,13 @@ public class Public {
         return res;
     }
 
+    /**
+     * List all Artefacts Versions.
+     * Returns the Artefact Versions registered with your organization. If no elements are found, an empty list is returned.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdArtefactVersionsResponse getOrgsOrgIdArtefactVersions(demo_1.test_1.models.operations.GetOrgsOrgIdArtefactVersionsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdArtefactVersionsRequest.class, baseUrl, "/orgs/{orgId}/artefact-versions", request, null);
@@ -1824,6 +2181,13 @@ public class Public {
         return res;
     }
 
+    /**
+     * Get an Artefacts Versions.
+     * Returns a specific Artefact Version.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdArtefactVersionsArtefactVersionIdResponse getOrgsOrgIdArtefactVersionsArtefactVersionId(demo_1.test_1.models.operations.GetOrgsOrgIdArtefactVersionsArtefactVersionIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdArtefactVersionsArtefactVersionIdRequest.class, baseUrl, "/orgs/{orgId}/artefact-versions/{artefactVersionId}", request, null);
@@ -1862,6 +2226,13 @@ public class Public {
         return res;
     }
 
+    /**
+     * List all Artefacts.
+     * Returns the Artefacts registered with your organization. If no elements are found, an empty list is returned.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdArtefactsResponse getOrgsOrgIdArtefacts(demo_1.test_1.models.operations.GetOrgsOrgIdArtefactsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdArtefactsRequest.class, baseUrl, "/orgs/{orgId}/artefacts", request, null);
@@ -1898,6 +2269,13 @@ public class Public {
         return res;
     }
 
+    /**
+     * List all Artefact Versions of an Artefact.
+     * Returns the Artefact Versions of a specified Artefact registered with your organization. If no elements are found, an empty list is returned.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdArtefactsArtefactIdVersionsResponse getOrgsOrgIdArtefactsArtefactIdVersions(demo_1.test_1.models.operations.GetOrgsOrgIdArtefactsArtefactIdVersionsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdArtefactsArtefactIdVersionsRequest.class, baseUrl, "/orgs/{orgId}/artefacts/{artefactId}/versions", request, null);
@@ -1942,6 +2320,13 @@ public class Public {
         return res;
     }
 
+    /**
+     * List all Environment Types
+     * Lists all Environment Types in an Organization.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdEnvTypesResponse getOrgsOrgIdEnvTypes(demo_1.test_1.models.operations.GetOrgsOrgIdEnvTypesRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdEnvTypesRequest.class, baseUrl, "/orgs/{orgId}/env-types", request, null);
@@ -1972,6 +2357,13 @@ public class Public {
         return res;
     }
 
+    /**
+     * Get an Environment Type
+     * Gets a specific Environment Type within an Organization.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdEnvTypesEnvTypeIdResponse getOrgsOrgIdEnvTypesEnvTypeId(demo_1.test_1.models.operations.GetOrgsOrgIdEnvTypesEnvTypeIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdEnvTypesEnvTypeIdRequest.class, baseUrl, "/orgs/{orgId}/env-types/{envTypeId}", request, null);
@@ -2010,6 +2402,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * Get the role of a User on an Environment Type
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdEnvTypesEnvTypeUsersUserIdResponse getOrgsOrgIdEnvTypesEnvTypeUsersUserId(demo_1.test_1.models.operations.GetOrgsOrgIdEnvTypesEnvTypeUsersUserIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdEnvTypesEnvTypeUsersUserIdRequest.class, baseUrl, "/orgs/{orgId}/env-types/{envType}/users/{userId}", request, null);
@@ -2050,6 +2448,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * List Events
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdEventsResponse getOrgsOrgIdEvents(demo_1.test_1.models.operations.GetOrgsOrgIdEventsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdEventsRequest.class, baseUrl, "/orgs/{orgId}/events", request, null);
@@ -2080,6 +2484,15 @@ public class Public {
         return res;
     }
 
+    /**
+     * List all Container Images
+     * DEPRECATED: This endpoint exists for historical compatibility and should not be used. Please use the [Artefact API](https://api-docs.humanitec.com/#tag/Artefact) instead.
+     * 
+     * Lists all of the Container Images registered for this organization.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdImagesResponse getOrgsOrgIdImages(demo_1.test_1.models.operations.GetOrgsOrgIdImagesRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdImagesRequest.class, baseUrl, "/orgs/{orgId}/images", request, null);
@@ -2110,6 +2523,17 @@ public class Public {
         return res;
     }
 
+    /**
+     * Get a specific Image Object
+     * DEPRECATED: This endpoint exists for historical compatibility and should not be used. Please use the [Artefact API](https://api-docs.humanitec.com/#tag/Artefact) instead.
+     * 
+     * The response includes a list of Image Builds as well as some metadata about the Image such as its Image Source.
+     * 
+     * Note, `imageId` may not be the same as the container name. `imageId` is determined by the system making notifications about new builds.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdImagesImageIdResponse getOrgsOrgIdImagesImageId(demo_1.test_1.models.operations.GetOrgsOrgIdImagesImageIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdImagesImageIdRequest.class, baseUrl, "/orgs/{orgId}/images/{imageId}", request, null);
@@ -2148,6 +2572,15 @@ public class Public {
         return res;
     }
 
+    /**
+     * Lists all the Builds of an Image
+     * DEPRECATED: This endpoint exists for historical compatibility and should not be used. Please use the [Artefact API](https://api-docs.humanitec.com/#tag/Artefact) instead.
+     * 
+     * The response lists all available Image Builds of an Image.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdImagesImageIdBuildsResponse getOrgsOrgIdImagesImageIdBuilds(demo_1.test_1.models.operations.GetOrgsOrgIdImagesImageIdBuildsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdImagesImageIdBuildsRequest.class, baseUrl, "/orgs/{orgId}/images/{imageId}/builds", request, null);
@@ -2186,6 +2619,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * List the invites issued for the organization.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdInvitationsResponse getOrgsOrgIdInvitations(demo_1.test_1.models.operations.GetOrgsOrgIdInvitationsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdInvitationsRequest.class, baseUrl, "/orgs/{orgId}/invitations", request, null);
@@ -2216,6 +2655,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * Lists available registries for the organization.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdRegistriesResponse getOrgsOrgIdRegistries(demo_1.test_1.models.operations.GetOrgsOrgIdRegistriesRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdRegistriesRequest.class, baseUrl, "/orgs/{orgId}/registries", request, null);
@@ -2254,6 +2699,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * Loads a registry record details.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdRegistriesRegIdResponse getOrgsOrgIdRegistriesRegId(demo_1.test_1.models.operations.GetOrgsOrgIdRegistriesRegIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdRegistriesRegIdRequest.class, baseUrl, "/orgs/{orgId}/registries/{regId}", request, null);
@@ -2292,6 +2743,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * Returns current account credentials or secret details for the registry.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdRegistriesRegIdCredsResponse getOrgsOrgIdRegistriesRegIdCreds(demo_1.test_1.models.operations.GetOrgsOrgIdRegistriesRegIdCredsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdRegistriesRegIdCredsRequest.class, baseUrl, "/orgs/{orgId}/registries/{regId}/creds", request, null);
@@ -2330,6 +2787,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * List Resource Account Types available to the organization.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdResourcesAccountTypesResponse getOrgsOrgIdResourcesAccountTypes(demo_1.test_1.models.operations.GetOrgsOrgIdResourcesAccountTypesRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdResourcesAccountTypesRequest.class, baseUrl, "/orgs/{orgId}/resources/account-types", request, null);
@@ -2368,6 +2831,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * List Resource Accounts in the organization.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdResourcesAccountsResponse getOrgsOrgIdResourcesAccounts(demo_1.test_1.models.operations.GetOrgsOrgIdResourcesAccountsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdResourcesAccountsRequest.class, baseUrl, "/orgs/{orgId}/resources/accounts", request, null);
@@ -2406,6 +2875,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * Get a Resource Account.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdResourcesAccountsAccIdResponse getOrgsOrgIdResourcesAccountsAccId(demo_1.test_1.models.operations.GetOrgsOrgIdResourcesAccountsAccIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdResourcesAccountsAccIdRequest.class, baseUrl, "/orgs/{orgId}/resources/accounts/{accId}", request, null);
@@ -2444,6 +2919,13 @@ public class Public {
         return res;
     }
 
+    /**
+     * List Resource Definitions.
+     * Filter criteria can be applied to obtain all the resource definitions that could match the filters, grouped by type and sorted by matching rank.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdResourcesDefsResponse getOrgsOrgIdResourcesDefs(demo_1.test_1.models.operations.GetOrgsOrgIdResourcesDefsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdResourcesDefsRequest.class, baseUrl, "/orgs/{orgId}/resources/defs", request, null);
@@ -2488,6 +2970,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * Get a specific Resource Definition.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdResourcesDefsDefIdResponse getOrgsOrgIdResourcesDefsDefId(demo_1.test_1.models.operations.GetOrgsOrgIdResourcesDefsDefIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdResourcesDefsDefIdRequest.class, baseUrl, "/orgs/{orgId}/resources/defs/{defId}", request, null);
@@ -2526,6 +3014,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * List Active Resources provisioned via a specific Resource Definition.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdResourcesDefsDefIdResourcesResponse getOrgsOrgIdResourcesDefsDefIdResources(demo_1.test_1.models.operations.GetOrgsOrgIdResourcesDefsDefIdResourcesRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdResourcesDefsDefIdResourcesRequest.class, baseUrl, "/orgs/{orgId}/resources/defs/{defId}/resources", request, null);
@@ -2564,6 +3058,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * List Resource Drivers.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdResourcesDriversResponse getOrgsOrgIdResourcesDrivers(demo_1.test_1.models.operations.GetOrgsOrgIdResourcesDriversRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdResourcesDriversRequest.class, baseUrl, "/orgs/{orgId}/resources/drivers", request, null);
@@ -2602,6 +3102,13 @@ public class Public {
         return res;
     }
 
+    /**
+     * Get a Resource Driver.
+     * # Only drivers that belongs to the given organization or registered as `public` are accessible through this endpoint
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdResourcesDriversDriverIdResponse getOrgsOrgIdResourcesDriversDriverId(demo_1.test_1.models.operations.GetOrgsOrgIdResourcesDriversDriverIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdResourcesDriversDriverIdRequest.class, baseUrl, "/orgs/{orgId}/resources/drivers/{driverId}", request, null);
@@ -2640,6 +3147,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * List Resource Types.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdResourcesTypesResponse getOrgsOrgIdResourcesTypes(demo_1.test_1.models.operations.GetOrgsOrgIdResourcesTypesRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdResourcesTypesRequest.class, baseUrl, "/orgs/{orgId}/resources/types", request, null);
@@ -2678,6 +3191,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * List Users with roles in an Organization
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdUsersResponse getOrgsOrgIdUsers(demo_1.test_1.models.operations.GetOrgsOrgIdUsersRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdUsersRequest.class, baseUrl, "/orgs/{orgId}/users", request, null);
@@ -2710,6 +3229,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * Get the role of a User on an Organization
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdUsersUserIdResponse getOrgsOrgIdUsersUserId(demo_1.test_1.models.operations.GetOrgsOrgIdUsersUserIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdUsersUserIdRequest.class, baseUrl, "/orgs/{orgId}/users/{userId}", request, null);
@@ -2750,6 +3275,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * List workload profiles available to the organization.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdWorkloadProfilesResponse getOrgsOrgIdWorkloadProfiles(demo_1.test_1.models.operations.GetOrgsOrgIdWorkloadProfilesRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdWorkloadProfilesRequest.class, baseUrl, "/orgs/{orgId}/workload-profiles", request, null);
@@ -2780,6 +3311,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * Get a Workload Profile
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdWorkloadProfilesProfileQidResponse getOrgsOrgIdWorkloadProfilesProfileQid(demo_1.test_1.models.operations.GetOrgsOrgIdWorkloadProfilesProfileQidRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdWorkloadProfilesProfileQidRequest.class, baseUrl, "/orgs/{orgId}/workload-profiles/{profileQid}", request, null);
@@ -2818,6 +3355,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * List versions of the given workload profile with optional constraint.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdWorkloadProfilesProfileQidVersionsResponse getOrgsOrgIdWorkloadProfilesProfileQidVersions(demo_1.test_1.models.operations.GetOrgsOrgIdWorkloadProfilesProfileQidVersionsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdWorkloadProfilesProfileQidVersionsRequest.class, baseUrl, "/orgs/{orgId}/workload-profiles/{profileQid}/versions", request, null);
@@ -2862,6 +3405,11 @@ public class Public {
         return res;
     }
 
+    /**
+     * DEPRECATED
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetTokensResponse getTokens() throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(baseUrl, "/tokens");
@@ -2892,6 +3440,11 @@ public class Public {
         return res;
     }
 
+    /**
+     * DEPRECATED
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetUsersMeResponse getUsersMe() throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(baseUrl, "/users/me");
@@ -2924,6 +3477,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * Updates the extended profile of the current user.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PatchCurrentUserResponse patchCurrentUser(demo_1.test_1.models.shared.UserProfileExtendedRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(baseUrl, "/current-user");
@@ -2969,6 +3528,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * Update an existing Delta
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PatchOrgsOrgIdAppsAppIdDeltasDeltaIdResponse patchOrgsOrgIdAppsAppIdDeltasDeltaId(demo_1.test_1.models.operations.PatchOrgsOrgIdAppsAppIdDeltasDeltaIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PatchOrgsOrgIdAppsAppIdDeltasDeltaIdRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/deltas/{deltaId}", request, null);
@@ -3019,6 +3584,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * Set number of replicas for an environment's modules.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PatchOrgsOrgIdAppsAppIdEnvsEnvIdRuntimeReplicasResponse patchOrgsOrgIdAppsAppIdEnvsEnvIdRuntimeReplicas(demo_1.test_1.models.operations.PatchOrgsOrgIdAppsAppIdEnvsEnvIdRuntimeReplicasRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PatchOrgsOrgIdAppsAppIdEnvsEnvIdRuntimeReplicasRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/envs/{envId}/runtime/replicas", request, null);
@@ -3048,6 +3619,13 @@ public class Public {
         return res;
     }
 
+    /**
+     * Update Shared Value for an Environment
+     * Update the value or description of the Shared Value. Shared Values marked as secret can also be updated.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PatchOrgsOrgIdAppsAppIdEnvsEnvIdValuesKeyResponse patchOrgsOrgIdAppsAppIdEnvsEnvIdValuesKey(demo_1.test_1.models.operations.PatchOrgsOrgIdAppsAppIdEnvsEnvIdValuesKeyRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PatchOrgsOrgIdAppsAppIdEnvsEnvIdValuesKeyRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/envs/{envId}/values/{key}", request, null);
@@ -3091,6 +3669,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * Update the role of a User on an Application
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PatchOrgsOrgIdAppsAppIdUsersUserIdResponse patchOrgsOrgIdAppsAppIdUsersUserId(demo_1.test_1.models.operations.PatchOrgsOrgIdAppsAppIdUsersUserIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PatchOrgsOrgIdAppsAppIdUsersUserIdRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/users/{userId}", request, null);
@@ -3136,6 +3720,13 @@ public class Public {
         return res;
     }
 
+    /**
+     * Update Shared Value for an Application
+     * Update the value or description of the Shared Value. Shared Values marked as secret can also be updated.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PatchOrgsOrgIdAppsAppIdValuesKeyResponse patchOrgsOrgIdAppsAppIdValuesKey(demo_1.test_1.models.operations.PatchOrgsOrgIdAppsAppIdValuesKeyRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PatchOrgsOrgIdAppsAppIdValuesKeyRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/values/{key}", request, null);
@@ -3179,6 +3770,13 @@ public class Public {
         return res;
     }
 
+    /**
+     * Update Version of an Artefact.
+     * Update the version of a specified Artefact registered with your organization".
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PatchOrgsOrgIdArtefactsArtefactIdVersionsVersionIdResponse patchOrgsOrgIdArtefactsArtefactIdVersionsVersionId(demo_1.test_1.models.operations.PatchOrgsOrgIdArtefactsArtefactIdVersionsVersionIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PatchOrgsOrgIdArtefactsArtefactIdVersionsVersionIdRequest.class, baseUrl, "/orgs/{orgId}/artefacts/{artefactId}/versions/{versionId}", request, null);
@@ -3222,6 +3820,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * Update the role of a User on an Environment Type
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PatchOrgsOrgIdEnvTypesEnvTypeUsersUserIdResponse patchOrgsOrgIdEnvTypesEnvTypeUsersUserId(demo_1.test_1.models.operations.PatchOrgsOrgIdEnvTypesEnvTypeUsersUserIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PatchOrgsOrgIdEnvTypesEnvTypeUsersUserIdRequest.class, baseUrl, "/orgs/{orgId}/env-types/{envType}/users/{userId}", request, null);
@@ -3267,6 +3871,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * Updates (patches) an existing registry record.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PatchOrgsOrgIdRegistriesRegIdResponse patchOrgsOrgIdRegistriesRegId(demo_1.test_1.models.operations.PatchOrgsOrgIdRegistriesRegIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PatchOrgsOrgIdRegistriesRegIdRequest.class, baseUrl, "/orgs/{orgId}/registries/{regId}", request, null);
@@ -3310,6 +3920,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * Update a Resource Account.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PatchOrgsOrgIdResourcesAccountsAccIdResponse patchOrgsOrgIdResourcesAccountsAccId(demo_1.test_1.models.operations.PatchOrgsOrgIdResourcesAccountsAccIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PatchOrgsOrgIdResourcesAccountsAccIdRequest.class, baseUrl, "/orgs/{orgId}/resources/accounts/{accId}", request, null);
@@ -3353,6 +3969,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * Update a Resource Definition.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PatchOrgsOrgIdResourcesDefsDefIdResponse patchOrgsOrgIdResourcesDefsDefId(demo_1.test_1.models.operations.PatchOrgsOrgIdResourcesDefsDefIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PatchOrgsOrgIdResourcesDefsDefIdRequest.class, baseUrl, "/orgs/{orgId}/resources/defs/{defId}", request, null);
@@ -3396,6 +4018,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * Update the role of a User on an Organization
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PatchOrgsOrgIdUsersUserIdResponse patchOrgsOrgIdUsersUserId(demo_1.test_1.models.operations.PatchOrgsOrgIdUsersUserIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PatchOrgsOrgIdUsersUserIdRequest.class, baseUrl, "/orgs/{orgId}/users/{userId}", request, null);
@@ -3441,6 +4069,13 @@ public class Public {
         return res;
     }
 
+    /**
+     * Add a new Application to an Organization
+     * Creates a new Application, then adds it to the specified Organization.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PostOrgsOrgIdAppsResponse postOrgsOrgIdApps(demo_1.test_1.models.operations.PostOrgsOrgIdAppsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdAppsRequest.class, baseUrl, "/orgs/{orgId}/apps", request, null);
@@ -3484,6 +4119,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * Create a new Delta
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdDeltasResponse postOrgsOrgIdAppsAppIdDeltas(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdDeltasRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdDeltasRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/deltas", request, null);
@@ -3527,6 +4168,17 @@ public class Public {
         return res;
     }
 
+    /**
+     * Add a new Environment to an Application.
+     * Creates a new Environment of the specified Type and associates it with the Application specified by `appId`.
+     * 
+     * The Environment is also initialized to the **current or past state of Deployment in another Environment**. This ensures that every Environment is derived from a previously known state. This means it is not possible to create a new Environment for an Application until at least one Deployment has occurred. (The Deployment does not have to be successful.)
+     * 
+     * The Type of the Environment must be already defined in the Organization.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdEnvsResponse postOrgsOrgIdAppsAppIdEnvs(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdEnvsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdEnvsRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/envs", request, null);
@@ -3570,6 +4222,21 @@ public class Public {
         return res;
     }
 
+    /**
+     * Start a new Deployment.
+     * At Humanitec, Deployments are defined as changes to the state of the Environment. The state can be changed by defining a set of desired changes to the current state via a Deployment Delta or by resetting the current state after a previous Deployment. (See Environment Rebase.) Both types of changes can be combined into a single Deployment during which the Delta is applied to the Rebased state.
+     * 
+     * When specifying a Delta, a Delta ID must be used. That Delta must have been committed to the Delta store prior to the Deployment.
+     * 
+     * A Set ID can also be defined in the deployment to force the state of the environment to a particular state. This will be ignored if the Delta is specified.
+     * 
+     * **NOTE:**
+     * 
+     * Directly setting a `set_id` in a deployment is not recommended as it will not record history of where the set came from. If the intention is to replicate an existing environment, use the environment rebasing approach described above.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdEnvsEnvIdDeploysResponse postOrgsOrgIdAppsAppIdEnvsEnvIdDeploys(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdEnvsEnvIdDeploysRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdEnvsEnvIdDeploysRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/envs/{envId}/deploys", request, null);
@@ -3613,6 +4280,13 @@ public class Public {
         return res;
     }
 
+    /**
+     * Create a new Automation Rule for an Environment.
+     * Items marked as deprecated are still supported (however not recommended) for use and are incompatible with properties of the latest api version. In particular an error is raised if  `images_filter` (deprecated) and `artefacts_filter` are used in the same payload. The same is true for `exclude_images_filter` (deprecated) and `exclude_artefacts_filter`. `match` and `update_to` are still supported but will trigger an error if combined with `match_ref`.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdEnvsEnvIdRulesResponse postOrgsOrgIdAppsAppIdEnvsEnvIdRules(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdEnvsEnvIdRulesRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdEnvsEnvIdRulesRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/envs/{envId}/rules", request, null);
@@ -3658,6 +4332,17 @@ public class Public {
         return res;
     }
 
+    /**
+     * Purge the value of a specific Shared Value from the App Environment Version history.
+     * Purging permanently removes the value of a specific Shared Value in an application. A purged value is no longer accessible, can't be restored and can't be used
+     * by deployments referencing a Value Set Version where the value was present.
+     * 
+     * Learn more about purging in our [docs](https://docs.humanitec.com/reference/concepts/app-config/shared-app-values#purge).
+     * 
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsValueSetVersionIdPurgeKeyResponse postOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsValueSetVersionIdPurgeKey(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsValueSetVersionIdPurgeKeyRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsValueSetVersionIdPurgeKeyRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/envs/{envId}/value-set-versions/{valueSetVersionId}/purge/{key}", request, null);
@@ -3695,6 +4380,16 @@ public class Public {
         return res;
     }
 
+    /**
+     * Restore a Value Set Version in an Environment of an App
+     * Restore the values of all Shared Values in an environment from a specific version. Keys not existing in the selected version are deleted.
+     * 
+     * Learn more about reverting in our [docs](https://docs.humanitec.com/reference/concepts/app-config/shared-app-values#revert).
+     * 
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsValueSetVersionIdRestoreResponse postOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsValueSetVersionIdRestore(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsValueSetVersionIdRestoreRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsValueSetVersionIdRestoreRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/envs/{envId}/value-set-versions/{valueSetVersionId}/restore", request, null);
@@ -3738,6 +4433,16 @@ public class Public {
         return res;
     }
 
+    /**
+     * Restore a specific key from the Value Set Version in an Environment of an App
+     * Restore the values of a single Shared Value in an Environment from a specific version.
+     * 
+     * Learn more about reverting in our [docs](https://docs.humanitec.com/reference/concepts/app-config/shared-app-values#revert).
+     * 
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsValueSetVersionIdRestoreKeyResponse postOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsValueSetVersionIdRestoreKey(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsValueSetVersionIdRestoreKeyRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsValueSetVersionIdRestoreKeyRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/envs/{envId}/value-set-versions/{valueSetVersionId}/restore/{key}", request, null);
@@ -3781,6 +4486,15 @@ public class Public {
         return res;
     }
 
+    /**
+     * Create a Shared Value for an Environment
+     * The Shared Value created will only be available to the specific Environment.
+     * 
+     * If a Value is marked as a secret, it will be securely stored. It will not be possible to retrieve the value again through the API. The value of the secret can however be updated.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdEnvsEnvIdValuesResponse postOrgsOrgIdAppsAppIdEnvsEnvIdValues(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdEnvsEnvIdValuesRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdEnvsEnvIdValuesRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/envs/{envId}/values", request, null);
@@ -3824,6 +4538,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * Apply a Deployment Delta to a Deployment Set
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdSetsSetIdResponse postOrgsOrgIdAppsAppIdSetsSetId(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdSetsSetIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdSetsSetIdRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/sets/{setId}", request, null);
@@ -3873,6 +4593,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * Adds a User to an Application with a Role
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdUsersResponse postOrgsOrgIdAppsAppIdUsers(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdUsersRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdUsersRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/users", request, null);
@@ -3918,6 +4644,17 @@ public class Public {
         return res;
     }
 
+    /**
+     * Purge the value of a specific Shared Value from the App Version history.
+     * Purging permanently removes the value of a specific Shared Value in an Application. A purged value is no longer accessible, can't be restored and can't be used
+     * by deployments referencing a Value Set Version where the value was present.
+     * 
+     * Learn more about purging in our [docs](https://docs.humanitec.com/reference/concepts/app-config/shared-app-values#purge).
+     * 
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionIdPurgeKeyResponse postOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionIdPurgeKey(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionIdPurgeKeyRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionIdPurgeKeyRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/value-set-versions/{valueSetVersionId}/purge/{key}", request, null);
@@ -3955,6 +4692,16 @@ public class Public {
         return res;
     }
 
+    /**
+     * Restore a Value Set Version in an App
+     * Restore the values of all Shared Values in an application from a specific version. Keys not existing in the selected version are deleted.
+     * 
+     * Learn more about reverting in our [docs](https://docs.humanitec.com/reference/concepts/app-config/shared-app-values#revert).
+     * 
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionIdRestoreResponse postOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionIdRestore(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionIdRestoreRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionIdRestoreRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/value-set-versions/{valueSetVersionId}/restore", request, null);
@@ -3998,6 +4745,16 @@ public class Public {
         return res;
     }
 
+    /**
+     * Restore a specific key from the Value Set Version in an App
+     * Restore the values of a single Shared Value in an application from a specific version.
+     * 
+     * Learn more about reverting in our [docs](https://docs.humanitec.com/reference/concepts/app-config/shared-app-values#revert).
+     * 
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionIdRestoreKeyResponse postOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionIdRestoreKey(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionIdRestoreKeyRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionIdRestoreKeyRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/value-set-versions/{valueSetVersionId}/restore/{key}", request, null);
@@ -4041,6 +4798,15 @@ public class Public {
         return res;
     }
 
+    /**
+     * Create a Shared Value for an Application
+     * The Shared Value created will be available to all Environments in that Application.
+     * 
+     * If a Value is marked as a secret, it will be securely stored. It will not be possible to retrieve the value again through the API. The value of the secret can however be updated.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdValuesResponse postOrgsOrgIdAppsAppIdValues(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdValuesRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdValuesRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/values", request, null);
@@ -4084,6 +4850,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * Create a new Webhook
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdWebhooksResponse postOrgsOrgIdAppsAppIdWebhooks(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdWebhooksRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdWebhooksRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/webhooks", request, null);
@@ -4129,6 +4901,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * Update a Webhook
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdWebhooksJobIdResponse postOrgsOrgIdAppsAppIdWebhooksJobId(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdWebhooksJobIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdWebhooksJobIdRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/webhooks/{jobId}", request, null);
@@ -4166,6 +4944,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * Register a new Artefact Version with your organization.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PostOrgsOrgIdArtefactVersionsResponse postOrgsOrgIdArtefactVersions(demo_1.test_1.models.operations.PostOrgsOrgIdArtefactVersionsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdArtefactVersionsRequest.class, baseUrl, "/orgs/{orgId}/artefact-versions", request, null);
@@ -4215,6 +4999,13 @@ public class Public {
         return res;
     }
 
+    /**
+     * Add a new Environment Type
+     * Adds a new Environment Type to an Organization.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PostOrgsOrgIdEnvTypesResponse postOrgsOrgIdEnvTypes(demo_1.test_1.models.operations.PostOrgsOrgIdEnvTypesRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdEnvTypesRequest.class, baseUrl, "/orgs/{orgId}/env-types", request, null);
@@ -4258,6 +5049,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * Adds a User to an Environment Type with a Role
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PostOrgsOrgIdEnvTypesEnvTypeUsersResponse postOrgsOrgIdEnvTypesEnvTypeUsers(demo_1.test_1.models.operations.PostOrgsOrgIdEnvTypesEnvTypeUsersRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdEnvTypesEnvTypeUsersRequest.class, baseUrl, "/orgs/{orgId}/env-types/{envType}/users", request, null);
@@ -4303,6 +5100,17 @@ public class Public {
         return res;
     }
 
+    /**
+     * Add a new Image Build
+     * DEPRECATED: This endpoint exists for historical compatibility and should not be used. Please use the [Artefact API](https://api-docs.humanitec.com/#tag/Artefact) instead.
+     * 
+     * This endpoint is used by Continuous Integration (CI) pipelines to notify Humanitec that a new Image Build is available.
+     * 
+     * If there is no Image with ID `imageId`, it will be automatically created.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PostOrgsOrgIdImagesImageIdBuildsResponse postOrgsOrgIdImagesImageIdBuilds(demo_1.test_1.models.operations.PostOrgsOrgIdImagesImageIdBuildsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdImagesImageIdBuildsRequest.class, baseUrl, "/orgs/{orgId}/images/{imageId}/builds", request, null);
@@ -4340,6 +5148,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * Invites a user to an Organization with a specified role.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PostOrgsOrgIdInvitationsResponse postOrgsOrgIdInvitations(demo_1.test_1.models.operations.PostOrgsOrgIdInvitationsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdInvitationsRequest.class, baseUrl, "/orgs/{orgId}/invitations", request, null);
@@ -4385,6 +5199,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * Creates a new registry record.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PostOrgsOrgIdRegistriesResponse postOrgsOrgIdRegistries(demo_1.test_1.models.operations.PostOrgsOrgIdRegistriesRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdRegistriesRequest.class, baseUrl, "/orgs/{orgId}/registries", request, null);
@@ -4428,6 +5248,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * Create a new Resource Account in the organization.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PostOrgsOrgIdResourcesAccountsResponse postOrgsOrgIdResourcesAccounts(demo_1.test_1.models.operations.PostOrgsOrgIdResourcesAccountsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdResourcesAccountsRequest.class, baseUrl, "/orgs/{orgId}/resources/accounts", request, null);
@@ -4471,6 +5297,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * Create a new Resource Definition.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PostOrgsOrgIdResourcesDefsResponse postOrgsOrgIdResourcesDefs(demo_1.test_1.models.operations.PostOrgsOrgIdResourcesDefsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdResourcesDefsRequest.class, baseUrl, "/orgs/{orgId}/resources/defs", request, null);
@@ -4514,6 +5346,23 @@ public class Public {
         return res;
     }
 
+    /**
+     * Add a new Matching Criteria to a Resource Definition.
+     * Matching Criteria are combined with Resource Type to select a specific definition. Matching Criteria can be set for any combination of Application ID, Environment ID, Environment Type, and Resource ID. In the event of multiple matches, the most specific match is chosen.
+     * 
+     * For example, given 3 sets of matching criteria for the same type:
+     * 
+     * ```
+     *  1. {"env_type":"test"}
+     *  2. {"env_type":"development"}
+     *  3. {"env_type":"test", "app_id":"my-app"}
+     * ```
+     * 
+     * If, a resource of that time was needed in an Application `my-app`, Environment `qa-team` with Type `test` and Resource ID `modules.my-module-externals.my-resource`, there would be two resources definitions matching the criteria: #1 &amp; #3. Definition #3 will be chosen because it's matching criteria is the most specific.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PostOrgsOrgIdResourcesDefsDefIdCriteriaResponse postOrgsOrgIdResourcesDefsDefIdCriteria(demo_1.test_1.models.operations.PostOrgsOrgIdResourcesDefsDefIdCriteriaRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdResourcesDefsDefIdCriteriaRequest.class, baseUrl, "/orgs/{orgId}/resources/defs/{defId}/criteria", request, null);
@@ -4557,6 +5406,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * Register a new Resource Driver.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PostOrgsOrgIdResourcesDriversResponse postOrgsOrgIdResourcesDrivers(demo_1.test_1.models.operations.PostOrgsOrgIdResourcesDriversRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdResourcesDriversRequest.class, baseUrl, "/orgs/{orgId}/resources/drivers", request, null);
@@ -4600,6 +5455,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * Creates a new service user.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PostOrgsOrgIdUsersResponse postOrgsOrgIdUsers(demo_1.test_1.models.operations.PostOrgsOrgIdUsersRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdUsersRequest.class, baseUrl, "/orgs/{orgId}/users", request, null);
@@ -4645,6 +5506,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * Create new Workload Profile
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PostOrgsOrgIdWorkloadProfilesResponse postOrgsOrgIdWorkloadProfiles(demo_1.test_1.models.operations.PostOrgsOrgIdWorkloadProfilesRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdWorkloadProfilesRequest.class, baseUrl, "/orgs/{orgId}/workload-profiles", request, null);
@@ -4688,6 +5555,27 @@ public class Public {
         return res;
     }
 
+    /**
+     * Add new Version of the Workload Profile
+     * Creates a Workload Profile Version from the uploaded Helm chart. The version is retrieved from the chart's metadata (Charts.yaml file).
+     * 
+     * The request has content type `multipart/form-data` and the request body includes two parts:
+     * 
+     * 1. `file` with `application/x-gzip` content type which is an archive containing a Helm chart.
+     * 
+     * 2. `metadata` with `application/json` content type which defines the version's metadata.
+     * 
+     * Request body example:
+     * 
+     * 	Content-Type: multipart/form-data; boundary=----boundary 	----boundary 	Content-Disposition: form-data; name="metadata" 	Content-Type: application/json; charset=UTF-8 	{ 	  "features": { 	     "humanitec/service": {}, 	     "humanitec/volumes": {}, 	     "custom": {"schema": {}} 	  }, 	  "notes": "Notes related to this version of the profile" 	} 	----boundary 	Content-Disposition: form-data; name="file"; filename="my-workload-1.0.1.tgz" 	Content-Type: application/x-gzip 	[TGZ_DATA] 	----boundary
+     * 
+     * **NOTE:**
+     * 
+     * A Workload Profile must be created before a version can be added to it.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PostOrgsOrgIdWorkloadProfilesProfileQidVersionsResponse postOrgsOrgIdWorkloadProfilesProfileQidVersions(demo_1.test_1.models.operations.PostOrgsOrgIdWorkloadProfilesProfileQidVersionsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdWorkloadProfilesProfileQidVersionsRequest.class, baseUrl, "/orgs/{orgId}/workload-profiles/{profileQid}/versions", request, null);
@@ -4731,6 +5619,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * Update an existing Delta
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PutDeltaResponse putDelta(demo_1.test_1.models.operations.PutDeltaRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PutDeltaRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/deltas/{deltaId}", request, null);
@@ -4775,6 +5669,13 @@ public class Public {
         return res;
     }
 
+    /**
+     * Mark a Delta as "archived"
+     * Archived Deltas are still accessible but can no longer be updated.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PutOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataArchivedResponse putOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataArchived(demo_1.test_1.models.operations.PutOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataArchivedRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PutOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataArchivedRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/deltas/{deltaId}/metadata/archived", request, null);
@@ -4819,6 +5720,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * Change the Environment of a Delta
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PutOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataEnvIdResponse putOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataEnvId(demo_1.test_1.models.operations.PutOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataEnvIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PutOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataEnvIdRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/deltas/{deltaId}/metadata/env_id", request, null);
@@ -4863,6 +5770,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * Change the name of a Delta
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PutOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataNameResponse putOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataName(demo_1.test_1.models.operations.PutOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataNameRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PutOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataNameRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/deltas/{deltaId}/metadata/name", request, null);
@@ -4907,6 +5820,21 @@ public class Public {
         return res;
     }
 
+    /**
+     * Rebase to a different Deployment.
+     * Rebasing an Environment means that the next Deployment to the Environment will be based on the Deployment specified in the rebase rather than the last one in the Environment. The Deployment to rebase to can either be current or a previous Deployment. The Deployment can be from any Environment of the same Application.
+     * 
+     * _Running code will only be affected on the next Deployment to the Environment._
+     * 
+     * Common use cases for rebasing an Environment:
+     * 
+     * * _Rollback_: Rebasing to a previous Deployment in the current Environment and then Deploying without additional changes will execute a rollback to the previous Deployment state.
+     * 
+     * * _Clone_: Rebasing to the current Deployment in a different Environment and then deploying without additional changes will clone all of the configuration of the other Environment into the current one. (NOTE: External Resources will not be cloned in the process - the current External Resources of the Environment will remain unchanged and will be used by the deployed Application in the Environment.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PutOrgsOrgIdAppsAppIdEnvsEnvIdFromDeployIdResponse putOrgsOrgIdAppsAppIdEnvsEnvIdFromDeployId(demo_1.test_1.models.operations.PutOrgsOrgIdAppsAppIdEnvsEnvIdFromDeployIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PutOrgsOrgIdAppsAppIdEnvsEnvIdFromDeployIdRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/envs/{envId}/from_deploy_id", request, null);
@@ -4944,6 +5872,13 @@ public class Public {
         return res;
     }
 
+    /**
+     * Update an existing Automation Rule for an Environment.
+     * Items marked as deprecated are still supported (however not recommended) for use and are incompatible with properties of the latest api version. In particular an error is raised if  `images_filter` (deprecated) and `artefacts_filter` are used in the same payload. The same is true for `exclude_images_filter` (deprecated) and `exclude_artefacts_filter`. `match` and `update_to` are still supported but will trigger an error if combined with `match_ref`.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PutOrgsOrgIdAppsAppIdEnvsEnvIdRulesRuleIdResponse putOrgsOrgIdAppsAppIdEnvsEnvIdRulesRuleId(demo_1.test_1.models.operations.PutOrgsOrgIdAppsAppIdEnvsEnvIdRulesRuleIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PutOrgsOrgIdAppsAppIdEnvsEnvIdRulesRuleIdRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/envs/{envId}/rules/{ruleId}", request, null);
@@ -4989,6 +5924,22 @@ public class Public {
         return res;
     }
 
+    /**
+     * Pause / Resume an environment.
+     * On pause requests, all the Kubernetes Deployment resources are scaled down to 0 replicas.
+     * 
+     * On resume requests, all the Kubernetes Deployment resources are scaled up to the number of replicas running before the environment was paused.
+     * 
+     * When an environment is paused, it is not possible to:
+     * 
+     * ```
+     *   - Deploy the environment within Humanitec.
+     *   - Scale the number of replicas running of any workload.
+     * ```
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PutOrgsOrgIdAppsAppIdEnvsEnvIdRuntimePausedResponse putOrgsOrgIdAppsAppIdEnvsEnvIdRuntimePaused(demo_1.test_1.models.operations.PutOrgsOrgIdAppsAppIdEnvsEnvIdRuntimePausedRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PutOrgsOrgIdAppsAppIdEnvsEnvIdRuntimePausedRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/envs/{envId}/runtime/paused", request, null);
@@ -5018,6 +5969,13 @@ public class Public {
         return res;
     }
 
+    /**
+     * Update Shared Value for an Environment
+     * Update the value or description of the Shared Value. Shared Values marked as secret can also be updated.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PutOrgsOrgIdAppsAppIdEnvsEnvIdValuesKeyResponse putOrgsOrgIdAppsAppIdEnvsEnvIdValuesKey(demo_1.test_1.models.operations.PutOrgsOrgIdAppsAppIdEnvsEnvIdValuesKeyRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PutOrgsOrgIdAppsAppIdEnvsEnvIdValuesKeyRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/envs/{envId}/values/{key}", request, null);
@@ -5061,6 +6019,13 @@ public class Public {
         return res;
     }
 
+    /**
+     * Update Shared Value for an Application
+     * Update the value or description of the Shared Value. Shared Values marked as secret can also be updated.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PutOrgsOrgIdAppsAppIdValuesKeyResponse putOrgsOrgIdAppsAppIdValuesKey(demo_1.test_1.models.operations.PutOrgsOrgIdAppsAppIdValuesKeyRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PutOrgsOrgIdAppsAppIdValuesKeyRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/values/{key}", request, null);
@@ -5104,6 +6069,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * Update a Resource Definition.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PutOrgsOrgIdResourcesDefsDefIdResponse putOrgsOrgIdResourcesDefsDefId(demo_1.test_1.models.operations.PutOrgsOrgIdResourcesDefsDefIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PutOrgsOrgIdResourcesDefsDefIdRequest.class, baseUrl, "/orgs/{orgId}/resources/defs/{defId}", request, null);
@@ -5147,6 +6118,12 @@ public class Public {
         return res;
     }
 
+    /**
+     * Update a Resource Driver.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PutOrgsOrgIdResourcesDriversDriverIdResponse putOrgsOrgIdResourcesDriversDriverId(demo_1.test_1.models.operations.PutOrgsOrgIdResourcesDriversDriverIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PutOrgsOrgIdResourcesDriversDriverIdRequest.class, baseUrl, "/orgs/{orgId}/resources/drivers/{driverId}", request, null);

@@ -37,6 +37,12 @@ public class ResourceAccount {
 		this._genVersion = genVersion;
 	}
 
+    /**
+     * List Resource Accounts in the organization.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdResourcesAccountsResponse getOrgsOrgIdResourcesAccounts(demo_1.test_1.models.operations.GetOrgsOrgIdResourcesAccountsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdResourcesAccountsRequest.class, baseUrl, "/orgs/{orgId}/resources/accounts", request, null);
@@ -75,6 +81,12 @@ public class ResourceAccount {
         return res;
     }
 
+    /**
+     * Get a Resource Account.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdResourcesAccountsAccIdResponse getOrgsOrgIdResourcesAccountsAccId(demo_1.test_1.models.operations.GetOrgsOrgIdResourcesAccountsAccIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdResourcesAccountsAccIdRequest.class, baseUrl, "/orgs/{orgId}/resources/accounts/{accId}", request, null);
@@ -113,6 +125,12 @@ public class ResourceAccount {
         return res;
     }
 
+    /**
+     * Update a Resource Account.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PatchOrgsOrgIdResourcesAccountsAccIdResponse patchOrgsOrgIdResourcesAccountsAccId(demo_1.test_1.models.operations.PatchOrgsOrgIdResourcesAccountsAccIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PatchOrgsOrgIdResourcesAccountsAccIdRequest.class, baseUrl, "/orgs/{orgId}/resources/accounts/{accId}", request, null);
@@ -156,6 +174,12 @@ public class ResourceAccount {
         return res;
     }
 
+    /**
+     * Create a new Resource Account in the organization.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PostOrgsOrgIdResourcesAccountsResponse postOrgsOrgIdResourcesAccounts(demo_1.test_1.models.operations.PostOrgsOrgIdResourcesAccountsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdResourcesAccountsRequest.class, baseUrl, "/orgs/{orgId}/resources/accounts", request, null);

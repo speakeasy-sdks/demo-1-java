@@ -46,6 +46,7 @@ public class DeltaRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("id")
     public String id;
+
     public DeltaRequest withId(String id) {
         this.id = id;
         return this;
@@ -54,6 +55,7 @@ public class DeltaRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("metadata")
     public DeltaMetadataRequest metadata;
+
     public DeltaRequest withMetadata(DeltaMetadataRequest metadata) {
         this.metadata = metadata;
         return this;
@@ -65,6 +67,7 @@ public class DeltaRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("modules")
     public ModuleDeltasRequest modules;
+
     public DeltaRequest withModules(ModuleDeltasRequest modules) {
         this.modules = modules;
         return this;
@@ -73,6 +76,7 @@ public class DeltaRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("shared")
     public UpdateActionRequest[] shared;
+
     public DeltaRequest withShared(UpdateActionRequest[] shared) {
         this.shared = shared;
         return this;

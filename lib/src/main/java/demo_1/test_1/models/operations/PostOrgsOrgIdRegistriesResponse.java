@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class PostOrgsOrgIdRegistriesResponse {
     
     public String contentType;
+
     public PostOrgsOrgIdRegistriesResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -22,6 +23,7 @@ public class PostOrgsOrgIdRegistriesResponse {
      */
     
     public demo_1.test_1.models.shared.ErrorInfoResponse errorInfoResponse;
+
     public PostOrgsOrgIdRegistriesResponse withErrorInfoResponse(demo_1.test_1.models.shared.ErrorInfoResponse errorInfoResponse) {
         this.errorInfoResponse = errorInfoResponse;
         return this;
@@ -34,6 +36,7 @@ public class PostOrgsOrgIdRegistriesResponse {
      */
     
     public demo_1.test_1.models.shared.RegistryResponse registryResponse;
+
     public PostOrgsOrgIdRegistriesResponse withRegistryResponse(demo_1.test_1.models.shared.RegistryResponse registryResponse) {
         this.registryResponse = registryResponse;
         return this;
@@ -41,6 +44,7 @@ public class PostOrgsOrgIdRegistriesResponse {
     
     
     public Integer statusCode;
+
     public PostOrgsOrgIdRegistriesResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -48,6 +52,7 @@ public class PostOrgsOrgIdRegistriesResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public PostOrgsOrgIdRegistriesResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;

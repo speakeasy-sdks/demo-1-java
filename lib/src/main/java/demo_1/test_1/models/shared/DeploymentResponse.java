@@ -19,6 +19,7 @@ public class DeploymentResponse {
      */
     @JsonProperty("comment")
     public String comment;
+
     public DeploymentResponse withComment(String comment) {
         this.comment = comment;
         return this;
@@ -29,6 +30,7 @@ public class DeploymentResponse {
      */
     @JsonProperty("created_at")
     public String createdAt;
+
     public DeploymentResponse withCreatedAt(String createdAt) {
         this.createdAt = createdAt;
         return this;
@@ -39,6 +41,7 @@ public class DeploymentResponse {
      */
     @JsonProperty("created_by")
     public String createdBy;
+
     public DeploymentResponse withCreatedBy(String createdBy) {
         this.createdBy = createdBy;
         return this;
@@ -50,6 +53,7 @@ public class DeploymentResponse {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("delta_id")
     public String deltaId;
+
     public DeploymentResponse withDeltaId(String deltaId) {
         this.deltaId = deltaId;
         return this;
@@ -60,6 +64,7 @@ public class DeploymentResponse {
      */
     @JsonProperty("env_id")
     public String envId;
+
     public DeploymentResponse withEnvId(String envId) {
         this.envId = envId;
         return this;
@@ -67,6 +72,7 @@ public class DeploymentResponse {
     
     @JsonProperty("export_file")
     public String exportFile;
+
     public DeploymentResponse withExportFile(String exportFile) {
         this.exportFile = exportFile;
         return this;
@@ -74,6 +80,7 @@ public class DeploymentResponse {
     
     @JsonProperty("export_status")
     public String exportStatus;
+
     public DeploymentResponse withExportStatus(String exportStatus) {
         this.exportStatus = exportStatus;
         return this;
@@ -84,6 +91,7 @@ public class DeploymentResponse {
      */
     @JsonProperty("from_id")
     public String fromId;
+
     public DeploymentResponse withFromId(String fromId) {
         this.fromId = fromId;
         return this;
@@ -94,6 +102,7 @@ public class DeploymentResponse {
      */
     @JsonProperty("id")
     public String id;
+
     public DeploymentResponse withId(String id) {
         this.id = id;
         return this;
@@ -104,6 +113,7 @@ public class DeploymentResponse {
      */
     @JsonProperty("set_id")
     public String setId;
+
     public DeploymentResponse withSetId(String setId) {
         this.setId = setId;
         return this;
@@ -114,6 +124,7 @@ public class DeploymentResponse {
      */
     @JsonProperty("status")
     public String status;
+
     public DeploymentResponse withStatus(String status) {
         this.status = status;
         return this;
@@ -124,6 +135,7 @@ public class DeploymentResponse {
      */
     @JsonProperty("status_changed_at")
     public String statusChangedAt;
+
     public DeploymentResponse withStatusChangedAt(String statusChangedAt) {
         this.statusChangedAt = statusChangedAt;
         return this;
@@ -135,6 +147,7 @@ public class DeploymentResponse {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("value_set_version_id")
     public String valueSetVersionId;
+
     public DeploymentResponse withValueSetVersionId(String valueSetVersionId) {
         this.valueSetVersionId = valueSetVersionId;
         return this;

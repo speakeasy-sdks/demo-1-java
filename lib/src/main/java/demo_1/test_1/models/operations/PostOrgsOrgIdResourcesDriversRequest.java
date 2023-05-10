@@ -15,6 +15,7 @@ public class PostOrgsOrgIdResourcesDriversRequest {
      */
     @SpeakeasyMetadata("request:mediaType=application/json")
     public demo_1.test_1.models.shared.CreateDriverRequestRequest createDriverRequestRequest;
+
     public PostOrgsOrgIdResourcesDriversRequest withCreateDriverRequestRequest(demo_1.test_1.models.shared.CreateDriverRequestRequest createDriverRequestRequest) {
         this.createDriverRequestRequest = createDriverRequestRequest;
         return this;
@@ -27,6 +28,7 @@ public class PostOrgsOrgIdResourcesDriversRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public PostOrgsOrgIdResourcesDriversRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;

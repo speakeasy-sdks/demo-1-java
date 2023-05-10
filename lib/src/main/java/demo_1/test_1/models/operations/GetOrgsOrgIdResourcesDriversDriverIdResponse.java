@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class GetOrgsOrgIdResourcesDriversDriverIdResponse {
     
     public String contentType;
+
     public GetOrgsOrgIdResourcesDriversDriverIdResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -22,6 +23,7 @@ public class GetOrgsOrgIdResourcesDriversDriverIdResponse {
      */
     
     public demo_1.test_1.models.shared.DriverDefinitionResponse driverDefinitionResponse;
+
     public GetOrgsOrgIdResourcesDriversDriverIdResponse withDriverDefinitionResponse(demo_1.test_1.models.shared.DriverDefinitionResponse driverDefinitionResponse) {
         this.driverDefinitionResponse = driverDefinitionResponse;
         return this;
@@ -34,6 +36,7 @@ public class GetOrgsOrgIdResourcesDriversDriverIdResponse {
      */
     
     public demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse;
+
     public GetOrgsOrgIdResourcesDriversDriverIdResponse withHumanitecErrorResponse(demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse) {
         this.humanitecErrorResponse = humanitecErrorResponse;
         return this;
@@ -41,6 +44,7 @@ public class GetOrgsOrgIdResourcesDriversDriverIdResponse {
     
     
     public Integer statusCode;
+
     public GetOrgsOrgIdResourcesDriversDriverIdResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -48,6 +52,7 @@ public class GetOrgsOrgIdResourcesDriversDriverIdResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public GetOrgsOrgIdResourcesDriversDriverIdResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;

@@ -17,6 +17,7 @@ public class EnvironmentDefinitionRequest {
      */
     @JsonProperty("from_deploy_id")
     public String fromDeployId;
+
     public EnvironmentDefinitionRequest withFromDeployId(String fromDeployId) {
         this.fromDeployId = fromDeployId;
         return this;
@@ -27,6 +28,7 @@ public class EnvironmentDefinitionRequest {
      */
     @JsonProperty("id")
     public String id;
+
     public EnvironmentDefinitionRequest withId(String id) {
         this.id = id;
         return this;
@@ -37,6 +39,7 @@ public class EnvironmentDefinitionRequest {
      */
     @JsonProperty("name")
     public String name;
+
     public EnvironmentDefinitionRequest withName(String name) {
         this.name = name;
         return this;
@@ -47,6 +50,7 @@ public class EnvironmentDefinitionRequest {
      */
     @JsonProperty("type")
     public String type;
+
     public EnvironmentDefinitionRequest withType(String type) {
         this.type = type;
         return this;

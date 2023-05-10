@@ -17,6 +17,7 @@ public class UserInviteResponse {
      */
     @JsonProperty("created_at")
     public String createdAt;
+
     public UserInviteResponse withCreatedAt(String createdAt) {
         this.createdAt = createdAt;
         return this;
@@ -27,6 +28,7 @@ public class UserInviteResponse {
      */
     @JsonProperty("created_by")
     public String createdBy;
+
     public UserInviteResponse withCreatedBy(String createdBy) {
         this.createdBy = createdBy;
         return this;
@@ -38,6 +40,7 @@ public class UserInviteResponse {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("email")
     public String email;
+
     public UserInviteResponse withEmail(String email) {
         this.email = email;
         return this;
@@ -48,6 +51,7 @@ public class UserInviteResponse {
      */
     @JsonProperty("expires_at")
     public String expiresAt;
+
     public UserInviteResponse withExpiresAt(String expiresAt) {
         this.expiresAt = expiresAt;
         return this;
@@ -58,6 +62,7 @@ public class UserInviteResponse {
      */
     @JsonProperty("user_id")
     public String userId;
+
     public UserInviteResponse withUserId(String userId) {
         this.userId = userId;
         return this;

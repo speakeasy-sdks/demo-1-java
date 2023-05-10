@@ -23,6 +23,7 @@ public class ValueResponse {
     @JsonDeserialize(using = DateTimeDeserializer.class)
     @JsonProperty("created_at")
     public OffsetDateTime createdAt;
+
     public ValueResponse withCreatedAt(OffsetDateTime createdAt) {
         this.createdAt = createdAt;
         return this;
@@ -33,6 +34,7 @@ public class ValueResponse {
      */
     @JsonProperty("description")
     public String description;
+
     public ValueResponse withDescription(String description) {
         this.description = description;
         return this;
@@ -43,6 +45,7 @@ public class ValueResponse {
      */
     @JsonProperty("is_secret")
     public Boolean isSecret;
+
     public ValueResponse withIsSecret(Boolean isSecret) {
         this.isSecret = isSecret;
         return this;
@@ -53,6 +56,7 @@ public class ValueResponse {
      */
     @JsonProperty("key")
     public String key;
+
     public ValueResponse withKey(String key) {
         this.key = key;
         return this;
@@ -63,6 +67,7 @@ public class ValueResponse {
      */
     @JsonProperty("secret_key")
     public String secretKey;
+
     public ValueResponse withSecretKey(String secretKey) {
         this.secretKey = secretKey;
         return this;
@@ -73,6 +78,7 @@ public class ValueResponse {
      */
     @JsonProperty("secret_version")
     public String secretVersion;
+
     public ValueResponse withSecretVersion(String secretVersion) {
         this.secretVersion = secretVersion;
         return this;
@@ -83,6 +89,7 @@ public class ValueResponse {
      */
     @JsonProperty("source")
     public ValueSourceEnum source;
+
     public ValueResponse withSource(ValueSourceEnum source) {
         this.source = source;
         return this;
@@ -92,6 +99,7 @@ public class ValueResponse {
     @JsonDeserialize(using = DateTimeDeserializer.class)
     @JsonProperty("updated_at")
     public OffsetDateTime updatedAt;
+
     public ValueResponse withUpdatedAt(OffsetDateTime updatedAt) {
         this.updatedAt = updatedAt;
         return this;
@@ -102,6 +110,7 @@ public class ValueResponse {
      */
     @JsonProperty("value")
     public String value;
+
     public ValueResponse withValue(String value) {
         this.value = value;
         return this;

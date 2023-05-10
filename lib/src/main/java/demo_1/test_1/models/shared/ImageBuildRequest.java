@@ -20,6 +20,7 @@ public class ImageBuildRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("branch")
     public String branch;
+
     public ImageBuildRequest withBranch(String branch) {
         this.branch = branch;
         return this;
@@ -31,6 +32,7 @@ public class ImageBuildRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("commit")
     public String commit;
+
     public ImageBuildRequest withCommit(String commit) {
         this.commit = commit;
         return this;
@@ -42,6 +44,7 @@ public class ImageBuildRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("image")
     public String image;
+
     public ImageBuildRequest withImage(String image) {
         this.image = image;
         return this;
@@ -53,6 +56,7 @@ public class ImageBuildRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("tags")
     public String[] tags;
+
     public ImageBuildRequest withTags(String[] tags) {
         this.tags = tags;
         return this;

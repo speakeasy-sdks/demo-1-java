@@ -15,6 +15,7 @@ public class PostOrgsOrgIdAppsAppIdEnvsEnvIdRulesRequest {
      */
     @SpeakeasyMetadata("request:mediaType=application/json")
     public demo_1.test_1.models.shared.AutomationRuleRequest automationRuleRequest;
+
     public PostOrgsOrgIdAppsAppIdEnvsEnvIdRulesRequest withAutomationRuleRequest(demo_1.test_1.models.shared.AutomationRuleRequest automationRuleRequest) {
         this.automationRuleRequest = automationRuleRequest;
         return this;
@@ -27,6 +28,7 @@ public class PostOrgsOrgIdAppsAppIdEnvsEnvIdRulesRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=appId")
     public String appId;
+
     public PostOrgsOrgIdAppsAppIdEnvsEnvIdRulesRequest withAppId(String appId) {
         this.appId = appId;
         return this;
@@ -39,6 +41,7 @@ public class PostOrgsOrgIdAppsAppIdEnvsEnvIdRulesRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=envId")
     public String envId;
+
     public PostOrgsOrgIdAppsAppIdEnvsEnvIdRulesRequest withEnvId(String envId) {
         this.envId = envId;
         return this;
@@ -51,6 +54,7 @@ public class PostOrgsOrgIdAppsAppIdEnvsEnvIdRulesRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public PostOrgsOrgIdAppsAppIdEnvsEnvIdRulesRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;

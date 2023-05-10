@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class GetOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionIdResponse {
     
     public String contentType;
+
     public GetOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionIdResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -22,6 +23,7 @@ public class GetOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionIdResponse {
      */
     
     public demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse;
+
     public GetOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionIdResponse withHumanitecErrorResponse(demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse) {
         this.humanitecErrorResponse = humanitecErrorResponse;
         return this;
@@ -29,6 +31,7 @@ public class GetOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionIdResponse {
     
     
     public Integer statusCode;
+
     public GetOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionIdResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -36,6 +39,7 @@ public class GetOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionIdResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public GetOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionIdResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;
@@ -48,6 +52,7 @@ public class GetOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionIdResponse {
      */
     
     public demo_1.test_1.models.shared.ValueSetVersionResponse valueSetVersionResponse;
+
     public GetOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionIdResponse withValueSetVersionResponse(demo_1.test_1.models.shared.ValueSetVersionResponse valueSetVersionResponse) {
         this.valueSetVersionResponse = valueSetVersionResponse;
         return this;

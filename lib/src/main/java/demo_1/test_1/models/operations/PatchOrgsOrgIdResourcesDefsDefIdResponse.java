@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class PatchOrgsOrgIdResourcesDefsDefIdResponse {
     
     public String contentType;
+
     public PatchOrgsOrgIdResourcesDefsDefIdResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -22,6 +23,7 @@ public class PatchOrgsOrgIdResourcesDefsDefIdResponse {
      */
     
     public demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse;
+
     public PatchOrgsOrgIdResourcesDefsDefIdResponse withHumanitecErrorResponse(demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse) {
         this.humanitecErrorResponse = humanitecErrorResponse;
         return this;
@@ -34,6 +36,7 @@ public class PatchOrgsOrgIdResourcesDefsDefIdResponse {
      */
     
     public demo_1.test_1.models.shared.ResourceDefinitionResponse resourceDefinitionResponse;
+
     public PatchOrgsOrgIdResourcesDefsDefIdResponse withResourceDefinitionResponse(demo_1.test_1.models.shared.ResourceDefinitionResponse resourceDefinitionResponse) {
         this.resourceDefinitionResponse = resourceDefinitionResponse;
         return this;
@@ -41,6 +44,7 @@ public class PatchOrgsOrgIdResourcesDefsDefIdResponse {
     
     
     public Integer statusCode;
+
     public PatchOrgsOrgIdResourcesDefsDefIdResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -48,6 +52,7 @@ public class PatchOrgsOrgIdResourcesDefsDefIdResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public PatchOrgsOrgIdResourcesDefsDefIdResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;

@@ -15,6 +15,7 @@ public class PostOrgsOrgIdWorkloadProfilesProfileQidVersionsRequest {
      */
     @SpeakeasyMetadata("request:mediaType=multipart/form-data")
     public PostOrgsOrgIdWorkloadProfilesProfileQidVersionsRequestBody requestBody;
+
     public PostOrgsOrgIdWorkloadProfilesProfileQidVersionsRequest withRequestBody(PostOrgsOrgIdWorkloadProfilesProfileQidVersionsRequestBody requestBody) {
         this.requestBody = requestBody;
         return this;
@@ -27,6 +28,7 @@ public class PostOrgsOrgIdWorkloadProfilesProfileQidVersionsRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public PostOrgsOrgIdWorkloadProfilesProfileQidVersionsRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;
@@ -39,6 +41,7 @@ public class PostOrgsOrgIdWorkloadProfilesProfileQidVersionsRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=profileQid")
     public String profileQid;
+
     public PostOrgsOrgIdWorkloadProfilesProfileQidVersionsRequest withProfileQid(String profileQid) {
         this.profileQid = profileQid;
         return this;

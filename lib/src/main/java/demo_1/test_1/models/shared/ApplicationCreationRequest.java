@@ -17,6 +17,7 @@ public class ApplicationCreationRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("env")
     public EnvironmentBaseRequest env;
+
     public ApplicationCreationRequest withEnv(EnvironmentBaseRequest env) {
         this.env = env;
         return this;
@@ -27,6 +28,7 @@ public class ApplicationCreationRequest {
      */
     @JsonProperty("id")
     public String id;
+
     public ApplicationCreationRequest withId(String id) {
         this.id = id;
         return this;
@@ -37,6 +39,7 @@ public class ApplicationCreationRequest {
      */
     @JsonProperty("name")
     public String name;
+
     public ApplicationCreationRequest withName(String name) {
         this.name = name;
         return this;

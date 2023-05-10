@@ -18,6 +18,7 @@ public class CreateResourceAccountRequestRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("credentials")
     public java.util.Map<String, Object> credentials;
+
     public CreateResourceAccountRequestRequest withCredentials(java.util.Map<String, Object> credentials) {
         this.credentials = credentials;
         return this;
@@ -29,6 +30,7 @@ public class CreateResourceAccountRequestRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("id")
     public String id;
+
     public CreateResourceAccountRequestRequest withId(String id) {
         this.id = id;
         return this;
@@ -40,6 +42,7 @@ public class CreateResourceAccountRequestRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("name")
     public String name;
+
     public CreateResourceAccountRequestRequest withName(String name) {
         this.name = name;
         return this;
@@ -51,6 +54,7 @@ public class CreateResourceAccountRequestRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("type")
     public String type;
+
     public CreateResourceAccountRequestRequest withType(String type) {
         this.type = type;
         return this;

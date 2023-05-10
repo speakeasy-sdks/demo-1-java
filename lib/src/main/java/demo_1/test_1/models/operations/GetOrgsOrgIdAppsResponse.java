@@ -13,6 +13,7 @@ public class GetOrgsOrgIdAppsResponse {
      */
     
     public demo_1.test_1.models.shared.ApplicationResponse[] applicationResponses;
+
     public GetOrgsOrgIdAppsResponse withApplicationResponses(demo_1.test_1.models.shared.ApplicationResponse[] applicationResponses) {
         this.applicationResponses = applicationResponses;
         return this;
@@ -20,6 +21,7 @@ public class GetOrgsOrgIdAppsResponse {
     
     
     public String contentType;
+
     public GetOrgsOrgIdAppsResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -27,6 +29,7 @@ public class GetOrgsOrgIdAppsResponse {
     
     
     public Integer statusCode;
+
     public GetOrgsOrgIdAppsResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -34,6 +37,7 @@ public class GetOrgsOrgIdAppsResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public GetOrgsOrgIdAppsResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;

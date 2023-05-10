@@ -15,6 +15,7 @@ public class GetOrgsOrgIdAppsAppIdRuntimeRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=appId")
     public String appId;
+
     public GetOrgsOrgIdAppsAppIdRuntimeRequest withAppId(String appId) {
         this.appId = appId;
         return this;
@@ -27,6 +28,7 @@ public class GetOrgsOrgIdAppsAppIdRuntimeRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=id")
     public String id;
+
     public GetOrgsOrgIdAppsAppIdRuntimeRequest withId(String id) {
         this.id = id;
         return this;
@@ -39,6 +41,7 @@ public class GetOrgsOrgIdAppsAppIdRuntimeRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public GetOrgsOrgIdAppsAppIdRuntimeRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;

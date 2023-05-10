@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class GetOrgsOrgIdAppsAppIdValueSetVersionsResponse {
     
     public String contentType;
+
     public GetOrgsOrgIdAppsAppIdValueSetVersionsResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -17,6 +18,7 @@ public class GetOrgsOrgIdAppsAppIdValueSetVersionsResponse {
     
     
     public Integer statusCode;
+
     public GetOrgsOrgIdAppsAppIdValueSetVersionsResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -24,6 +26,7 @@ public class GetOrgsOrgIdAppsAppIdValueSetVersionsResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public GetOrgsOrgIdAppsAppIdValueSetVersionsResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;
@@ -36,6 +39,7 @@ public class GetOrgsOrgIdAppsAppIdValueSetVersionsResponse {
      */
     
     public demo_1.test_1.models.shared.ValueSetVersionResponse[] valueSetVersionResponses;
+
     public GetOrgsOrgIdAppsAppIdValueSetVersionsResponse withValueSetVersionResponses(demo_1.test_1.models.shared.ValueSetVersionResponse[] valueSetVersionResponses) {
         this.valueSetVersionResponses = valueSetVersionResponses;
         return this;

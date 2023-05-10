@@ -10,6 +10,7 @@ import demo_1.test_1.utils.SpeakeasyMetadata;
 public class PostOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionIdRestoreKeyRequest {
     @SpeakeasyMetadata("request:mediaType=application/json")
     public demo_1.test_1.models.shared.ValueSetActionPayloadRequest valueSetActionPayloadRequest;
+
     public PostOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionIdRestoreKeyRequest withValueSetActionPayloadRequest(demo_1.test_1.models.shared.ValueSetActionPayloadRequest valueSetActionPayloadRequest) {
         this.valueSetActionPayloadRequest = valueSetActionPayloadRequest;
         return this;
@@ -22,6 +23,7 @@ public class PostOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionIdRestoreKeyRe
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=appId")
     public String appId;
+
     public PostOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionIdRestoreKeyRequest withAppId(String appId) {
         this.appId = appId;
         return this;
@@ -34,6 +36,7 @@ public class PostOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionIdRestoreKeyRe
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=key")
     public String key;
+
     public PostOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionIdRestoreKeyRequest withKey(String key) {
         this.key = key;
         return this;
@@ -46,6 +49,7 @@ public class PostOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionIdRestoreKeyRe
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public PostOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionIdRestoreKeyRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;
@@ -58,6 +62,7 @@ public class PostOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionIdRestoreKeyRe
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=valueSetVersionId")
     public String valueSetVersionId;
+
     public PostOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionIdRestoreKeyRequest withValueSetVersionId(String valueSetVersionId) {
         this.valueSetVersionId = valueSetVersionId;
         return this;

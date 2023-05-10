@@ -10,6 +10,7 @@ import demo_1.test_1.utils.SpeakeasyMetadata;
 public class PostOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsValueSetVersionIdRestoreKeyRequest {
     @SpeakeasyMetadata("request:mediaType=application/json")
     public demo_1.test_1.models.shared.ValueSetActionPayloadRequest valueSetActionPayloadRequest;
+
     public PostOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsValueSetVersionIdRestoreKeyRequest withValueSetActionPayloadRequest(demo_1.test_1.models.shared.ValueSetActionPayloadRequest valueSetActionPayloadRequest) {
         this.valueSetActionPayloadRequest = valueSetActionPayloadRequest;
         return this;
@@ -22,6 +23,7 @@ public class PostOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsValueSetVersionIdRes
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=appId")
     public String appId;
+
     public PostOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsValueSetVersionIdRestoreKeyRequest withAppId(String appId) {
         this.appId = appId;
         return this;
@@ -34,6 +36,7 @@ public class PostOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsValueSetVersionIdRes
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=envId")
     public String envId;
+
     public PostOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsValueSetVersionIdRestoreKeyRequest withEnvId(String envId) {
         this.envId = envId;
         return this;
@@ -46,6 +49,7 @@ public class PostOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsValueSetVersionIdRes
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=key")
     public String key;
+
     public PostOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsValueSetVersionIdRestoreKeyRequest withKey(String key) {
         this.key = key;
         return this;
@@ -58,6 +62,7 @@ public class PostOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsValueSetVersionIdRes
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public PostOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsValueSetVersionIdRestoreKeyRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;
@@ -70,6 +75,7 @@ public class PostOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsValueSetVersionIdRes
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=valueSetVersionId")
     public String valueSetVersionId;
+
     public PostOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsValueSetVersionIdRestoreKeyRequest withValueSetVersionId(String valueSetVersionId) {
         this.valueSetVersionId = valueSetVersionId;
         return this;

@@ -18,6 +18,7 @@ public class AutomationRuleRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("active")
     public Boolean active;
+
     public AutomationRuleRequest withActive(Boolean active) {
         this.active = active;
         return this;
@@ -29,6 +30,7 @@ public class AutomationRuleRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("artefacts_filter")
     public String[] artefactsFilter;
+
     public AutomationRuleRequest withArtefactsFilter(String[] artefactsFilter) {
         this.artefactsFilter = artefactsFilter;
         return this;
@@ -40,6 +42,7 @@ public class AutomationRuleRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("exclude_artefacts_filter")
     public Boolean excludeArtefactsFilter;
+
     public AutomationRuleRequest withExcludeArtefactsFilter(Boolean excludeArtefactsFilter) {
         this.excludeArtefactsFilter = excludeArtefactsFilter;
         return this;
@@ -51,6 +54,7 @@ public class AutomationRuleRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("exclude_images_filter")
     public Boolean excludeImagesFilter;
+
     public AutomationRuleRequest withExcludeImagesFilter(Boolean excludeImagesFilter) {
         this.excludeImagesFilter = excludeImagesFilter;
         return this;
@@ -62,6 +66,7 @@ public class AutomationRuleRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("images_filter")
     public String[] imagesFilter;
+
     public AutomationRuleRequest withImagesFilter(String[] imagesFilter) {
         this.imagesFilter = imagesFilter;
         return this;
@@ -73,6 +78,7 @@ public class AutomationRuleRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("match")
     public String match;
+
     public AutomationRuleRequest withMatch(String match) {
         this.match = match;
         return this;
@@ -84,6 +90,7 @@ public class AutomationRuleRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("match_ref")
     public String matchRef;
+
     public AutomationRuleRequest withMatchRef(String matchRef) {
         this.matchRef = matchRef;
         return this;
@@ -94,6 +101,7 @@ public class AutomationRuleRequest {
      */
     @JsonProperty("type")
     public String type;
+
     public AutomationRuleRequest withType(String type) {
         this.type = type;
         return this;
@@ -105,6 +113,7 @@ public class AutomationRuleRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("update_to")
     public String updateTo;
+
     public AutomationRuleRequest withUpdateTo(String updateTo) {
         this.updateTo = updateTo;
         return this;

@@ -18,6 +18,7 @@ public class WebhookRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("disabled")
     public Boolean disabled;
+
     public WebhookRequest withDisabled(Boolean disabled) {
         this.disabled = disabled;
         return this;
@@ -26,6 +27,7 @@ public class WebhookRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("headers")
     public java.util.Map<String, Object> headers;
+
     public WebhookRequest withHeaders(java.util.Map<String, Object> headers) {
         this.headers = headers;
         return this;
@@ -37,6 +39,7 @@ public class WebhookRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("id")
     public String id;
+
     public WebhookRequest withId(String id) {
         this.id = id;
         return this;
@@ -45,6 +48,7 @@ public class WebhookRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("payload")
     public java.util.Map<String, Object> payload;
+
     public WebhookRequest withPayload(java.util.Map<String, Object> payload) {
         this.payload = payload;
         return this;
@@ -56,6 +60,7 @@ public class WebhookRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("triggers")
     public EventBaseRequest[] triggers;
+
     public WebhookRequest withTriggers(EventBaseRequest[] triggers) {
         this.triggers = triggers;
         return this;
@@ -67,6 +72,7 @@ public class WebhookRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("url")
     public String url;
+
     public WebhookRequest withUrl(String url) {
         this.url = url;
         return this;

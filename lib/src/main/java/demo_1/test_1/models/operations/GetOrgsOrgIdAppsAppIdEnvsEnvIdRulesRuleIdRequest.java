@@ -15,6 +15,7 @@ public class GetOrgsOrgIdAppsAppIdEnvsEnvIdRulesRuleIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=appId")
     public String appId;
+
     public GetOrgsOrgIdAppsAppIdEnvsEnvIdRulesRuleIdRequest withAppId(String appId) {
         this.appId = appId;
         return this;
@@ -27,6 +28,7 @@ public class GetOrgsOrgIdAppsAppIdEnvsEnvIdRulesRuleIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=envId")
     public String envId;
+
     public GetOrgsOrgIdAppsAppIdEnvsEnvIdRulesRuleIdRequest withEnvId(String envId) {
         this.envId = envId;
         return this;
@@ -39,6 +41,7 @@ public class GetOrgsOrgIdAppsAppIdEnvsEnvIdRulesRuleIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public GetOrgsOrgIdAppsAppIdEnvsEnvIdRulesRuleIdRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;
@@ -51,6 +54,7 @@ public class GetOrgsOrgIdAppsAppIdEnvsEnvIdRulesRuleIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=ruleId")
     public String ruleId;
+
     public GetOrgsOrgIdAppsAppIdEnvsEnvIdRulesRuleIdRequest withRuleId(String ruleId) {
         this.ruleId = ruleId;
         return this;

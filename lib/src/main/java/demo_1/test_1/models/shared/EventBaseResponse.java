@@ -15,6 +15,7 @@ public class EventBaseResponse {
      */
     @JsonProperty("scope")
     public String scope;
+
     public EventBaseResponse withScope(String scope) {
         this.scope = scope;
         return this;
@@ -25,6 +26,7 @@ public class EventBaseResponse {
      */
     @JsonProperty("type")
     public String type;
+
     public EventBaseResponse withType(String type) {
         this.type = type;
         return this;

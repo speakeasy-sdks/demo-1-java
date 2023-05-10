@@ -20,6 +20,7 @@ public class DeploymentRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("comment")
     public String comment;
+
     public DeploymentRequest withComment(String comment) {
         this.comment = comment;
         return this;
@@ -31,6 +32,7 @@ public class DeploymentRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("delta_id")
     public String deltaId;
+
     public DeploymentRequest withDeltaId(String deltaId) {
         this.deltaId = deltaId;
         return this;
@@ -42,6 +44,7 @@ public class DeploymentRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("value_set_version_id")
     public String valueSetVersionId;
+
     public DeploymentRequest withValueSetVersionId(String valueSetVersionId) {
         this.valueSetVersionId = valueSetVersionId;
         return this;

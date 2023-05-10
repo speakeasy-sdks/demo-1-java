@@ -15,6 +15,7 @@ public class PostOrgsOrgIdEnvTypesRequest {
      */
     @SpeakeasyMetadata("request:mediaType=application/json")
     public demo_1.test_1.models.shared.EnvironmentTypeRequest environmentTypeRequest;
+
     public PostOrgsOrgIdEnvTypesRequest withEnvironmentTypeRequest(demo_1.test_1.models.shared.EnvironmentTypeRequest environmentTypeRequest) {
         this.environmentTypeRequest = environmentTypeRequest;
         return this;
@@ -27,6 +28,7 @@ public class PostOrgsOrgIdEnvTypesRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public PostOrgsOrgIdEnvTypesRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;

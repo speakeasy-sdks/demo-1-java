@@ -15,6 +15,7 @@ public class PostOrgsOrgIdResourcesDefsDefIdCriteriaRequest {
      */
     @SpeakeasyMetadata("request:mediaType=application/json")
     public demo_1.test_1.models.shared.MatchingCriteriaRuleRequest matchingCriteriaRuleRequest;
+
     public PostOrgsOrgIdResourcesDefsDefIdCriteriaRequest withMatchingCriteriaRuleRequest(demo_1.test_1.models.shared.MatchingCriteriaRuleRequest matchingCriteriaRuleRequest) {
         this.matchingCriteriaRuleRequest = matchingCriteriaRuleRequest;
         return this;
@@ -27,6 +28,7 @@ public class PostOrgsOrgIdResourcesDefsDefIdCriteriaRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=defId")
     public String defId;
+
     public PostOrgsOrgIdResourcesDefsDefIdCriteriaRequest withDefId(String defId) {
         this.defId = defId;
         return this;
@@ -39,6 +41,7 @@ public class PostOrgsOrgIdResourcesDefsDefIdCriteriaRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public PostOrgsOrgIdResourcesDefsDefIdCriteriaRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;

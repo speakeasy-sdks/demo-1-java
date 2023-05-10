@@ -15,6 +15,7 @@ public class GetOrgsOrgIdResourcesAccountTypesResponse {
      */
     
     public demo_1.test_1.models.shared.AccountTypeResponse[] accountTypeResponses;
+
     public GetOrgsOrgIdResourcesAccountTypesResponse withAccountTypeResponses(demo_1.test_1.models.shared.AccountTypeResponse[] accountTypeResponses) {
         this.accountTypeResponses = accountTypeResponses;
         return this;
@@ -22,6 +23,7 @@ public class GetOrgsOrgIdResourcesAccountTypesResponse {
     
     
     public String contentType;
+
     public GetOrgsOrgIdResourcesAccountTypesResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -34,6 +36,7 @@ public class GetOrgsOrgIdResourcesAccountTypesResponse {
      */
     
     public demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse;
+
     public GetOrgsOrgIdResourcesAccountTypesResponse withHumanitecErrorResponse(demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse) {
         this.humanitecErrorResponse = humanitecErrorResponse;
         return this;
@@ -41,6 +44,7 @@ public class GetOrgsOrgIdResourcesAccountTypesResponse {
     
     
     public Integer statusCode;
+
     public GetOrgsOrgIdResourcesAccountTypesResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -48,6 +52,7 @@ public class GetOrgsOrgIdResourcesAccountTypesResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public GetOrgsOrgIdResourcesAccountTypesResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;

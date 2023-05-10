@@ -15,6 +15,7 @@ public class ModuleDeltasRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("add")
     public java.util.Map<String, java.util.Map<String, ControllerRequest>> add;
+
     public ModuleDeltasRequest withAdd(java.util.Map<String, java.util.Map<String, ControllerRequest>> add) {
         this.add = add;
         return this;
@@ -23,6 +24,7 @@ public class ModuleDeltasRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("remove")
     public String[] remove;
+
     public ModuleDeltasRequest withRemove(String[] remove) {
         this.remove = remove;
         return this;
@@ -31,6 +33,7 @@ public class ModuleDeltasRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("update")
     public java.util.Map<String, UpdateActionRequest[]> update;
+
     public ModuleDeltasRequest withUpdate(java.util.Map<String, UpdateActionRequest[]> update) {
         this.update = update;
         return this;

@@ -15,6 +15,7 @@ public class GetOrgsOrgIdAppsAppIdEnvsEnvIdRulesRuleIdResponse {
      */
     
     public demo_1.test_1.models.shared.AutomationRuleResponse automationRuleResponse;
+
     public GetOrgsOrgIdAppsAppIdEnvsEnvIdRulesRuleIdResponse withAutomationRuleResponse(demo_1.test_1.models.shared.AutomationRuleResponse automationRuleResponse) {
         this.automationRuleResponse = automationRuleResponse;
         return this;
@@ -22,6 +23,7 @@ public class GetOrgsOrgIdAppsAppIdEnvsEnvIdRulesRuleIdResponse {
     
     
     public String contentType;
+
     public GetOrgsOrgIdAppsAppIdEnvsEnvIdRulesRuleIdResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -29,6 +31,7 @@ public class GetOrgsOrgIdAppsAppIdEnvsEnvIdRulesRuleIdResponse {
     
     
     public Integer statusCode;
+
     public GetOrgsOrgIdAppsAppIdEnvsEnvIdRulesRuleIdResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -36,6 +39,7 @@ public class GetOrgsOrgIdAppsAppIdEnvsEnvIdRulesRuleIdResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public GetOrgsOrgIdAppsAppIdEnvsEnvIdRulesRuleIdResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;

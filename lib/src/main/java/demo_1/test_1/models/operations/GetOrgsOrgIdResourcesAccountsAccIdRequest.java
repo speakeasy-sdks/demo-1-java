@@ -15,6 +15,7 @@ public class GetOrgsOrgIdResourcesAccountsAccIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=accId")
     public String accId;
+
     public GetOrgsOrgIdResourcesAccountsAccIdRequest withAccId(String accId) {
         this.accId = accId;
         return this;
@@ -27,6 +28,7 @@ public class GetOrgsOrgIdResourcesAccountsAccIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public GetOrgsOrgIdResourcesAccountsAccIdRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;

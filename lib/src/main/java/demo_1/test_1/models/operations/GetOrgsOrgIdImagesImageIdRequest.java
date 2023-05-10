@@ -15,6 +15,7 @@ public class GetOrgsOrgIdImagesImageIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=imageId")
     public String imageId;
+
     public GetOrgsOrgIdImagesImageIdRequest withImageId(String imageId) {
         this.imageId = imageId;
         return this;
@@ -27,6 +28,7 @@ public class GetOrgsOrgIdImagesImageIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public GetOrgsOrgIdImagesImageIdRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;

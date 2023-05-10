@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class GetOrgsOrgIdEnvTypesEnvTypeIdResponse {
     
     public String contentType;
+
     public GetOrgsOrgIdEnvTypesEnvTypeIdResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -22,6 +23,7 @@ public class GetOrgsOrgIdEnvTypesEnvTypeIdResponse {
      */
     
     public demo_1.test_1.models.shared.EnvironmentTypeResponse environmentTypeResponse;
+
     public GetOrgsOrgIdEnvTypesEnvTypeIdResponse withEnvironmentTypeResponse(demo_1.test_1.models.shared.EnvironmentTypeResponse environmentTypeResponse) {
         this.environmentTypeResponse = environmentTypeResponse;
         return this;
@@ -34,6 +36,7 @@ public class GetOrgsOrgIdEnvTypesEnvTypeIdResponse {
      */
     
     public demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse;
+
     public GetOrgsOrgIdEnvTypesEnvTypeIdResponse withHumanitecErrorResponse(demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse) {
         this.humanitecErrorResponse = humanitecErrorResponse;
         return this;
@@ -41,6 +44,7 @@ public class GetOrgsOrgIdEnvTypesEnvTypeIdResponse {
     
     
     public Integer statusCode;
+
     public GetOrgsOrgIdEnvTypesEnvTypeIdResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -48,6 +52,7 @@ public class GetOrgsOrgIdEnvTypesEnvTypeIdResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public GetOrgsOrgIdEnvTypesEnvTypeIdResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;

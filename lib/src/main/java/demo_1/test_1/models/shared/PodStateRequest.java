@@ -15,6 +15,7 @@ public class PodStateRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("containerStatuses")
     public java.util.Map<String, Object>[] containerStatuses;
+
     public PodStateRequest withContainerStatuses(java.util.Map<String, Object>[] containerStatuses) {
         this.containerStatuses = containerStatuses;
         return this;
@@ -23,6 +24,7 @@ public class PodStateRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("phase")
     public String phase;
+
     public PodStateRequest withPhase(String phase) {
         this.phase = phase;
         return this;
@@ -31,6 +33,7 @@ public class PodStateRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("podName")
     public String podName;
+
     public PodStateRequest withPodName(String podName) {
         this.podName = podName;
         return this;
@@ -39,6 +42,7 @@ public class PodStateRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("revision")
     public Long revision;
+
     public PodStateRequest withRevision(Long revision) {
         this.revision = revision;
         return this;
@@ -47,6 +51,7 @@ public class PodStateRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("status")
     public String status;
+
     public PodStateRequest withStatus(String status) {
         this.status = status;
         return this;

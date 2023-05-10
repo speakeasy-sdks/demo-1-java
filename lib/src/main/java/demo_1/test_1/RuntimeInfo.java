@@ -36,6 +36,12 @@ public class RuntimeInfo {
 		this._genVersion = genVersion;
 	}
 
+    /**
+     * Get Runtime information about the environment.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdRuntimeResponse getOrgsOrgIdAppsAppIdEnvsEnvIdRuntime(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdRuntimeRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdRuntimeRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/envs/{envId}/runtime", request, null);
@@ -68,6 +74,12 @@ public class RuntimeInfo {
         return res;
     }
 
+    /**
+     * Get Runtime information about specific environments.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdRuntimeResponse getOrgsOrgIdAppsAppIdRuntime(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdRuntimeRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdRuntimeRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/runtime", request, null);
@@ -106,6 +118,12 @@ public class RuntimeInfo {
         return res;
     }
 
+    /**
+     * Set number of replicas for an environment's modules.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PatchOrgsOrgIdAppsAppIdEnvsEnvIdRuntimeReplicasResponse patchOrgsOrgIdAppsAppIdEnvsEnvIdRuntimeReplicas(demo_1.test_1.models.operations.PatchOrgsOrgIdAppsAppIdEnvsEnvIdRuntimeReplicasRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PatchOrgsOrgIdAppsAppIdEnvsEnvIdRuntimeReplicasRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/envs/{envId}/runtime/replicas", request, null);
@@ -135,6 +153,22 @@ public class RuntimeInfo {
         return res;
     }
 
+    /**
+     * Pause / Resume an environment.
+     * On pause requests, all the Kubernetes Deployment resources are scaled down to 0 replicas.
+     * 
+     * On resume requests, all the Kubernetes Deployment resources are scaled up to the number of replicas running before the environment was paused.
+     * 
+     * When an environment is paused, it is not possible to:
+     * 
+     * ```
+     *   - Deploy the environment within Humanitec.
+     *   - Scale the number of replicas running of any workload.
+     * ```
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PutOrgsOrgIdAppsAppIdEnvsEnvIdRuntimePausedResponse putOrgsOrgIdAppsAppIdEnvsEnvIdRuntimePaused(demo_1.test_1.models.operations.PutOrgsOrgIdAppsAppIdEnvsEnvIdRuntimePausedRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PutOrgsOrgIdAppsAppIdEnvsEnvIdRuntimePausedRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/envs/{envId}/runtime/paused", request, null);

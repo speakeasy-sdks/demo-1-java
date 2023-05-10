@@ -15,6 +15,7 @@ public class DeleteOrgsOrgIdAppsAppIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=appId")
     public String appId;
+
     public DeleteOrgsOrgIdAppsAppIdRequest withAppId(String appId) {
         this.appId = appId;
         return this;
@@ -27,6 +28,7 @@ public class DeleteOrgsOrgIdAppsAppIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public DeleteOrgsOrgIdAppsAppIdRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;

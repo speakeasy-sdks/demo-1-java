@@ -16,6 +16,7 @@ import java.time.OffsetDateTime;
 public class DeltaMetadataResponse {
     @JsonProperty("archived")
     public Boolean archived;
+
     public DeltaMetadataResponse withArchived(Boolean archived) {
         this.archived = archived;
         return this;
@@ -24,6 +25,7 @@ public class DeltaMetadataResponse {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("contributers")
     public String[] contributers;
+
     public DeltaMetadataResponse withContributers(String[] contributers) {
         this.contributers = contributers;
         return this;
@@ -33,6 +35,7 @@ public class DeltaMetadataResponse {
     @JsonDeserialize(using = DateTimeDeserializer.class)
     @JsonProperty("created_at")
     public OffsetDateTime createdAt;
+
     public DeltaMetadataResponse withCreatedAt(OffsetDateTime createdAt) {
         this.createdAt = createdAt;
         return this;
@@ -40,6 +43,7 @@ public class DeltaMetadataResponse {
     
     @JsonProperty("created_by")
     public String createdBy;
+
     public DeltaMetadataResponse withCreatedBy(String createdBy) {
         this.createdBy = createdBy;
         return this;
@@ -48,6 +52,7 @@ public class DeltaMetadataResponse {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("env_id")
     public String envId;
+
     public DeltaMetadataResponse withEnvId(String envId) {
         this.envId = envId;
         return this;
@@ -57,6 +62,7 @@ public class DeltaMetadataResponse {
     @JsonDeserialize(using = DateTimeDeserializer.class)
     @JsonProperty("last_modified_at")
     public OffsetDateTime lastModifiedAt;
+
     public DeltaMetadataResponse withLastModifiedAt(OffsetDateTime lastModifiedAt) {
         this.lastModifiedAt = lastModifiedAt;
         return this;
@@ -65,6 +71,7 @@ public class DeltaMetadataResponse {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("name")
     public String name;
+
     public DeltaMetadataResponse withName(String name) {
         this.name = name;
         return this;
@@ -73,6 +80,7 @@ public class DeltaMetadataResponse {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("shared")
     public Boolean shared;
+
     public DeltaMetadataResponse withShared(Boolean shared) {
         this.shared = shared;
         return this;

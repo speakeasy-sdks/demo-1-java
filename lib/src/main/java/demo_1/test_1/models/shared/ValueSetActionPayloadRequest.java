@@ -12,6 +12,7 @@ public class ValueSetActionPayloadRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("comment")
     public String comment;
+
     public ValueSetActionPayloadRequest withComment(String comment) {
         this.comment = comment;
         return this;

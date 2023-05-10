@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class PostOrgsOrgIdInvitationsResponse {
     
     public String contentType;
+
     public PostOrgsOrgIdInvitationsResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -22,6 +23,7 @@ public class PostOrgsOrgIdInvitationsResponse {
      */
     
     public demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse;
+
     public PostOrgsOrgIdInvitationsResponse withHumanitecErrorResponse(demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse) {
         this.humanitecErrorResponse = humanitecErrorResponse;
         return this;
@@ -29,6 +31,7 @@ public class PostOrgsOrgIdInvitationsResponse {
     
     
     public Integer statusCode;
+
     public PostOrgsOrgIdInvitationsResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -36,6 +39,7 @@ public class PostOrgsOrgIdInvitationsResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public PostOrgsOrgIdInvitationsResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;
@@ -48,6 +52,7 @@ public class PostOrgsOrgIdInvitationsResponse {
      */
     
     public demo_1.test_1.models.shared.UserRoleResponse[] userRoleResponses;
+
     public PostOrgsOrgIdInvitationsResponse withUserRoleResponses(demo_1.test_1.models.shared.UserRoleResponse[] userRoleResponses) {
         this.userRoleResponses = userRoleResponses;
         return this;

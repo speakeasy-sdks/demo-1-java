@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class PutOrgsOrgIdAppsAppIdEnvsEnvIdValuesKeyResponse {
     
     public String contentType;
+
     public PutOrgsOrgIdAppsAppIdEnvsEnvIdValuesKeyResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -22,6 +23,7 @@ public class PutOrgsOrgIdAppsAppIdEnvsEnvIdValuesKeyResponse {
      */
     
     public demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse;
+
     public PutOrgsOrgIdAppsAppIdEnvsEnvIdValuesKeyResponse withHumanitecErrorResponse(demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse) {
         this.humanitecErrorResponse = humanitecErrorResponse;
         return this;
@@ -29,6 +31,7 @@ public class PutOrgsOrgIdAppsAppIdEnvsEnvIdValuesKeyResponse {
     
     
     public Integer statusCode;
+
     public PutOrgsOrgIdAppsAppIdEnvsEnvIdValuesKeyResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -36,6 +39,7 @@ public class PutOrgsOrgIdAppsAppIdEnvsEnvIdValuesKeyResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public PutOrgsOrgIdAppsAppIdEnvsEnvIdValuesKeyResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;
@@ -48,6 +52,7 @@ public class PutOrgsOrgIdAppsAppIdEnvsEnvIdValuesKeyResponse {
      */
     
     public demo_1.test_1.models.shared.ValueResponse valueResponse;
+
     public PutOrgsOrgIdAppsAppIdEnvsEnvIdValuesKeyResponse withValueResponse(demo_1.test_1.models.shared.ValueResponse valueResponse) {
         this.valueResponse = valueResponse;
         return this;

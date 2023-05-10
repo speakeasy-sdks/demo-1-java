@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class DeleteOrgsOrgIdUsersUserIdResponse {
     
     public String contentType;
+
     public DeleteOrgsOrgIdUsersUserIdResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -22,6 +23,7 @@ public class DeleteOrgsOrgIdUsersUserIdResponse {
      */
     
     public demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse;
+
     public DeleteOrgsOrgIdUsersUserIdResponse withHumanitecErrorResponse(demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse) {
         this.humanitecErrorResponse = humanitecErrorResponse;
         return this;
@@ -29,6 +31,7 @@ public class DeleteOrgsOrgIdUsersUserIdResponse {
     
     
     public Integer statusCode;
+
     public DeleteOrgsOrgIdUsersUserIdResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -36,6 +39,7 @@ public class DeleteOrgsOrgIdUsersUserIdResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public DeleteOrgsOrgIdUsersUserIdResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;

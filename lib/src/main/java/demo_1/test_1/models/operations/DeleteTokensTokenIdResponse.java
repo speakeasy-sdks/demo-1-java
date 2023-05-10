@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class DeleteTokensTokenIdResponse {
     
     public String contentType;
+
     public DeleteTokensTokenIdResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -17,6 +18,7 @@ public class DeleteTokensTokenIdResponse {
     
     
     public Integer statusCode;
+
     public DeleteTokensTokenIdResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -24,6 +26,7 @@ public class DeleteTokensTokenIdResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public DeleteTokensTokenIdResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;

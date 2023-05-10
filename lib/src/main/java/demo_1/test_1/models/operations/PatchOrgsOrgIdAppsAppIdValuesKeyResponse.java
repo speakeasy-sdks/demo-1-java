@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class PatchOrgsOrgIdAppsAppIdValuesKeyResponse {
     
     public String contentType;
+
     public PatchOrgsOrgIdAppsAppIdValuesKeyResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -22,6 +23,7 @@ public class PatchOrgsOrgIdAppsAppIdValuesKeyResponse {
      */
     
     public demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse;
+
     public PatchOrgsOrgIdAppsAppIdValuesKeyResponse withHumanitecErrorResponse(demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse) {
         this.humanitecErrorResponse = humanitecErrorResponse;
         return this;
@@ -29,6 +31,7 @@ public class PatchOrgsOrgIdAppsAppIdValuesKeyResponse {
     
     
     public Integer statusCode;
+
     public PatchOrgsOrgIdAppsAppIdValuesKeyResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -36,6 +39,7 @@ public class PatchOrgsOrgIdAppsAppIdValuesKeyResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public PatchOrgsOrgIdAppsAppIdValuesKeyResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;
@@ -48,6 +52,7 @@ public class PatchOrgsOrgIdAppsAppIdValuesKeyResponse {
      */
     
     public demo_1.test_1.models.shared.ValueResponse valueResponse;
+
     public PatchOrgsOrgIdAppsAppIdValuesKeyResponse withValueResponse(demo_1.test_1.models.shared.ValueResponse valueResponse) {
         this.valueResponse = valueResponse;
         return this;

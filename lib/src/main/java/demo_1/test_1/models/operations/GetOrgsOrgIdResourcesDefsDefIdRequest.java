@@ -15,6 +15,7 @@ public class GetOrgsOrgIdResourcesDefsDefIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=defId")
     public String defId;
+
     public GetOrgsOrgIdResourcesDefsDefIdRequest withDefId(String defId) {
         this.defId = defId;
         return this;
@@ -27,6 +28,7 @@ public class GetOrgsOrgIdResourcesDefsDefIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public GetOrgsOrgIdResourcesDefsDefIdRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;

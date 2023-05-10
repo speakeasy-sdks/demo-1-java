@@ -15,6 +15,7 @@ public class GetOrgsOrgIdWorkloadProfilesProfileQidVersionsRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public GetOrgsOrgIdWorkloadProfilesProfileQidVersionsRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;
@@ -27,6 +28,7 @@ public class GetOrgsOrgIdWorkloadProfilesProfileQidVersionsRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=profileQid")
     public String profileQid;
+
     public GetOrgsOrgIdWorkloadProfilesProfileQidVersionsRequest withProfileQid(String profileQid) {
         this.profileQid = profileQid;
         return this;
@@ -39,6 +41,7 @@ public class GetOrgsOrgIdWorkloadProfilesProfileQidVersionsRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=version")
     public String version;
+
     public GetOrgsOrgIdWorkloadProfilesProfileQidVersionsRequest withVersion(String version) {
         this.version = version;
         return this;

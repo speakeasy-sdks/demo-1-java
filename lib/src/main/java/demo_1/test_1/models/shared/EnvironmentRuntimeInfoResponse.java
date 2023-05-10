@@ -15,6 +15,7 @@ public class EnvironmentRuntimeInfoResponse {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("error")
     public String error;
+
     public EnvironmentRuntimeInfoResponse withError(String error) {
         this.error = error;
         return this;
@@ -22,6 +23,7 @@ public class EnvironmentRuntimeInfoResponse {
     
     @JsonProperty("id")
     public String id;
+
     public EnvironmentRuntimeInfoResponse withId(String id) {
         this.id = id;
         return this;
@@ -29,6 +31,7 @@ public class EnvironmentRuntimeInfoResponse {
     
     @JsonProperty("paused")
     public Boolean paused;
+
     public EnvironmentRuntimeInfoResponse withPaused(Boolean paused) {
         this.paused = paused;
         return this;
@@ -37,6 +40,7 @@ public class EnvironmentRuntimeInfoResponse {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("status")
     public String status;
+
     public EnvironmentRuntimeInfoResponse withStatus(String status) {
         this.status = status;
         return this;

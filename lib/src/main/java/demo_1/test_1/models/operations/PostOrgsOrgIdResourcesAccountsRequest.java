@@ -10,6 +10,7 @@ import demo_1.test_1.utils.SpeakeasyMetadata;
 public class PostOrgsOrgIdResourcesAccountsRequest {
     @SpeakeasyMetadata("request:mediaType=application/json")
     public demo_1.test_1.models.shared.CreateResourceAccountRequestRequest createResourceAccountRequestRequest;
+
     public PostOrgsOrgIdResourcesAccountsRequest withCreateResourceAccountRequestRequest(demo_1.test_1.models.shared.CreateResourceAccountRequestRequest createResourceAccountRequestRequest) {
         this.createResourceAccountRequestRequest = createResourceAccountRequestRequest;
         return this;
@@ -22,6 +23,7 @@ public class PostOrgsOrgIdResourcesAccountsRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public PostOrgsOrgIdResourcesAccountsRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;

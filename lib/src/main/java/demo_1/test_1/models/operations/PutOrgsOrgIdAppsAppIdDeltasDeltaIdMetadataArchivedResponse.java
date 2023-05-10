@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class PutOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataArchivedResponse {
     
     public String contentType;
+
     public PutOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataArchivedResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -22,6 +23,7 @@ public class PutOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataArchivedResponse {
      */
     
     public demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse;
+
     public PutOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataArchivedResponse withHumanitecErrorResponse(demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse) {
         this.humanitecErrorResponse = humanitecErrorResponse;
         return this;
@@ -29,6 +31,7 @@ public class PutOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataArchivedResponse {
     
     
     public Integer statusCode;
+
     public PutOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataArchivedResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -36,6 +39,7 @@ public class PutOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataArchivedResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public PutOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataArchivedResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;
@@ -48,6 +52,7 @@ public class PutOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataArchivedResponse {
      */
     
     public String putOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataArchived404ApplicationJSONString;
+
     public PutOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataArchivedResponse withPutOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataArchived404ApplicationJSONString(String putOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataArchived404ApplicationJSONString) {
         this.putOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataArchived404ApplicationJSONString = putOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataArchived404ApplicationJSONString;
         return this;

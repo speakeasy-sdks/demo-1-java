@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class PutDeltaResponse {
     
     public String contentType;
+
     public PutDeltaResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -22,6 +23,7 @@ public class PutDeltaResponse {
      */
     
     public demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse;
+
     public PutDeltaResponse withHumanitecErrorResponse(demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse) {
         this.humanitecErrorResponse = humanitecErrorResponse;
         return this;
@@ -29,6 +31,7 @@ public class PutDeltaResponse {
     
     
     public Integer statusCode;
+
     public PutDeltaResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -36,6 +39,7 @@ public class PutDeltaResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public PutDeltaResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;
@@ -48,6 +52,7 @@ public class PutDeltaResponse {
      */
     
     public String putDelta404ApplicationJSONString;
+
     public PutDeltaResponse withPutDelta404ApplicationJSONString(String putDelta404ApplicationJSONString) {
         this.putDelta404ApplicationJSONString = putDelta404ApplicationJSONString;
         return this;

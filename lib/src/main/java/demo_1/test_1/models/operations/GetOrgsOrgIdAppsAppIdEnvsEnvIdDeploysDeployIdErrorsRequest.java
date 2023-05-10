@@ -15,6 +15,7 @@ public class GetOrgsOrgIdAppsAppIdEnvsEnvIdDeploysDeployIdErrorsRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=appId")
     public String appId;
+
     public GetOrgsOrgIdAppsAppIdEnvsEnvIdDeploysDeployIdErrorsRequest withAppId(String appId) {
         this.appId = appId;
         return this;
@@ -27,6 +28,7 @@ public class GetOrgsOrgIdAppsAppIdEnvsEnvIdDeploysDeployIdErrorsRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=deployId")
     public String deployId;
+
     public GetOrgsOrgIdAppsAppIdEnvsEnvIdDeploysDeployIdErrorsRequest withDeployId(String deployId) {
         this.deployId = deployId;
         return this;
@@ -39,6 +41,7 @@ public class GetOrgsOrgIdAppsAppIdEnvsEnvIdDeploysDeployIdErrorsRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=envId")
     public String envId;
+
     public GetOrgsOrgIdAppsAppIdEnvsEnvIdDeploysDeployIdErrorsRequest withEnvId(String envId) {
         this.envId = envId;
         return this;
@@ -51,6 +54,7 @@ public class GetOrgsOrgIdAppsAppIdEnvsEnvIdDeploysDeployIdErrorsRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public GetOrgsOrgIdAppsAppIdEnvsEnvIdDeploysDeployIdErrorsRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;

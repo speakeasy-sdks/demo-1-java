@@ -15,6 +15,7 @@ public class GetOrgsOrgIdArtefactsRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=name")
     public String name;
+
     public GetOrgsOrgIdArtefactsRequest withName(String name) {
         this.name = name;
         return this;
@@ -27,6 +28,7 @@ public class GetOrgsOrgIdArtefactsRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public GetOrgsOrgIdArtefactsRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;
@@ -39,6 +41,7 @@ public class GetOrgsOrgIdArtefactsRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=type")
     public String type;
+
     public GetOrgsOrgIdArtefactsRequest withType(String type) {
         this.type = type;
         return this;

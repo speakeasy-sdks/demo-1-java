@@ -12,6 +12,7 @@ public class EnvironmentBaseResponse {
      */
     @JsonProperty("id")
     public String id;
+
     public EnvironmentBaseResponse withId(String id) {
         this.id = id;
         return this;
@@ -22,6 +23,7 @@ public class EnvironmentBaseResponse {
      */
     @JsonProperty("name")
     public String name;
+
     public EnvironmentBaseResponse withName(String name) {
         this.name = name;
         return this;
@@ -32,6 +34,7 @@ public class EnvironmentBaseResponse {
      */
     @JsonProperty("type")
     public String type;
+
     public EnvironmentBaseResponse withType(String type) {
         this.type = type;
         return this;

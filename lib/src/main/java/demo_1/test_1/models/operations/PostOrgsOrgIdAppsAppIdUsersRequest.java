@@ -15,6 +15,7 @@ public class PostOrgsOrgIdAppsAppIdUsersRequest {
      */
     @SpeakeasyMetadata("request:mediaType=application/json")
     public demo_1.test_1.models.shared.UserRoleRequest userRoleRequest;
+
     public PostOrgsOrgIdAppsAppIdUsersRequest withUserRoleRequest(demo_1.test_1.models.shared.UserRoleRequest userRoleRequest) {
         this.userRoleRequest = userRoleRequest;
         return this;
@@ -27,6 +28,7 @@ public class PostOrgsOrgIdAppsAppIdUsersRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=appId")
     public String appId;
+
     public PostOrgsOrgIdAppsAppIdUsersRequest withAppId(String appId) {
         this.appId = appId;
         return this;
@@ -39,6 +41,7 @@ public class PostOrgsOrgIdAppsAppIdUsersRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public PostOrgsOrgIdAppsAppIdUsersRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;

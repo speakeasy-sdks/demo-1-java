@@ -37,6 +37,12 @@ public class DriverDefinition {
 		this._genVersion = genVersion;
 	}
 
+    /**
+     * Delete a Resources Driver.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.DeleteOrgsOrgIdResourcesDriversDriverIdResponse deleteOrgsOrgIdResourcesDriversDriverId(demo_1.test_1.models.operations.DeleteOrgsOrgIdResourcesDriversDriverIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.DeleteOrgsOrgIdResourcesDriversDriverIdRequest.class, baseUrl, "/orgs/{orgId}/resources/drivers/{driverId}", request, null);
@@ -69,6 +75,12 @@ public class DriverDefinition {
         return res;
     }
 
+    /**
+     * List Resource Drivers.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdResourcesDriversResponse getOrgsOrgIdResourcesDrivers(demo_1.test_1.models.operations.GetOrgsOrgIdResourcesDriversRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdResourcesDriversRequest.class, baseUrl, "/orgs/{orgId}/resources/drivers", request, null);
@@ -107,6 +119,13 @@ public class DriverDefinition {
         return res;
     }
 
+    /**
+     * Get a Resource Driver.
+     * # Only drivers that belongs to the given organization or registered as `public` are accessible through this endpoint
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdResourcesDriversDriverIdResponse getOrgsOrgIdResourcesDriversDriverId(demo_1.test_1.models.operations.GetOrgsOrgIdResourcesDriversDriverIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdResourcesDriversDriverIdRequest.class, baseUrl, "/orgs/{orgId}/resources/drivers/{driverId}", request, null);
@@ -145,6 +164,12 @@ public class DriverDefinition {
         return res;
     }
 
+    /**
+     * Register a new Resource Driver.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PostOrgsOrgIdResourcesDriversResponse postOrgsOrgIdResourcesDrivers(demo_1.test_1.models.operations.PostOrgsOrgIdResourcesDriversRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdResourcesDriversRequest.class, baseUrl, "/orgs/{orgId}/resources/drivers", request, null);
@@ -188,6 +213,12 @@ public class DriverDefinition {
         return res;
     }
 
+    /**
+     * Update a Resource Driver.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PutOrgsOrgIdResourcesDriversDriverIdResponse putOrgsOrgIdResourcesDriversDriverId(demo_1.test_1.models.operations.PutOrgsOrgIdResourcesDriversDriverIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PutOrgsOrgIdResourcesDriversDriverIdRequest.class, baseUrl, "/orgs/{orgId}/resources/drivers/{driverId}", request, null);

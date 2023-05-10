@@ -36,6 +36,12 @@ public class ResourceType {
 		this._genVersion = genVersion;
 	}
 
+    /**
+     * List Resource Types.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdResourcesTypesResponse getOrgsOrgIdResourcesTypes(demo_1.test_1.models.operations.GetOrgsOrgIdResourcesTypesRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdResourcesTypesRequest.class, baseUrl, "/orgs/{orgId}/resources/types", request, null);

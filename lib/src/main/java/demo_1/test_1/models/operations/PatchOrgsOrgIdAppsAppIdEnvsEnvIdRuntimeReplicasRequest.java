@@ -15,6 +15,7 @@ public class PatchOrgsOrgIdAppsAppIdEnvsEnvIdRuntimeReplicasRequest {
      */
     @SpeakeasyMetadata("request:mediaType=application/json")
     public java.util.Map<String, Long> requestBody;
+
     public PatchOrgsOrgIdAppsAppIdEnvsEnvIdRuntimeReplicasRequest withRequestBody(java.util.Map<String, Long> requestBody) {
         this.requestBody = requestBody;
         return this;
@@ -27,6 +28,7 @@ public class PatchOrgsOrgIdAppsAppIdEnvsEnvIdRuntimeReplicasRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=appId")
     public String appId;
+
     public PatchOrgsOrgIdAppsAppIdEnvsEnvIdRuntimeReplicasRequest withAppId(String appId) {
         this.appId = appId;
         return this;
@@ -39,6 +41,7 @@ public class PatchOrgsOrgIdAppsAppIdEnvsEnvIdRuntimeReplicasRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=envId")
     public String envId;
+
     public PatchOrgsOrgIdAppsAppIdEnvsEnvIdRuntimeReplicasRequest withEnvId(String envId) {
         this.envId = envId;
         return this;
@@ -51,6 +54,7 @@ public class PatchOrgsOrgIdAppsAppIdEnvsEnvIdRuntimeReplicasRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public PatchOrgsOrgIdAppsAppIdEnvsEnvIdRuntimeReplicasRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;

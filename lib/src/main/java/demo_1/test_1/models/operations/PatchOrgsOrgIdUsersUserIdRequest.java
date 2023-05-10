@@ -15,6 +15,7 @@ public class PatchOrgsOrgIdUsersUserIdRequest {
      */
     @SpeakeasyMetadata("request:mediaType=application/json")
     public demo_1.test_1.models.shared.RoleRequest roleRequest;
+
     public PatchOrgsOrgIdUsersUserIdRequest withRoleRequest(demo_1.test_1.models.shared.RoleRequest roleRequest) {
         this.roleRequest = roleRequest;
         return this;
@@ -27,6 +28,7 @@ public class PatchOrgsOrgIdUsersUserIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public PatchOrgsOrgIdUsersUserIdRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;
@@ -39,6 +41,7 @@ public class PatchOrgsOrgIdUsersUserIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=userId")
     public String userId;
+
     public PatchOrgsOrgIdUsersUserIdRequest withUserId(String userId) {
         this.userId = userId;
         return this;

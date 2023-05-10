@@ -18,6 +18,7 @@ public class UpdateResourceAccountRequestRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("credentials")
     public java.util.Map<String, Object> credentials;
+
     public UpdateResourceAccountRequestRequest withCredentials(java.util.Map<String, Object> credentials) {
         this.credentials = credentials;
         return this;
@@ -29,6 +30,7 @@ public class UpdateResourceAccountRequestRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("name")
     public String name;
+
     public UpdateResourceAccountRequestRequest withName(String name) {
         this.name = name;
         return this;

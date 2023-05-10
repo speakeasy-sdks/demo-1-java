@@ -17,6 +17,7 @@ public class UserProfileExtendedResponse {
      */
     @JsonProperty("created_at")
     public String createdAt;
+
     public UserProfileExtendedResponse withCreatedAt(String createdAt) {
         this.createdAt = createdAt;
         return this;
@@ -28,6 +29,7 @@ public class UserProfileExtendedResponse {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("email")
     public String email;
+
     public UserProfileExtendedResponse withEmail(String email) {
         this.email = email;
         return this;
@@ -38,6 +40,7 @@ public class UserProfileExtendedResponse {
      */
     @JsonProperty("id")
     public String id;
+
     public UserProfileExtendedResponse withId(String id) {
         this.id = id;
         return this;
@@ -48,6 +51,7 @@ public class UserProfileExtendedResponse {
      */
     @JsonProperty("name")
     public String name;
+
     public UserProfileExtendedResponse withName(String name) {
         this.name = name;
         return this;
@@ -55,6 +59,7 @@ public class UserProfileExtendedResponse {
     
     @JsonProperty("properties")
     public java.util.Map<String, Object> properties;
+
     public UserProfileExtendedResponse withProperties(java.util.Map<String, Object> properties) {
         this.properties = properties;
         return this;
@@ -62,6 +67,7 @@ public class UserProfileExtendedResponse {
     
     @JsonProperty("roles")
     public java.util.Map<String, String> roles;
+
     public UserProfileExtendedResponse withRoles(java.util.Map<String, String> roles) {
         this.roles = roles;
         return this;
@@ -72,6 +78,7 @@ public class UserProfileExtendedResponse {
      */
     @JsonProperty("type")
     public String type;
+
     public UserProfileExtendedResponse withType(String type) {
         this.type = type;
         return this;

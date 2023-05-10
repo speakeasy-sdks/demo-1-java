@@ -18,6 +18,7 @@ public class HumanitecErrorResponse {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("details")
     public java.util.Map<String, Object> details;
+
     public HumanitecErrorResponse withDetails(java.util.Map<String, Object> details) {
         this.details = details;
         return this;
@@ -28,6 +29,7 @@ public class HumanitecErrorResponse {
      */
     @JsonProperty("error")
     public String error;
+
     public HumanitecErrorResponse withError(String error) {
         this.error = error;
         return this;
@@ -38,6 +40,7 @@ public class HumanitecErrorResponse {
      */
     @JsonProperty("message")
     public String message;
+
     public HumanitecErrorResponse withMessage(String message) {
         this.message = message;
         return this;

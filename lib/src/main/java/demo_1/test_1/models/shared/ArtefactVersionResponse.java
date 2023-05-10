@@ -17,6 +17,7 @@ public class ArtefactVersionResponse {
      */
     @JsonProperty("archived")
     public Boolean archived;
+
     public ArtefactVersionResponse withArchived(Boolean archived) {
         this.archived = archived;
         return this;
@@ -27,6 +28,7 @@ public class ArtefactVersionResponse {
      */
     @JsonProperty("artefact_id")
     public String artefactId;
+
     public ArtefactVersionResponse withArtefactId(String artefactId) {
         this.artefactId = artefactId;
         return this;
@@ -37,6 +39,7 @@ public class ArtefactVersionResponse {
      */
     @JsonProperty("commit")
     public String commit;
+
     public ArtefactVersionResponse withCommit(String commit) {
         this.commit = commit;
         return this;
@@ -48,6 +51,7 @@ public class ArtefactVersionResponse {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("created_at")
     public String createdAt;
+
     public ArtefactVersionResponse withCreatedAt(String createdAt) {
         this.createdAt = createdAt;
         return this;
@@ -59,6 +63,7 @@ public class ArtefactVersionResponse {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("created_by")
     public String createdBy;
+
     public ArtefactVersionResponse withCreatedBy(String createdBy) {
         this.createdBy = createdBy;
         return this;
@@ -69,6 +74,7 @@ public class ArtefactVersionResponse {
      */
     @JsonProperty("digest")
     public String digest;
+
     public ArtefactVersionResponse withDigest(String digest) {
         this.digest = digest;
         return this;
@@ -79,6 +85,7 @@ public class ArtefactVersionResponse {
      */
     @JsonProperty("id")
     public String id;
+
     public ArtefactVersionResponse withId(String id) {
         this.id = id;
         return this;
@@ -89,6 +96,7 @@ public class ArtefactVersionResponse {
      */
     @JsonProperty("name")
     public String name;
+
     public ArtefactVersionResponse withName(String name) {
         this.name = name;
         return this;
@@ -99,6 +107,7 @@ public class ArtefactVersionResponse {
      */
     @JsonProperty("ref")
     public String ref;
+
     public ArtefactVersionResponse withRef(String ref) {
         this.ref = ref;
         return this;
@@ -110,6 +119,7 @@ public class ArtefactVersionResponse {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("updated_at")
     public String updatedAt;
+
     public ArtefactVersionResponse withUpdatedAt(String updatedAt) {
         this.updatedAt = updatedAt;
         return this;
@@ -121,6 +131,7 @@ public class ArtefactVersionResponse {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("updated_by")
     public String updatedBy;
+
     public ArtefactVersionResponse withUpdatedBy(String updatedBy) {
         this.updatedBy = updatedBy;
         return this;
@@ -131,6 +142,7 @@ public class ArtefactVersionResponse {
      */
     @JsonProperty("version")
     public String version;
+
     public ArtefactVersionResponse withVersion(String version) {
         this.version = version;
         return this;

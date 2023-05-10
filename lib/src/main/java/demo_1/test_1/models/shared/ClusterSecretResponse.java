@@ -15,6 +15,7 @@ public class ClusterSecretResponse {
      */
     @JsonProperty("namespace")
     public String namespace;
+
     public ClusterSecretResponse withNamespace(String namespace) {
         this.namespace = namespace;
         return this;
@@ -25,6 +26,7 @@ public class ClusterSecretResponse {
      */
     @JsonProperty("secret")
     public String secret;
+
     public ClusterSecretResponse withSecret(String secret) {
         this.secret = secret;
         return this;

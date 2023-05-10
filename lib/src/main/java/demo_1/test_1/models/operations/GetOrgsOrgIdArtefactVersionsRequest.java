@@ -15,6 +15,7 @@ public class GetOrgsOrgIdArtefactVersionsRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=archived")
     public String archived;
+
     public GetOrgsOrgIdArtefactVersionsRequest withArchived(String archived) {
         this.archived = archived;
         return this;
@@ -27,6 +28,7 @@ public class GetOrgsOrgIdArtefactVersionsRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=name")
     public String name;
+
     public GetOrgsOrgIdArtefactVersionsRequest withName(String name) {
         this.name = name;
         return this;
@@ -39,6 +41,7 @@ public class GetOrgsOrgIdArtefactVersionsRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public GetOrgsOrgIdArtefactVersionsRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;
@@ -51,6 +54,7 @@ public class GetOrgsOrgIdArtefactVersionsRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=reference")
     public String reference;
+
     public GetOrgsOrgIdArtefactVersionsRequest withReference(String reference) {
         this.reference = reference;
         return this;

@@ -16,6 +16,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class ValueEditPayloadRequest {
     @JsonProperty("description")
     public String description;
+
     public ValueEditPayloadRequest withDescription(String description) {
         this.description = description;
         return this;
@@ -24,6 +25,7 @@ public class ValueEditPayloadRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("is_secret")
     public Boolean isSecret;
+
     public ValueEditPayloadRequest withIsSecret(Boolean isSecret) {
         this.isSecret = isSecret;
         return this;
@@ -32,6 +34,7 @@ public class ValueEditPayloadRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("key")
     public String key;
+
     public ValueEditPayloadRequest withKey(String key) {
         this.key = key;
         return this;
@@ -39,6 +42,7 @@ public class ValueEditPayloadRequest {
     
     @JsonProperty("value")
     public String value;
+
     public ValueEditPayloadRequest withValue(String value) {
         this.value = value;
         return this;

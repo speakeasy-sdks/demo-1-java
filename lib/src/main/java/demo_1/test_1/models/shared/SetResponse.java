@@ -45,6 +45,7 @@ public class SetResponse {
      */
     @JsonProperty("id")
     public String id;
+
     public SetResponse withId(String id) {
         this.id = id;
         return this;
@@ -55,6 +56,7 @@ public class SetResponse {
      */
     @JsonProperty("modules")
     public java.util.Map<String, java.util.Map<String, ControllerResponse>> modules;
+
     public SetResponse withModules(java.util.Map<String, java.util.Map<String, ControllerResponse>> modules) {
         this.modules = modules;
         return this;
@@ -65,6 +67,7 @@ public class SetResponse {
      */
     @JsonProperty("shared")
     public java.util.Map<String, Object> shared;
+
     public SetResponse withShared(java.util.Map<String, Object> shared) {
         this.shared = shared;
         return this;
@@ -75,6 +78,7 @@ public class SetResponse {
      */
     @JsonProperty("version")
     public Long version;
+
     public SetResponse withVersion(Long version) {
         this.version = version;
         return this;

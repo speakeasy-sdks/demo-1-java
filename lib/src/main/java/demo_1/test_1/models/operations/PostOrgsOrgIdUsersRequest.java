@@ -15,6 +15,7 @@ public class PostOrgsOrgIdUsersRequest {
      */
     @SpeakeasyMetadata("request:mediaType=application/json")
     public demo_1.test_1.models.shared.NewServiceUserRequest newServiceUserRequest;
+
     public PostOrgsOrgIdUsersRequest withNewServiceUserRequest(demo_1.test_1.models.shared.NewServiceUserRequest newServiceUserRequest) {
         this.newServiceUserRequest = newServiceUserRequest;
         return this;
@@ -27,6 +28,7 @@ public class PostOrgsOrgIdUsersRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public PostOrgsOrgIdUsersRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;

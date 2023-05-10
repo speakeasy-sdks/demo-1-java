@@ -15,6 +15,7 @@ public class GetOrgsOrgIdArtefactsResponse {
      */
     
     public demo_1.test_1.models.shared.ArtefactResponse[] artefactResponses;
+
     public GetOrgsOrgIdArtefactsResponse withArtefactResponses(demo_1.test_1.models.shared.ArtefactResponse[] artefactResponses) {
         this.artefactResponses = artefactResponses;
         return this;
@@ -22,6 +23,7 @@ public class GetOrgsOrgIdArtefactsResponse {
     
     
     public String contentType;
+
     public GetOrgsOrgIdArtefactsResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -29,6 +31,7 @@ public class GetOrgsOrgIdArtefactsResponse {
     
     
     public Integer statusCode;
+
     public GetOrgsOrgIdArtefactsResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -36,6 +39,7 @@ public class GetOrgsOrgIdArtefactsResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public GetOrgsOrgIdArtefactsResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;

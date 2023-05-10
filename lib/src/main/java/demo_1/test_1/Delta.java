@@ -64,6 +64,12 @@ public class Delta {
 		this._genVersion = genVersion;
 	}
 
+    /**
+     * Fetch an existing Delta
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetDeltaResponse getDelta(demo_1.test_1.models.operations.GetDeltaRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetDeltaRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/deltas/{deltaId}", request, null);
@@ -101,6 +107,12 @@ public class Delta {
         return res;
     }
 
+    /**
+     * List Deltas in an Application
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdDeltasResponse getOrgsOrgIdAppsAppIdDeltas(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdDeltasRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdDeltasRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/deltas", request, null);
@@ -137,6 +149,12 @@ public class Delta {
         return res;
     }
 
+    /**
+     * Update an existing Delta
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PatchOrgsOrgIdAppsAppIdDeltasDeltaIdResponse patchOrgsOrgIdAppsAppIdDeltasDeltaId(demo_1.test_1.models.operations.PatchOrgsOrgIdAppsAppIdDeltasDeltaIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PatchOrgsOrgIdAppsAppIdDeltasDeltaIdRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/deltas/{deltaId}", request, null);
@@ -187,6 +205,12 @@ public class Delta {
         return res;
     }
 
+    /**
+     * Create a new Delta
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdDeltasResponse postOrgsOrgIdAppsAppIdDeltas(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdDeltasRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdDeltasRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/deltas", request, null);
@@ -230,6 +254,12 @@ public class Delta {
         return res;
     }
 
+    /**
+     * Update an existing Delta
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PutDeltaResponse putDelta(demo_1.test_1.models.operations.PutDeltaRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PutDeltaRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/deltas/{deltaId}", request, null);
@@ -274,6 +304,13 @@ public class Delta {
         return res;
     }
 
+    /**
+     * Mark a Delta as "archived"
+     * Archived Deltas are still accessible but can no longer be updated.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PutOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataArchivedResponse putOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataArchived(demo_1.test_1.models.operations.PutOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataArchivedRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PutOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataArchivedRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/deltas/{deltaId}/metadata/archived", request, null);
@@ -318,6 +355,12 @@ public class Delta {
         return res;
     }
 
+    /**
+     * Change the Environment of a Delta
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PutOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataEnvIdResponse putOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataEnvId(demo_1.test_1.models.operations.PutOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataEnvIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PutOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataEnvIdRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/deltas/{deltaId}/metadata/env_id", request, null);
@@ -362,6 +405,12 @@ public class Delta {
         return res;
     }
 
+    /**
+     * Change the name of a Delta
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PutOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataNameResponse putOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataName(demo_1.test_1.models.operations.PutOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataNameRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PutOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataNameRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/deltas/{deltaId}/metadata/name", request, null);

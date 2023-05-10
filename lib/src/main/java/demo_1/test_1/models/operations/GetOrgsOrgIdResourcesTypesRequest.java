@@ -15,6 +15,7 @@ public class GetOrgsOrgIdResourcesTypesRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public GetOrgsOrgIdResourcesTypesRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;

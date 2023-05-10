@@ -37,6 +37,13 @@ public class Deployment {
 		this._genVersion = genVersion;
 	}
 
+    /**
+     * List Deployments in an Environment.
+     * List all of the Deployments that have been carried out in the current Environment. Deployments are returned with the newest first.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdDeploysResponse getOrgsOrgIdAppsAppIdEnvsEnvIdDeploys(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdDeploysRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdDeploysRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/envs/{envId}/deploys", request, null);
@@ -75,6 +82,13 @@ public class Deployment {
         return res;
     }
 
+    /**
+     * Get a specific Deployment.
+     * Gets a specific Deployment in an Application and an Environment.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdDeploysDeployIdResponse getOrgsOrgIdAppsAppIdEnvsEnvIdDeploysDeployId(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdDeploysDeployIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdDeploysDeployIdRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/envs/{envId}/deploys/{deployId}", request, null);
@@ -113,6 +127,12 @@ public class Deployment {
         return res;
     }
 
+    /**
+     * List errors that occurred in a Deployment.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdDeploysDeployIdErrorsResponse getOrgsOrgIdAppsAppIdEnvsEnvIdDeploysDeployIdErrors(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdDeploysDeployIdErrorsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdDeploysDeployIdErrorsRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/envs/{envId}/deploys/{deployId}/errors", request, null);
@@ -143,6 +163,21 @@ public class Deployment {
         return res;
     }
 
+    /**
+     * Start a new Deployment.
+     * At Humanitec, Deployments are defined as changes to the state of the Environment. The state can be changed by defining a set of desired changes to the current state via a Deployment Delta or by resetting the current state after a previous Deployment. (See Environment Rebase.) Both types of changes can be combined into a single Deployment during which the Delta is applied to the Rebased state.
+     * 
+     * When specifying a Delta, a Delta ID must be used. That Delta must have been committed to the Delta store prior to the Deployment.
+     * 
+     * A Set ID can also be defined in the deployment to force the state of the environment to a particular state. This will be ignored if the Delta is specified.
+     * 
+     * **NOTE:**
+     * 
+     * Directly setting a `set_id` in a deployment is not recommended as it will not record history of where the set came from. If the intention is to replicate an existing environment, use the environment rebasing approach described above.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdEnvsEnvIdDeploysResponse postOrgsOrgIdAppsAppIdEnvsEnvIdDeploys(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdEnvsEnvIdDeploysRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdEnvsEnvIdDeploysRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/envs/{envId}/deploys", request, null);

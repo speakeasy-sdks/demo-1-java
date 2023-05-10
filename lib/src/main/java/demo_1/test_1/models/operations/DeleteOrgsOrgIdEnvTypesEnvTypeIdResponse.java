@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class DeleteOrgsOrgIdEnvTypesEnvTypeIdResponse {
     
     public String contentType;
+
     public DeleteOrgsOrgIdEnvTypesEnvTypeIdResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -22,6 +23,7 @@ public class DeleteOrgsOrgIdEnvTypesEnvTypeIdResponse {
      */
     
     public demo_1.test_1.models.shared.EnvironmentTypeResponse environmentTypeResponse;
+
     public DeleteOrgsOrgIdEnvTypesEnvTypeIdResponse withEnvironmentTypeResponse(demo_1.test_1.models.shared.EnvironmentTypeResponse environmentTypeResponse) {
         this.environmentTypeResponse = environmentTypeResponse;
         return this;
@@ -34,6 +36,7 @@ public class DeleteOrgsOrgIdEnvTypesEnvTypeIdResponse {
      */
     
     public demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse;
+
     public DeleteOrgsOrgIdEnvTypesEnvTypeIdResponse withHumanitecErrorResponse(demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse) {
         this.humanitecErrorResponse = humanitecErrorResponse;
         return this;
@@ -41,6 +44,7 @@ public class DeleteOrgsOrgIdEnvTypesEnvTypeIdResponse {
     
     
     public Integer statusCode;
+
     public DeleteOrgsOrgIdEnvTypesEnvTypeIdResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -48,6 +52,7 @@ public class DeleteOrgsOrgIdEnvTypesEnvTypeIdResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public DeleteOrgsOrgIdEnvTypesEnvTypeIdResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;
@@ -60,6 +65,7 @@ public class DeleteOrgsOrgIdEnvTypesEnvTypeIdResponse {
      */
     
     public java.util.Map<String, String>[] deleteOrgsOrgIdEnvTypesEnvTypeId409ApplicationJSONObjects;
+
     public DeleteOrgsOrgIdEnvTypesEnvTypeIdResponse withDeleteOrgsOrgIdEnvTypesEnvTypeId409ApplicationJSONObjects(java.util.Map<String, String>[] deleteOrgsOrgIdEnvTypesEnvTypeId409ApplicationJSONObjects) {
         this.deleteOrgsOrgIdEnvTypesEnvTypeId409ApplicationJSONObjects = deleteOrgsOrgIdEnvTypesEnvTypeId409ApplicationJSONObjects;
         return this;

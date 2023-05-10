@@ -15,6 +15,7 @@ public class PostOrgsOrgIdRegistriesRequest {
      */
     @SpeakeasyMetadata("request:mediaType=application/json")
     public demo_1.test_1.models.shared.RegistryRequest registryRequest;
+
     public PostOrgsOrgIdRegistriesRequest withRegistryRequest(demo_1.test_1.models.shared.RegistryRequest registryRequest) {
         this.registryRequest = registryRequest;
         return this;
@@ -27,6 +28,7 @@ public class PostOrgsOrgIdRegistriesRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public PostOrgsOrgIdRegistriesRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;

@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class PatchOrgsOrgIdRegistriesRegIdResponse {
     
     public String contentType;
+
     public PatchOrgsOrgIdRegistriesRegIdResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -22,6 +23,7 @@ public class PatchOrgsOrgIdRegistriesRegIdResponse {
      */
     
     public demo_1.test_1.models.shared.ErrorInfoResponse errorInfoResponse;
+
     public PatchOrgsOrgIdRegistriesRegIdResponse withErrorInfoResponse(demo_1.test_1.models.shared.ErrorInfoResponse errorInfoResponse) {
         this.errorInfoResponse = errorInfoResponse;
         return this;
@@ -34,6 +36,7 @@ public class PatchOrgsOrgIdRegistriesRegIdResponse {
      */
     
     public demo_1.test_1.models.shared.RegistryResponse registryResponse;
+
     public PatchOrgsOrgIdRegistriesRegIdResponse withRegistryResponse(demo_1.test_1.models.shared.RegistryResponse registryResponse) {
         this.registryResponse = registryResponse;
         return this;
@@ -41,6 +44,7 @@ public class PatchOrgsOrgIdRegistriesRegIdResponse {
     
     
     public Integer statusCode;
+
     public PatchOrgsOrgIdRegistriesRegIdResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -48,6 +52,7 @@ public class PatchOrgsOrgIdRegistriesRegIdResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public PatchOrgsOrgIdRegistriesRegIdResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;

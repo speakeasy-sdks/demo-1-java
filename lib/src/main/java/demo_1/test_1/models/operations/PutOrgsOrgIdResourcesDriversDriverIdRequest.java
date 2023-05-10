@@ -10,6 +10,7 @@ import demo_1.test_1.utils.SpeakeasyMetadata;
 public class PutOrgsOrgIdResourcesDriversDriverIdRequest {
     @SpeakeasyMetadata("request:mediaType=application/json")
     public demo_1.test_1.models.shared.UpdateDriverRequestRequest updateDriverRequestRequest;
+
     public PutOrgsOrgIdResourcesDriversDriverIdRequest withUpdateDriverRequestRequest(demo_1.test_1.models.shared.UpdateDriverRequestRequest updateDriverRequestRequest) {
         this.updateDriverRequestRequest = updateDriverRequestRequest;
         return this;
@@ -22,6 +23,7 @@ public class PutOrgsOrgIdResourcesDriversDriverIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=driverId")
     public String driverId;
+
     public PutOrgsOrgIdResourcesDriversDriverIdRequest withDriverId(String driverId) {
         this.driverId = driverId;
         return this;
@@ -34,6 +36,7 @@ public class PutOrgsOrgIdResourcesDriversDriverIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public PutOrgsOrgIdResourcesDriversDriverIdRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;

@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class DeleteOrgsOrgIdResourcesDefsDefIdResponse {
     
     public String contentType;
+
     public DeleteOrgsOrgIdResourcesDefsDefIdResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -22,6 +23,7 @@ public class DeleteOrgsOrgIdResourcesDefsDefIdResponse {
      */
     
     public demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse;
+
     public DeleteOrgsOrgIdResourcesDefsDefIdResponse withHumanitecErrorResponse(demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse) {
         this.humanitecErrorResponse = humanitecErrorResponse;
         return this;
@@ -34,6 +36,7 @@ public class DeleteOrgsOrgIdResourcesDefsDefIdResponse {
      */
     
     public demo_1.test_1.models.shared.ResourceDefinitionChangeResponse[] resourceDefinitionChangeResponses;
+
     public DeleteOrgsOrgIdResourcesDefsDefIdResponse withResourceDefinitionChangeResponses(demo_1.test_1.models.shared.ResourceDefinitionChangeResponse[] resourceDefinitionChangeResponses) {
         this.resourceDefinitionChangeResponses = resourceDefinitionChangeResponses;
         return this;
@@ -41,6 +44,7 @@ public class DeleteOrgsOrgIdResourcesDefsDefIdResponse {
     
     
     public Integer statusCode;
+
     public DeleteOrgsOrgIdResourcesDefsDefIdResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -48,6 +52,7 @@ public class DeleteOrgsOrgIdResourcesDefsDefIdResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public DeleteOrgsOrgIdResourcesDefsDefIdResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;

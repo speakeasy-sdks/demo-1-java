@@ -37,6 +37,13 @@ public class ValueSetVersion {
 		this._genVersion = genVersion;
 	}
 
+    /**
+     * List Value Set Versions in an Environment of an App
+     * A new Value Set Version is created on every modification of a Value inside the an Environment of an App. In case this environment has no overrides the response is the same as the App level endpoint.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsResponse getOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersions(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/envs/{envId}/value-set-versions", request, null);
@@ -73,6 +80,12 @@ public class ValueSetVersion {
         return res;
     }
 
+    /**
+     * Get a single Value Set Version in an Environment of an App
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsValueSetVersionIdResponse getOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsValueSetVersionId(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsValueSetVersionIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsValueSetVersionIdRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/envs/{envId}/value-set-versions/{valueSetVersionId}", request, null);
@@ -111,6 +124,13 @@ public class ValueSetVersion {
         return res;
     }
 
+    /**
+     * List Value Set Versions in the App
+     * A new Value Set Version is created on every modification of a Value inside the app.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdValueSetVersionsResponse getOrgsOrgIdAppsAppIdValueSetVersions(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdValueSetVersionsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdValueSetVersionsRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/value-set-versions", request, null);
@@ -147,6 +167,12 @@ public class ValueSetVersion {
         return res;
     }
 
+    /**
+     * Get a single Value Set Version from the App
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionIdResponse getOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionId(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionIdRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/value-set-versions/{valueSetVersionId}", request, null);
@@ -185,6 +211,17 @@ public class ValueSetVersion {
         return res;
     }
 
+    /**
+     * Purge the value of a specific Shared Value from the App Environment Version history.
+     * Purging permanently removes the value of a specific Shared Value in an application. A purged value is no longer accessible, can't be restored and can't be used
+     * by deployments referencing a Value Set Version where the value was present.
+     * 
+     * Learn more about purging in our [docs](https://docs.humanitec.com/reference/concepts/app-config/shared-app-values#purge).
+     * 
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsValueSetVersionIdPurgeKeyResponse postOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsValueSetVersionIdPurgeKey(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsValueSetVersionIdPurgeKeyRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsValueSetVersionIdPurgeKeyRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/envs/{envId}/value-set-versions/{valueSetVersionId}/purge/{key}", request, null);
@@ -222,6 +259,16 @@ public class ValueSetVersion {
         return res;
     }
 
+    /**
+     * Restore a Value Set Version in an Environment of an App
+     * Restore the values of all Shared Values in an environment from a specific version. Keys not existing in the selected version are deleted.
+     * 
+     * Learn more about reverting in our [docs](https://docs.humanitec.com/reference/concepts/app-config/shared-app-values#revert).
+     * 
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsValueSetVersionIdRestoreResponse postOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsValueSetVersionIdRestore(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsValueSetVersionIdRestoreRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsValueSetVersionIdRestoreRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/envs/{envId}/value-set-versions/{valueSetVersionId}/restore", request, null);
@@ -265,6 +312,16 @@ public class ValueSetVersion {
         return res;
     }
 
+    /**
+     * Restore a specific key from the Value Set Version in an Environment of an App
+     * Restore the values of a single Shared Value in an Environment from a specific version.
+     * 
+     * Learn more about reverting in our [docs](https://docs.humanitec.com/reference/concepts/app-config/shared-app-values#revert).
+     * 
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsValueSetVersionIdRestoreKeyResponse postOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsValueSetVersionIdRestoreKey(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsValueSetVersionIdRestoreKeyRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsValueSetVersionIdRestoreKeyRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/envs/{envId}/value-set-versions/{valueSetVersionId}/restore/{key}", request, null);
@@ -308,6 +365,17 @@ public class ValueSetVersion {
         return res;
     }
 
+    /**
+     * Purge the value of a specific Shared Value from the App Version history.
+     * Purging permanently removes the value of a specific Shared Value in an Application. A purged value is no longer accessible, can't be restored and can't be used
+     * by deployments referencing a Value Set Version where the value was present.
+     * 
+     * Learn more about purging in our [docs](https://docs.humanitec.com/reference/concepts/app-config/shared-app-values#purge).
+     * 
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionIdPurgeKeyResponse postOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionIdPurgeKey(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionIdPurgeKeyRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionIdPurgeKeyRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/value-set-versions/{valueSetVersionId}/purge/{key}", request, null);
@@ -345,6 +413,16 @@ public class ValueSetVersion {
         return res;
     }
 
+    /**
+     * Restore a Value Set Version in an App
+     * Restore the values of all Shared Values in an application from a specific version. Keys not existing in the selected version are deleted.
+     * 
+     * Learn more about reverting in our [docs](https://docs.humanitec.com/reference/concepts/app-config/shared-app-values#revert).
+     * 
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionIdRestoreResponse postOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionIdRestore(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionIdRestoreRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionIdRestoreRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/value-set-versions/{valueSetVersionId}/restore", request, null);
@@ -388,6 +466,16 @@ public class ValueSetVersion {
         return res;
     }
 
+    /**
+     * Restore a specific key from the Value Set Version in an App
+     * Restore the values of a single Shared Value in an application from a specific version.
+     * 
+     * Learn more about reverting in our [docs](https://docs.humanitec.com/reference/concepts/app-config/shared-app-values#revert).
+     * 
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionIdRestoreKeyResponse postOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionIdRestoreKey(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionIdRestoreKeyRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionIdRestoreKeyRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/value-set-versions/{valueSetVersionId}/restore/{key}", request, null);

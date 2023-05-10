@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class GetSetsResponse {
     
     public String contentType;
+
     public GetSetsResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -22,6 +23,7 @@ public class GetSetsResponse {
      */
     
     public demo_1.test_1.models.shared.SetResponse[] setResponses;
+
     public GetSetsResponse withSetResponses(demo_1.test_1.models.shared.SetResponse[] setResponses) {
         this.setResponses = setResponses;
         return this;
@@ -29,6 +31,7 @@ public class GetSetsResponse {
     
     
     public Integer statusCode;
+
     public GetSetsResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -36,6 +39,7 @@ public class GetSetsResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public GetSetsResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;
@@ -48,6 +52,7 @@ public class GetSetsResponse {
      */
     
     public String getSets404ApplicationJSONString;
+
     public GetSetsResponse withGetSets404ApplicationJSONString(String getSets404ApplicationJSONString) {
         this.getSets404ApplicationJSONString = getSets404ApplicationJSONString;
         return this;

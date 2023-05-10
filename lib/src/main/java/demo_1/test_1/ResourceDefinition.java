@@ -38,6 +38,19 @@ public class ResourceDefinition {
 		this._genVersion = genVersion;
 	}
 
+    /**
+     * Delete a Resource Definition.
+     * If there **are no** Active Resources provisioned via the current definition, the Resource Definition is deleted immediately.
+     * 
+     * If there **are** Active Resources provisioned via the current definition, the request fails. The response will describe the changes to the affected Active Resources if operation is forced.
+     * 
+     * The request can take an optional `force` query parameter. If set to `true`, the current Resource Definition is **marked as** pending deletion and will be deleted (purged) as soon as no existing Active Resources reference it. With the next deployment matching criteria for Resources will be re-evaluated, and current Active Resources for the target environment would be either linked to another matching Resource Definition or decommissioned and created using the new or default Resource Definition (when available).
+     * 
+     * The Resource Definition that has been marked for deletion cannot be used to provision new resources.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.DeleteOrgsOrgIdResourcesDefsDefIdResponse deleteOrgsOrgIdResourcesDefsDefId(demo_1.test_1.models.operations.DeleteOrgsOrgIdResourcesDefsDefIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.DeleteOrgsOrgIdResourcesDefsDefIdRequest.class, baseUrl, "/orgs/{orgId}/resources/defs/{defId}", request, null);
@@ -84,6 +97,17 @@ public class ResourceDefinition {
         return res;
     }
 
+    /**
+     * Delete a Matching Criteria from a Resource Definition.
+     * If there **are no** Active Resources that would match to a different Resource Definition when the current Matching Criteria is deleted, the Matching Criteria is deleted immediately.
+     * 
+     * If there **are** Active Resources that would match to a different Resource Definition, the request fails with HTTP status code 409 (Conflict). The response content will list all of affected Active Resources and their new matches.
+     * 
+     * The request can take an optional `force` query parameter. If set to `true`, the Matching Criteria is deleted immediately. Referenced Active Resources would match to a different Resource Definition during the next deployment in the target environment.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.DeleteOrgsOrgIdResourcesDefsDefIdCriteriaCriteriaIdResponse deleteOrgsOrgIdResourcesDefsDefIdCriteriaCriteriaId(demo_1.test_1.models.operations.DeleteOrgsOrgIdResourcesDefsDefIdCriteriaCriteriaIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.DeleteOrgsOrgIdResourcesDefsDefIdCriteriaCriteriaIdRequest.class, baseUrl, "/orgs/{orgId}/resources/defs/{defId}/criteria/{criteriaId}", request, null);
@@ -137,6 +161,13 @@ public class ResourceDefinition {
         return res;
     }
 
+    /**
+     * List Resource Definitions.
+     * Filter criteria can be applied to obtain all the resource definitions that could match the filters, grouped by type and sorted by matching rank.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdResourcesDefsResponse getOrgsOrgIdResourcesDefs(demo_1.test_1.models.operations.GetOrgsOrgIdResourcesDefsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdResourcesDefsRequest.class, baseUrl, "/orgs/{orgId}/resources/defs", request, null);
@@ -181,6 +212,12 @@ public class ResourceDefinition {
         return res;
     }
 
+    /**
+     * Get a specific Resource Definition.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdResourcesDefsDefIdResponse getOrgsOrgIdResourcesDefsDefId(demo_1.test_1.models.operations.GetOrgsOrgIdResourcesDefsDefIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdResourcesDefsDefIdRequest.class, baseUrl, "/orgs/{orgId}/resources/defs/{defId}", request, null);
@@ -219,6 +256,12 @@ public class ResourceDefinition {
         return res;
     }
 
+    /**
+     * List Active Resources provisioned via a specific Resource Definition.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdResourcesDefsDefIdResourcesResponse getOrgsOrgIdResourcesDefsDefIdResources(demo_1.test_1.models.operations.GetOrgsOrgIdResourcesDefsDefIdResourcesRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdResourcesDefsDefIdResourcesRequest.class, baseUrl, "/orgs/{orgId}/resources/defs/{defId}/resources", request, null);
@@ -257,6 +300,12 @@ public class ResourceDefinition {
         return res;
     }
 
+    /**
+     * Update a Resource Definition.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PatchOrgsOrgIdResourcesDefsDefIdResponse patchOrgsOrgIdResourcesDefsDefId(demo_1.test_1.models.operations.PatchOrgsOrgIdResourcesDefsDefIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PatchOrgsOrgIdResourcesDefsDefIdRequest.class, baseUrl, "/orgs/{orgId}/resources/defs/{defId}", request, null);
@@ -300,6 +349,12 @@ public class ResourceDefinition {
         return res;
     }
 
+    /**
+     * Create a new Resource Definition.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PostOrgsOrgIdResourcesDefsResponse postOrgsOrgIdResourcesDefs(demo_1.test_1.models.operations.PostOrgsOrgIdResourcesDefsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdResourcesDefsRequest.class, baseUrl, "/orgs/{orgId}/resources/defs", request, null);
@@ -343,6 +398,23 @@ public class ResourceDefinition {
         return res;
     }
 
+    /**
+     * Add a new Matching Criteria to a Resource Definition.
+     * Matching Criteria are combined with Resource Type to select a specific definition. Matching Criteria can be set for any combination of Application ID, Environment ID, Environment Type, and Resource ID. In the event of multiple matches, the most specific match is chosen.
+     * 
+     * For example, given 3 sets of matching criteria for the same type:
+     * 
+     * ```
+     *  1. {"env_type":"test"}
+     *  2. {"env_type":"development"}
+     *  3. {"env_type":"test", "app_id":"my-app"}
+     * ```
+     * 
+     * If, a resource of that time was needed in an Application `my-app`, Environment `qa-team` with Type `test` and Resource ID `modules.my-module-externals.my-resource`, there would be two resources definitions matching the criteria: #1 &amp; #3. Definition #3 will be chosen because it's matching criteria is the most specific.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PostOrgsOrgIdResourcesDefsDefIdCriteriaResponse postOrgsOrgIdResourcesDefsDefIdCriteria(demo_1.test_1.models.operations.PostOrgsOrgIdResourcesDefsDefIdCriteriaRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdResourcesDefsDefIdCriteriaRequest.class, baseUrl, "/orgs/{orgId}/resources/defs/{defId}/criteria", request, null);
@@ -386,6 +458,12 @@ public class ResourceDefinition {
         return res;
     }
 
+    /**
+     * Update a Resource Definition.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PutOrgsOrgIdResourcesDefsDefIdResponse putOrgsOrgIdResourcesDefsDefId(demo_1.test_1.models.operations.PutOrgsOrgIdResourcesDefsDefIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PutOrgsOrgIdResourcesDefsDefIdRequest.class, baseUrl, "/orgs/{orgId}/resources/defs/{defId}", request, null);

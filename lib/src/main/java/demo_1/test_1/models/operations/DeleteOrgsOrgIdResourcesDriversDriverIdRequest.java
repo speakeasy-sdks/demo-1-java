@@ -15,6 +15,7 @@ public class DeleteOrgsOrgIdResourcesDriversDriverIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=driverId")
     public String driverId;
+
     public DeleteOrgsOrgIdResourcesDriversDriverIdRequest withDriverId(String driverId) {
         this.driverId = driverId;
         return this;
@@ -27,6 +28,7 @@ public class DeleteOrgsOrgIdResourcesDriversDriverIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public DeleteOrgsOrgIdResourcesDriversDriverIdRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;

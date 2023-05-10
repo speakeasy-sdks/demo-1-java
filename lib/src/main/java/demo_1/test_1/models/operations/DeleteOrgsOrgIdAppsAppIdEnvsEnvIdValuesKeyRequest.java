@@ -15,6 +15,7 @@ public class DeleteOrgsOrgIdAppsAppIdEnvsEnvIdValuesKeyRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=appId")
     public String appId;
+
     public DeleteOrgsOrgIdAppsAppIdEnvsEnvIdValuesKeyRequest withAppId(String appId) {
         this.appId = appId;
         return this;
@@ -27,6 +28,7 @@ public class DeleteOrgsOrgIdAppsAppIdEnvsEnvIdValuesKeyRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=envId")
     public String envId;
+
     public DeleteOrgsOrgIdAppsAppIdEnvsEnvIdValuesKeyRequest withEnvId(String envId) {
         this.envId = envId;
         return this;
@@ -39,6 +41,7 @@ public class DeleteOrgsOrgIdAppsAppIdEnvsEnvIdValuesKeyRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=key")
     public String key;
+
     public DeleteOrgsOrgIdAppsAppIdEnvsEnvIdValuesKeyRequest withKey(String key) {
         this.key = key;
         return this;
@@ -51,6 +54,7 @@ public class DeleteOrgsOrgIdAppsAppIdEnvsEnvIdValuesKeyRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public DeleteOrgsOrgIdAppsAppIdEnvsEnvIdValuesKeyRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;

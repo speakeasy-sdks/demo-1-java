@@ -22,6 +22,7 @@ public class WorkloadProfileVersionRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("features")
     public java.util.Map<String, Object> features;
+
     public WorkloadProfileVersionRequest withFeatures(java.util.Map<String, Object> features) {
         this.features = features;
         return this;
@@ -33,6 +34,7 @@ public class WorkloadProfileVersionRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("notes")
     public String notes;
+
     public WorkloadProfileVersionRequest withNotes(String notes) {
         this.notes = notes;
         return this;

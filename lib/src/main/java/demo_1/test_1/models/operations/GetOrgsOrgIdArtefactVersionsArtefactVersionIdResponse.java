@@ -15,6 +15,7 @@ public class GetOrgsOrgIdArtefactVersionsArtefactVersionIdResponse {
      */
     
     public demo_1.test_1.models.shared.ArtefactVersionResponse artefactVersionResponse;
+
     public GetOrgsOrgIdArtefactVersionsArtefactVersionIdResponse withArtefactVersionResponse(demo_1.test_1.models.shared.ArtefactVersionResponse artefactVersionResponse) {
         this.artefactVersionResponse = artefactVersionResponse;
         return this;
@@ -22,6 +23,7 @@ public class GetOrgsOrgIdArtefactVersionsArtefactVersionIdResponse {
     
     
     public String contentType;
+
     public GetOrgsOrgIdArtefactVersionsArtefactVersionIdResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -34,6 +36,7 @@ public class GetOrgsOrgIdArtefactVersionsArtefactVersionIdResponse {
      */
     
     public demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse;
+
     public GetOrgsOrgIdArtefactVersionsArtefactVersionIdResponse withHumanitecErrorResponse(demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse) {
         this.humanitecErrorResponse = humanitecErrorResponse;
         return this;
@@ -41,6 +44,7 @@ public class GetOrgsOrgIdArtefactVersionsArtefactVersionIdResponse {
     
     
     public Integer statusCode;
+
     public GetOrgsOrgIdArtefactVersionsArtefactVersionIdResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -48,6 +52,7 @@ public class GetOrgsOrgIdArtefactVersionsArtefactVersionIdResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public GetOrgsOrgIdArtefactVersionsArtefactVersionIdResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;

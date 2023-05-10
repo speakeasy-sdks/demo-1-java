@@ -17,6 +17,7 @@ public class PutOrgsOrgIdResourcesDefsDefIdRequest {
      */
     @SpeakeasyMetadata("request:mediaType=application/json")
     public demo_1.test_1.models.shared.UpdateResourceDefinitionRequestRequest updateResourceDefinitionRequestRequest;
+
     public PutOrgsOrgIdResourcesDefsDefIdRequest withUpdateResourceDefinitionRequestRequest(demo_1.test_1.models.shared.UpdateResourceDefinitionRequestRequest updateResourceDefinitionRequestRequest) {
         this.updateResourceDefinitionRequestRequest = updateResourceDefinitionRequestRequest;
         return this;
@@ -29,6 +30,7 @@ public class PutOrgsOrgIdResourcesDefsDefIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=defId")
     public String defId;
+
     public PutOrgsOrgIdResourcesDefsDefIdRequest withDefId(String defId) {
         this.defId = defId;
         return this;
@@ -41,6 +43,7 @@ public class PutOrgsOrgIdResourcesDefsDefIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public PutOrgsOrgIdResourcesDefsDefIdRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;

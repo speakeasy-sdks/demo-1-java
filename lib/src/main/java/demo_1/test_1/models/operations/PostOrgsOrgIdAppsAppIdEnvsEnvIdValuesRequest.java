@@ -15,6 +15,7 @@ public class PostOrgsOrgIdAppsAppIdEnvsEnvIdValuesRequest {
      */
     @SpeakeasyMetadata("request:mediaType=application/json")
     public demo_1.test_1.models.shared.ValueCreatePayloadRequest valueCreatePayloadRequest;
+
     public PostOrgsOrgIdAppsAppIdEnvsEnvIdValuesRequest withValueCreatePayloadRequest(demo_1.test_1.models.shared.ValueCreatePayloadRequest valueCreatePayloadRequest) {
         this.valueCreatePayloadRequest = valueCreatePayloadRequest;
         return this;
@@ -27,6 +28,7 @@ public class PostOrgsOrgIdAppsAppIdEnvsEnvIdValuesRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=appId")
     public String appId;
+
     public PostOrgsOrgIdAppsAppIdEnvsEnvIdValuesRequest withAppId(String appId) {
         this.appId = appId;
         return this;
@@ -39,6 +41,7 @@ public class PostOrgsOrgIdAppsAppIdEnvsEnvIdValuesRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=envId")
     public String envId;
+
     public PostOrgsOrgIdAppsAppIdEnvsEnvIdValuesRequest withEnvId(String envId) {
         this.envId = envId;
         return this;
@@ -51,6 +54,7 @@ public class PostOrgsOrgIdAppsAppIdEnvsEnvIdValuesRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public PostOrgsOrgIdAppsAppIdEnvsEnvIdValuesRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;

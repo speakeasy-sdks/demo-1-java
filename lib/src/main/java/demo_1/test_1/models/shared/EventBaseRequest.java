@@ -18,6 +18,7 @@ public class EventBaseRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("scope")
     public String scope;
+
     public EventBaseRequest withScope(String scope) {
         this.scope = scope;
         return this;
@@ -29,6 +30,7 @@ public class EventBaseRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("type")
     public String type;
+
     public EventBaseRequest withType(String type) {
         this.type = type;
         return this;

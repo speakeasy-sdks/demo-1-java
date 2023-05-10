@@ -18,6 +18,7 @@ public class UpdateResourceDefinitionRequestRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("driver_account")
     public String driverAccount;
+
     public UpdateResourceDefinitionRequestRequest withDriverAccount(String driverAccount) {
         this.driverAccount = driverAccount;
         return this;
@@ -29,6 +30,7 @@ public class UpdateResourceDefinitionRequestRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("driver_inputs")
     public ValuesSecretsRequest driverInputs;
+
     public UpdateResourceDefinitionRequestRequest withDriverInputs(ValuesSecretsRequest driverInputs) {
         this.driverInputs = driverInputs;
         return this;
@@ -39,6 +41,7 @@ public class UpdateResourceDefinitionRequestRequest {
      */
     @JsonProperty("name")
     public String name;
+
     public UpdateResourceDefinitionRequestRequest withName(String name) {
         this.name = name;
         return this;

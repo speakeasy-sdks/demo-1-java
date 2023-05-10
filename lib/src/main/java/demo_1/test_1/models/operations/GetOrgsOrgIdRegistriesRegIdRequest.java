@@ -15,6 +15,7 @@ public class GetOrgsOrgIdRegistriesRegIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public GetOrgsOrgIdRegistriesRegIdRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;
@@ -27,6 +28,7 @@ public class GetOrgsOrgIdRegistriesRegIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=regId")
     public String regId;
+
     public GetOrgsOrgIdRegistriesRegIdRequest withRegId(String regId) {
         this.regId = regId;
         return this;

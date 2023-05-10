@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class GetOrgsOrgIdInvitationsResponse {
     
     public String contentType;
+
     public GetOrgsOrgIdInvitationsResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -17,6 +18,7 @@ public class GetOrgsOrgIdInvitationsResponse {
     
     
     public Integer statusCode;
+
     public GetOrgsOrgIdInvitationsResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -24,6 +26,7 @@ public class GetOrgsOrgIdInvitationsResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public GetOrgsOrgIdInvitationsResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;
@@ -36,6 +39,7 @@ public class GetOrgsOrgIdInvitationsResponse {
      */
     
     public demo_1.test_1.models.shared.UserInviteResponse[] userInviteResponses;
+
     public GetOrgsOrgIdInvitationsResponse withUserInviteResponses(demo_1.test_1.models.shared.UserInviteResponse[] userInviteResponses) {
         this.userInviteResponses = userInviteResponses;
         return this;

@@ -12,6 +12,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class RuntimeInfoResponse {
     @JsonProperty("modules")
     public java.util.Map<String, java.util.Map<String, ControllerResponse>> modules;
+
     public RuntimeInfoResponse withModules(java.util.Map<String, java.util.Map<String, ControllerResponse>> modules) {
         this.modules = modules;
         return this;
@@ -19,6 +20,7 @@ public class RuntimeInfoResponse {
     
     @JsonProperty("namespace")
     public String namespace;
+
     public RuntimeInfoResponse withNamespace(String namespace) {
         this.namespace = namespace;
         return this;

@@ -22,6 +22,7 @@ public class WorkloadProfileVersionResponse {
     @JsonDeserialize(using = DateTimeDeserializer.class)
     @JsonProperty("created_at")
     public OffsetDateTime createdAt;
+
     public WorkloadProfileVersionResponse withCreatedAt(OffsetDateTime createdAt) {
         this.createdAt = createdAt;
         return this;
@@ -32,6 +33,7 @@ public class WorkloadProfileVersionResponse {
      */
     @JsonProperty("created_by")
     public String createdBy;
+
     public WorkloadProfileVersionResponse withCreatedBy(String createdBy) {
         this.createdBy = createdBy;
         return this;
@@ -46,6 +48,7 @@ public class WorkloadProfileVersionResponse {
      */
     @JsonProperty("features")
     public java.util.Map<String, Object> features;
+
     public WorkloadProfileVersionResponse withFeatures(java.util.Map<String, Object> features) {
         this.features = features;
         return this;
@@ -56,6 +59,7 @@ public class WorkloadProfileVersionResponse {
      */
     @JsonProperty("notes")
     public String notes;
+
     public WorkloadProfileVersionResponse withNotes(String notes) {
         this.notes = notes;
         return this;
@@ -66,6 +70,7 @@ public class WorkloadProfileVersionResponse {
      */
     @JsonProperty("org_id")
     public String orgId;
+
     public WorkloadProfileVersionResponse withOrgId(String orgId) {
         this.orgId = orgId;
         return this;
@@ -76,6 +81,7 @@ public class WorkloadProfileVersionResponse {
      */
     @JsonProperty("profile_id")
     public String profileId;
+
     public WorkloadProfileVersionResponse withProfileId(String profileId) {
         this.profileId = profileId;
         return this;
@@ -86,6 +92,7 @@ public class WorkloadProfileVersionResponse {
      */
     @JsonProperty("version")
     public String version;
+
     public WorkloadProfileVersionResponse withVersion(String version) {
         this.version = version;
         return this;

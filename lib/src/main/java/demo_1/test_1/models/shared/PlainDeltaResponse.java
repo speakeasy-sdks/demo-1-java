@@ -37,6 +37,7 @@ public class PlainDeltaResponse {
      */
     @JsonProperty("modules")
     public ModuleDeltasResponse modules;
+
     public PlainDeltaResponse withModules(ModuleDeltasResponse modules) {
         this.modules = modules;
         return this;
@@ -44,6 +45,7 @@ public class PlainDeltaResponse {
     
     @JsonProperty("shared")
     public UpdateActionResponse[] shared;
+
     public PlainDeltaResponse withShared(UpdateActionResponse[] shared) {
         this.shared = shared;
         return this;

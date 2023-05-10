@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class PatchOrgsOrgIdAppsAppIdEnvsEnvIdRuntimeReplicasResponse {
     
     public String contentType;
+
     public PatchOrgsOrgIdAppsAppIdEnvsEnvIdRuntimeReplicasResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -17,6 +18,7 @@ public class PatchOrgsOrgIdAppsAppIdEnvsEnvIdRuntimeReplicasResponse {
     
     
     public Integer statusCode;
+
     public PatchOrgsOrgIdAppsAppIdEnvsEnvIdRuntimeReplicasResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -24,6 +26,7 @@ public class PatchOrgsOrgIdAppsAppIdEnvsEnvIdRuntimeReplicasResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public PatchOrgsOrgIdAppsAppIdEnvsEnvIdRuntimeReplicasResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;

@@ -12,6 +12,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class ModuleDeltasResponse {
     @JsonProperty("add")
     public java.util.Map<String, java.util.Map<String, ControllerResponse>> add;
+
     public ModuleDeltasResponse withAdd(java.util.Map<String, java.util.Map<String, ControllerResponse>> add) {
         this.add = add;
         return this;
@@ -19,6 +20,7 @@ public class ModuleDeltasResponse {
     
     @JsonProperty("remove")
     public String[] remove;
+
     public ModuleDeltasResponse withRemove(String[] remove) {
         this.remove = remove;
         return this;
@@ -26,6 +28,7 @@ public class ModuleDeltasResponse {
     
     @JsonProperty("update")
     public java.util.Map<String, UpdateActionResponse[]> update;
+
     public ModuleDeltasResponse withUpdate(java.util.Map<String, UpdateActionResponse[]> update) {
         this.update = update;
         return this;

@@ -35,6 +35,12 @@ public class Event {
 		this._genVersion = genVersion;
 	}
 
+    /**
+     * Deletes all Jobs for the Application
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.DeleteOrgsOrgIdAppsAppIdJobsResponse deleteOrgsOrgIdAppsAppIdJobs(demo_1.test_1.models.operations.DeleteOrgsOrgIdAppsAppIdJobsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.DeleteOrgsOrgIdAppsAppIdJobsRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/jobs", request, null);
@@ -59,6 +65,12 @@ public class Event {
         return res;
     }
 
+    /**
+     * Delete a Webhook
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.DeleteOrgsOrgIdAppsAppIdWebhooksJobIdResponse deleteOrgsOrgIdAppsAppIdWebhooksJobId(demo_1.test_1.models.operations.DeleteOrgsOrgIdAppsAppIdWebhooksJobIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.DeleteOrgsOrgIdAppsAppIdWebhooksJobIdRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/webhooks/{jobId}", request, null);
@@ -83,6 +95,12 @@ public class Event {
         return res;
     }
 
+    /**
+     * List Webhooks
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdWebhooksResponse getOrgsOrgIdAppsAppIdWebhooks(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdWebhooksRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdWebhooksRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/webhooks", request, null);
@@ -113,6 +131,12 @@ public class Event {
         return res;
     }
 
+    /**
+     * Get a Webhook
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdWebhooksJobIdResponse getOrgsOrgIdAppsAppIdWebhooksJobId(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdWebhooksJobIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdWebhooksJobIdRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/webhooks/{jobId}", request, null);
@@ -145,6 +169,12 @@ public class Event {
         return res;
     }
 
+    /**
+     * List Events
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdEventsResponse getOrgsOrgIdEvents(demo_1.test_1.models.operations.GetOrgsOrgIdEventsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdEventsRequest.class, baseUrl, "/orgs/{orgId}/events", request, null);
@@ -175,6 +205,12 @@ public class Event {
         return res;
     }
 
+    /**
+     * Create a new Webhook
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdWebhooksResponse postOrgsOrgIdAppsAppIdWebhooks(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdWebhooksRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdWebhooksRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/webhooks", request, null);
@@ -220,6 +256,12 @@ public class Event {
         return res;
     }
 
+    /**
+     * Update a Webhook
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdWebhooksJobIdResponse postOrgsOrgIdAppsAppIdWebhooksJobId(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdWebhooksJobIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdWebhooksJobIdRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/webhooks/{jobId}", request, null);

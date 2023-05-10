@@ -17,6 +17,7 @@ public class ResourceAccountResponse {
      */
     @JsonProperty("created_at")
     public String createdAt;
+
     public ResourceAccountResponse withCreatedAt(String createdAt) {
         this.createdAt = createdAt;
         return this;
@@ -27,6 +28,7 @@ public class ResourceAccountResponse {
      */
     @JsonProperty("created_by")
     public String createdBy;
+
     public ResourceAccountResponse withCreatedBy(String createdBy) {
         this.createdBy = createdBy;
         return this;
@@ -37,6 +39,7 @@ public class ResourceAccountResponse {
      */
     @JsonProperty("id")
     public String id;
+
     public ResourceAccountResponse withId(String id) {
         this.id = id;
         return this;
@@ -47,6 +50,7 @@ public class ResourceAccountResponse {
      */
     @JsonProperty("is_used")
     public Boolean isUsed;
+
     public ResourceAccountResponse withIsUsed(Boolean isUsed) {
         this.isUsed = isUsed;
         return this;
@@ -57,6 +61,7 @@ public class ResourceAccountResponse {
      */
     @JsonProperty("name")
     public String name;
+
     public ResourceAccountResponse withName(String name) {
         this.name = name;
         return this;
@@ -67,6 +72,7 @@ public class ResourceAccountResponse {
      */
     @JsonProperty("type")
     public String type;
+
     public ResourceAccountResponse withType(String type) {
         this.type = type;
         return this;

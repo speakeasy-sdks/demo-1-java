@@ -66,6 +66,12 @@ public class Set {
 		this._genVersion = genVersion;
 	}
 
+    /**
+     * Get all Deployment Sets
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetSetsResponse getSets(demo_1.test_1.models.operations.GetSetsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetSetsRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/sets", request, null);
@@ -103,6 +109,12 @@ public class Set {
         return res;
     }
 
+    /**
+     * Get a Deployment Set
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdSetsSetIdResponse getOrgsOrgIdAppsAppIdSetsSetId(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdSetsSetIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdSetsSetIdRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/sets/{setId}", request, null);
@@ -146,6 +158,12 @@ public class Set {
         return res;
     }
 
+    /**
+     * Get the difference between 2 Deployment Sets
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdSetsSetIdDiffSourceSetIdResponse getOrgsOrgIdAppsAppIdSetsSetIdDiffSourceSetId(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdSetsSetIdDiffSourceSetIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdSetsSetIdDiffSourceSetIdRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/sets/{setId}/diff/{sourceSetId}", request, null);
@@ -183,6 +201,12 @@ public class Set {
         return res;
     }
 
+    /**
+     * Apply a Deployment Delta to a Deployment Set
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdSetsSetIdResponse postOrgsOrgIdAppsAppIdSetsSetId(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdSetsSetIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdSetsSetIdRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/sets/{setId}", request, null);

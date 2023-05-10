@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class PatchCurrentUserResponse {
     
     public String contentType;
+
     public PatchCurrentUserResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -22,6 +23,7 @@ public class PatchCurrentUserResponse {
      */
     
     public demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse;
+
     public PatchCurrentUserResponse withHumanitecErrorResponse(demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse) {
         this.humanitecErrorResponse = humanitecErrorResponse;
         return this;
@@ -29,6 +31,7 @@ public class PatchCurrentUserResponse {
     
     
     public Integer statusCode;
+
     public PatchCurrentUserResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -36,6 +39,7 @@ public class PatchCurrentUserResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public PatchCurrentUserResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;
@@ -48,6 +52,7 @@ public class PatchCurrentUserResponse {
      */
     
     public demo_1.test_1.models.shared.UserProfileExtendedResponse userProfileExtendedResponse;
+
     public PatchCurrentUserResponse withUserProfileExtendedResponse(demo_1.test_1.models.shared.UserProfileExtendedResponse userProfileExtendedResponse) {
         this.userProfileExtendedResponse = userProfileExtendedResponse;
         return this;

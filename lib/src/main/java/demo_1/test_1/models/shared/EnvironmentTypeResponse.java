@@ -17,6 +17,7 @@ public class EnvironmentTypeResponse {
      */
     @JsonProperty("description")
     public String description;
+
     public EnvironmentTypeResponse withDescription(String description) {
         this.description = description;
         return this;
@@ -27,6 +28,7 @@ public class EnvironmentTypeResponse {
      */
     @JsonProperty("id")
     public String id;
+
     public EnvironmentTypeResponse withId(String id) {
         this.id = id;
         return this;

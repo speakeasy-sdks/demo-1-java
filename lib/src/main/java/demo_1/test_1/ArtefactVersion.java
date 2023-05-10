@@ -36,6 +36,13 @@ public class ArtefactVersion {
 		this._genVersion = genVersion;
 	}
 
+    /**
+     * List all Artefacts Versions.
+     * Returns the Artefact Versions registered with your organization. If no elements are found, an empty list is returned.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdArtefactVersionsResponse getOrgsOrgIdArtefactVersions(demo_1.test_1.models.operations.GetOrgsOrgIdArtefactVersionsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdArtefactVersionsRequest.class, baseUrl, "/orgs/{orgId}/artefact-versions", request, null);
@@ -80,6 +87,13 @@ public class ArtefactVersion {
         return res;
     }
 
+    /**
+     * Get an Artefacts Versions.
+     * Returns a specific Artefact Version.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdArtefactVersionsArtefactVersionIdResponse getOrgsOrgIdArtefactVersionsArtefactVersionId(demo_1.test_1.models.operations.GetOrgsOrgIdArtefactVersionsArtefactVersionIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdArtefactVersionsArtefactVersionIdRequest.class, baseUrl, "/orgs/{orgId}/artefact-versions/{artefactVersionId}", request, null);
@@ -118,6 +132,13 @@ public class ArtefactVersion {
         return res;
     }
 
+    /**
+     * List all Artefact Versions of an Artefact.
+     * Returns the Artefact Versions of a specified Artefact registered with your organization. If no elements are found, an empty list is returned.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdArtefactsArtefactIdVersionsResponse getOrgsOrgIdArtefactsArtefactIdVersions(demo_1.test_1.models.operations.GetOrgsOrgIdArtefactsArtefactIdVersionsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdArtefactsArtefactIdVersionsRequest.class, baseUrl, "/orgs/{orgId}/artefacts/{artefactId}/versions", request, null);
@@ -162,6 +183,13 @@ public class ArtefactVersion {
         return res;
     }
 
+    /**
+     * Update Version of an Artefact.
+     * Update the version of a specified Artefact registered with your organization".
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PatchOrgsOrgIdArtefactsArtefactIdVersionsVersionIdResponse patchOrgsOrgIdArtefactsArtefactIdVersionsVersionId(demo_1.test_1.models.operations.PatchOrgsOrgIdArtefactsArtefactIdVersionsVersionIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PatchOrgsOrgIdArtefactsArtefactIdVersionsVersionIdRequest.class, baseUrl, "/orgs/{orgId}/artefacts/{artefactId}/versions/{versionId}", request, null);
@@ -205,6 +233,12 @@ public class ArtefactVersion {
         return res;
     }
 
+    /**
+     * Register a new Artefact Version with your organization.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PostOrgsOrgIdArtefactVersionsResponse postOrgsOrgIdArtefactVersions(demo_1.test_1.models.operations.PostOrgsOrgIdArtefactVersionsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdArtefactVersionsRequest.class, baseUrl, "/orgs/{orgId}/artefact-versions", request, null);

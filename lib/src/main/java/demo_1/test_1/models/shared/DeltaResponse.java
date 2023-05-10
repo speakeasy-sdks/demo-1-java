@@ -43,6 +43,7 @@ public class DeltaResponse {
      */
     @JsonProperty("id")
     public String id;
+
     public DeltaResponse withId(String id) {
         this.id = id;
         return this;
@@ -50,6 +51,7 @@ public class DeltaResponse {
     
     @JsonProperty("metadata")
     public DeltaMetadataResponse metadata;
+
     public DeltaResponse withMetadata(DeltaMetadataResponse metadata) {
         this.metadata = metadata;
         return this;
@@ -60,6 +62,7 @@ public class DeltaResponse {
      */
     @JsonProperty("modules")
     public ModuleDeltasResponse modules;
+
     public DeltaResponse withModules(ModuleDeltasResponse modules) {
         this.modules = modules;
         return this;
@@ -67,6 +70,7 @@ public class DeltaResponse {
     
     @JsonProperty("shared")
     public UpdateActionResponse[] shared;
+
     public DeltaResponse withShared(UpdateActionResponse[] shared) {
         this.shared = shared;
         return this;

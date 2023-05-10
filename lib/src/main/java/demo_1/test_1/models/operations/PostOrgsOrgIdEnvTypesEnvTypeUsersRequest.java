@@ -15,6 +15,7 @@ public class PostOrgsOrgIdEnvTypesEnvTypeUsersRequest {
      */
     @SpeakeasyMetadata("request:mediaType=application/json")
     public demo_1.test_1.models.shared.UserRoleRequest userRoleRequest;
+
     public PostOrgsOrgIdEnvTypesEnvTypeUsersRequest withUserRoleRequest(demo_1.test_1.models.shared.UserRoleRequest userRoleRequest) {
         this.userRoleRequest = userRoleRequest;
         return this;
@@ -27,6 +28,7 @@ public class PostOrgsOrgIdEnvTypesEnvTypeUsersRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=envType")
     public String envType;
+
     public PostOrgsOrgIdEnvTypesEnvTypeUsersRequest withEnvType(String envType) {
         this.envType = envType;
         return this;
@@ -39,6 +41,7 @@ public class PostOrgsOrgIdEnvTypesEnvTypeUsersRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public PostOrgsOrgIdEnvTypesEnvTypeUsersRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;

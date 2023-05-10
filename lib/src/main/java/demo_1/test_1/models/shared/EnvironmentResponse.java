@@ -17,6 +17,7 @@ public class EnvironmentResponse {
      */
     @JsonProperty("created_at")
     public String createdAt;
+
     public EnvironmentResponse withCreatedAt(String createdAt) {
         this.createdAt = createdAt;
         return this;
@@ -27,6 +28,7 @@ public class EnvironmentResponse {
      */
     @JsonProperty("created_by")
     public String createdBy;
+
     public EnvironmentResponse withCreatedBy(String createdBy) {
         this.createdBy = createdBy;
         return this;
@@ -40,6 +42,7 @@ public class EnvironmentResponse {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("from_deploy")
     public DeploymentResponse fromDeploy;
+
     public EnvironmentResponse withFromDeploy(DeploymentResponse fromDeploy) {
         this.fromDeploy = fromDeploy;
         return this;
@@ -50,6 +53,7 @@ public class EnvironmentResponse {
      */
     @JsonProperty("id")
     public String id;
+
     public EnvironmentResponse withId(String id) {
         this.id = id;
         return this;
@@ -63,6 +67,7 @@ public class EnvironmentResponse {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("last_deploy")
     public DeploymentResponse lastDeploy;
+
     public EnvironmentResponse withLastDeploy(DeploymentResponse lastDeploy) {
         this.lastDeploy = lastDeploy;
         return this;
@@ -73,6 +78,7 @@ public class EnvironmentResponse {
      */
     @JsonProperty("name")
     public String name;
+
     public EnvironmentResponse withName(String name) {
         this.name = name;
         return this;
@@ -83,6 +89,7 @@ public class EnvironmentResponse {
      */
     @JsonProperty("type")
     public String type;
+
     public EnvironmentResponse withType(String type) {
         this.type = type;
         return this;

@@ -15,6 +15,7 @@ public class GetOrgsOrgIdAppsAppIdEnvsEnvIdResourcesResponse {
      */
     
     public demo_1.test_1.models.shared.ActiveResourceResponse[] activeResourceResponses;
+
     public GetOrgsOrgIdAppsAppIdEnvsEnvIdResourcesResponse withActiveResourceResponses(demo_1.test_1.models.shared.ActiveResourceResponse[] activeResourceResponses) {
         this.activeResourceResponses = activeResourceResponses;
         return this;
@@ -22,6 +23,7 @@ public class GetOrgsOrgIdAppsAppIdEnvsEnvIdResourcesResponse {
     
     
     public String contentType;
+
     public GetOrgsOrgIdAppsAppIdEnvsEnvIdResourcesResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -34,6 +36,7 @@ public class GetOrgsOrgIdAppsAppIdEnvsEnvIdResourcesResponse {
      */
     
     public demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse;
+
     public GetOrgsOrgIdAppsAppIdEnvsEnvIdResourcesResponse withHumanitecErrorResponse(demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse) {
         this.humanitecErrorResponse = humanitecErrorResponse;
         return this;
@@ -41,6 +44,7 @@ public class GetOrgsOrgIdAppsAppIdEnvsEnvIdResourcesResponse {
     
     
     public Integer statusCode;
+
     public GetOrgsOrgIdAppsAppIdEnvsEnvIdResourcesResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -48,6 +52,7 @@ public class GetOrgsOrgIdAppsAppIdEnvsEnvIdResourcesResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public GetOrgsOrgIdAppsAppIdEnvsEnvIdResourcesResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;

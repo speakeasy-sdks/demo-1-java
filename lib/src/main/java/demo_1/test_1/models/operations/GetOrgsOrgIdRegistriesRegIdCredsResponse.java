@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class GetOrgsOrgIdRegistriesRegIdCredsResponse {
     
     public String contentType;
+
     public GetOrgsOrgIdRegistriesRegIdCredsResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -22,6 +23,7 @@ public class GetOrgsOrgIdRegistriesRegIdCredsResponse {
      */
     
     public demo_1.test_1.models.shared.ErrorInfoResponse errorInfoResponse;
+
     public GetOrgsOrgIdRegistriesRegIdCredsResponse withErrorInfoResponse(demo_1.test_1.models.shared.ErrorInfoResponse errorInfoResponse) {
         this.errorInfoResponse = errorInfoResponse;
         return this;
@@ -34,6 +36,7 @@ public class GetOrgsOrgIdRegistriesRegIdCredsResponse {
      */
     
     public demo_1.test_1.models.shared.RegistryCredsResponse registryCredsResponse;
+
     public GetOrgsOrgIdRegistriesRegIdCredsResponse withRegistryCredsResponse(demo_1.test_1.models.shared.RegistryCredsResponse registryCredsResponse) {
         this.registryCredsResponse = registryCredsResponse;
         return this;
@@ -41,6 +44,7 @@ public class GetOrgsOrgIdRegistriesRegIdCredsResponse {
     
     
     public Integer statusCode;
+
     public GetOrgsOrgIdRegistriesRegIdCredsResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -48,6 +52,7 @@ public class GetOrgsOrgIdRegistriesRegIdCredsResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public GetOrgsOrgIdRegistriesRegIdCredsResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;

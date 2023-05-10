@@ -18,6 +18,7 @@ public class WebhookResponse {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("created_at")
     public String createdAt;
+
     public WebhookResponse withCreatedAt(String createdAt) {
         this.createdAt = createdAt;
         return this;
@@ -29,6 +30,7 @@ public class WebhookResponse {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("created_by")
     public String createdBy;
+
     public WebhookResponse withCreatedBy(String createdBy) {
         this.createdBy = createdBy;
         return this;
@@ -39,6 +41,7 @@ public class WebhookResponse {
      */
     @JsonProperty("disabled")
     public Boolean disabled;
+
     public WebhookResponse withDisabled(Boolean disabled) {
         this.disabled = disabled;
         return this;
@@ -46,6 +49,7 @@ public class WebhookResponse {
     
     @JsonProperty("headers")
     public java.util.Map<String, Object> headers;
+
     public WebhookResponse withHeaders(java.util.Map<String, Object> headers) {
         this.headers = headers;
         return this;
@@ -56,6 +60,7 @@ public class WebhookResponse {
      */
     @JsonProperty("id")
     public String id;
+
     public WebhookResponse withId(String id) {
         this.id = id;
         return this;
@@ -63,6 +68,7 @@ public class WebhookResponse {
     
     @JsonProperty("payload")
     public java.util.Map<String, Object> payload;
+
     public WebhookResponse withPayload(java.util.Map<String, Object> payload) {
         this.payload = payload;
         return this;
@@ -73,6 +79,7 @@ public class WebhookResponse {
      */
     @JsonProperty("triggers")
     public EventBaseResponse[] triggers;
+
     public WebhookResponse withTriggers(EventBaseResponse[] triggers) {
         this.triggers = triggers;
         return this;
@@ -83,6 +90,7 @@ public class WebhookResponse {
      */
     @JsonProperty("url")
     public String url;
+
     public WebhookResponse withUrl(String url) {
         this.url = url;
         return this;

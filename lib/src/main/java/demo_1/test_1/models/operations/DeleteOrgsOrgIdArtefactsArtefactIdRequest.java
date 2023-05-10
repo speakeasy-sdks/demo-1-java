@@ -15,6 +15,7 @@ public class DeleteOrgsOrgIdArtefactsArtefactIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=artefactId")
     public String artefactId;
+
     public DeleteOrgsOrgIdArtefactsArtefactIdRequest withArtefactId(String artefactId) {
         this.artefactId = artefactId;
         return this;
@@ -27,6 +28,7 @@ public class DeleteOrgsOrgIdArtefactsArtefactIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public DeleteOrgsOrgIdArtefactsArtefactIdRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;

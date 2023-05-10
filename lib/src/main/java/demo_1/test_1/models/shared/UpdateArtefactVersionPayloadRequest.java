@@ -15,6 +15,7 @@ public class UpdateArtefactVersionPayloadRequest {
      */
     @JsonProperty("archived")
     public Boolean archived;
+
     public UpdateArtefactVersionPayloadRequest withArchived(Boolean archived) {
         this.archived = archived;
         return this;

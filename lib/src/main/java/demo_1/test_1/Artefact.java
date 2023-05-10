@@ -35,6 +35,13 @@ public class Artefact {
 		this._genVersion = genVersion;
 	}
 
+    /**
+     * Delete Artefact and all related Artefact Versions
+     * The specified Artefact and its Artefact Versions will be permanently deleted. Only Administrators can delete an Artefact.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.DeleteOrgsOrgIdArtefactsArtefactIdResponse deleteOrgsOrgIdArtefactsArtefactId(demo_1.test_1.models.operations.DeleteOrgsOrgIdArtefactsArtefactIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.DeleteOrgsOrgIdArtefactsArtefactIdRequest.class, baseUrl, "/orgs/{orgId}/artefacts/{artefactId}", request, null);
@@ -67,6 +74,13 @@ public class Artefact {
         return res;
     }
 
+    /**
+     * List all Artefacts.
+     * Returns the Artefacts registered with your organization. If no elements are found, an empty list is returned.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdArtefactsResponse getOrgsOrgIdArtefacts(demo_1.test_1.models.operations.GetOrgsOrgIdArtefactsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdArtefactsRequest.class, baseUrl, "/orgs/{orgId}/artefacts", request, null);

@@ -18,6 +18,7 @@ public class RegistryCredsResponse {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("expires")
     public String expires;
+
     public RegistryCredsResponse withExpires(String expires) {
         this.expires = expires;
         return this;
@@ -28,6 +29,7 @@ public class RegistryCredsResponse {
      */
     @JsonProperty("password")
     public String password;
+
     public RegistryCredsResponse withPassword(String password) {
         this.password = password;
         return this;
@@ -38,6 +40,7 @@ public class RegistryCredsResponse {
      */
     @JsonProperty("registry")
     public String registry;
+
     public RegistryCredsResponse withRegistry(String registry) {
         this.registry = registry;
         return this;
@@ -48,6 +51,7 @@ public class RegistryCredsResponse {
      */
     @JsonProperty("secrets")
     public java.util.Map<String, ClusterSecretResponse> secrets;
+
     public RegistryCredsResponse withSecrets(java.util.Map<String, ClusterSecretResponse> secrets) {
         this.secrets = secrets;
         return this;
@@ -58,6 +62,7 @@ public class RegistryCredsResponse {
      */
     @JsonProperty("username")
     public String username;
+
     public RegistryCredsResponse withUsername(String username) {
         this.username = username;
         return this;

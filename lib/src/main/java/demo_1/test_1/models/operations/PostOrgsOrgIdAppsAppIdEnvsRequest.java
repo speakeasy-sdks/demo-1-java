@@ -15,6 +15,7 @@ public class PostOrgsOrgIdAppsAppIdEnvsRequest {
      */
     @SpeakeasyMetadata("request:mediaType=application/json")
     public demo_1.test_1.models.shared.EnvironmentDefinitionRequest environmentDefinitionRequest;
+
     public PostOrgsOrgIdAppsAppIdEnvsRequest withEnvironmentDefinitionRequest(demo_1.test_1.models.shared.EnvironmentDefinitionRequest environmentDefinitionRequest) {
         this.environmentDefinitionRequest = environmentDefinitionRequest;
         return this;
@@ -27,6 +28,7 @@ public class PostOrgsOrgIdAppsAppIdEnvsRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=appId")
     public String appId;
+
     public PostOrgsOrgIdAppsAppIdEnvsRequest withAppId(String appId) {
         this.appId = appId;
         return this;
@@ -39,6 +41,7 @@ public class PostOrgsOrgIdAppsAppIdEnvsRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public PostOrgsOrgIdAppsAppIdEnvsRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;

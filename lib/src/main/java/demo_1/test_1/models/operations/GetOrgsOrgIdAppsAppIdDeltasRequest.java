@@ -15,6 +15,7 @@ public class GetOrgsOrgIdAppsAppIdDeltasRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=appId")
     public String appId;
+
     public GetOrgsOrgIdAppsAppIdDeltasRequest withAppId(String appId) {
         this.appId = appId;
         return this;
@@ -27,6 +28,7 @@ public class GetOrgsOrgIdAppsAppIdDeltasRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=archived")
     public Boolean archived;
+
     public GetOrgsOrgIdAppsAppIdDeltasRequest withArchived(Boolean archived) {
         this.archived = archived;
         return this;
@@ -39,6 +41,7 @@ public class GetOrgsOrgIdAppsAppIdDeltasRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=env")
     public String env;
+
     public GetOrgsOrgIdAppsAppIdDeltasRequest withEnv(String env) {
         this.env = env;
         return this;
@@ -51,6 +54,7 @@ public class GetOrgsOrgIdAppsAppIdDeltasRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public GetOrgsOrgIdAppsAppIdDeltasRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;

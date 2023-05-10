@@ -17,6 +17,7 @@ import java.time.OffsetDateTime;
 public class ValueSetVersionResponse {
     @JsonProperty("change")
     public JSONPatchResponse[] change;
+
     public ValueSetVersionResponse withChange(JSONPatchResponse[] change) {
         this.change = change;
         return this;
@@ -24,6 +25,7 @@ public class ValueSetVersionResponse {
     
     @JsonProperty("comment")
     public String comment;
+
     public ValueSetVersionResponse withComment(String comment) {
         this.comment = comment;
         return this;
@@ -33,6 +35,7 @@ public class ValueSetVersionResponse {
     @JsonDeserialize(using = DateTimeDeserializer.class)
     @JsonProperty("created_at")
     public OffsetDateTime createdAt;
+
     public ValueSetVersionResponse withCreatedAt(OffsetDateTime createdAt) {
         this.createdAt = createdAt;
         return this;
@@ -40,6 +43,7 @@ public class ValueSetVersionResponse {
     
     @JsonProperty("created_by")
     public String createdBy;
+
     public ValueSetVersionResponse withCreatedBy(String createdBy) {
         this.createdBy = createdBy;
         return this;
@@ -47,6 +51,7 @@ public class ValueSetVersionResponse {
     
     @JsonProperty("id")
     public String id;
+
     public ValueSetVersionResponse withId(String id) {
         this.id = id;
         return this;
@@ -54,6 +59,7 @@ public class ValueSetVersionResponse {
     
     @JsonProperty("result_of")
     public ValueSetVersionResultOfEnum resultOf;
+
     public ValueSetVersionResponse withResultOf(ValueSetVersionResultOfEnum resultOf) {
         this.resultOf = resultOf;
         return this;
@@ -61,6 +67,7 @@ public class ValueSetVersionResponse {
     
     @JsonProperty("source_value_set_version_id")
     public String sourceValueSetVersionId;
+
     public ValueSetVersionResponse withSourceValueSetVersionId(String sourceValueSetVersionId) {
         this.sourceValueSetVersionId = sourceValueSetVersionId;
         return this;
@@ -70,6 +77,7 @@ public class ValueSetVersionResponse {
     @JsonDeserialize(using = DateTimeDeserializer.class)
     @JsonProperty("updated_at")
     public OffsetDateTime updatedAt;
+
     public ValueSetVersionResponse withUpdatedAt(OffsetDateTime updatedAt) {
         this.updatedAt = updatedAt;
         return this;
@@ -77,6 +85,7 @@ public class ValueSetVersionResponse {
     
     @JsonProperty("values")
     public java.util.Map<String, ValueResponse> values;
+
     public ValueSetVersionResponse withValues(java.util.Map<String, ValueResponse> values) {
         this.values = values;
         return this;

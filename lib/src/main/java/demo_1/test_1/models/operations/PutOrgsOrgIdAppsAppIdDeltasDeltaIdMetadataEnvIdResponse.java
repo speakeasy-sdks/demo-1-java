@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class PutOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataEnvIdResponse {
     
     public String contentType;
+
     public PutOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataEnvIdResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -22,6 +23,7 @@ public class PutOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataEnvIdResponse {
      */
     
     public demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse;
+
     public PutOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataEnvIdResponse withHumanitecErrorResponse(demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse) {
         this.humanitecErrorResponse = humanitecErrorResponse;
         return this;
@@ -29,6 +31,7 @@ public class PutOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataEnvIdResponse {
     
     
     public Integer statusCode;
+
     public PutOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataEnvIdResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -36,6 +39,7 @@ public class PutOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataEnvIdResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public PutOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataEnvIdResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;
@@ -48,6 +52,7 @@ public class PutOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataEnvIdResponse {
      */
     
     public String putOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataEnvId404ApplicationJSONString;
+
     public PutOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataEnvIdResponse withPutOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataEnvId404ApplicationJSONString(String putOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataEnvId404ApplicationJSONString) {
         this.putOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataEnvId404ApplicationJSONString = putOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataEnvId404ApplicationJSONString;
         return this;

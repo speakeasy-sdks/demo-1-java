@@ -18,6 +18,7 @@ public class UserRoleRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("created_at")
     public String createdAt;
+
     public UserRoleRequest withCreatedAt(String createdAt) {
         this.createdAt = createdAt;
         return this;
@@ -29,6 +30,7 @@ public class UserRoleRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("email")
     public String email;
+
     public UserRoleRequest withEmail(String email) {
         this.email = email;
         return this;
@@ -40,6 +42,7 @@ public class UserRoleRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("id")
     public String id;
+
     public UserRoleRequest withId(String id) {
         this.id = id;
         return this;
@@ -51,6 +54,7 @@ public class UserRoleRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("invite")
     public String invite;
+
     public UserRoleRequest withInvite(String invite) {
         this.invite = invite;
         return this;
@@ -62,6 +66,7 @@ public class UserRoleRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("name")
     public String name;
+
     public UserRoleRequest withName(String name) {
         this.name = name;
         return this;
@@ -73,6 +78,7 @@ public class UserRoleRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("role")
     public String role;
+
     public UserRoleRequest withRole(String role) {
         this.role = role;
         return this;
@@ -84,6 +90,7 @@ public class UserRoleRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("type")
     public String type;
+
     public UserRoleRequest withType(String type) {
         this.type = type;
         return this;
@@ -95,6 +102,7 @@ public class UserRoleRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("user")
     public String user;
+
     public UserRoleRequest withUser(String user) {
         this.user = user;
         return this;

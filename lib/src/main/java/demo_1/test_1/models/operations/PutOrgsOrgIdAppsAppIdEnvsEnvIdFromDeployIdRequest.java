@@ -15,6 +15,7 @@ public class PutOrgsOrgIdAppsAppIdEnvsEnvIdFromDeployIdRequest {
      */
     @SpeakeasyMetadata("request:mediaType=application/json")
     public String requestBody;
+
     public PutOrgsOrgIdAppsAppIdEnvsEnvIdFromDeployIdRequest withRequestBody(String requestBody) {
         this.requestBody = requestBody;
         return this;
@@ -27,6 +28,7 @@ public class PutOrgsOrgIdAppsAppIdEnvsEnvIdFromDeployIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=appId")
     public String appId;
+
     public PutOrgsOrgIdAppsAppIdEnvsEnvIdFromDeployIdRequest withAppId(String appId) {
         this.appId = appId;
         return this;
@@ -39,6 +41,7 @@ public class PutOrgsOrgIdAppsAppIdEnvsEnvIdFromDeployIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=envId")
     public String envId;
+
     public PutOrgsOrgIdAppsAppIdEnvsEnvIdFromDeployIdRequest withEnvId(String envId) {
         this.envId = envId;
         return this;
@@ -51,6 +54,7 @@ public class PutOrgsOrgIdAppsAppIdEnvsEnvIdFromDeployIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public PutOrgsOrgIdAppsAppIdEnvsEnvIdFromDeployIdRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;

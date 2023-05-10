@@ -15,6 +15,7 @@ public class PostOrgsOrgIdAppsAppIdEnvsEnvIdDeploysRequest {
      */
     @SpeakeasyMetadata("request:mediaType=application/json")
     public demo_1.test_1.models.shared.DeploymentRequest deploymentRequest;
+
     public PostOrgsOrgIdAppsAppIdEnvsEnvIdDeploysRequest withDeploymentRequest(demo_1.test_1.models.shared.DeploymentRequest deploymentRequest) {
         this.deploymentRequest = deploymentRequest;
         return this;
@@ -27,6 +28,7 @@ public class PostOrgsOrgIdAppsAppIdEnvsEnvIdDeploysRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=appId")
     public String appId;
+
     public PostOrgsOrgIdAppsAppIdEnvsEnvIdDeploysRequest withAppId(String appId) {
         this.appId = appId;
         return this;
@@ -39,6 +41,7 @@ public class PostOrgsOrgIdAppsAppIdEnvsEnvIdDeploysRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=envId")
     public String envId;
+
     public PostOrgsOrgIdAppsAppIdEnvsEnvIdDeploysRequest withEnvId(String envId) {
         this.envId = envId;
         return this;
@@ -51,6 +54,7 @@ public class PostOrgsOrgIdAppsAppIdEnvsEnvIdDeploysRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public PostOrgsOrgIdAppsAppIdEnvsEnvIdDeploysRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;

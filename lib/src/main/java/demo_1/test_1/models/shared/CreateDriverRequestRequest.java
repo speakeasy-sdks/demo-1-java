@@ -17,6 +17,7 @@ public class CreateDriverRequestRequest {
      */
     @JsonProperty("account_types")
     public String[] accountTypes;
+
     public CreateDriverRequestRequest withAccountTypes(String[] accountTypes) {
         this.accountTypes = accountTypes;
         return this;
@@ -28,6 +29,7 @@ public class CreateDriverRequestRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("id")
     public String id;
+
     public CreateDriverRequestRequest withId(String id) {
         this.id = id;
         return this;
@@ -38,6 +40,7 @@ public class CreateDriverRequestRequest {
      */
     @JsonProperty("inputs_schema")
     public java.util.Map<String, Object> inputsSchema;
+
     public CreateDriverRequestRequest withInputsSchema(java.util.Map<String, Object> inputsSchema) {
         this.inputsSchema = inputsSchema;
         return this;
@@ -49,6 +52,7 @@ public class CreateDriverRequestRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("is_public")
     public Boolean isPublic;
+
     public CreateDriverRequestRequest withIsPublic(Boolean isPublic) {
         this.isPublic = isPublic;
         return this;
@@ -59,6 +63,7 @@ public class CreateDriverRequestRequest {
      */
     @JsonProperty("target")
     public String target;
+
     public CreateDriverRequestRequest withTarget(String target) {
         this.target = target;
         return this;
@@ -70,6 +75,7 @@ public class CreateDriverRequestRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("template")
     public Object template;
+
     public CreateDriverRequestRequest withTemplate(Object template) {
         this.template = template;
         return this;
@@ -80,6 +86,7 @@ public class CreateDriverRequestRequest {
      */
     @JsonProperty("type")
     public String type;
+
     public CreateDriverRequestRequest withType(String type) {
         this.type = type;
         return this;

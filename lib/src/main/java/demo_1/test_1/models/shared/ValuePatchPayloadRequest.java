@@ -17,6 +17,7 @@ public class ValuePatchPayloadRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("description")
     public String description;
+
     public ValuePatchPayloadRequest withDescription(String description) {
         this.description = description;
         return this;
@@ -25,6 +26,7 @@ public class ValuePatchPayloadRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("value")
     public String value;
+
     public ValuePatchPayloadRequest withValue(String value) {
         this.value = value;
         return this;

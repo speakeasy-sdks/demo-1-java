@@ -38,6 +38,13 @@ public class EnvironmentType {
 		this._genVersion = genVersion;
 	}
 
+    /**
+     * Deletes an Environment Type
+     * Deletes a specific Environment Type from an Organization. If there are Environments with this Type in the Organization, the operation will fail.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.DeleteOrgsOrgIdEnvTypesEnvTypeIdResponse deleteOrgsOrgIdEnvTypesEnvTypeId(demo_1.test_1.models.operations.DeleteOrgsOrgIdEnvTypesEnvTypeIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.DeleteOrgsOrgIdEnvTypesEnvTypeIdRequest.class, baseUrl, "/orgs/{orgId}/env-types/{envTypeId}", request, null);
@@ -84,6 +91,13 @@ public class EnvironmentType {
         return res;
     }
 
+    /**
+     * List all Environment Types
+     * Lists all Environment Types in an Organization.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdEnvTypesResponse getOrgsOrgIdEnvTypes(demo_1.test_1.models.operations.GetOrgsOrgIdEnvTypesRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdEnvTypesRequest.class, baseUrl, "/orgs/{orgId}/env-types", request, null);
@@ -114,6 +128,13 @@ public class EnvironmentType {
         return res;
     }
 
+    /**
+     * Get an Environment Type
+     * Gets a specific Environment Type within an Organization.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdEnvTypesEnvTypeIdResponse getOrgsOrgIdEnvTypesEnvTypeId(demo_1.test_1.models.operations.GetOrgsOrgIdEnvTypesEnvTypeIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdEnvTypesEnvTypeIdRequest.class, baseUrl, "/orgs/{orgId}/env-types/{envTypeId}", request, null);
@@ -152,6 +173,13 @@ public class EnvironmentType {
         return res;
     }
 
+    /**
+     * Add a new Environment Type
+     * Adds a new Environment Type to an Organization.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PostOrgsOrgIdEnvTypesResponse postOrgsOrgIdEnvTypes(demo_1.test_1.models.operations.PostOrgsOrgIdEnvTypesRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdEnvTypesRequest.class, baseUrl, "/orgs/{orgId}/env-types", request, null);

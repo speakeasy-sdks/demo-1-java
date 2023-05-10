@@ -24,6 +24,7 @@ public class WorkloadProfileResponse {
     @JsonDeserialize(using = DateTimeDeserializer.class)
     @JsonProperty("created_at")
     public OffsetDateTime createdAt;
+
     public WorkloadProfileResponse withCreatedAt(OffsetDateTime createdAt) {
         this.createdAt = createdAt;
         return this;
@@ -34,6 +35,7 @@ public class WorkloadProfileResponse {
      */
     @JsonProperty("created_by")
     public String createdBy;
+
     public WorkloadProfileResponse withCreatedBy(String createdBy) {
         this.createdBy = createdBy;
         return this;
@@ -44,6 +46,7 @@ public class WorkloadProfileResponse {
      */
     @JsonProperty("id")
     public String id;
+
     public WorkloadProfileResponse withId(String id) {
         this.id = id;
         return this;
@@ -54,6 +57,7 @@ public class WorkloadProfileResponse {
      */
     @JsonProperty("latest")
     public String latest;
+
     public WorkloadProfileResponse withLatest(String latest) {
         this.latest = latest;
         return this;
@@ -64,6 +68,7 @@ public class WorkloadProfileResponse {
      */
     @JsonProperty("org_id")
     public String orgId;
+
     public WorkloadProfileResponse withOrgId(String orgId) {
         this.orgId = orgId;
         return this;

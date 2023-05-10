@@ -12,6 +12,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class DeploymentErrorResponse {
     @JsonProperty("code")
     public String code;
+
     public DeploymentErrorResponse withCode(String code) {
         this.code = code;
         return this;
@@ -19,6 +20,7 @@ public class DeploymentErrorResponse {
     
     @JsonProperty("error_type")
     public String errorType;
+
     public DeploymentErrorResponse withErrorType(String errorType) {
         this.errorType = errorType;
         return this;
@@ -26,6 +28,7 @@ public class DeploymentErrorResponse {
     
     @JsonProperty("message")
     public String message;
+
     public DeploymentErrorResponse withMessage(String message) {
         this.message = message;
         return this;
@@ -33,6 +36,7 @@ public class DeploymentErrorResponse {
     
     @JsonProperty("object_id")
     public String objectId;
+
     public DeploymentErrorResponse withObjectId(String objectId) {
         this.objectId = objectId;
         return this;
@@ -40,6 +44,7 @@ public class DeploymentErrorResponse {
     
     @JsonProperty("scope")
     public String scope;
+
     public DeploymentErrorResponse withScope(String scope) {
         this.scope = scope;
         return this;
@@ -47,6 +52,7 @@ public class DeploymentErrorResponse {
     
     @JsonProperty("summary")
     public String summary;
+
     public DeploymentErrorResponse withSummary(String summary) {
         this.summary = summary;
         return this;

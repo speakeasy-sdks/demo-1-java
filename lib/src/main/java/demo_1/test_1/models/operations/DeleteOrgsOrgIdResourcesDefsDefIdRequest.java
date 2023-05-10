@@ -15,6 +15,7 @@ public class DeleteOrgsOrgIdResourcesDefsDefIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=defId")
     public String defId;
+
     public DeleteOrgsOrgIdResourcesDefsDefIdRequest withDefId(String defId) {
         this.defId = defId;
         return this;
@@ -27,6 +28,7 @@ public class DeleteOrgsOrgIdResourcesDefsDefIdRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=force")
     public Boolean force;
+
     public DeleteOrgsOrgIdResourcesDefsDefIdRequest withForce(Boolean force) {
         this.force = force;
         return this;
@@ -39,6 +41,7 @@ public class DeleteOrgsOrgIdResourcesDefsDefIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public DeleteOrgsOrgIdResourcesDefsDefIdRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;

@@ -15,6 +15,7 @@ public class PostOrgsOrgIdArtefactVersionsRequest {
      */
     @SpeakeasyMetadata("request:mediaType=application/json")
     public demo_1.test_1.models.shared.AddArtefactVersionPayloadRequest addArtefactVersionPayloadRequest;
+
     public PostOrgsOrgIdArtefactVersionsRequest withAddArtefactVersionPayloadRequest(demo_1.test_1.models.shared.AddArtefactVersionPayloadRequest addArtefactVersionPayloadRequest) {
         this.addArtefactVersionPayloadRequest = addArtefactVersionPayloadRequest;
         return this;
@@ -27,6 +28,7 @@ public class PostOrgsOrgIdArtefactVersionsRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public PostOrgsOrgIdArtefactVersionsRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;
@@ -39,6 +41,7 @@ public class PostOrgsOrgIdArtefactVersionsRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=vcs")
     public String vcs;
+
     public PostOrgsOrgIdArtefactVersionsRequest withVcs(String vcs) {
         this.vcs = vcs;
         return this;

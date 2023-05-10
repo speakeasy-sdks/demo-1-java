@@ -15,6 +15,7 @@ public class GetOrgsOrgIdArtefactVersionsArtefactVersionIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=artefactVersionId")
     public String artefactVersionId;
+
     public GetOrgsOrgIdArtefactVersionsArtefactVersionIdRequest withArtefactVersionId(String artefactVersionId) {
         this.artefactVersionId = artefactVersionId;
         return this;
@@ -27,6 +28,7 @@ public class GetOrgsOrgIdArtefactVersionsArtefactVersionIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public GetOrgsOrgIdArtefactVersionsArtefactVersionIdRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;

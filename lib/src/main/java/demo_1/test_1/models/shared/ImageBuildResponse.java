@@ -20,6 +20,7 @@ public class ImageBuildResponse {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("added_at")
     public String addedAt;
+
     public ImageBuildResponse withAddedAt(String addedAt) {
         this.addedAt = addedAt;
         return this;
@@ -30,6 +31,7 @@ public class ImageBuildResponse {
      */
     @JsonProperty("branch")
     public String branch;
+
     public ImageBuildResponse withBranch(String branch) {
         this.branch = branch;
         return this;
@@ -40,6 +42,7 @@ public class ImageBuildResponse {
      */
     @JsonProperty("commit")
     public String commit;
+
     public ImageBuildResponse withCommit(String commit) {
         this.commit = commit;
         return this;
@@ -50,6 +53,7 @@ public class ImageBuildResponse {
      */
     @JsonProperty("image")
     public String image;
+
     public ImageBuildResponse withImage(String image) {
         this.image = image;
         return this;
@@ -60,6 +64,7 @@ public class ImageBuildResponse {
      */
     @JsonProperty("tags")
     public String[] tags;
+
     public ImageBuildResponse withTags(String[] tags) {
         this.tags = tags;
         return this;

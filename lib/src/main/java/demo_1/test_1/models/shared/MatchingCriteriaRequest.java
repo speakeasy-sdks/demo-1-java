@@ -34,6 +34,7 @@ public class MatchingCriteriaRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("app_id")
     public String appId;
+
     public MatchingCriteriaRequest withAppId(String appId) {
         this.appId = appId;
         return this;
@@ -45,6 +46,7 @@ public class MatchingCriteriaRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("env_id")
     public String envId;
+
     public MatchingCriteriaRequest withEnvId(String envId) {
         this.envId = envId;
         return this;
@@ -56,6 +58,7 @@ public class MatchingCriteriaRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("env_type")
     public String envType;
+
     public MatchingCriteriaRequest withEnvType(String envType) {
         this.envType = envType;
         return this;
@@ -67,6 +70,7 @@ public class MatchingCriteriaRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("id")
     public String id;
+
     public MatchingCriteriaRequest withId(String id) {
         this.id = id;
         return this;
@@ -78,6 +82,7 @@ public class MatchingCriteriaRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("res_id")
     public String resId;
+
     public MatchingCriteriaRequest withResId(String resId) {
         this.resId = resId;
         return this;

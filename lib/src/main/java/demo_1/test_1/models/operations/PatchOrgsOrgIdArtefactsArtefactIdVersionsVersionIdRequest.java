@@ -15,6 +15,7 @@ public class PatchOrgsOrgIdArtefactsArtefactIdVersionsVersionIdRequest {
      */
     @SpeakeasyMetadata("request:mediaType=application/json")
     public demo_1.test_1.models.shared.UpdateArtefactVersionPayloadRequest updateArtefactVersionPayloadRequest;
+
     public PatchOrgsOrgIdArtefactsArtefactIdVersionsVersionIdRequest withUpdateArtefactVersionPayloadRequest(demo_1.test_1.models.shared.UpdateArtefactVersionPayloadRequest updateArtefactVersionPayloadRequest) {
         this.updateArtefactVersionPayloadRequest = updateArtefactVersionPayloadRequest;
         return this;
@@ -27,6 +28,7 @@ public class PatchOrgsOrgIdArtefactsArtefactIdVersionsVersionIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=artefactId")
     public String artefactId;
+
     public PatchOrgsOrgIdArtefactsArtefactIdVersionsVersionIdRequest withArtefactId(String artefactId) {
         this.artefactId = artefactId;
         return this;
@@ -39,6 +41,7 @@ public class PatchOrgsOrgIdArtefactsArtefactIdVersionsVersionIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public PatchOrgsOrgIdArtefactsArtefactIdVersionsVersionIdRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;
@@ -51,6 +54,7 @@ public class PatchOrgsOrgIdArtefactsArtefactIdVersionsVersionIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=versionId")
     public String versionId;
+
     public PatchOrgsOrgIdArtefactsArtefactIdVersionsVersionIdRequest withVersionId(String versionId) {
         this.versionId = versionId;
         return this;

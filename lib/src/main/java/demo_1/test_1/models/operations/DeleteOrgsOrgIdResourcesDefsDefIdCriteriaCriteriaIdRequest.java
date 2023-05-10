@@ -15,6 +15,7 @@ public class DeleteOrgsOrgIdResourcesDefsDefIdCriteriaCriteriaIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=criteriaId")
     public String criteriaId;
+
     public DeleteOrgsOrgIdResourcesDefsDefIdCriteriaCriteriaIdRequest withCriteriaId(String criteriaId) {
         this.criteriaId = criteriaId;
         return this;
@@ -27,6 +28,7 @@ public class DeleteOrgsOrgIdResourcesDefsDefIdCriteriaCriteriaIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=defId")
     public String defId;
+
     public DeleteOrgsOrgIdResourcesDefsDefIdCriteriaCriteriaIdRequest withDefId(String defId) {
         this.defId = defId;
         return this;
@@ -39,6 +41,7 @@ public class DeleteOrgsOrgIdResourcesDefsDefIdCriteriaCriteriaIdRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=force")
     public Boolean force;
+
     public DeleteOrgsOrgIdResourcesDefsDefIdCriteriaCriteriaIdRequest withForce(Boolean force) {
         this.force = force;
         return this;
@@ -51,6 +54,7 @@ public class DeleteOrgsOrgIdResourcesDefsDefIdCriteriaCriteriaIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public DeleteOrgsOrgIdResourcesDefsDefIdCriteriaCriteriaIdRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;

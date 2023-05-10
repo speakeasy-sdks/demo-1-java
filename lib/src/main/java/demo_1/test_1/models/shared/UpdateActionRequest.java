@@ -19,6 +19,7 @@ public class UpdateActionRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("from")
     public String from;
+
     public UpdateActionRequest withFrom(String from) {
         this.from = from;
         return this;
@@ -27,6 +28,7 @@ public class UpdateActionRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("op")
     public String op;
+
     public UpdateActionRequest withOp(String op) {
         this.op = op;
         return this;
@@ -35,6 +37,7 @@ public class UpdateActionRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("path")
     public String path;
+
     public UpdateActionRequest withPath(String path) {
         this.path = path;
         return this;
@@ -43,6 +46,7 @@ public class UpdateActionRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("value")
     public Object value;
+
     public UpdateActionRequest withValue(Object value) {
         this.value = value;
         return this;

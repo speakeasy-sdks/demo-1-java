@@ -18,6 +18,7 @@ public class UserProfileExtendedRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("created_at")
     public String createdAt;
+
     public UserProfileExtendedRequest withCreatedAt(String createdAt) {
         this.createdAt = createdAt;
         return this;
@@ -29,6 +30,7 @@ public class UserProfileExtendedRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("email")
     public String email;
+
     public UserProfileExtendedRequest withEmail(String email) {
         this.email = email;
         return this;
@@ -40,6 +42,7 @@ public class UserProfileExtendedRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("id")
     public String id;
+
     public UserProfileExtendedRequest withId(String id) {
         this.id = id;
         return this;
@@ -51,6 +54,7 @@ public class UserProfileExtendedRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("name")
     public String name;
+
     public UserProfileExtendedRequest withName(String name) {
         this.name = name;
         return this;
@@ -59,6 +63,7 @@ public class UserProfileExtendedRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("properties")
     public java.util.Map<String, Object> properties;
+
     public UserProfileExtendedRequest withProperties(java.util.Map<String, Object> properties) {
         this.properties = properties;
         return this;
@@ -67,6 +72,7 @@ public class UserProfileExtendedRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("roles")
     public java.util.Map<String, String> roles;
+
     public UserProfileExtendedRequest withRoles(java.util.Map<String, String> roles) {
         this.roles = roles;
         return this;
@@ -78,6 +84,7 @@ public class UserProfileExtendedRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("type")
     public String type;
+
     public UserProfileExtendedRequest withType(String type) {
         this.type = type;
         return this;

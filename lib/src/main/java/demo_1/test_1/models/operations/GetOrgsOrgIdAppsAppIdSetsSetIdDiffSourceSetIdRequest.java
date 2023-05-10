@@ -15,6 +15,7 @@ public class GetOrgsOrgIdAppsAppIdSetsSetIdDiffSourceSetIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=appId")
     public String appId;
+
     public GetOrgsOrgIdAppsAppIdSetsSetIdDiffSourceSetIdRequest withAppId(String appId) {
         this.appId = appId;
         return this;
@@ -27,6 +28,7 @@ public class GetOrgsOrgIdAppsAppIdSetsSetIdDiffSourceSetIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public GetOrgsOrgIdAppsAppIdSetsSetIdDiffSourceSetIdRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;
@@ -39,6 +41,7 @@ public class GetOrgsOrgIdAppsAppIdSetsSetIdDiffSourceSetIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=setId")
     public String setId;
+
     public GetOrgsOrgIdAppsAppIdSetsSetIdDiffSourceSetIdRequest withSetId(String setId) {
         this.setId = setId;
         return this;
@@ -51,6 +54,7 @@ public class GetOrgsOrgIdAppsAppIdSetsSetIdDiffSourceSetIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=sourceSetId")
     public String sourceSetId;
+
     public GetOrgsOrgIdAppsAppIdSetsSetIdDiffSourceSetIdRequest withSourceSetId(String sourceSetId) {
         this.sourceSetId = sourceSetId;
         return this;

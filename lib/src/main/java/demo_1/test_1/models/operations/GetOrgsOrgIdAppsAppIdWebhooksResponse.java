@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class GetOrgsOrgIdAppsAppIdWebhooksResponse {
     
     public String contentType;
+
     public GetOrgsOrgIdAppsAppIdWebhooksResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -17,6 +18,7 @@ public class GetOrgsOrgIdAppsAppIdWebhooksResponse {
     
     
     public Integer statusCode;
+
     public GetOrgsOrgIdAppsAppIdWebhooksResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -24,6 +26,7 @@ public class GetOrgsOrgIdAppsAppIdWebhooksResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public GetOrgsOrgIdAppsAppIdWebhooksResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;
@@ -36,6 +39,7 @@ public class GetOrgsOrgIdAppsAppIdWebhooksResponse {
      */
     
     public demo_1.test_1.models.shared.WebhookResponse[] webhookResponses;
+
     public GetOrgsOrgIdAppsAppIdWebhooksResponse withWebhookResponses(demo_1.test_1.models.shared.WebhookResponse[] webhookResponses) {
         this.webhookResponses = webhookResponses;
         return this;

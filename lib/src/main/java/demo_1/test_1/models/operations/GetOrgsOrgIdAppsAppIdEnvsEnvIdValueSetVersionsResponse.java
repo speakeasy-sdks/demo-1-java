@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class GetOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsResponse {
     
     public String contentType;
+
     public GetOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -17,6 +18,7 @@ public class GetOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsResponse {
     
     
     public Integer statusCode;
+
     public GetOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -24,6 +26,7 @@ public class GetOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public GetOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;
@@ -36,6 +39,7 @@ public class GetOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsResponse {
      */
     
     public demo_1.test_1.models.shared.ValueSetVersionResponse[] valueSetVersionResponses;
+
     public GetOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsResponse withValueSetVersionResponses(demo_1.test_1.models.shared.ValueSetVersionResponse[] valueSetVersionResponses) {
         this.valueSetVersionResponses = valueSetVersionResponses;
         return this;

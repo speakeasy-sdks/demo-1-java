@@ -18,6 +18,7 @@ public class AccountCredsRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("expires")
     public String expires;
+
     public AccountCredsRequest withExpires(String expires) {
         this.expires = expires;
         return this;
@@ -28,6 +29,7 @@ public class AccountCredsRequest {
      */
     @JsonProperty("password")
     public String password;
+
     public AccountCredsRequest withPassword(String password) {
         this.password = password;
         return this;
@@ -38,6 +40,7 @@ public class AccountCredsRequest {
      */
     @JsonProperty("username")
     public String username;
+
     public AccountCredsRequest withUsername(String username) {
         this.username = username;
         return this;

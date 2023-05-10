@@ -20,6 +20,7 @@ public class RegistryRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("creds")
     public AccountCredsRequest creds;
+
     public RegistryRequest withCreds(AccountCredsRequest creds) {
         this.creds = creds;
         return this;
@@ -31,6 +32,7 @@ public class RegistryRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("enable_ci")
     public Boolean enableCi;
+
     public RegistryRequest withEnableCi(Boolean enableCi) {
         this.enableCi = enableCi;
         return this;
@@ -41,6 +43,7 @@ public class RegistryRequest {
      */
     @JsonProperty("id")
     public String id;
+
     public RegistryRequest withId(String id) {
         this.id = id;
         return this;
@@ -51,6 +54,7 @@ public class RegistryRequest {
      */
     @JsonProperty("registry")
     public String registry;
+
     public RegistryRequest withRegistry(String registry) {
         this.registry = registry;
         return this;
@@ -62,6 +66,7 @@ public class RegistryRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("secrets")
     public java.util.Map<String, ClusterSecretRequest> secrets;
+
     public RegistryRequest withSecrets(java.util.Map<String, ClusterSecretRequest> secrets) {
         this.secrets = secrets;
         return this;
@@ -84,6 +89,7 @@ public class RegistryRequest {
      */
     @JsonProperty("type")
     public String type;
+
     public RegistryRequest withType(String type) {
         this.type = type;
         return this;

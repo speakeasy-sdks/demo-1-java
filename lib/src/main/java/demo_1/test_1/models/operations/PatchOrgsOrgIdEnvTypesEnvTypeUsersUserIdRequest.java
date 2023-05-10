@@ -15,6 +15,7 @@ public class PatchOrgsOrgIdEnvTypesEnvTypeUsersUserIdRequest {
      */
     @SpeakeasyMetadata("request:mediaType=application/json")
     public demo_1.test_1.models.shared.RoleRequest roleRequest;
+
     public PatchOrgsOrgIdEnvTypesEnvTypeUsersUserIdRequest withRoleRequest(demo_1.test_1.models.shared.RoleRequest roleRequest) {
         this.roleRequest = roleRequest;
         return this;
@@ -27,6 +28,7 @@ public class PatchOrgsOrgIdEnvTypesEnvTypeUsersUserIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=envType")
     public String envType;
+
     public PatchOrgsOrgIdEnvTypesEnvTypeUsersUserIdRequest withEnvType(String envType) {
         this.envType = envType;
         return this;
@@ -39,6 +41,7 @@ public class PatchOrgsOrgIdEnvTypesEnvTypeUsersUserIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public PatchOrgsOrgIdEnvTypesEnvTypeUsersUserIdRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;
@@ -51,6 +54,7 @@ public class PatchOrgsOrgIdEnvTypesEnvTypeUsersUserIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=userId")
     public String userId;
+
     public PatchOrgsOrgIdEnvTypesEnvTypeUsersUserIdRequest withUserId(String userId) {
         this.userId = userId;
         return this;

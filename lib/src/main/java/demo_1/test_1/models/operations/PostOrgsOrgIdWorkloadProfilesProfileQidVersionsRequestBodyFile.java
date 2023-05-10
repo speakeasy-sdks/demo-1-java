@@ -10,6 +10,7 @@ import demo_1.test_1.utils.SpeakeasyMetadata;
 public class PostOrgsOrgIdWorkloadProfilesProfileQidVersionsRequestBodyFile {
     @SpeakeasyMetadata("multipartForm:content")
     public byte[] content;
+
     public PostOrgsOrgIdWorkloadProfilesProfileQidVersionsRequestBodyFile withContent(byte[] content) {
         this.content = content;
         return this;
@@ -17,6 +18,7 @@ public class PostOrgsOrgIdWorkloadProfilesProfileQidVersionsRequestBodyFile {
     
     @SpeakeasyMetadata("multipartForm:name=file")
     public String file;
+
     public PostOrgsOrgIdWorkloadProfilesProfileQidVersionsRequestBodyFile withFile(String file) {
         this.file = file;
         return this;

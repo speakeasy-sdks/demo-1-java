@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class PostOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionIdRestoreResponse {
     
     public String contentType;
+
     public PostOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionIdRestoreResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -22,6 +23,7 @@ public class PostOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionIdRestoreRespo
      */
     
     public demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse;
+
     public PostOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionIdRestoreResponse withHumanitecErrorResponse(demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse) {
         this.humanitecErrorResponse = humanitecErrorResponse;
         return this;
@@ -29,6 +31,7 @@ public class PostOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionIdRestoreRespo
     
     
     public Integer statusCode;
+
     public PostOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionIdRestoreResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -36,6 +39,7 @@ public class PostOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionIdRestoreRespo
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public PostOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionIdRestoreResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;
@@ -48,6 +52,7 @@ public class PostOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionIdRestoreRespo
      */
     
     public demo_1.test_1.models.shared.ValueSetVersionResponse valueSetVersionResponse;
+
     public PostOrgsOrgIdAppsAppIdValueSetVersionsValueSetVersionIdRestoreResponse withValueSetVersionResponse(demo_1.test_1.models.shared.ValueSetVersionResponse valueSetVersionResponse) {
         this.valueSetVersionResponse = valueSetVersionResponse;
         return this;

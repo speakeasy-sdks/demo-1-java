@@ -15,6 +15,7 @@ public class PostOrgsOrgIdAppsResponse {
      */
     
     public demo_1.test_1.models.shared.ApplicationResponse applicationResponse;
+
     public PostOrgsOrgIdAppsResponse withApplicationResponse(demo_1.test_1.models.shared.ApplicationResponse applicationResponse) {
         this.applicationResponse = applicationResponse;
         return this;
@@ -22,6 +23,7 @@ public class PostOrgsOrgIdAppsResponse {
     
     
     public String contentType;
+
     public PostOrgsOrgIdAppsResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -34,6 +36,7 @@ public class PostOrgsOrgIdAppsResponse {
      */
     
     public demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse;
+
     public PostOrgsOrgIdAppsResponse withHumanitecErrorResponse(demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse) {
         this.humanitecErrorResponse = humanitecErrorResponse;
         return this;
@@ -41,6 +44,7 @@ public class PostOrgsOrgIdAppsResponse {
     
     
     public Integer statusCode;
+
     public PostOrgsOrgIdAppsResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -48,6 +52,7 @@ public class PostOrgsOrgIdAppsResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public PostOrgsOrgIdAppsResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;

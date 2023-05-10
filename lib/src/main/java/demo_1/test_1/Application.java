@@ -37,6 +37,15 @@ public class Application {
 		this._genVersion = genVersion;
 	}
 
+    /**
+     * Delete an Application
+     * Deleting an Application will also delete everything associated with it. This includes Environments, Deployment history on those Environments, and any shared values and secrets associated.
+     * 
+     * _Deletions are currently irreversible._
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.DeleteOrgsOrgIdAppsAppIdResponse deleteOrgsOrgIdAppsAppId(demo_1.test_1.models.operations.DeleteOrgsOrgIdAppsAppIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.DeleteOrgsOrgIdAppsAppIdRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}", request, null);
@@ -69,6 +78,13 @@ public class Application {
         return res;
     }
 
+    /**
+     * List all Applications in an Organization.
+     * Listing or lists of all Applications that exist within a specific Organization.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdAppsResponse getOrgsOrgIdApps(demo_1.test_1.models.operations.GetOrgsOrgIdAppsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdAppsRequest.class, baseUrl, "/orgs/{orgId}/apps", request, null);
@@ -99,6 +115,13 @@ public class Application {
         return res;
     }
 
+    /**
+     * Get an existing Application
+     * Gets a specific Application in the specified Organization by ID.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdResponse getOrgsOrgIdAppsAppId(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}", request, null);
@@ -137,6 +160,13 @@ public class Application {
         return res;
     }
 
+    /**
+     * Add a new Application to an Organization
+     * Creates a new Application, then adds it to the specified Organization.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PostOrgsOrgIdAppsResponse postOrgsOrgIdApps(demo_1.test_1.models.operations.PostOrgsOrgIdAppsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdAppsRequest.class, baseUrl, "/orgs/{orgId}/apps", request, null);

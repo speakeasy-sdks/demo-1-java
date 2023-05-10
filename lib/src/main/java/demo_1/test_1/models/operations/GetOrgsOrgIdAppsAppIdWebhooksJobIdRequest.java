@@ -15,6 +15,7 @@ public class GetOrgsOrgIdAppsAppIdWebhooksJobIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=appId")
     public String appId;
+
     public GetOrgsOrgIdAppsAppIdWebhooksJobIdRequest withAppId(String appId) {
         this.appId = appId;
         return this;
@@ -27,6 +28,7 @@ public class GetOrgsOrgIdAppsAppIdWebhooksJobIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=jobId")
     public String jobId;
+
     public GetOrgsOrgIdAppsAppIdWebhooksJobIdRequest withJobId(String jobId) {
         this.jobId = jobId;
         return this;
@@ -39,6 +41,7 @@ public class GetOrgsOrgIdAppsAppIdWebhooksJobIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public GetOrgsOrgIdAppsAppIdWebhooksJobIdRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;

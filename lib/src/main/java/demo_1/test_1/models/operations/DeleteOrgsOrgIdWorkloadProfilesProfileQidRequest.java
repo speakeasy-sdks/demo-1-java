@@ -15,6 +15,7 @@ public class DeleteOrgsOrgIdWorkloadProfilesProfileQidRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public DeleteOrgsOrgIdWorkloadProfilesProfileQidRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;
@@ -27,6 +28,7 @@ public class DeleteOrgsOrgIdWorkloadProfilesProfileQidRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=profileQid")
     public String profileQid;
+
     public DeleteOrgsOrgIdWorkloadProfilesProfileQidRequest withProfileQid(String profileQid) {
         this.profileQid = profileQid;
         return this;

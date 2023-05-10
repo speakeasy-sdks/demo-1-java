@@ -35,6 +35,12 @@ public class AutomationRule {
 		this._genVersion = genVersion;
 	}
 
+    /**
+     * Delete Automation Rule from an Environment.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.DeleteOrgsOrgIdAppsAppIdEnvsEnvIdRulesRuleIdResponse deleteOrgsOrgIdAppsAppIdEnvsEnvIdRulesRuleId(demo_1.test_1.models.operations.DeleteOrgsOrgIdAppsAppIdEnvsEnvIdRulesRuleIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.DeleteOrgsOrgIdAppsAppIdEnvsEnvIdRulesRuleIdRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/envs/{envId}/rules/{ruleId}", request, null);
@@ -59,6 +65,12 @@ public class AutomationRule {
         return res;
     }
 
+    /**
+     * List all Automation Rules in an Environment.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdRulesResponse getOrgsOrgIdAppsAppIdEnvsEnvIdRules(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdRulesRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdRulesRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/envs/{envId}/rules", request, null);
@@ -91,6 +103,12 @@ public class AutomationRule {
         return res;
     }
 
+    /**
+     * Get a specific Automation Rule for an Environment.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdRulesRuleIdResponse getOrgsOrgIdAppsAppIdEnvsEnvIdRulesRuleId(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdRulesRuleIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdRulesRuleIdRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/envs/{envId}/rules/{ruleId}", request, null);
@@ -123,6 +141,13 @@ public class AutomationRule {
         return res;
     }
 
+    /**
+     * Create a new Automation Rule for an Environment.
+     * Items marked as deprecated are still supported (however not recommended) for use and are incompatible with properties of the latest api version. In particular an error is raised if  `images_filter` (deprecated) and `artefacts_filter` are used in the same payload. The same is true for `exclude_images_filter` (deprecated) and `exclude_artefacts_filter`. `match` and `update_to` are still supported but will trigger an error if combined with `match_ref`.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdEnvsEnvIdRulesResponse postOrgsOrgIdAppsAppIdEnvsEnvIdRules(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdEnvsEnvIdRulesRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdEnvsEnvIdRulesRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/envs/{envId}/rules", request, null);
@@ -168,6 +193,13 @@ public class AutomationRule {
         return res;
     }
 
+    /**
+     * Update an existing Automation Rule for an Environment.
+     * Items marked as deprecated are still supported (however not recommended) for use and are incompatible with properties of the latest api version. In particular an error is raised if  `images_filter` (deprecated) and `artefacts_filter` are used in the same payload. The same is true for `exclude_images_filter` (deprecated) and `exclude_artefacts_filter`. `match` and `update_to` are still supported but will trigger an error if combined with `match_ref`.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PutOrgsOrgIdAppsAppIdEnvsEnvIdRulesRuleIdResponse putOrgsOrgIdAppsAppIdEnvsEnvIdRulesRuleId(demo_1.test_1.models.operations.PutOrgsOrgIdAppsAppIdEnvsEnvIdRulesRuleIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PutOrgsOrgIdAppsAppIdEnvsEnvIdRulesRuleIdRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/envs/{envId}/rules/{ruleId}", request, null);

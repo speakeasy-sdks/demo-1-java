@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class PatchOrgsOrgIdAppsAppIdDeltasDeltaIdResponse {
     
     public String contentType;
+
     public PatchOrgsOrgIdAppsAppIdDeltasDeltaIdResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -22,6 +23,7 @@ public class PatchOrgsOrgIdAppsAppIdDeltasDeltaIdResponse {
      */
     
     public demo_1.test_1.models.shared.DeltaResponse deltaResponse;
+
     public PatchOrgsOrgIdAppsAppIdDeltasDeltaIdResponse withDeltaResponse(demo_1.test_1.models.shared.DeltaResponse deltaResponse) {
         this.deltaResponse = deltaResponse;
         return this;
@@ -34,6 +36,7 @@ public class PatchOrgsOrgIdAppsAppIdDeltasDeltaIdResponse {
      */
     
     public demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse;
+
     public PatchOrgsOrgIdAppsAppIdDeltasDeltaIdResponse withHumanitecErrorResponse(demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse) {
         this.humanitecErrorResponse = humanitecErrorResponse;
         return this;
@@ -41,6 +44,7 @@ public class PatchOrgsOrgIdAppsAppIdDeltasDeltaIdResponse {
     
     
     public Integer statusCode;
+
     public PatchOrgsOrgIdAppsAppIdDeltasDeltaIdResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -48,6 +52,7 @@ public class PatchOrgsOrgIdAppsAppIdDeltasDeltaIdResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public PatchOrgsOrgIdAppsAppIdDeltasDeltaIdResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;
@@ -60,6 +65,7 @@ public class PatchOrgsOrgIdAppsAppIdDeltasDeltaIdResponse {
      */
     
     public String patchOrgsOrgIdAppsAppIdDeltasDeltaId404ApplicationJSONString;
+
     public PatchOrgsOrgIdAppsAppIdDeltasDeltaIdResponse withPatchOrgsOrgIdAppsAppIdDeltasDeltaId404ApplicationJSONString(String patchOrgsOrgIdAppsAppIdDeltasDeltaId404ApplicationJSONString) {
         this.patchOrgsOrgIdAppsAppIdDeltasDeltaId404ApplicationJSONString = patchOrgsOrgIdAppsAppIdDeltasDeltaId404ApplicationJSONString;
         return this;

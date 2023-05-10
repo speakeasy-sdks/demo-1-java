@@ -17,6 +17,7 @@ public class WorkloadProfileRequest {
      */
     @JsonProperty("id")
     public String id;
+
     public WorkloadProfileRequest withId(String id) {
         this.id = id;
         return this;

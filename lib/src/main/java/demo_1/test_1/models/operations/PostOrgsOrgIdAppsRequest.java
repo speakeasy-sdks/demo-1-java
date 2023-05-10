@@ -15,6 +15,7 @@ public class PostOrgsOrgIdAppsRequest {
      */
     @SpeakeasyMetadata("request:mediaType=application/json")
     public demo_1.test_1.models.shared.ApplicationCreationRequest applicationCreationRequest;
+
     public PostOrgsOrgIdAppsRequest withApplicationCreationRequest(demo_1.test_1.models.shared.ApplicationCreationRequest applicationCreationRequest) {
         this.applicationCreationRequest = applicationCreationRequest;
         return this;
@@ -27,6 +28,7 @@ public class PostOrgsOrgIdAppsRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public PostOrgsOrgIdAppsRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;

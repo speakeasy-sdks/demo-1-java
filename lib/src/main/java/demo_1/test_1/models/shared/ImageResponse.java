@@ -17,6 +17,7 @@ public class ImageResponse {
      */
     @JsonProperty("added_at")
     public String addedAt;
+
     public ImageResponse withAddedAt(String addedAt) {
         this.addedAt = addedAt;
         return this;
@@ -27,6 +28,7 @@ public class ImageResponse {
      */
     @JsonProperty("builds")
     public ImageBuildResponse[] builds;
+
     public ImageResponse withBuilds(ImageBuildResponse[] builds) {
         this.builds = builds;
         return this;
@@ -37,6 +39,7 @@ public class ImageResponse {
      */
     @JsonProperty("id")
     public String id;
+
     public ImageResponse withId(String id) {
         this.id = id;
         return this;
@@ -47,6 +50,7 @@ public class ImageResponse {
      */
     @JsonProperty("source")
     public String source;
+
     public ImageResponse withSource(String source) {
         this.source = source;
         return this;

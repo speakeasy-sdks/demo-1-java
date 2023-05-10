@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class GetOrgsOrgIdResourcesDefsDefIdResponse {
     
     public String contentType;
+
     public GetOrgsOrgIdResourcesDefsDefIdResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -22,6 +23,7 @@ public class GetOrgsOrgIdResourcesDefsDefIdResponse {
      */
     
     public demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse;
+
     public GetOrgsOrgIdResourcesDefsDefIdResponse withHumanitecErrorResponse(demo_1.test_1.models.shared.HumanitecErrorResponse humanitecErrorResponse) {
         this.humanitecErrorResponse = humanitecErrorResponse;
         return this;
@@ -34,6 +36,7 @@ public class GetOrgsOrgIdResourcesDefsDefIdResponse {
      */
     
     public demo_1.test_1.models.shared.ResourceDefinitionResponse resourceDefinitionResponse;
+
     public GetOrgsOrgIdResourcesDefsDefIdResponse withResourceDefinitionResponse(demo_1.test_1.models.shared.ResourceDefinitionResponse resourceDefinitionResponse) {
         this.resourceDefinitionResponse = resourceDefinitionResponse;
         return this;
@@ -41,6 +44,7 @@ public class GetOrgsOrgIdResourcesDefsDefIdResponse {
     
     
     public Integer statusCode;
+
     public GetOrgsOrgIdResourcesDefsDefIdResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -48,6 +52,7 @@ public class GetOrgsOrgIdResourcesDefsDefIdResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public GetOrgsOrgIdResourcesDefsDefIdResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;

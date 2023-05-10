@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class DeleteOrgsOrgIdAppsAppIdEnvsEnvIdRulesRuleIdResponse {
     
     public String contentType;
+
     public DeleteOrgsOrgIdAppsAppIdEnvsEnvIdRulesRuleIdResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -17,6 +18,7 @@ public class DeleteOrgsOrgIdAppsAppIdEnvsEnvIdRulesRuleIdResponse {
     
     
     public Integer statusCode;
+
     public DeleteOrgsOrgIdAppsAppIdEnvsEnvIdRulesRuleIdResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -24,6 +26,7 @@ public class DeleteOrgsOrgIdAppsAppIdEnvsEnvIdRulesRuleIdResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public DeleteOrgsOrgIdAppsAppIdEnvsEnvIdRulesRuleIdResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;

@@ -35,6 +35,7 @@ public class PatchOrgsOrgIdAppsAppIdDeltasDeltaIdRequest {
      */
     @SpeakeasyMetadata("request:mediaType=application/json")
     public demo_1.test_1.models.shared.DeltaRequest[] requestBody;
+
     public PatchOrgsOrgIdAppsAppIdDeltasDeltaIdRequest withRequestBody(demo_1.test_1.models.shared.DeltaRequest[] requestBody) {
         this.requestBody = requestBody;
         return this;
@@ -47,6 +48,7 @@ public class PatchOrgsOrgIdAppsAppIdDeltasDeltaIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=appId")
     public String appId;
+
     public PatchOrgsOrgIdAppsAppIdDeltasDeltaIdRequest withAppId(String appId) {
         this.appId = appId;
         return this;
@@ -59,6 +61,7 @@ public class PatchOrgsOrgIdAppsAppIdDeltasDeltaIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=deltaId")
     public String deltaId;
+
     public PatchOrgsOrgIdAppsAppIdDeltasDeltaIdRequest withDeltaId(String deltaId) {
         this.deltaId = deltaId;
         return this;
@@ -71,6 +74,7 @@ public class PatchOrgsOrgIdAppsAppIdDeltasDeltaIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=orgId")
     public String orgId;
+
     public PatchOrgsOrgIdAppsAppIdDeltasDeltaIdRequest withOrgId(String orgId) {
         this.orgId = orgId;
         return this;

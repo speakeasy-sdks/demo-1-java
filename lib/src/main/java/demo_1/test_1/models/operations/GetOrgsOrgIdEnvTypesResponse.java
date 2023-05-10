@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class GetOrgsOrgIdEnvTypesResponse {
     
     public String contentType;
+
     public GetOrgsOrgIdEnvTypesResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -22,6 +23,7 @@ public class GetOrgsOrgIdEnvTypesResponse {
      */
     
     public demo_1.test_1.models.shared.EnvironmentTypeResponse[] environmentTypeResponses;
+
     public GetOrgsOrgIdEnvTypesResponse withEnvironmentTypeResponses(demo_1.test_1.models.shared.EnvironmentTypeResponse[] environmentTypeResponses) {
         this.environmentTypeResponses = environmentTypeResponses;
         return this;
@@ -29,6 +31,7 @@ public class GetOrgsOrgIdEnvTypesResponse {
     
     
     public Integer statusCode;
+
     public GetOrgsOrgIdEnvTypesResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -36,6 +39,7 @@ public class GetOrgsOrgIdEnvTypesResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public GetOrgsOrgIdEnvTypesResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;

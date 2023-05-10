@@ -15,6 +15,7 @@ public class ControllerRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("kind")
     public String kind;
+
     public ControllerRequest withKind(String kind) {
         this.kind = kind;
         return this;
@@ -23,6 +24,7 @@ public class ControllerRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("message")
     public String message;
+
     public ControllerRequest withMessage(String message) {
         this.message = message;
         return this;
@@ -31,6 +33,7 @@ public class ControllerRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("pods")
     public PodStateRequest[] pods;
+
     public ControllerRequest withPods(PodStateRequest[] pods) {
         this.pods = pods;
         return this;
@@ -39,6 +42,7 @@ public class ControllerRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("replicas")
     public Long replicas;
+
     public ControllerRequest withReplicas(Long replicas) {
         this.replicas = replicas;
         return this;
@@ -47,6 +51,7 @@ public class ControllerRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("revision")
     public Long revision;
+
     public ControllerRequest withRevision(Long revision) {
         this.revision = revision;
         return this;
@@ -55,6 +60,7 @@ public class ControllerRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("status")
     public String status;
+
     public ControllerRequest withStatus(String status) {
         this.status = status;
         return this;

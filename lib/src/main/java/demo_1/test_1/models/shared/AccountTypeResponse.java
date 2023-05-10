@@ -15,6 +15,7 @@ public class AccountTypeResponse {
      */
     @JsonProperty("name")
     public String name;
+
     public AccountTypeResponse withName(String name) {
         this.name = name;
         return this;
@@ -25,6 +26,7 @@ public class AccountTypeResponse {
      */
     @JsonProperty("type")
     public String type;
+
     public AccountTypeResponse withType(String type) {
         this.type = type;
         return this;

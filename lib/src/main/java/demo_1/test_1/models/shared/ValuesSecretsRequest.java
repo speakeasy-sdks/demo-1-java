@@ -18,6 +18,7 @@ public class ValuesSecretsRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("secrets")
     public java.util.Map<String, Object> secrets;
+
     public ValuesSecretsRequest withSecrets(java.util.Map<String, Object> secrets) {
         this.secrets = secrets;
         return this;
@@ -29,6 +30,7 @@ public class ValuesSecretsRequest {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("values")
     public java.util.Map<String, Object> values;
+
     public ValuesSecretsRequest withValues(java.util.Map<String, Object> values) {
         this.values = values;
         return this;

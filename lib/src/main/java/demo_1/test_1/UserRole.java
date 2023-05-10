@@ -35,6 +35,12 @@ public class UserRole {
 		this._genVersion = genVersion;
 	}
 
+    /**
+     * Remove the role of a User on an Application
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.DeleteOrgsOrgIdAppsAppIdUsersUserIdResponse deleteOrgsOrgIdAppsAppIdUsersUserId(demo_1.test_1.models.operations.DeleteOrgsOrgIdAppsAppIdUsersUserIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.DeleteOrgsOrgIdAppsAppIdUsersUserIdRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/users/{userId}", request, null);
@@ -67,6 +73,12 @@ public class UserRole {
         return res;
     }
 
+    /**
+     * Remove the role of a User on an Environment Type
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.DeleteOrgsOrgIdEnvTypesEnvTypeUsersUserIdResponse deleteOrgsOrgIdEnvTypesEnvTypeUsersUserId(demo_1.test_1.models.operations.DeleteOrgsOrgIdEnvTypesEnvTypeUsersUserIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.DeleteOrgsOrgIdEnvTypesEnvTypeUsersUserIdRequest.class, baseUrl, "/orgs/{orgId}/env-types/{envType}/users/{userId}", request, null);
@@ -99,6 +111,12 @@ public class UserRole {
         return res;
     }
 
+    /**
+     * Remove the role of a User on an Organization
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.DeleteOrgsOrgIdUsersUserIdResponse deleteOrgsOrgIdUsersUserId(demo_1.test_1.models.operations.DeleteOrgsOrgIdUsersUserIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.DeleteOrgsOrgIdUsersUserIdRequest.class, baseUrl, "/orgs/{orgId}/users/{userId}", request, null);
@@ -131,6 +149,12 @@ public class UserRole {
         return res;
     }
 
+    /**
+     * List Users with roles in an App
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdUsersResponse getOrgsOrgIdAppsAppIdUsers(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdUsersRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdUsersRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/users", request, null);
@@ -163,6 +187,12 @@ public class UserRole {
         return res;
     }
 
+    /**
+     * Get the role of a User on an Application
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdUsersUserIdResponse getOrgsOrgIdAppsAppIdUsersUserId(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdUsersUserIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdUsersUserIdRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/users/{userId}", request, null);
@@ -203,6 +233,12 @@ public class UserRole {
         return res;
     }
 
+    /**
+     * Get the role of a User on an Environment Type
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdEnvTypesEnvTypeUsersUserIdResponse getOrgsOrgIdEnvTypesEnvTypeUsersUserId(demo_1.test_1.models.operations.GetOrgsOrgIdEnvTypesEnvTypeUsersUserIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdEnvTypesEnvTypeUsersUserIdRequest.class, baseUrl, "/orgs/{orgId}/env-types/{envType}/users/{userId}", request, null);
@@ -243,6 +279,12 @@ public class UserRole {
         return res;
     }
 
+    /**
+     * List Users with roles in an Organization
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdUsersResponse getOrgsOrgIdUsers(demo_1.test_1.models.operations.GetOrgsOrgIdUsersRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdUsersRequest.class, baseUrl, "/orgs/{orgId}/users", request, null);
@@ -275,6 +317,12 @@ public class UserRole {
         return res;
     }
 
+    /**
+     * Get the role of a User on an Organization
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.GetOrgsOrgIdUsersUserIdResponse getOrgsOrgIdUsersUserId(demo_1.test_1.models.operations.GetOrgsOrgIdUsersUserIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdUsersUserIdRequest.class, baseUrl, "/orgs/{orgId}/users/{userId}", request, null);
@@ -315,6 +363,12 @@ public class UserRole {
         return res;
     }
 
+    /**
+     * Update the role of a User on an Application
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PatchOrgsOrgIdAppsAppIdUsersUserIdResponse patchOrgsOrgIdAppsAppIdUsersUserId(demo_1.test_1.models.operations.PatchOrgsOrgIdAppsAppIdUsersUserIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PatchOrgsOrgIdAppsAppIdUsersUserIdRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/users/{userId}", request, null);
@@ -360,6 +414,12 @@ public class UserRole {
         return res;
     }
 
+    /**
+     * Update the role of a User on an Environment Type
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PatchOrgsOrgIdEnvTypesEnvTypeUsersUserIdResponse patchOrgsOrgIdEnvTypesEnvTypeUsersUserId(demo_1.test_1.models.operations.PatchOrgsOrgIdEnvTypesEnvTypeUsersUserIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PatchOrgsOrgIdEnvTypesEnvTypeUsersUserIdRequest.class, baseUrl, "/orgs/{orgId}/env-types/{envType}/users/{userId}", request, null);
@@ -405,6 +465,12 @@ public class UserRole {
         return res;
     }
 
+    /**
+     * Update the role of a User on an Organization
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PatchOrgsOrgIdUsersUserIdResponse patchOrgsOrgIdUsersUserId(demo_1.test_1.models.operations.PatchOrgsOrgIdUsersUserIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PatchOrgsOrgIdUsersUserIdRequest.class, baseUrl, "/orgs/{orgId}/users/{userId}", request, null);
@@ -450,6 +516,12 @@ public class UserRole {
         return res;
     }
 
+    /**
+     * Adds a User to an Application with a Role
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdUsersResponse postOrgsOrgIdAppsAppIdUsers(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdUsersRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdUsersRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/users", request, null);
@@ -495,6 +567,12 @@ public class UserRole {
         return res;
     }
 
+    /**
+     * Adds a User to an Environment Type with a Role
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PostOrgsOrgIdEnvTypesEnvTypeUsersResponse postOrgsOrgIdEnvTypesEnvTypeUsers(demo_1.test_1.models.operations.PostOrgsOrgIdEnvTypesEnvTypeUsersRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdEnvTypesEnvTypeUsersRequest.class, baseUrl, "/orgs/{orgId}/env-types/{envType}/users", request, null);
@@ -540,6 +618,12 @@ public class UserRole {
         return res;
     }
 
+    /**
+     * Invites a user to an Organization with a specified role.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public demo_1.test_1.models.operations.PostOrgsOrgIdInvitationsResponse postOrgsOrgIdInvitations(demo_1.test_1.models.operations.PostOrgsOrgIdInvitationsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdInvitationsRequest.class, baseUrl, "/orgs/{orgId}/invitations", request, null);

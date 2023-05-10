@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class GetDeltaResponse {
     
     public String contentType;
+
     public GetDeltaResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -20,6 +21,7 @@ public class GetDeltaResponse {
      */
     
     public demo_1.test_1.models.shared.DeltaResponse deltaResponse;
+
     public GetDeltaResponse withDeltaResponse(demo_1.test_1.models.shared.DeltaResponse deltaResponse) {
         this.deltaResponse = deltaResponse;
         return this;
@@ -27,6 +29,7 @@ public class GetDeltaResponse {
     
     
     public Integer statusCode;
+
     public GetDeltaResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -34,6 +37,7 @@ public class GetDeltaResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public GetDeltaResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;
@@ -46,6 +50,7 @@ public class GetDeltaResponse {
      */
     
     public String getDelta404ApplicationJSONString;
+
     public GetDeltaResponse withGetDelta404ApplicationJSONString(String getDelta404ApplicationJSONString) {
         this.getDelta404ApplicationJSONString = getDelta404ApplicationJSONString;
         return this;
