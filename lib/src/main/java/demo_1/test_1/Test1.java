@@ -159,7 +159,7 @@ public class Test1 {
     /**
      * Deployments represent updates to the running state of an Environment.
      * 
-     * Deployments are made by applying _Deltas_ to a state defined by an existing Deployment. The Environment\u2019s from_deploy property defines the Deployment. This Deployment is usually but not always in the current Environment. If the Deployment is from another Environment, the state of that Environment will be "cloned" into the current Environment with the option to apply a Delta.
+     * Deployments are made by applying _Deltas_ to a state defined by an existing Deployment. The Environment’s from_deploy property defines the Deployment. This Deployment is usually but not always in the current Environment. If the Deployment is from another Environment, the state of that Environment will be "cloned" into the current Environment with the option to apply a Delta.
      * &lt;SchemaDefinition schemaRef="#/components/schemas/DeploymentRequest" /&gt;
      * 
      */
@@ -167,7 +167,7 @@ public class Test1 {
     /**
      * DriverDefinition describes the resource driver.
      * 
-     * Resource Drivers are code that fulfils the Humanitec Resource Driver Interface. This interface allows for certain actions to be performed on resources such as creation and destruction. Humanitec provides numerous Resource Drivers \u201cout of the box\u201d. It is also possible to use 3rd party Resource Drivers or write your own.
+     * Resource Drivers are code that fulfils the Humanitec Resource Driver Interface. This interface allows for certain actions to be performed on resources such as creation and destruction. Humanitec provides numerous Resource Drivers “out of the box”. It is also possible to use 3rd party Resource Drivers or write your own.
      * &lt;SchemaDefinition schemaRef="#/components/schemas/DriverDefinitionRequest" /&gt;
      * 
      */
@@ -346,8 +346,8 @@ public class Test1 {
 	
 	private String _serverUrl;
 	private String _language = "java";
-	private String _sdkVersion = "1.0.1";
-	private String _genVersion = "2.26.2";
+	private String _sdkVersion = "1.0.2";
+	private String _genVersion = "2.26.3";
 	/**
 	 * The Builder class allows the configuration of a new instance of the SDK.
 	 */

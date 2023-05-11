@@ -37,7 +37,7 @@ public class EnvironmentResponse {
     /**
      * Deployments represent updates to the running state of an Environment.
      * 
-     * Deployments are made by applying _Deltas_ to a state defined by an existing Deployment. The Environment\u2019s from_deploy property defines the Deployment. This Deployment is usually but not always in the current Environment. If the Deployment is from another Environment, the state of that Environment will be "cloned" into the current Environment with the option to apply a Delta.
+     * Deployments are made by applying _Deltas_ to a state defined by an existing Deployment. The Environment’s from_deploy property defines the Deployment. This Deployment is usually but not always in the current Environment. If the Deployment is from another Environment, the state of that Environment will be "cloned" into the current Environment with the option to apply a Delta.
      */
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("from_deploy")
@@ -62,7 +62,7 @@ public class EnvironmentResponse {
     /**
      * Deployments represent updates to the running state of an Environment.
      * 
-     * Deployments are made by applying _Deltas_ to a state defined by an existing Deployment. The Environment\u2019s from_deploy property defines the Deployment. This Deployment is usually but not always in the current Environment. If the Deployment is from another Environment, the state of that Environment will be "cloned" into the current Environment with the option to apply a Delta.
+     * Deployments are made by applying _Deltas_ to a state defined by an existing Deployment. The Environment’s from_deploy property defines the Deployment. This Deployment is usually but not always in the current Environment. If the Deployment is from another Environment, the state of that Environment will be "cloned" into the current Environment with the option to apply a Delta.
      */
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("last_deploy")
