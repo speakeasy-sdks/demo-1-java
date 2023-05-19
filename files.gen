@@ -404,12 +404,12 @@ lib/src/main/java/demo_1/test_1/models/shared/RoleRequest.java
 lib/src/main/java/demo_1/test_1/models/shared/UserRoleRequest.java
 lib/src/main/java/demo_1/test_1/models/shared/UserInviteRequestRequest.java
 lib/src/main/java/demo_1/test_1/models/shared/ValueResponse.java
-lib/src/main/java/demo_1/test_1/models/shared/ValueSourceEnum.java
+lib/src/main/java/demo_1/test_1/models/shared/ValueSource.java
 lib/src/main/java/demo_1/test_1/models/shared/ValuePatchPayloadRequest.java
 lib/src/main/java/demo_1/test_1/models/shared/ValueCreatePayloadRequest.java
 lib/src/main/java/demo_1/test_1/models/shared/ValueEditPayloadRequest.java
 lib/src/main/java/demo_1/test_1/models/shared/ValueSetVersionResponse.java
-lib/src/main/java/demo_1/test_1/models/shared/ValueSetVersionResultOfEnum.java
+lib/src/main/java/demo_1/test_1/models/shared/ValueSetVersionResultOf.java
 lib/src/main/java/demo_1/test_1/models/shared/JSONPatchResponse.java
 lib/src/main/java/demo_1/test_1/models/shared/ValueSetActionPayloadRequest.java
 lib/src/main/java/demo_1/test_1/models/shared/WorkloadProfileResponse.java

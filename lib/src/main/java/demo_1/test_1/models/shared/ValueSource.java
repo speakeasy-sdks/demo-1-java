@@ -7,16 +7,16 @@ package demo_1.test_1.models.shared;
 import com.fasterxml.jackson.annotation.JsonValue;
 
 /**
- * ValueSourceEnum - Source of the value, "app" for app level, "env" for app env level.
+ * ValueSource - Source of the value, "app" for app level, "env" for app env level.
  */
-public enum ValueSourceEnum {
+public enum ValueSource {
     APP("app"),
     ENV("env");
 
     @JsonValue
     public final String value;
 
-    private ValueSourceEnum(String value) {
+    private ValueSource(String value) {
         this.value = value;
     }
 }

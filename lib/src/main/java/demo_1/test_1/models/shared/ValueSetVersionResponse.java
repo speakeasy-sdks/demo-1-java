@@ -58,9 +58,9 @@ public class ValueSetVersionResponse {
     }
     
     @JsonProperty("result_of")
-    public ValueSetVersionResultOfEnum resultOf;
+    public ValueSetVersionResultOf resultOf;
 
-    public ValueSetVersionResponse withResultOf(ValueSetVersionResultOfEnum resultOf) {
+    public ValueSetVersionResponse withResultOf(ValueSetVersionResultOf resultOf) {
         this.resultOf = resultOf;
         return this;
     }
@@ -91,7 +91,7 @@ public class ValueSetVersionResponse {
         return this;
     }
     
-    public ValueSetVersionResponse(@JsonProperty("change") JSONPatchResponse[] change, @JsonProperty("comment") String comment, @JsonProperty("created_at") OffsetDateTime createdAt, @JsonProperty("created_by") String createdBy, @JsonProperty("id") String id, @JsonProperty("result_of") ValueSetVersionResultOfEnum resultOf, @JsonProperty("source_value_set_version_id") String sourceValueSetVersionId, @JsonProperty("updated_at") OffsetDateTime updatedAt, @JsonProperty("values") java.util.Map<String, ValueResponse> values) {
+    public ValueSetVersionResponse(@JsonProperty("change") JSONPatchResponse[] change, @JsonProperty("comment") String comment, @JsonProperty("created_at") OffsetDateTime createdAt, @JsonProperty("created_by") String createdBy, @JsonProperty("id") String id, @JsonProperty("result_of") ValueSetVersionResultOf resultOf, @JsonProperty("source_value_set_version_id") String sourceValueSetVersionId, @JsonProperty("updated_at") OffsetDateTime updatedAt, @JsonProperty("values") java.util.Map<String, ValueResponse> values) {
         this.change = change;
         this.comment = comment;
         this.createdAt = createdAt;

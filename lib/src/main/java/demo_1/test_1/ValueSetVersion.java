@@ -51,7 +51,8 @@ public class ValueSetVersion {
         HTTPRequest req = new HTTPRequest();
         req.setMethod("GET");
         req.setURL(url);
-        
+
+        req.addHeader("Accept", "application/json");
         req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
         java.util.List<NameValuePair> queryParams = demo_1.test_1.utils.Utils.getQueryParams(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdEnvsEnvIdValueSetVersionsRequest.class, request, null);
         if (queryParams != null) {
@@ -94,7 +95,8 @@ public class ValueSetVersion {
         HTTPRequest req = new HTTPRequest();
         req.setMethod("GET");
         req.setURL(url);
-        
+
+        req.addHeader("Accept", "application/json;q=1, application/json;q=0");
         req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
         
         HTTPClient client = this._defaultClient;
@@ -140,7 +142,8 @@ public class ValueSetVersion {
         HTTPRequest req = new HTTPRequest();
         req.setMethod("GET");
         req.setURL(url);
-        
+
+        req.addHeader("Accept", "application/json");
         req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
         java.util.List<NameValuePair> queryParams = demo_1.test_1.utils.Utils.getQueryParams(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdValueSetVersionsRequest.class, request, null);
         if (queryParams != null) {
@@ -183,7 +186,8 @@ public class ValueSetVersion {
         HTTPRequest req = new HTTPRequest();
         req.setMethod("GET");
         req.setURL(url);
-        
+
+        req.addHeader("Accept", "application/json;q=1, application/json;q=0");
         req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
         
         HTTPClient client = this._defaultClient;
@@ -238,7 +242,8 @@ public class ValueSetVersion {
             throw new Exception("Request body is required");
         }
         req.setBody(serializedRequestBody);
-        
+
+        req.addHeader("Accept", "application/json");
         req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
         
         HTTPClient client = this._defaultClient;
@@ -286,7 +291,8 @@ public class ValueSetVersion {
             throw new Exception("Request body is required");
         }
         req.setBody(serializedRequestBody);
-        
+
+        req.addHeader("Accept", "application/json;q=1, application/json;q=0");
         req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
         
         HTTPClient client = this._defaultClient;
@@ -340,7 +346,8 @@ public class ValueSetVersion {
             throw new Exception("Request body is required");
         }
         req.setBody(serializedRequestBody);
-        
+
+        req.addHeader("Accept", "application/json;q=1, application/json;q=0");
         req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
         
         HTTPClient client = this._defaultClient;
@@ -395,7 +402,8 @@ public class ValueSetVersion {
             throw new Exception("Request body is required");
         }
         req.setBody(serializedRequestBody);
-        
+
+        req.addHeader("Accept", "application/json");
         req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
         
         HTTPClient client = this._defaultClient;
@@ -443,7 +451,8 @@ public class ValueSetVersion {
             throw new Exception("Request body is required");
         }
         req.setBody(serializedRequestBody);
-        
+
+        req.addHeader("Accept", "application/json;q=1, application/json;q=0");
         req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
         
         HTTPClient client = this._defaultClient;
@@ -497,7 +506,8 @@ public class ValueSetVersion {
             throw new Exception("Request body is required");
         }
         req.setBody(serializedRequestBody);
-        
+
+        req.addHeader("Accept", "application/json;q=1, application/json;q=0");
         req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
         
         HTTPClient client = this._defaultClient;

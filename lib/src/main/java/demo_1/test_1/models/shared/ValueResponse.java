@@ -88,9 +88,9 @@ public class ValueResponse {
      * Source of the value, "app" for app level, "env" for app env level.
      */
     @JsonProperty("source")
-    public ValueSourceEnum source;
+    public ValueSource source;
 
-    public ValueResponse withSource(ValueSourceEnum source) {
+    public ValueResponse withSource(ValueSource source) {
         this.source = source;
         return this;
     }
@@ -116,7 +116,7 @@ public class ValueResponse {
         return this;
     }
     
-    public ValueResponse(@JsonProperty("created_at") OffsetDateTime createdAt, @JsonProperty("description") String description, @JsonProperty("is_secret") Boolean isSecret, @JsonProperty("key") String key, @JsonProperty("secret_key") String secretKey, @JsonProperty("secret_version") String secretVersion, @JsonProperty("source") ValueSourceEnum source, @JsonProperty("updated_at") OffsetDateTime updatedAt, @JsonProperty("value") String value) {
+    public ValueResponse(@JsonProperty("created_at") OffsetDateTime createdAt, @JsonProperty("description") String description, @JsonProperty("is_secret") Boolean isSecret, @JsonProperty("key") String key, @JsonProperty("secret_key") String secretKey, @JsonProperty("secret_version") String secretVersion, @JsonProperty("source") ValueSource source, @JsonProperty("updated_at") OffsetDateTime updatedAt, @JsonProperty("value") String value) {
         this.createdAt = createdAt;
         this.description = description;
         this.isSecret = isSecret;

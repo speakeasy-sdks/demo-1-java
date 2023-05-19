@@ -50,7 +50,8 @@ public class ArtefactVersion {
         HTTPRequest req = new HTTPRequest();
         req.setMethod("GET");
         req.setURL(url);
-        
+
+        req.addHeader("Accept", "application/json;q=1, application/json;q=0");
         req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
         java.util.List<NameValuePair> queryParams = demo_1.test_1.utils.Utils.getQueryParams(demo_1.test_1.models.operations.GetOrgsOrgIdArtefactVersionsRequest.class, request, null);
         if (queryParams != null) {
@@ -102,7 +103,8 @@ public class ArtefactVersion {
         HTTPRequest req = new HTTPRequest();
         req.setMethod("GET");
         req.setURL(url);
-        
+
+        req.addHeader("Accept", "application/json;q=1, application/json;q=0");
         req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
         
         HTTPClient client = this._defaultClient;
@@ -148,7 +150,8 @@ public class ArtefactVersion {
         HTTPRequest req = new HTTPRequest();
         req.setMethod("GET");
         req.setURL(url);
-        
+
+        req.addHeader("Accept", "application/json;q=1, application/json;q=0");
         req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
         java.util.List<NameValuePair> queryParams = demo_1.test_1.utils.Utils.getQueryParams(demo_1.test_1.models.operations.GetOrgsOrgIdArtefactsArtefactIdVersionsRequest.class, request, null);
         if (queryParams != null) {
@@ -205,7 +208,8 @@ public class ArtefactVersion {
             throw new Exception("Request body is required");
         }
         req.setBody(serializedRequestBody);
-        
+
+        req.addHeader("Accept", "application/json;q=1, application/json;q=0");
         req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
         
         HTTPClient client = this._defaultClient;
@@ -255,7 +259,8 @@ public class ArtefactVersion {
             throw new Exception("Request body is required");
         }
         req.setBody(serializedRequestBody);
-        
+
+        req.addHeader("Accept", "application/json;q=1, application/json;q=0");
         req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
         java.util.List<NameValuePair> queryParams = demo_1.test_1.utils.Utils.getQueryParams(demo_1.test_1.models.operations.PostOrgsOrgIdArtefactVersionsRequest.class, request, null);
         if (queryParams != null) {

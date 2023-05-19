@@ -6,7 +6,7 @@ package demo_1.test_1.models.shared;
 
 import com.fasterxml.jackson.annotation.JsonValue;
 
-public enum ValueSetVersionResultOfEnum {
+public enum ValueSetVersionResultOf {
     APP_VALUE_CREATE("app_value_create"),
     APP_VALUE_UPDATE("app_value_update"),
     APP_VALUE_DELETE("app_value_delete"),
@@ -23,7 +23,7 @@ public enum ValueSetVersionResultOfEnum {
     @JsonValue
     public final String value;
 
-    private ValueSetVersionResultOfEnum(String value) {
+    private ValueSetVersionResultOf(String value) {
         this.value = value;
     }
 }
