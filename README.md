@@ -6,7 +6,7 @@
 ### Gradle
 
 ```groovy
-implementation 'demo_1.test_1:test-1:1.6.0'
+implementation 'demo_1.test_1:test-1:1.6.1'
 ```
 <!-- End SDK Installation -->
 
