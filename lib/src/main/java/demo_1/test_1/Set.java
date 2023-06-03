@@ -50,20 +50,10 @@ import org.apache.http.NameValuePair;
  */
 public class Set {
 	
-	private HTTPClient _defaultClient;
-	private HTTPClient _securityClient;
-	private String _serverUrl;
-	private String _language;
-	private String _sdkVersion;
-	private String _genVersion;
+	private SDKConfiguration sdkConfiguration;
 
-	public Set(HTTPClient defaultClient, HTTPClient securityClient, String serverUrl, String language, String sdkVersion, String genVersion) {
-		this._defaultClient = defaultClient;
-		this._securityClient = securityClient;
-		this._serverUrl = serverUrl;
-		this._language = language;
-		this._sdkVersion = sdkVersion;
-		this._genVersion = genVersion;
+	public Set(SDKConfiguration sdkConfiguration) {
+		this.sdkConfiguration = sdkConfiguration;
 	}
 
     /**
@@ -73,7 +63,7 @@ public class Set {
      * @throws Exception if the API call fails
      */
     public demo_1.test_1.models.operations.GetSetsResponse getSets(demo_1.test_1.models.operations.GetSetsRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetSetsRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/sets", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -81,9 +71,9 @@ public class Set {
         req.setURL(url);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         
-        HTTPClient client = this._defaultClient;
+        HTTPClient client = this.sdkConfiguration.defaultClient;
         HttpResponse<byte[]> httpRes = client.send(req);
 
         String contentType = httpRes.headers().firstValue("Content-Type").orElse("application/octet-stream");
@@ -118,7 +108,7 @@ public class Set {
      * @throws Exception if the API call fails
      */
     public demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdSetsSetIdResponse getOrgsOrgIdAppsAppIdSetsSetId(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdSetsSetIdRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdSetsSetIdRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/sets/{setId}", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -126,7 +116,7 @@ public class Set {
         req.setURL(url);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         java.util.List<NameValuePair> queryParams = demo_1.test_1.utils.Utils.getQueryParams(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdSetsSetIdRequest.class, request, null);
         if (queryParams != null) {
             for (NameValuePair queryParam : queryParams) {
@@ -134,7 +124,7 @@ public class Set {
             }
         }
         
-        HTTPClient client = this._defaultClient;
+        HTTPClient client = this.sdkConfiguration.defaultClient;
         HttpResponse<byte[]> httpRes = client.send(req);
 
         String contentType = httpRes.headers().firstValue("Content-Type").orElse("application/octet-stream");
@@ -169,7 +159,7 @@ public class Set {
      * @throws Exception if the API call fails
      */
     public demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdSetsSetIdDiffSourceSetIdResponse getOrgsOrgIdAppsAppIdSetsSetIdDiffSourceSetId(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdSetsSetIdDiffSourceSetIdRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdSetsSetIdDiffSourceSetIdRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/sets/{setId}/diff/{sourceSetId}", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -177,9 +167,9 @@ public class Set {
         req.setURL(url);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         
-        HTTPClient client = this._defaultClient;
+        HTTPClient client = this.sdkConfiguration.defaultClient;
         HttpResponse<byte[]> httpRes = client.send(req);
 
         String contentType = httpRes.headers().firstValue("Content-Type").orElse("application/octet-stream");
@@ -214,7 +204,7 @@ public class Set {
      * @throws Exception if the API call fails
      */
     public demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdSetsSetIdResponse postOrgsOrgIdAppsAppIdSetsSetId(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdSetsSetIdRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdSetsSetIdRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/sets/{setId}", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -227,9 +217,9 @@ public class Set {
         req.setBody(serializedRequestBody);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0.7, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         
-        HTTPClient client = this._defaultClient;
+        HTTPClient client = this.sdkConfiguration.defaultClient;
         HttpResponse<byte[]> httpRes = client.send(req);
 
         String contentType = httpRes.headers().firstValue("Content-Type").orElse("application/octet-stream");

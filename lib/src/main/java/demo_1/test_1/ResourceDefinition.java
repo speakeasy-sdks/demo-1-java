@@ -22,20 +22,10 @@ import org.apache.http.NameValuePair;
  */
 public class ResourceDefinition {
 	
-	private HTTPClient _defaultClient;
-	private HTTPClient _securityClient;
-	private String _serverUrl;
-	private String _language;
-	private String _sdkVersion;
-	private String _genVersion;
+	private SDKConfiguration sdkConfiguration;
 
-	public ResourceDefinition(HTTPClient defaultClient, HTTPClient securityClient, String serverUrl, String language, String sdkVersion, String genVersion) {
-		this._defaultClient = defaultClient;
-		this._securityClient = securityClient;
-		this._serverUrl = serverUrl;
-		this._language = language;
-		this._sdkVersion = sdkVersion;
-		this._genVersion = genVersion;
+	public ResourceDefinition(SDKConfiguration sdkConfiguration) {
+		this.sdkConfiguration = sdkConfiguration;
 	}
 
     /**
@@ -52,7 +42,7 @@ public class ResourceDefinition {
      * @throws Exception if the API call fails
      */
     public demo_1.test_1.models.operations.DeleteOrgsOrgIdResourcesDefsDefIdResponse deleteOrgsOrgIdResourcesDefsDefId(demo_1.test_1.models.operations.DeleteOrgsOrgIdResourcesDefsDefIdRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.DeleteOrgsOrgIdResourcesDefsDefIdRequest.class, baseUrl, "/orgs/{orgId}/resources/defs/{defId}", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -60,7 +50,7 @@ public class ResourceDefinition {
         req.setURL(url);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         java.util.List<NameValuePair> queryParams = demo_1.test_1.utils.Utils.getQueryParams(demo_1.test_1.models.operations.DeleteOrgsOrgIdResourcesDefsDefIdRequest.class, request, null);
         if (queryParams != null) {
             for (NameValuePair queryParam : queryParams) {
@@ -68,7 +58,7 @@ public class ResourceDefinition {
             }
         }
         
-        HTTPClient client = this._defaultClient;
+        HTTPClient client = this.sdkConfiguration.defaultClient;
         HttpResponse<byte[]> httpRes = client.send(req);
 
         String contentType = httpRes.headers().firstValue("Content-Type").orElse("application/octet-stream");
@@ -111,7 +101,7 @@ public class ResourceDefinition {
      * @throws Exception if the API call fails
      */
     public demo_1.test_1.models.operations.DeleteOrgsOrgIdResourcesDefsDefIdCriteriaCriteriaIdResponse deleteOrgsOrgIdResourcesDefsDefIdCriteriaCriteriaId(demo_1.test_1.models.operations.DeleteOrgsOrgIdResourcesDefsDefIdCriteriaCriteriaIdRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.DeleteOrgsOrgIdResourcesDefsDefIdCriteriaCriteriaIdRequest.class, baseUrl, "/orgs/{orgId}/resources/defs/{defId}/criteria/{criteriaId}", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -119,7 +109,7 @@ public class ResourceDefinition {
         req.setURL(url);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0.7, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         java.util.List<NameValuePair> queryParams = demo_1.test_1.utils.Utils.getQueryParams(demo_1.test_1.models.operations.DeleteOrgsOrgIdResourcesDefsDefIdCriteriaCriteriaIdRequest.class, request, null);
         if (queryParams != null) {
             for (NameValuePair queryParam : queryParams) {
@@ -127,7 +117,7 @@ public class ResourceDefinition {
             }
         }
         
-        HTTPClient client = this._defaultClient;
+        HTTPClient client = this.sdkConfiguration.defaultClient;
         HttpResponse<byte[]> httpRes = client.send(req);
 
         String contentType = httpRes.headers().firstValue("Content-Type").orElse("application/octet-stream");
@@ -173,7 +163,7 @@ public class ResourceDefinition {
      * @throws Exception if the API call fails
      */
     public demo_1.test_1.models.operations.GetOrgsOrgIdResourcesDefsResponse getOrgsOrgIdResourcesDefs(demo_1.test_1.models.operations.GetOrgsOrgIdResourcesDefsRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdResourcesDefsRequest.class, baseUrl, "/orgs/{orgId}/resources/defs", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -181,7 +171,7 @@ public class ResourceDefinition {
         req.setURL(url);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         java.util.List<NameValuePair> queryParams = demo_1.test_1.utils.Utils.getQueryParams(demo_1.test_1.models.operations.GetOrgsOrgIdResourcesDefsRequest.class, request, null);
         if (queryParams != null) {
             for (NameValuePair queryParam : queryParams) {
@@ -189,7 +179,7 @@ public class ResourceDefinition {
             }
         }
         
-        HTTPClient client = this._defaultClient;
+        HTTPClient client = this.sdkConfiguration.defaultClient;
         HttpResponse<byte[]> httpRes = client.send(req);
 
         String contentType = httpRes.headers().firstValue("Content-Type").orElse("application/octet-stream");
@@ -225,7 +215,7 @@ public class ResourceDefinition {
      * @throws Exception if the API call fails
      */
     public demo_1.test_1.models.operations.GetOrgsOrgIdResourcesDefsDefIdResponse getOrgsOrgIdResourcesDefsDefId(demo_1.test_1.models.operations.GetOrgsOrgIdResourcesDefsDefIdRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdResourcesDefsDefIdRequest.class, baseUrl, "/orgs/{orgId}/resources/defs/{defId}", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -233,9 +223,9 @@ public class ResourceDefinition {
         req.setURL(url);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         
-        HTTPClient client = this._defaultClient;
+        HTTPClient client = this.sdkConfiguration.defaultClient;
         HttpResponse<byte[]> httpRes = client.send(req);
 
         String contentType = httpRes.headers().firstValue("Content-Type").orElse("application/octet-stream");
@@ -271,7 +261,7 @@ public class ResourceDefinition {
      * @throws Exception if the API call fails
      */
     public demo_1.test_1.models.operations.GetOrgsOrgIdResourcesDefsDefIdResourcesResponse getOrgsOrgIdResourcesDefsDefIdResources(demo_1.test_1.models.operations.GetOrgsOrgIdResourcesDefsDefIdResourcesRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdResourcesDefsDefIdResourcesRequest.class, baseUrl, "/orgs/{orgId}/resources/defs/{defId}/resources", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -279,9 +269,9 @@ public class ResourceDefinition {
         req.setURL(url);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         
-        HTTPClient client = this._defaultClient;
+        HTTPClient client = this.sdkConfiguration.defaultClient;
         HttpResponse<byte[]> httpRes = client.send(req);
 
         String contentType = httpRes.headers().firstValue("Content-Type").orElse("application/octet-stream");
@@ -317,7 +307,7 @@ public class ResourceDefinition {
      * @throws Exception if the API call fails
      */
     public demo_1.test_1.models.operations.PatchOrgsOrgIdResourcesDefsDefIdResponse patchOrgsOrgIdResourcesDefsDefId(demo_1.test_1.models.operations.PatchOrgsOrgIdResourcesDefsDefIdRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PatchOrgsOrgIdResourcesDefsDefIdRequest.class, baseUrl, "/orgs/{orgId}/resources/defs/{defId}", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -330,9 +320,9 @@ public class ResourceDefinition {
         req.setBody(serializedRequestBody);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         
-        HTTPClient client = this._defaultClient;
+        HTTPClient client = this.sdkConfiguration.defaultClient;
         HttpResponse<byte[]> httpRes = client.send(req);
 
         String contentType = httpRes.headers().firstValue("Content-Type").orElse("application/octet-stream");
@@ -368,7 +358,7 @@ public class ResourceDefinition {
      * @throws Exception if the API call fails
      */
     public demo_1.test_1.models.operations.PostOrgsOrgIdResourcesDefsResponse postOrgsOrgIdResourcesDefs(demo_1.test_1.models.operations.PostOrgsOrgIdResourcesDefsRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdResourcesDefsRequest.class, baseUrl, "/orgs/{orgId}/resources/defs", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -381,9 +371,9 @@ public class ResourceDefinition {
         req.setBody(serializedRequestBody);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         
-        HTTPClient client = this._defaultClient;
+        HTTPClient client = this.sdkConfiguration.defaultClient;
         HttpResponse<byte[]> httpRes = client.send(req);
 
         String contentType = httpRes.headers().firstValue("Content-Type").orElse("application/octet-stream");
@@ -430,7 +420,7 @@ public class ResourceDefinition {
      * @throws Exception if the API call fails
      */
     public demo_1.test_1.models.operations.PostOrgsOrgIdResourcesDefsDefIdCriteriaResponse postOrgsOrgIdResourcesDefsDefIdCriteria(demo_1.test_1.models.operations.PostOrgsOrgIdResourcesDefsDefIdCriteriaRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdResourcesDefsDefIdCriteriaRequest.class, baseUrl, "/orgs/{orgId}/resources/defs/{defId}/criteria", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -443,9 +433,9 @@ public class ResourceDefinition {
         req.setBody(serializedRequestBody);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         
-        HTTPClient client = this._defaultClient;
+        HTTPClient client = this.sdkConfiguration.defaultClient;
         HttpResponse<byte[]> httpRes = client.send(req);
 
         String contentType = httpRes.headers().firstValue("Content-Type").orElse("application/octet-stream");
@@ -481,7 +471,7 @@ public class ResourceDefinition {
      * @throws Exception if the API call fails
      */
     public demo_1.test_1.models.operations.PutOrgsOrgIdResourcesDefsDefIdResponse putOrgsOrgIdResourcesDefsDefId(demo_1.test_1.models.operations.PutOrgsOrgIdResourcesDefsDefIdRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PutOrgsOrgIdResourcesDefsDefIdRequest.class, baseUrl, "/orgs/{orgId}/resources/defs/{defId}", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -494,9 +484,9 @@ public class ResourceDefinition {
         req.setBody(serializedRequestBody);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         
-        HTTPClient client = this._defaultClient;
+        HTTPClient client = this.sdkConfiguration.defaultClient;
         HttpResponse<byte[]> httpRes = client.send(req);
 
         String contentType = httpRes.headers().firstValue("Content-Type").orElse("application/octet-stream");

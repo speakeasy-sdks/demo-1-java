@@ -341,21 +341,13 @@ public class Test1 {
     public WorkloadProfile workloadProfile;
     public Public public_;	
 
-	private HTTPClient _defaultClient;
-	private HTTPClient _securityClient;
-	
-	private String _serverUrl;
-	private String _language = "java";
-	private String _sdkVersion = "1.7.1";
-	private String _genVersion = "2.34.7";
+	private SDKConfiguration sdkConfiguration;
+
 	/**
 	 * The Builder class allows the configuration of a new instance of the SDK.
 	 */
 	public static class Builder {
-		private HTTPClient client;
-		
-		private String serverUrl;
-		private java.util.Map<String, String> params = new java.util.HashMap<String, String>();
+		private SDKConfiguration sdkConfiguration = new SDKConfiguration();
 
 		private Builder() {
 		}
@@ -366,7 +358,7 @@ public class Test1 {
 		 * @return The builder instance.
 		 */
 		public Builder setClient(HTTPClient client) {
-			this.client = client;
+			this.sdkConfiguration.defaultClient = client;
 			return this;
 		}
 		
@@ -376,7 +368,7 @@ public class Test1 {
 		 * @return The builder instance.
 		 */
 		public Builder setServerURL(String serverUrl) {
-			this.serverUrl = serverUrl;
+			this.sdkConfiguration.serverUrl = serverUrl;
 			return this;
 		}
 		
@@ -387,8 +379,18 @@ public class Test1 {
 		 * @return The builder instance.
 		 */
 		public Builder setServerURL(String serverUrl, java.util.Map<String, String> params) {
-			this.serverUrl = serverUrl;
-			this.params = params;
+			this.sdkConfiguration.serverUrl = demo_1.test_1.utils.Utils.templateUrl(serverUrl, params);
+			return this;
+		}
+		
+		/**
+		 * Allows the overriding of the default server by index
+		 * @param serverIdx The server to use for all requests.
+		 * @return The builder instance.
+		 */
+		public Builder setServerIndex(int serverIdx) {
+			this.sdkConfiguration.serverIdx = serverIdx;
+			this.sdkConfiguration.serverUrl = SERVERS[serverIdx];
 			return this;
 		}
 		
@@ -398,7 +400,24 @@ public class Test1 {
 		 * @throws Exception Thrown if the SDK could not be built.
 		 */
 		public Test1 build() throws Exception {
-			return new Test1(this.client, this.serverUrl, this.params);
+			if (this.sdkConfiguration.defaultClient == null) {
+				this.sdkConfiguration.defaultClient = new SpeakeasyHTTPClient();
+			}
+			
+			if (this.sdkConfiguration.securityClient == null) {
+				this.sdkConfiguration.securityClient = this.sdkConfiguration.defaultClient;
+			}
+			
+			if (this.sdkConfiguration.serverUrl == null || this.sdkConfiguration.serverUrl.isBlank()) {
+				this.sdkConfiguration.serverUrl = SERVERS[0];
+				this.sdkConfiguration.serverIdx = 0;
+			}
+
+			if (this.sdkConfiguration.serverUrl.endsWith("/")) {
+				this.sdkConfiguration.serverUrl = this.sdkConfiguration.serverUrl.substring(0, this.sdkConfiguration.serverUrl.length() - 1);
+			}
+			
+			return new Test1(this.sdkConfiguration);
 		}
 	}
 
@@ -410,281 +429,63 @@ public class Test1 {
 		return new Builder();
 	}
 
-	private Test1(HTTPClient client, String serverUrl, java.util.Map<String, String> params) throws Exception {
-		this._defaultClient = client;
+	private Test1(SDKConfiguration sdkConfiguration) throws Exception {
+		this.sdkConfiguration = sdkConfiguration;
 		
-		if (this._defaultClient == null) {
-			this._defaultClient = new SpeakeasyHTTPClient();
-		}
+		this.accountType = new AccountType(this.sdkConfiguration);
 		
-		if (this._securityClient == null) {
-			this._securityClient = this._defaultClient;
-		}
-
-		if (serverUrl != null && !serverUrl.isBlank()) {
-			this._serverUrl = demo_1.test_1.utils.Utils.templateUrl(serverUrl, params);
-		}
+		this.activeResource = new ActiveResource(this.sdkConfiguration);
 		
-		if (this._serverUrl == null) {
-			this._serverUrl = SERVERS[0];
-		}
-
-		if (this._serverUrl.endsWith("/")) {
-            this._serverUrl = this._serverUrl.substring(0, this._serverUrl.length() - 1);
-        }
-
+		this.application = new Application(this.sdkConfiguration);
 		
+		this.artefact = new Artefact(this.sdkConfiguration);
 		
-		this.accountType = new AccountType(
-			this._defaultClient,
-			this._securityClient,
-			this._serverUrl,
-			this._language,
-			this._sdkVersion,
-			this._genVersion
-		);
+		this.artefactVersion = new ArtefactVersion(this.sdkConfiguration);
 		
-		this.activeResource = new ActiveResource(
-			this._defaultClient,
-			this._securityClient,
-			this._serverUrl,
-			this._language,
-			this._sdkVersion,
-			this._genVersion
-		);
+		this.automationRule = new AutomationRule(this.sdkConfiguration);
 		
-		this.application = new Application(
-			this._defaultClient,
-			this._securityClient,
-			this._serverUrl,
-			this._language,
-			this._sdkVersion,
-			this._genVersion
-		);
+		this.delta = new Delta(this.sdkConfiguration);
 		
-		this.artefact = new Artefact(
-			this._defaultClient,
-			this._securityClient,
-			this._serverUrl,
-			this._language,
-			this._sdkVersion,
-			this._genVersion
-		);
+		this.deployment = new Deployment(this.sdkConfiguration);
 		
-		this.artefactVersion = new ArtefactVersion(
-			this._defaultClient,
-			this._securityClient,
-			this._serverUrl,
-			this._language,
-			this._sdkVersion,
-			this._genVersion
-		);
+		this.driverDefinition = new DriverDefinition(this.sdkConfiguration);
 		
-		this.automationRule = new AutomationRule(
-			this._defaultClient,
-			this._securityClient,
-			this._serverUrl,
-			this._language,
-			this._sdkVersion,
-			this._genVersion
-		);
+		this.environment = new Environment(this.sdkConfiguration);
 		
-		this.delta = new Delta(
-			this._defaultClient,
-			this._securityClient,
-			this._serverUrl,
-			this._language,
-			this._sdkVersion,
-			this._genVersion
-		);
+		this.environmentType = new EnvironmentType(this.sdkConfiguration);
 		
-		this.deployment = new Deployment(
-			this._defaultClient,
-			this._securityClient,
-			this._serverUrl,
-			this._language,
-			this._sdkVersion,
-			this._genVersion
-		);
+		this.event = new Event(this.sdkConfiguration);
 		
-		this.driverDefinition = new DriverDefinition(
-			this._defaultClient,
-			this._securityClient,
-			this._serverUrl,
-			this._language,
-			this._sdkVersion,
-			this._genVersion
-		);
+		this.image = new Image(this.sdkConfiguration);
 		
-		this.environment = new Environment(
-			this._defaultClient,
-			this._securityClient,
-			this._serverUrl,
-			this._language,
-			this._sdkVersion,
-			this._genVersion
-		);
+		this.matchingCriteria = new MatchingCriteria(this.sdkConfiguration);
 		
-		this.environmentType = new EnvironmentType(
-			this._defaultClient,
-			this._securityClient,
-			this._serverUrl,
-			this._language,
-			this._sdkVersion,
-			this._genVersion
-		);
+		this.organization = new Organization(this.sdkConfiguration);
 		
-		this.event = new Event(
-			this._defaultClient,
-			this._securityClient,
-			this._serverUrl,
-			this._language,
-			this._sdkVersion,
-			this._genVersion
-		);
+		this.registry = new Registry(this.sdkConfiguration);
 		
-		this.image = new Image(
-			this._defaultClient,
-			this._securityClient,
-			this._serverUrl,
-			this._language,
-			this._sdkVersion,
-			this._genVersion
-		);
+		this.resourceAccount = new ResourceAccount(this.sdkConfiguration);
 		
-		this.matchingCriteria = new MatchingCriteria(
-			this._defaultClient,
-			this._securityClient,
-			this._serverUrl,
-			this._language,
-			this._sdkVersion,
-			this._genVersion
-		);
+		this.resourceDefinition = new ResourceDefinition(this.sdkConfiguration);
 		
-		this.organization = new Organization(
-			this._defaultClient,
-			this._securityClient,
-			this._serverUrl,
-			this._language,
-			this._sdkVersion,
-			this._genVersion
-		);
+		this.resourceType = new ResourceType(this.sdkConfiguration);
 		
-		this.registry = new Registry(
-			this._defaultClient,
-			this._securityClient,
-			this._serverUrl,
-			this._language,
-			this._sdkVersion,
-			this._genVersion
-		);
+		this.runtimeInfo = new RuntimeInfo(this.sdkConfiguration);
 		
-		this.resourceAccount = new ResourceAccount(
-			this._defaultClient,
-			this._securityClient,
-			this._serverUrl,
-			this._language,
-			this._sdkVersion,
-			this._genVersion
-		);
+		this.set = new Set(this.sdkConfiguration);
 		
-		this.resourceDefinition = new ResourceDefinition(
-			this._defaultClient,
-			this._securityClient,
-			this._serverUrl,
-			this._language,
-			this._sdkVersion,
-			this._genVersion
-		);
+		this.userInvite = new UserInvite(this.sdkConfiguration);
 		
-		this.resourceType = new ResourceType(
-			this._defaultClient,
-			this._securityClient,
-			this._serverUrl,
-			this._language,
-			this._sdkVersion,
-			this._genVersion
-		);
+		this.userProfile = new UserProfile(this.sdkConfiguration);
 		
-		this.runtimeInfo = new RuntimeInfo(
-			this._defaultClient,
-			this._securityClient,
-			this._serverUrl,
-			this._language,
-			this._sdkVersion,
-			this._genVersion
-		);
+		this.userRole = new UserRole(this.sdkConfiguration);
 		
-		this.set = new Set(
-			this._defaultClient,
-			this._securityClient,
-			this._serverUrl,
-			this._language,
-			this._sdkVersion,
-			this._genVersion
-		);
+		this.value = new Value(this.sdkConfiguration);
 		
-		this.userInvite = new UserInvite(
-			this._defaultClient,
-			this._securityClient,
-			this._serverUrl,
-			this._language,
-			this._sdkVersion,
-			this._genVersion
-		);
+		this.valueSetVersion = new ValueSetVersion(this.sdkConfiguration);
 		
-		this.userProfile = new UserProfile(
-			this._defaultClient,
-			this._securityClient,
-			this._serverUrl,
-			this._language,
-			this._sdkVersion,
-			this._genVersion
-		);
+		this.workloadProfile = new WorkloadProfile(this.sdkConfiguration);
 		
-		this.userRole = new UserRole(
-			this._defaultClient,
-			this._securityClient,
-			this._serverUrl,
-			this._language,
-			this._sdkVersion,
-			this._genVersion
-		);
-		
-		this.value = new Value(
-			this._defaultClient,
-			this._securityClient,
-			this._serverUrl,
-			this._language,
-			this._sdkVersion,
-			this._genVersion
-		);
-		
-		this.valueSetVersion = new ValueSetVersion(
-			this._defaultClient,
-			this._securityClient,
-			this._serverUrl,
-			this._language,
-			this._sdkVersion,
-			this._genVersion
-		);
-		
-		this.workloadProfile = new WorkloadProfile(
-			this._defaultClient,
-			this._securityClient,
-			this._serverUrl,
-			this._language,
-			this._sdkVersion,
-			this._genVersion
-		);
-		
-		this.public_ = new Public(
-			this._defaultClient,
-			this._securityClient,
-			this._serverUrl,
-			this._language,
-			this._sdkVersion,
-			this._genVersion
-		);
+		this.public_ = new Public(this.sdkConfiguration);
 	}
 }

@@ -48,20 +48,10 @@ import org.apache.http.NameValuePair;
  */
 public class Delta {
 	
-	private HTTPClient _defaultClient;
-	private HTTPClient _securityClient;
-	private String _serverUrl;
-	private String _language;
-	private String _sdkVersion;
-	private String _genVersion;
+	private SDKConfiguration sdkConfiguration;
 
-	public Delta(HTTPClient defaultClient, HTTPClient securityClient, String serverUrl, String language, String sdkVersion, String genVersion) {
-		this._defaultClient = defaultClient;
-		this._securityClient = securityClient;
-		this._serverUrl = serverUrl;
-		this._language = language;
-		this._sdkVersion = sdkVersion;
-		this._genVersion = genVersion;
+	public Delta(SDKConfiguration sdkConfiguration) {
+		this.sdkConfiguration = sdkConfiguration;
 	}
 
     /**
@@ -71,7 +61,7 @@ public class Delta {
      * @throws Exception if the API call fails
      */
     public demo_1.test_1.models.operations.GetDeltaResponse getDelta(demo_1.test_1.models.operations.GetDeltaRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetDeltaRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/deltas/{deltaId}", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -79,9 +69,9 @@ public class Delta {
         req.setURL(url);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         
-        HTTPClient client = this._defaultClient;
+        HTTPClient client = this.sdkConfiguration.defaultClient;
         HttpResponse<byte[]> httpRes = client.send(req);
 
         String contentType = httpRes.headers().firstValue("Content-Type").orElse("application/octet-stream");
@@ -116,7 +106,7 @@ public class Delta {
      * @throws Exception if the API call fails
      */
     public demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdDeltasResponse getOrgsOrgIdAppsAppIdDeltas(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdDeltasRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdDeltasRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/deltas", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -124,7 +114,7 @@ public class Delta {
         req.setURL(url);
 
         req.addHeader("Accept", "application/json");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         java.util.List<NameValuePair> queryParams = demo_1.test_1.utils.Utils.getQueryParams(demo_1.test_1.models.operations.GetOrgsOrgIdAppsAppIdDeltasRequest.class, request, null);
         if (queryParams != null) {
             for (NameValuePair queryParam : queryParams) {
@@ -132,7 +122,7 @@ public class Delta {
             }
         }
         
-        HTTPClient client = this._defaultClient;
+        HTTPClient client = this.sdkConfiguration.defaultClient;
         HttpResponse<byte[]> httpRes = client.send(req);
 
         String contentType = httpRes.headers().firstValue("Content-Type").orElse("application/octet-stream");
@@ -160,7 +150,7 @@ public class Delta {
      * @throws Exception if the API call fails
      */
     public demo_1.test_1.models.operations.PatchOrgsOrgIdAppsAppIdDeltasDeltaIdResponse patchOrgsOrgIdAppsAppIdDeltasDeltaId(demo_1.test_1.models.operations.PatchOrgsOrgIdAppsAppIdDeltasDeltaIdRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PatchOrgsOrgIdAppsAppIdDeltasDeltaIdRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/deltas/{deltaId}", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -173,9 +163,9 @@ public class Delta {
         req.setBody(serializedRequestBody);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0.7, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         
-        HTTPClient client = this._defaultClient;
+        HTTPClient client = this.sdkConfiguration.defaultClient;
         HttpResponse<byte[]> httpRes = client.send(req);
 
         String contentType = httpRes.headers().firstValue("Content-Type").orElse("application/octet-stream");
@@ -218,7 +208,7 @@ public class Delta {
      * @throws Exception if the API call fails
      */
     public demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdDeltasResponse postOrgsOrgIdAppsAppIdDeltas(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdDeltasRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PostOrgsOrgIdAppsAppIdDeltasRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/deltas", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -231,9 +221,9 @@ public class Delta {
         req.setBody(serializedRequestBody);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         
-        HTTPClient client = this._defaultClient;
+        HTTPClient client = this.sdkConfiguration.defaultClient;
         HttpResponse<byte[]> httpRes = client.send(req);
 
         String contentType = httpRes.headers().firstValue("Content-Type").orElse("application/octet-stream");
@@ -269,7 +259,7 @@ public class Delta {
      * @throws Exception if the API call fails
      */
     public demo_1.test_1.models.operations.PutDeltaResponse putDelta(demo_1.test_1.models.operations.PutDeltaRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PutDeltaRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/deltas/{deltaId}", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -282,9 +272,9 @@ public class Delta {
         req.setBody(serializedRequestBody);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         
-        HTTPClient client = this._defaultClient;
+        HTTPClient client = this.sdkConfiguration.defaultClient;
         HttpResponse<byte[]> httpRes = client.send(req);
 
         String contentType = httpRes.headers().firstValue("Content-Type").orElse("application/octet-stream");
@@ -322,7 +312,7 @@ public class Delta {
      * @throws Exception if the API call fails
      */
     public demo_1.test_1.models.operations.PutOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataArchivedResponse putOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataArchived(demo_1.test_1.models.operations.PutOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataArchivedRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PutOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataArchivedRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/deltas/{deltaId}/metadata/archived", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -335,9 +325,9 @@ public class Delta {
         req.setBody(serializedRequestBody);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         
-        HTTPClient client = this._defaultClient;
+        HTTPClient client = this.sdkConfiguration.defaultClient;
         HttpResponse<byte[]> httpRes = client.send(req);
 
         String contentType = httpRes.headers().firstValue("Content-Type").orElse("application/octet-stream");
@@ -374,7 +364,7 @@ public class Delta {
      * @throws Exception if the API call fails
      */
     public demo_1.test_1.models.operations.PutOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataEnvIdResponse putOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataEnvId(demo_1.test_1.models.operations.PutOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataEnvIdRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PutOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataEnvIdRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/deltas/{deltaId}/metadata/env_id", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -387,9 +377,9 @@ public class Delta {
         req.setBody(serializedRequestBody);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         
-        HTTPClient client = this._defaultClient;
+        HTTPClient client = this.sdkConfiguration.defaultClient;
         HttpResponse<byte[]> httpRes = client.send(req);
 
         String contentType = httpRes.headers().firstValue("Content-Type").orElse("application/octet-stream");
@@ -426,7 +416,7 @@ public class Delta {
      * @throws Exception if the API call fails
      */
     public demo_1.test_1.models.operations.PutOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataNameResponse putOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataName(demo_1.test_1.models.operations.PutOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataNameRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = demo_1.test_1.utils.Utils.generateURL(demo_1.test_1.models.operations.PutOrgsOrgIdAppsAppIdDeltasDeltaIdMetadataNameRequest.class, baseUrl, "/orgs/{orgId}/apps/{appId}/deltas/{deltaId}/metadata/name", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -439,9 +429,9 @@ public class Delta {
         req.setBody(serializedRequestBody);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         
-        HTTPClient client = this._defaultClient;
+        HTTPClient client = this.sdkConfiguration.defaultClient;
         HttpResponse<byte[]> httpRes = client.send(req);
 
         String contentType = httpRes.headers().firstValue("Content-Type").orElse("application/octet-stream");
