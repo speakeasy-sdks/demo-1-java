@@ -8,7 +8,7 @@ import demo_1.test_1.utils.HTTPClient;
 import demo_1.test_1.utils.SpeakeasyHTTPClient;
 
 /**
- * # Introduction
+ * Humanitec API: # Introduction
  * The *Humanitec API* allows you to automate and integrate Humanitec into your developer and operational workflows.
  * The API is a REST based API. It is based around a set of concepts:
  * 
