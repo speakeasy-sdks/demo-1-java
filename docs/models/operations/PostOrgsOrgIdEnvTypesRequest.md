@@ -1,0 +1,9 @@
+# PostOrgsOrgIdEnvTypesRequest
+
+
+## Fields
+
+| Field                                                                                               | Type                                                                                                | Required                                                                                            | Description                                                                                         |
+| --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| `environmentTypeRequest`                                                                            | [demo_1.test_1.models.shared.EnvironmentTypeRequest](../../models/shared/EnvironmentTypeRequest.md) | :heavy_check_mark:                                                                                  | New Environment Type.<br/><br/>                                                                     |
+| `orgId`                                                                                             | *String*                                                                                            | :heavy_check_mark:                                                                                  | The Organization ID.<br/><br/>                                                                      |

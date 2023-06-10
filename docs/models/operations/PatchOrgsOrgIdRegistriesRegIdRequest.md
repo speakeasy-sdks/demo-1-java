@@ -1,0 +1,10 @@
+# PatchOrgsOrgIdRegistriesRegIdRequest
+
+
+## Fields
+
+| Field                                                                                 | Type                                                                                  | Required                                                                              | Description                                                                           |
+| ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| `registryRequest`                                                                     | [demo_1.test_1.models.shared.RegistryRequest](../../models/shared/RegistryRequest.md) | :heavy_check_mark:                                                                    | Record details to update.<br/><br/>                                                   |
+| `orgId`                                                                               | *String*                                                                              | :heavy_check_mark:                                                                    | Unique (alpha-numerical) organization identifier.<br/><br/>                           |
+| `regId`                                                                               | *String*                                                                              | :heavy_check_mark:                                                                    | Unique (alpha-numerical) registry identifier.<br/><br/>                               |

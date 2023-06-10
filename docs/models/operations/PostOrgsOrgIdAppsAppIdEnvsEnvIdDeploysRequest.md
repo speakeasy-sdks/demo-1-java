@@ -1,0 +1,11 @@
+# PostOrgsOrgIdAppsAppIdEnvsEnvIdDeploysRequest
+
+
+## Fields
+
+| Field                                                                                     | Type                                                                                      | Required                                                                                  | Description                                                                               |
+| ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| `deploymentRequest`                                                                       | [demo_1.test_1.models.shared.DeploymentRequest](../../models/shared/DeploymentRequest.md) | :heavy_check_mark:                                                                        | The Delta describing the change to the Environment and a comment.<br/><br/>               |
+| `appId`                                                                                   | *String*                                                                                  | :heavy_check_mark:                                                                        | The Application ID.<br/><br/>                                                             |
+| `envId`                                                                                   | *String*                                                                                  | :heavy_check_mark:                                                                        | The Environment ID.<br/><br/>                                                             |
+| `orgId`                                                                                   | *String*                                                                                  | :heavy_check_mark:                                                                        | The Organization ID.<br/><br/>                                                            |

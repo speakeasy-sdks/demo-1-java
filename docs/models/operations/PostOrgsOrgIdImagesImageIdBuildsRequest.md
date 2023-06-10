@@ -1,0 +1,10 @@
+# PostOrgsOrgIdImagesImageIdBuildsRequest
+
+
+## Fields
+
+| Field                                                                                     | Type                                                                                      | Required                                                                                  | Description                                                                               |
+| ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| `imageBuildRequest`                                                                       | [demo_1.test_1.models.shared.ImageBuildRequest](../../models/shared/ImageBuildRequest.md) | :heavy_check_mark:                                                                        | The metadata associated with the build.<br/><br/>                                         |
+| `imageId`                                                                                 | *String*                                                                                  | :heavy_check_mark:                                                                        | The Image ID.<br/><br/>                                                                   |
+| `orgId`                                                                                   | *String*                                                                                  | :heavy_check_mark:                                                                        | The organization ID.<br/><br/>                                                            |

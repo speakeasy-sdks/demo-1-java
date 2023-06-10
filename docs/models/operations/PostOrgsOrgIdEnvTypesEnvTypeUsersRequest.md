@@ -1,0 +1,10 @@
+# PostOrgsOrgIdEnvTypesEnvTypeUsersRequest
+
+
+## Fields
+
+| Field                                                                                 | Type                                                                                  | Required                                                                              | Description                                                                           |
+| ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| `userRoleRequest`                                                                     | [demo_1.test_1.models.shared.UserRoleRequest](../../models/shared/UserRoleRequest.md) | :heavy_check_mark:                                                                    | The user ID and the role<br/><br/>                                                    |
+| `envType`                                                                             | *String*                                                                              | :heavy_check_mark:                                                                    | The Environment Type.<br/><br/>                                                       |
+| `orgId`                                                                               | *String*                                                                              | :heavy_check_mark:                                                                    | The Organization ID.<br/><br/>                                                        |

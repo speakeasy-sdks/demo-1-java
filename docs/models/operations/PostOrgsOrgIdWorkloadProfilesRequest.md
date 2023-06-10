@@ -1,0 +1,9 @@
+# PostOrgsOrgIdWorkloadProfilesRequest
+
+
+## Fields
+
+| Field                                                                                               | Type                                                                                                | Required                                                                                            | Description                                                                                         |
+| --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| `workloadProfileRequest`                                                                            | [demo_1.test_1.models.shared.WorkloadProfileRequest](../../models/shared/WorkloadProfileRequest.md) | :heavy_check_mark:                                                                                  | Workload profile details.<br/><br/>                                                                 |
+| `orgId`                                                                                             | *String*                                                                                            | :heavy_check_mark:                                                                                  | The Organization ID.<br/><br/>                                                                      |

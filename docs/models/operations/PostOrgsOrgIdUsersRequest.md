@@ -1,0 +1,9 @@
+# PostOrgsOrgIdUsersRequest
+
+
+## Fields
+
+| Field                                                                                             | Type                                                                                              | Required                                                                                          | Description                                                                                       |
+| ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| `newServiceUserRequest`                                                                           | [demo_1.test_1.models.shared.NewServiceUserRequest](../../models/shared/NewServiceUserRequest.md) | :heavy_check_mark:                                                                                | The user ID and the role<br/><br/>                                                                |
+| `orgId`                                                                                           | *String*                                                                                          | :heavy_check_mark:                                                                                | The Organization ID.<br/><br/>                                                                    |

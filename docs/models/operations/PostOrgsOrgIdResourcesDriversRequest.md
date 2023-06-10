@@ -1,0 +1,9 @@
+# PostOrgsOrgIdResourcesDriversRequest
+
+
+## Fields
+
+| Field                                                                                                       | Type                                                                                                        | Required                                                                                                    | Description                                                                                                 |
+| ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| `createDriverRequestRequest`                                                                                | [demo_1.test_1.models.shared.CreateDriverRequestRequest](../../models/shared/CreateDriverRequestRequest.md) | :heavy_check_mark:                                                                                          | Resources Driver details.<br/><br/>                                                                         |
+| `orgId`                                                                                                     | *String*                                                                                                    | :heavy_check_mark:                                                                                          | The Organization ID.<br/><br/>                                                                              |

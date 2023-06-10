@@ -1,0 +1,9 @@
+# PostOrgsOrgIdInvitationsRequest
+
+
+## Fields
+
+| Field                                                                                                   | Type                                                                                                    | Required                                                                                                | Description                                                                                             |
+| ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| `userInviteRequestRequest`                                                                              | [demo_1.test_1.models.shared.UserInviteRequestRequest](../../models/shared/UserInviteRequestRequest.md) | :heavy_check_mark:                                                                                      | The email and the desired role<br/><br/>                                                                |
+| `orgId`                                                                                                 | *String*                                                                                                | :heavy_check_mark:                                                                                      | The Organization ID.<br/><br/>                                                                          |

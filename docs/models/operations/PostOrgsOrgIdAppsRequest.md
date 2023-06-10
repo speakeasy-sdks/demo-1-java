@@ -1,0 +1,9 @@
+# PostOrgsOrgIdAppsRequest
+
+
+## Fields
+
+| Field                                                                                                       | Type                                                                                                        | Required                                                                                                    | Description                                                                                                 |
+| ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| `applicationCreationRequest`                                                                                | [demo_1.test_1.models.shared.ApplicationCreationRequest](../../models/shared/ApplicationCreationRequest.md) | :heavy_check_mark:                                                                                          | The request ID, Human-friendly name and environment of the Application.<br/><br/>                           |
+| `orgId`                                                                                                     | *String*                                                                                                    | :heavy_check_mark:                                                                                          | The Organization ID.<br/><br/>                                                                              |
